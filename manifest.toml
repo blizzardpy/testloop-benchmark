@@ -1,0 +1,371 @@
+# Benchmark manifest (milestone M2). Draft: becomes immutable at tag benchmark-v1.
+# One [[project]] per source repository, pinned to a commit; one [[project.target]] per module under test.
+# category: logic = pure logic, class = class-based / stateful, io = parsing or file/environment I/O,
+#           deps = depends on third-party packages (proposal بند ۵-د).
+# status: candidate | selected | rejected (with reason).
+
+[[project]]
+name = "python-slugify"
+repo = "https://github.com/un33k/python-slugify"
+commit = "35aca63fc2672cba2c739ff6dff685a4f26a4f9a"
+test_deps = []
+
+[[project.target]]
+id = "slugify"
+category = "logic"
+module_file = "slugify/slugify.py"
+module_name = "slugify.slugify"
+python_path = ["."]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "inflection"
+repo = "https://github.com/jpvanhal/inflection"
+commit = "88eefaacf7d0caaa701af7c8ab2d0ab3f17086f1"
+test_deps = []
+
+[[project.target]]
+id = "inflection"
+category = "logic"
+module_file = "inflection/__init__.py"
+module_name = "inflection"
+python_path = ["."]
+human_tests = ["test_inflection.py"]
+status = "candidate"
+
+[[project]]
+name = "python-semver"
+repo = "https://github.com/python-semver/python-semver"
+commit = "84561d55265c2cba6f5df0d341d6e967ce20e082"
+test_deps = []
+
+[[project.target]]
+id = "semver-version"
+category = "class"
+module_file = "src/semver/version.py"
+module_name = "semver.version"
+python_path = ["src"]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "python-json-pointer"
+repo = "https://github.com/stefankoegl/python-json-pointer"
+commit = "86b82bf7a0b342e1c7b3aaf4c437dce264740579"
+test_deps = []
+
+[[project.target]]
+id = "jsonpointer"
+category = "logic"
+module_file = "jsonpointer.py"
+module_name = "jsonpointer"
+python_path = ["."]
+human_tests = ["tests.py"]
+status = "candidate"
+
+[[project]]
+name = "toolz"
+repo = "https://github.com/pytoolz/toolz"
+commit = "451af60dec590a6010e2babdbf391ea8f815122f"
+test_deps = []
+
+[[project.target]]
+id = "toolz-dicttoolz"
+category = "logic"
+module_file = "toolz/dicttoolz.py"
+module_name = "toolz.dicttoolz"
+python_path = ["."]
+human_tests = ["toolz/tests/test_dicttoolz.py"]
+status = "candidate"
+
+[[project.target]]
+id = "toolz-itertoolz"
+category = "logic"
+module_file = "toolz/itertoolz.py"
+module_name = "toolz.itertoolz"
+python_path = ["."]
+human_tests = ["toolz/tests/test_itertoolz.py"]
+status = "candidate"
+
+[[project]]
+name = "boltons"
+repo = "https://github.com/mahmoud/boltons"
+commit = "4e5faa3d7e4008d89e0d8bf1ea87b6d9a061a16d"
+test_deps = []
+
+[[project.target]]
+id = "boltons-strutils"
+category = "logic"
+module_file = "boltons/strutils.py"
+module_name = "boltons.strutils"
+python_path = ["."]
+human_tests = ["tests/test_strutils.py"]
+status = "candidate"
+
+[[project.target]]
+id = "boltons-cacheutils"
+category = "class"
+module_file = "boltons/cacheutils.py"
+module_name = "boltons.cacheutils"
+python_path = ["."]
+human_tests = ["tests/test_cacheutils.py"]
+status = "candidate"
+
+[[project.target]]
+id = "boltons-setutils"
+category = "class"
+module_file = "boltons/setutils.py"
+module_name = "boltons.setutils"
+python_path = ["."]
+human_tests = ["tests/test_setutils.py"]
+status = "candidate"
+
+[[project]]
+name = "humanize"
+repo = "https://github.com/python-humanize/humanize"
+commit = "785e5dcc0d0308ad0dff3f6cc0faa7085ad0375b"
+test_deps = ["freezegun"]
+
+[[project.target]]
+id = "humanize-number"
+category = "logic"
+module_file = "src/humanize/number.py"
+module_name = "humanize.number"
+python_path = ["src"]
+human_tests = ["tests/test_number.py"]
+status = "candidate"
+
+[[project]]
+name = "parse"
+repo = "https://github.com/r1chardj0n3s/parse"
+commit = "0d2d28fbccf023d0485be21aaccc95de88e92eaa"
+test_deps = []
+
+[[project.target]]
+id = "parse"
+category = "logic"
+module_file = "parse/__init__.py"
+module_name = "parse"
+python_path = ["."]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "webcolors"
+repo = "https://github.com/ubernostrum/webcolors"
+commit = "6c8da6832eb4ae2591a1883a0d1371263d6cd4db"
+test_deps = []
+
+[[project.target]]
+id = "webcolors-conversion"
+category = "logic"
+module_file = "src/webcolors/_conversion.py"
+module_name = "webcolors._conversion"
+python_path = ["src"]
+human_tests = ["tests/test_conversion.py"]
+status = "candidate"
+
+[[project]]
+name = "cachetools"
+repo = "https://github.com/tkem/cachetools"
+commit = "be0b2eba99f676fbd525a8bc83a4dd62611c6821"
+test_deps = []
+
+[[project.target]]
+id = "cachetools"
+category = "class"
+module_file = "src/cachetools/__init__.py"
+module_name = "cachetools"
+python_path = ["src"]
+human_tests = ["tests/test_cache.py", "tests/test_fifo.py", "tests/test_lfu.py", "tests/test_lru.py", "tests/test_rr.py", "tests/test_ttl.py", "tests/test_tlru.py"]
+status = "candidate"
+
+[[project]]
+name = "bidict"
+repo = "https://github.com/jab/bidict"
+commit = "299fedc89f1d70d5d41cf7922564b376d3e2d435"
+test_deps = ["hypothesis", "sortedcontainers", "sortedcollections"]
+
+[[project.target]]
+id = "bidict-base"
+category = "class"
+module_file = "bidict/_base.py"
+module_name = "bidict._base"
+python_path = ["."]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "isodate"
+repo = "https://github.com/gweis/isodate"
+commit = "17cb25eb7bc3556a68f3f7b241313e9bb8b23760"
+test_deps = []
+
+[[project.target]]
+id = "isodate-duration"
+category = "class"
+module_file = "src/isodate/duration.py"
+module_name = "isodate.duration"
+python_path = ["src"]
+human_tests = ["tests/test_duration.py"]
+status = "candidate"
+
+[[project]]
+name = "schedule"
+repo = "https://github.com/dbader/schedule"
+commit = "82a43db1b938d8fdf60103bd41f329e06c8d3651"
+test_deps = []
+
+[[project.target]]
+id = "schedule"
+category = "class"
+module_file = "schedule/__init__.py"
+module_name = "schedule"
+python_path = ["."]
+human_tests = ["test_schedule.py"]
+status = "candidate"
+
+[[project]]
+name = "dateutil"
+repo = "https://github.com/dateutil/dateutil"
+commit = "2642afacc33fb839c404b75b230fff58b79793f2"
+test_deps = ["hypothesis"]
+
+[[project.target]]
+id = "dateutil-relativedelta"
+category = "class"
+module_file = "src/dateutil/relativedelta.py"
+module_name = "dateutil.relativedelta"
+python_path = ["src"]
+human_tests = ["tests/test_relativedelta.py"]
+status = "candidate"
+
+[[project]]
+name = "xmltodict"
+repo = "https://github.com/martinblech/xmltodict"
+commit = "6e29fba282e68631034dd2722a413b4e35276584"
+test_deps = []
+
+[[project.target]]
+id = "xmltodict"
+category = "io"
+module_file = "xmltodict.py"
+module_name = "xmltodict"
+python_path = ["."]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "tomli"
+repo = "https://github.com/hukkin/tomli"
+commit = "43a86ade8b795c6ef9b4ec53372a607cd1ed426f"
+test_deps = []
+
+[[project.target]]
+id = "tomli-parser"
+category = "io"
+module_file = "src/tomli/_parser.py"
+module_name = "tomli._parser"
+python_path = ["src"]
+human_tests = ["tests"]
+status = "candidate"
+
+[[project]]
+name = "python-dotenv"
+repo = "https://github.com/theskumar/python-dotenv"
+commit = "0b2880591780a426b0551436f47a17e7a76d954f"
+test_deps = ["sh", "click"]
+
+[[project.target]]
+id = "dotenv-main"
+category = "io"
+module_file = "src/dotenv/main.py"
+module_name = "dotenv.main"
+python_path = ["src"]
+human_tests = ["tests/test_main.py"]
+status = "candidate"
+
+[[project.target]]
+id = "dotenv-parser"
+category = "io"
+module_file = "src/dotenv/parser.py"
+module_name = "dotenv.parser"
+python_path = ["src"]
+human_tests = ["tests/test_parser.py"]
+status = "candidate"
+
+[[project]]
+name = "python-pathspec"
+repo = "https://github.com/cpburnz/python-pathspec"
+commit = "4f65e9d67cbe2dfc635794fc3da243f1c8aa1bfd"
+test_deps = []
+
+[[project.target]]
+id = "pathspec"
+category = "io"
+module_file = "pathspec/pathspec.py"
+module_name = "pathspec.pathspec"
+python_path = ["."]
+human_tests = ["tests/test_05_pathspec.py"]
+status = "candidate"
+
+[[project]]
+name = "requests"
+repo = "https://github.com/psf/requests"
+commit = "611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60"
+test_deps = ["pytest-mock", "trustme", "pytest-httpbin"]
+
+[[project.target]]
+id = "requests-utils"
+category = "deps"
+module_file = "src/requests/utils.py"
+module_name = "requests.utils"
+python_path = ["src"]
+human_tests = ["tests/test_utils.py"]
+status = "candidate"
+
+[[project]]
+name = "marshmallow"
+repo = "https://github.com/marshmallow-code/marshmallow"
+commit = "d08471b17880c62b789971ada638707a11d3f8d4"
+test_deps = ["simplejson"]
+
+[[project.target]]
+id = "marshmallow-validate"
+category = "deps"
+module_file = "src/marshmallow/validate.py"
+module_name = "marshmallow.validate"
+python_path = ["src"]
+human_tests = ["tests/test_validate.py"]
+status = "candidate"
+
+[[project]]
+name = "jinja"
+repo = "https://github.com/pallets/jinja"
+commit = "5ef70112a1ff19c05324ff889dd30405b1002044"
+test_deps = ["trio"]
+
+[[project.target]]
+id = "jinja2-filters"
+category = "deps"
+module_file = "src/jinja2/filters.py"
+module_name = "jinja2.filters"
+python_path = ["src"]
+human_tests = ["tests/test_filters.py"]
+status = "candidate"
+
+[[project]]
+name = "click"
+repo = "https://github.com/pallets/click"
+commit = "2247b35ea1c47c727d7a06e51fa280e12a863ff6"
+test_deps = []
+
+[[project.target]]
+id = "click-types"
+category = "deps"
+module_file = "src/click/types.py"
+module_name = "click.types"
+python_path = ["src"]
+human_tests = ["tests/test_types.py"]
+status = "candidate"

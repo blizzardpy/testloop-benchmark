@@ -1,5 +1,5 @@
 {
-  "target": "slugify.slugify",
+  "target": "slugify",
   "module_file": "slugify/slugify.py",
   "source_sha256": "81f6b705b8b34d6c816f9561441fa35e83d79af71a260dceb60f9e0b566a3bb9",
   "generator_version": "1",
