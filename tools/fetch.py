@@ -11,6 +11,10 @@ installed package still provides metadata (importlib.metadata.version).
 
     python tools/fetch.py              # everything
     python tools/fetch.py --only toolz # one project
+    python tools/fetch.py --pynguin    # also a Pynguin venv per project (../_checkouts/_venvs/<name>-pynguin)
+
+Pynguin pins its own pytest, so it gets a venv of its own with the project
+installed beside it; the project's test venv is left alone.
 """
 
 from __future__ import annotations
@@ -25,6 +29,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parents[1]
 CHECKOUTS = HERE.parent / "_checkouts"
 HARNESS_DEPS = ["pytest>=8", "pytest-timeout>=2.3", "coverage>=7.4"]
+PYNGUIN = "pynguin==0.48.0"
 
 
 def run(*cmd: str, cwd: Path | None = None) -> None:
@@ -54,6 +59,16 @@ def venv(project: dict, src: Path) -> Path:
     return py
 
 
+def pynguin_venv(project: dict, src: Path) -> Path:
+    env = CHECKOUTS / "_venvs" / f"{project['name']}-pynguin"
+    py = env / "bin" / "python"
+    if not py.exists():
+        run(sys.executable, "-m", "venv", str(env))
+    run(str(py), "-m", "pip", "install", "--quiet", "--upgrade", "pip")
+    run(str(py), "-m", "pip", "install", "--quiet", PYNGUIN, str(src))
+    return py
+
+
 def write_target(project: dict, target: dict) -> Path:
     path = HERE / "targets" / f"{target['id']}.toml"
     q = lambda v: json.dumps(v, ensure_ascii=False)  # noqa: E731  (TOML-compatible literals)
@@ -76,6 +91,7 @@ def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--only", nargs="*", help="project names")
     p.add_argument("--no-install", action="store_true", help="clone and write targets only")
+    p.add_argument("--pynguin", action="store_true", help="also build each project's Pynguin venv")
     args = p.parse_args()
     manifest = tomllib.loads((HERE / "manifest.toml").read_text(encoding="utf-8"))
     (HERE / "targets").mkdir(exist_ok=True)
@@ -87,6 +103,8 @@ def main() -> int:
             src = checkout(project)
             if not args.no_install:
                 venv(project, src)
+                if args.pynguin:
+                    pynguin_venv(project, src)
             for target in project["target"]:
                 if target.get("status") != "rejected":
                     write_target(project, target)
