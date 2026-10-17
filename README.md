@@ -2,9 +2,11 @@
 
 The benchmark the thesis is evaluated on (proposal بند ۵-د; roadmap milestone M2).
 
-**Status (2026-10-17): selection proposed, not frozen.** 22 modules from 20
-projects are selected, 4 candidates rejected. After the selection is confirmed
-the repository is tagged `benchmark-v1` and not edited again.
+**Status (2026-10-17): frozen as `benchmark-v1`.** 22 modules from 20
+projects, 4 candidates rejected. The modules, their pinned commits and their
+pinned mutant sets at tag `benchmark-v1` are never edited; every result in the
+thesis names this tag. The BugsInPy and post-cutoff tiers are added later as
+separate targets and do not change these 22.
 
 | Category | Modules |
 |---|---|

@@ -1,8 +1,8 @@
-# Benchmark manifest (milestone M2). Draft: becomes immutable at tag benchmark-v1.
+# Benchmark manifest (milestone M2). Frozen at tag benchmark-v1 (2026-10-17): selected targets are immutable.
 # One [[project]] per source repository, pinned to a commit; one [[project.target]] per module under test.
 # category: logic = pure logic, class = class-based / stateful, io = parsing or file/environment I/O,
 #           deps = depends on third-party packages (proposal بند ۵-د).
-# status: candidate | selected | rejected (with reason). Selection proposed 2026-10-17, not yet frozen.
+# status: candidate | selected | rejected (with reason). Selection frozen 2026-10-17.
 
 [[project]]
 name = "python-slugify"
