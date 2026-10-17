@@ -2,7 +2,7 @@
 
 The benchmark the thesis is evaluated on (proposal بند ۵-د; roadmap milestone M2).
 
-**Status (2026-10-17): selection proposed, not frozen.** 22 modules from 19
+**Status (2026-10-17): selection proposed, not frozen.** 22 modules from 20
 projects are selected, 4 candidates rejected. After the selection is confirmed
 the repository is tagged `benchmark-v1` and not edited again.
 
