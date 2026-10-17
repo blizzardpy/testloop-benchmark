@@ -65,7 +65,10 @@ def pynguin_venv(project: dict, src: Path) -> Path:
     if not py.exists():
         run(sys.executable, "-m", "venv", str(env))
     run(str(py), "-m", "pip", "install", "--quiet", "--upgrade", "pip")
-    run(str(py), "-m", "pip", "install", "--quiet", PYNGUIN, str(src))
+    # Same runtime packages as the test venv (test_deps can pull in optional
+    # extras such as brotli that change module constants), minus the harness's
+    # pytest, which Pynguin pins to an older major.
+    run(str(py), "-m", "pip", "install", "--quiet", PYNGUIN, *project.get("test_deps", []), str(src))
     return py
 
 
