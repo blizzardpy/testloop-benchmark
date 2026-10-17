@@ -1,0 +1,125 @@
+{
+  "target": "isodate-duration",
+  "module_file": "src/isodate/duration.py",
+  "source_sha256": "bf247a96efef3e2dc55921fe86882d3ca964f22fa5d18564872a8bc6a1457c1e",
+  "tests_total": 133,
+  "tests_passed": 133,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 137,
+  "covered_lines": 128,
+  "num_branches": 54,
+  "covered_branches": 47,
+  "missing_lines": [
+    82,
+    85,
+    227,
+    256,
+    261,
+    278,
+    290,
+    292,
+    298
+  ],
+  "missing_branches": [
+    [
+      226,
+      227
+    ],
+    [
+      252,
+      256
+    ],
+    [
+      259,
+      261
+    ],
+    [
+      277,
+      278
+    ],
+    [
+      289,
+      290
+    ],
+    [
+      291,
+      292
+    ],
+    [
+      293,
+      298
+    ]
+  ],
+  "mutants_total": 184,
+  "mutants_killed": 143,
+  "mutants_survived": 28,
+  "mutants_not_covered": 13,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "cb408ea6074f",
+    "8b165eb20db2",
+    "47cd1114a041",
+    "1d30ea0cb342",
+    "59d2c0f01b17",
+    "a58a7869757c",
+    "27783612daaa",
+    "2820d4e37a72",
+    "cdaa9de5739a",
+    "c3c12288d430",
+    "abfea0b6919f",
+    "8054d131deff",
+    "b0e7a73a06eb",
+    "f5234146fc7a",
+    "cd05ba1e0c5e",
+    "f4bc56e182eb",
+    "ccea80db1f47",
+    "5d2195bc9ccd",
+    "8f9a3343f4b8",
+    "b64195828f5b",
+    "51a6d0e6af51",
+    "89d2bcbe2355",
+    "58288249d8de",
+    "f13466c2bff7",
+    "cea7ac56609f",
+    "acf78b655a84",
+    "0d42064e1350",
+    "89aa99db2a87",
+    "6628882427e5",
+    "ba51c3199cab",
+    "9c8e143d6d95",
+    "6c8c18cd7df0",
+    "8d6644c0a6b7",
+    "a0cd93600980",
+    "feb7b763d0bf",
+    "5b9833821df0",
+    "75670f46f80e",
+    "05fb5392b099",
+    "499c42746359",
+    "617669f2a243",
+    "b91381dd7a0e"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 20.91218678999985,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:33:07+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9343065693430657,
+  "branch_coverage": 0.8703703703703703,
+  "mutation_score": 0.7771739130434783,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 235,
+  "mutants_generated": 184,
+  "id": "isodate-duration",
+  "status": "ok",
+  "screen_seconds": 20.9
+}

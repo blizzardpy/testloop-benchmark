@@ -1,0 +1,1731 @@
+{
+  "target": "dotenv-main",
+  "module_file": "src/dotenv/main.py",
+  "source_sha256": "fcb89122cd8756c43209f9052bb3c552dbe440d45493c762295c771f0d1ceaa8",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 172,
+  "mutants": [
+    {
+      "id": "aaed5fc759c1",
+      "operator": "CRP",
+      "lineno": 17,
+      "col_offset": 21,
+      "end_lineno": 17,
+      "end_col_offset": 39,
+      "original": "\"os.PathLike[str]\"",
+      "replacement": "('XXos.PathLike[str]XX')"
+    },
+    {
+      "id": "d54337d8e74d",
+      "operator": "CRP",
+      "lineno": 26,
+      "col_offset": 7,
+      "end_lineno": 26,
+      "end_col_offset": 31,
+      "original": "\"PYTHON_DOTENV_DISABLED\"",
+      "replacement": "('XXPYTHON_DOTENV_DISABLEDXX')"
+    },
+    {
+      "id": "2ef443b1b2a6",
+      "operator": "ROR",
+      "lineno": 26,
+      "col_offset": 7,
+      "end_lineno": 26,
+      "end_col_offset": 49,
+      "original": "\"PYTHON_DOTENV_DISABLED\" not in os.environ",
+      "replacement": "('PYTHON_DOTENV_DISABLED' in os.environ)"
+    },
+    {
+      "id": "daf4f95c3e7d",
+      "operator": "RET",
+      "lineno": 27,
+      "col_offset": 8,
+      "end_lineno": 27,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "3848b59a65f0",
+      "operator": "CRP",
+      "lineno": 27,
+      "col_offset": 15,
+      "end_lineno": 27,
+      "end_col_offset": 20,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "6d896ad2f7a8",
+      "operator": "CRP",
+      "lineno": 28,
+      "col_offset": 23,
+      "end_lineno": 28,
+      "end_col_offset": 47,
+      "original": "\"PYTHON_DOTENV_DISABLED\"",
+      "replacement": "('XXPYTHON_DOTENV_DISABLEDXX')"
+    },
+    {
+      "id": "909305dafd16",
+      "operator": "RET",
+      "lineno": 29,
+      "col_offset": 4,
+      "end_lineno": 29,
+      "end_col_offset": 50,
+      "original": "return value in {\"1\", \"true\", \"t\", \"yes\", \"y\"}",
+      "replacement": "return None"
+    },
+    {
+      "id": "5e9142f57625",
+      "operator": "ROR",
+      "lineno": 29,
+      "col_offset": 11,
+      "end_lineno": 29,
+      "end_col_offset": 50,
+      "original": "value in {\"1\", \"true\", \"t\", \"yes\", \"y\"}",
+      "replacement": "(value not in {'1', 'true', 't', 'yes', 'y'})"
+    },
+    {
+      "id": "36dab281c542",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 21,
+      "end_lineno": 29,
+      "end_col_offset": 24,
+      "original": "\"1\"",
+      "replacement": "('XX1XX')"
+    },
+    {
+      "id": "1f76dd9c7387",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 26,
+      "end_lineno": 29,
+      "end_col_offset": 32,
+      "original": "\"true\"",
+      "replacement": "('XXtrueXX')"
+    },
+    {
+      "id": "ff65a7e42a21",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 34,
+      "end_lineno": 29,
+      "end_col_offset": 37,
+      "original": "\"t\"",
+      "replacement": "('XXtXX')"
+    },
+    {
+      "id": "30b7c09e7ec3",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 39,
+      "end_lineno": 29,
+      "end_col_offset": 44,
+      "original": "\"yes\"",
+      "replacement": "('XXyesXX')"
+    },
+    {
+      "id": "81e80f99d448",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 46,
+      "end_lineno": 29,
+      "end_col_offset": 49,
+      "original": "\"y\"",
+      "replacement": "('XXyXX')"
+    },
+    {
+      "id": "e52e3e4909b1",
+      "operator": "COND",
+      "lineno": 34,
+      "col_offset": 11,
+      "end_lineno": 34,
+      "end_col_offset": 24,
+      "original": "mapping.error",
+      "replacement": "(not mapping.error)"
+    },
+    {
+      "id": "e9b9800954f9",
+      "operator": "CRP",
+      "lineno": 36,
+      "col_offset": 16,
+      "end_lineno": 36,
+      "end_col_offset": 77,
+      "original": "\"python-dotenv could not parse statement starting at line %s\"",
+      "replacement": "('XXpython-dotenv could not parse statement starting at line %sXX')"
+    },
+    {
+      "id": "ea66e33d76cb",
+      "operator": "CRP",
+      "lineno": 47,
+      "col_offset": 24,
+      "end_lineno": 47,
+      "end_col_offset": 29,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "7725d5fab8f9",
+      "operator": "CRP",
+      "lineno": 49,
+      "col_offset": 28,
+      "end_lineno": 49,
+      "end_col_offset": 32,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "fcf6812b316d",
+      "operator": "CRP",
+      "lineno": 50,
+      "col_offset": 25,
+      "end_lineno": 50,
+      "end_col_offset": 29,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "a17330068161",
+      "operator": "COND",
+      "lineno": 53,
+      "col_offset": 11,
+      "end_lineno": 53,
+      "end_col_offset": 39,
+      "original": "isinstance(dotenv_path, str)",
+      "replacement": "(not isinstance(dotenv_path, str))"
+    },
+    {
+      "id": "17809f34e1b9",
+      "operator": "ROR",
+      "lineno": 55,
+      "col_offset": 13,
+      "end_lineno": 55,
+      "end_col_offset": 36,
+      "original": "dotenv_path is not None",
+      "replacement": "(dotenv_path is None)"
+    },
+    {
+      "id": "80c66ef3f5ca",
+      "operator": "LCR",
+      "lineno": 66,
+      "col_offset": 11,
+      "end_lineno": 66,
+      "end_col_offset": 66,
+      "original": "self.dotenv_path and _is_file_or_fifo(self.dotenv_path)",
+      "replacement": "(self.dotenv_path or _is_file_or_fifo(self.dotenv_path))"
+    },
+    {
+      "id": "67ff03d61e85",
+      "operator": "ROR",
+      "lineno": 69,
+      "col_offset": 13,
+      "end_lineno": 69,
+      "end_col_offset": 36,
+      "original": "self.stream is not None",
+      "replacement": "(self.stream is None)"
+    },
+    {
+      "id": "71801f5174d6",
+      "operator": "COND",
+      "lineno": 72,
+      "col_offset": 15,
+      "end_lineno": 72,
+      "end_col_offset": 27,
+      "original": "self.verbose",
+      "replacement": "(not self.verbose)"
+    },
+    {
+      "id": "062d19e631bf",
+      "operator": "CRP",
+      "lineno": 74,
+      "col_offset": 20,
+      "end_lineno": 74,
+      "end_col_offset": 73,
+      "original": "\"python-dotenv could not find configuration file %s.\"",
+      "replacement": "('XXpython-dotenv could not find configuration file %s.XX')"
+    },
+    {
+      "id": "749d2d6174bc",
+      "operator": "LCR",
+      "lineno": 75,
+      "col_offset": 20,
+      "end_lineno": 75,
+      "end_col_offset": 46,
+      "original": "self.dotenv_path or \".env\"",
+      "replacement": "(self.dotenv_path and '.env')"
+    },
+    {
+      "id": "567235527e72",
+      "operator": "CRP",
+      "lineno": 75,
+      "col_offset": 40,
+      "end_lineno": 75,
+      "end_col_offset": 46,
+      "original": "\".env\"",
+      "replacement": "('XX.envXX')"
+    },
+    {
+      "id": "3abdbbb8850a",
+      "operator": "CRP",
+      "lineno": 77,
+      "col_offset": 30,
+      "end_lineno": 77,
+      "end_col_offset": 32,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "c8d0e7d1fdad",
+      "operator": "ROR",
+      "lineno": 81,
+      "col_offset": 11,
+      "end_lineno": 81,
+      "end_col_offset": 33,
+      "original": "self._dict is not None",
+      "replacement": "(self._dict is None)"
+    },
+    {
+      "id": "5e10d21ddef7",
+      "operator": "RET",
+      "lineno": 82,
+      "col_offset": 12,
+      "end_lineno": 82,
+      "end_col_offset": 29,
+      "original": "return self._dict",
+      "replacement": "return None"
+    },
+    {
+      "id": "8b872b974943",
+      "operator": "COND",
+      "lineno": 86,
+      "col_offset": 11,
+      "end_lineno": 86,
+      "end_col_offset": 27,
+      "original": "self.interpolate",
+      "replacement": "(not self.interpolate)"
+    },
+    {
+      "id": "528665d064d0",
+      "operator": "RET",
+      "lineno": 93,
+      "col_offset": 8,
+      "end_lineno": 93,
+      "end_col_offset": 25,
+      "original": "return self._dict",
+      "replacement": "return None"
+    },
+    {
+      "id": "96169301dfbb",
+      "operator": "ROR",
+      "lineno": 98,
+      "col_offset": 19,
+      "end_lineno": 98,
+      "end_col_offset": 42,
+      "original": "mapping.key is not None",
+      "replacement": "(mapping.key is None)"
+    },
+    {
+      "id": "165042d129f9",
+      "operator": "UOI",
+      "lineno": 105,
+      "col_offset": 11,
+      "end_lineno": 105,
+      "end_col_offset": 26,
+      "original": "not self.dict()",
+      "replacement": "(self.dict())"
+    },
+    {
+      "id": "688cef159d54",
+      "operator": "RET",
+      "lineno": 106,
+      "col_offset": 12,
+      "end_lineno": 106,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "7453db8eaaa9",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 19,
+      "end_lineno": 106,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "2549383c9321",
+      "operator": "LCR",
+      "lineno": 109,
+      "col_offset": 15,
+      "end_lineno": 109,
+      "end_col_offset": 52,
+      "original": "k in os.environ and not self.override",
+      "replacement": "(k in os.environ or not self.override)"
+    },
+    {
+      "id": "03b4efc8d4bf",
+      "operator": "ROR",
+      "lineno": 109,
+      "col_offset": 15,
+      "end_lineno": 109,
+      "end_col_offset": 30,
+      "original": "k in os.environ",
+      "replacement": "(k not in os.environ)"
+    },
+    {
+      "id": "25bafd58eeeb",
+      "operator": "UOI",
+      "lineno": 109,
+      "col_offset": 35,
+      "end_lineno": 109,
+      "end_col_offset": 52,
+      "original": "not self.override",
+      "replacement": "(self.override)"
+    },
+    {
+      "id": "1f2e056f1551",
+      "operator": "BRK",
+      "lineno": 110,
+      "col_offset": 16,
+      "end_lineno": 110,
+      "end_col_offset": 24,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "fc3a29dfd0ec",
+      "operator": "ROR",
+      "lineno": 111,
+      "col_offset": 15,
+      "end_lineno": 111,
+      "end_col_offset": 28,
+      "original": "v is not None",
+      "replacement": "(v is None)"
+    },
+    {
+      "id": "f9a8710e72b4",
+      "operator": "RET",
+      "lineno": 114,
+      "col_offset": 8,
+      "end_lineno": 114,
+      "end_col_offset": 19,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "50ba3fa2bddc",
+      "operator": "CRP",
+      "lineno": 114,
+      "col_offset": 15,
+      "end_lineno": 114,
+      "end_col_offset": 19,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8ff7240d9b50",
+      "operator": "ROR",
+      "lineno": 120,
+      "col_offset": 11,
+      "end_lineno": 120,
+      "end_col_offset": 22,
+      "original": "key in data",
+      "replacement": "(key not in data)"
+    },
+    {
+      "id": "a7f34af7896f",
+      "operator": "RET",
+      "lineno": 121,
+      "col_offset": 12,
+      "end_lineno": 121,
+      "end_col_offset": 28,
+      "original": "return data[key]",
+      "replacement": "return None"
+    },
+    {
+      "id": "8a86e07e1532",
+      "operator": "COND",
+      "lineno": 123,
+      "col_offset": 11,
+      "end_lineno": 123,
+      "end_col_offset": 23,
+      "original": "self.verbose",
+      "replacement": "(not self.verbose)"
+    },
+    {
+      "id": "272f58e423ef",
+      "operator": "CRP",
+      "lineno": 124,
+      "col_offset": 27,
+      "end_lineno": 124,
+      "end_col_offset": 52,
+      "original": "\"Key %s not found in %s.\"",
+      "replacement": "('XXKey %s not found in %s.XX')"
+    },
+    {
+      "id": "7753fd93458d",
+      "operator": "CRP",
+      "lineno": 132,
+      "col_offset": 30,
+      "end_lineno": 132,
+      "end_col_offset": 37,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "8ccdca2466cc",
+      "operator": "RET",
+      "lineno": 139,
+      "col_offset": 4,
+      "end_lineno": 139,
+      "end_col_offset": 79,
+      "original": "return DotEnv(dotenv_path, verbose=True, encoding=encoding).get(key_to_get)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a97dbafe47cb",
+      "operator": "CRP",
+      "lineno": 139,
+      "col_offset": 39,
+      "end_lineno": 139,
+      "end_col_offset": 43,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "1ad8d441d9fc",
+      "operator": "CRP",
+      "lineno": 152,
+      "col_offset": 31,
+      "end_lineno": 152,
+      "end_col_offset": 35,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "f88f0f40fcdb",
+      "operator": "AOR",
+      "lineno": 155,
+      "col_offset": 23,
+      "end_lineno": 155,
+      "end_col_offset": 51,
+      "original": "stat.S_IWRITE | stat.S_IREAD",
+      "replacement": "(stat.S_IWRITE & stat.S_IREAD)"
+    },
+    {
+      "id": "af78905fd332",
+      "operator": "CRP",
+      "lineno": 156,
+      "col_offset": 35,
+      "end_lineno": 156,
+      "end_col_offset": 39,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "d386cf26e256",
+      "operator": "CRP",
+      "lineno": 158,
+      "col_offset": 27,
+      "end_lineno": 158,
+      "end_col_offset": 81,
+      "original": "\"python-dotenv could not remove the temporary file %s\"",
+      "replacement": "('XXpython-dotenv could not remove the temporary file %sXX')"
+    },
+    {
+      "id": "28cf471738e4",
+      "operator": "CRP",
+      "lineno": 165,
+      "col_offset": 28,
+      "end_lineno": 165,
+      "end_col_offset": 33,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "cac5e7831d8b",
+      "operator": "COND",
+      "lineno": 167,
+      "col_offset": 7,
+      "end_lineno": 167,
+      "end_col_offset": 22,
+      "original": "follow_symlinks",
+      "replacement": "(not follow_symlinks)"
+    },
+    {
+      "id": "970fdd4ba003",
+      "operator": "CRP",
+      "lineno": 183,
+      "col_offset": 29,
+      "end_lineno": 183,
+      "end_col_offset": 31,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "37c9f7a4a3f3",
+      "operator": "CRP",
+      "lineno": 188,
+      "col_offset": 17,
+      "end_lineno": 188,
+      "end_col_offset": 20,
+      "original": "\"w\"",
+      "replacement": "('XXwXX')"
+    },
+    {
+      "id": "7056d888540f",
+      "operator": "CRP",
+      "lineno": 190,
+      "col_offset": 19,
+      "end_lineno": 190,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "656c9b261eaa",
+      "operator": "CRP",
+      "lineno": 191,
+      "col_offset": 19,
+      "end_lineno": 191,
+      "end_col_offset": 26,
+      "original": "\".tmp_\"",
+      "replacement": "('XX.tmp_XX')"
+    },
+    {
+      "id": "c43f8aa068e2",
+      "operator": "ROR",
+      "lineno": 210,
+      "col_offset": 7,
+      "end_lineno": 210,
+      "end_col_offset": 20,
+      "original": "error is None",
+      "replacement": "(error is not None)"
+    },
+    {
+      "id": "ddb23a7c0eab",
+      "operator": "ROR",
+      "lineno": 212,
+      "col_offset": 15,
+      "end_lineno": 212,
+      "end_col_offset": 40,
+      "original": "original_mode is not None",
+      "replacement": "(original_mode is None)"
+    },
+    {
+      "id": "792d4ee9ea89",
+      "operator": "CRP",
+      "lineno": 228,
+      "col_offset": 22,
+      "end_lineno": 228,
+      "end_col_offset": 30,
+      "original": "\"always\"",
+      "replacement": "('XXalwaysXX')"
+    },
+    {
+      "id": "e5b757b4a14a",
+      "operator": "CRP",
+      "lineno": 229,
+      "col_offset": 19,
+      "end_lineno": 229,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "57d83d76bbe3",
+      "operator": "CRP",
+      "lineno": 230,
+      "col_offset": 30,
+      "end_lineno": 230,
+      "end_col_offset": 37,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "660496ca6c6d",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 28,
+      "end_lineno": 231,
+      "end_col_offset": 33,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "ae419b125d1e",
+      "operator": "COND",
+      "lineno": 242,
+      "col_offset": 7,
+      "end_lineno": 242,
+      "end_col_offset": 35,
+      "original": "isinstance(dotenv_path, str)",
+      "replacement": "(not isinstance(dotenv_path, str))"
+    },
+    {
+      "id": "979336500e51",
+      "operator": "ROR",
+      "lineno": 246,
+      "col_offset": 7,
+      "end_lineno": 246,
+      "end_col_offset": 52,
+      "original": "quote_mode not in (\"always\", \"auto\", \"never\")",
+      "replacement": "(quote_mode in ('always', 'auto', 'never'))"
+    },
+    {
+      "id": "28bfd3dd4df8",
+      "operator": "CRP",
+      "lineno": 246,
+      "col_offset": 26,
+      "end_lineno": 246,
+      "end_col_offset": 34,
+      "original": "\"always\"",
+      "replacement": "('XXalwaysXX')"
+    },
+    {
+      "id": "2c4e8fbc0b12",
+      "operator": "CRP",
+      "lineno": 246,
+      "col_offset": 36,
+      "end_lineno": 246,
+      "end_col_offset": 42,
+      "original": "\"auto\"",
+      "replacement": "('XXautoXX')"
+    },
+    {
+      "id": "749f18ee0fc5",
+      "operator": "CRP",
+      "lineno": 246,
+      "col_offset": 44,
+      "end_lineno": 246,
+      "end_col_offset": 51,
+      "original": "\"never\"",
+      "replacement": "('XXneverXX')"
+    },
+    {
+      "id": "76ced7f7cca3",
+      "operator": "LCR",
+      "lineno": 249,
+      "col_offset": 12,
+      "end_lineno": 251,
+      "end_col_offset": 5,
+      "original": "quote_mode == \"always\" or ( quote_mode == \"auto\" and not value_to_set.isalnum() )",
+      "replacement": "(quote_mode == 'always' and (quote_mode == 'auto' and (not value_to_set.isalnum())))"
+    },
+    {
+      "id": "1b1680405a1c",
+      "operator": "ROR",
+      "lineno": 249,
+      "col_offset": 12,
+      "end_lineno": 249,
+      "end_col_offset": 34,
+      "original": "quote_mode == \"always\"",
+      "replacement": "(quote_mode != 'always')"
+    },
+    {
+      "id": "b9fdb28f879a",
+      "operator": "CRP",
+      "lineno": 249,
+      "col_offset": 26,
+      "end_lineno": 249,
+      "end_col_offset": 34,
+      "original": "\"always\"",
+      "replacement": "('XXalwaysXX')"
+    },
+    {
+      "id": "a7054d1e0fd0",
+      "operator": "LCR",
+      "lineno": 250,
+      "col_offset": 8,
+      "end_lineno": 250,
+      "end_col_offset": 59,
+      "original": "quote_mode == \"auto\" and not value_to_set.isalnum()",
+      "replacement": "(quote_mode == 'auto' or not value_to_set.isalnum())"
+    },
+    {
+      "id": "65c50662dc31",
+      "operator": "ROR",
+      "lineno": 250,
+      "col_offset": 8,
+      "end_lineno": 250,
+      "end_col_offset": 28,
+      "original": "quote_mode == \"auto\"",
+      "replacement": "(quote_mode != 'auto')"
+    },
+    {
+      "id": "01f6ff082767",
+      "operator": "CRP",
+      "lineno": 250,
+      "col_offset": 22,
+      "end_lineno": 250,
+      "end_col_offset": 28,
+      "original": "\"auto\"",
+      "replacement": "('XXautoXX')"
+    },
+    {
+      "id": "b5048f1c165a",
+      "operator": "UOI",
+      "lineno": 250,
+      "col_offset": 33,
+      "end_lineno": 250,
+      "end_col_offset": 59,
+      "original": "not value_to_set.isalnum()",
+      "replacement": "(value_to_set.isalnum())"
+    },
+    {
+      "id": "05b64d14241e",
+      "operator": "COND",
+      "lineno": 253,
+      "col_offset": 7,
+      "end_lineno": 253,
+      "end_col_offset": 12,
+      "original": "quote",
+      "replacement": "(not quote)"
+    },
+    {
+      "id": "10f2677188fa",
+      "operator": "CRP",
+      "lineno": 258,
+      "col_offset": 39,
+      "end_lineno": 258,
+      "end_col_offset": 43,
+      "original": "\"\\\\\"",
+      "replacement": "('XX\\\\XX')"
+    },
+    {
+      "id": "d2202e148e4e",
+      "operator": "CRP",
+      "lineno": 258,
+      "col_offset": 45,
+      "end_lineno": 258,
+      "end_col_offset": 51,
+      "original": "\"\\\\\\\\\"",
+      "replacement": "('XX\\\\\\\\XX')"
+    },
+    {
+      "id": "d1b376d80862",
+      "operator": "CRP",
+      "lineno": 258,
+      "col_offset": 61,
+      "end_lineno": 258,
+      "end_col_offset": 64,
+      "original": "\"'\"",
+      "replacement": "(\"XX'XX\")"
+    },
+    {
+      "id": "8d91ff98e939",
+      "operator": "CRP",
+      "lineno": 258,
+      "col_offset": 66,
+      "end_lineno": 258,
+      "end_col_offset": 71,
+      "original": "\"\\\\'\"",
+      "replacement": "(\"XX\\\\'XX\")"
+    },
+    {
+      "id": "8b97e6e63a3f",
+      "operator": "COND",
+      "lineno": 262,
+      "col_offset": 7,
+      "end_lineno": 262,
+      "end_col_offset": 13,
+      "original": "export",
+      "replacement": "(not export)"
+    },
+    {
+      "id": "6c9a93fd5d28",
+      "operator": "CRP",
+      "lineno": 271,
+      "col_offset": 19,
+      "end_lineno": 271,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "3937882ff6cd",
+      "operator": "CRP",
+      "lineno": 272,
+      "col_offset": 26,
+      "end_lineno": 272,
+      "end_col_offset": 31,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "1f87f7e218b3",
+      "operator": "ROR",
+      "lineno": 274,
+      "col_offset": 15,
+      "end_lineno": 274,
+      "end_col_offset": 40,
+      "original": "mapping.key == key_to_set",
+      "replacement": "(mapping.key != key_to_set)"
+    },
+    {
+      "id": "6c614e710137",
+      "operator": "CRP",
+      "lineno": 276,
+      "col_offset": 27,
+      "end_lineno": 276,
+      "end_col_offset": 31,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8ce78e23980d",
+      "operator": "UOI",
+      "lineno": 279,
+      "col_offset": 34,
+      "end_lineno": 279,
+      "end_col_offset": 76,
+      "original": "not mapping.original.string.endswith(\"\\n\")",
+      "replacement": "(mapping.original.string.endswith('\\n'))"
+    },
+    {
+      "id": "12de2a370f26",
+      "operator": "CRP",
+      "lineno": 279,
+      "col_offset": 71,
+      "end_lineno": 279,
+      "end_col_offset": 75,
+      "original": "\"\\n\"",
+      "replacement": "('XX\\nXX')"
+    },
+    {
+      "id": "0e5c11d3a691",
+      "operator": "UOI",
+      "lineno": 280,
+      "col_offset": 11,
+      "end_lineno": 280,
+      "end_col_offset": 23,
+      "original": "not replaced",
+      "replacement": "(replaced)"
+    },
+    {
+      "id": "f9dc1d7b44f7",
+      "operator": "COND",
+      "lineno": 281,
+      "col_offset": 15,
+      "end_lineno": 281,
+      "end_col_offset": 30,
+      "original": "missing_newline",
+      "replacement": "(not missing_newline)"
+    },
+    {
+      "id": "e5b23e2086ed",
+      "operator": "CRP",
+      "lineno": 282,
+      "col_offset": 27,
+      "end_lineno": 282,
+      "end_col_offset": 31,
+      "original": "\"\\n\"",
+      "replacement": "('XX\\nXX')"
+    },
+    {
+      "id": "28764a47de0d",
+      "operator": "RET",
+      "lineno": 285,
+      "col_offset": 4,
+      "end_lineno": 285,
+      "end_col_offset": 41,
+      "original": "return True, key_to_set, value_to_set",
+      "replacement": "return None"
+    },
+    {
+      "id": "ffcec88686db",
+      "operator": "CRP",
+      "lineno": 285,
+      "col_offset": 11,
+      "end_lineno": 285,
+      "end_col_offset": 15,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "6fc4056c6b42",
+      "operator": "CRP",
+      "lineno": 291,
+      "col_offset": 22,
+      "end_lineno": 291,
+      "end_col_offset": 30,
+      "original": "\"always\"",
+      "replacement": "('XXalwaysXX')"
+    },
+    {
+      "id": "8de11c6ab6b1",
+      "operator": "CRP",
+      "lineno": 292,
+      "col_offset": 30,
+      "end_lineno": 292,
+      "end_col_offset": 37,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "5272870f6607",
+      "operator": "CRP",
+      "lineno": 293,
+      "col_offset": 28,
+      "end_lineno": 293,
+      "end_col_offset": 33,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "90df3a517b98",
+      "operator": "COND",
+      "lineno": 305,
+      "col_offset": 7,
+      "end_lineno": 305,
+      "end_col_offset": 35,
+      "original": "isinstance(dotenv_path, str)",
+      "replacement": "(not isinstance(dotenv_path, str))"
+    },
+    {
+      "id": "8780c2ef0520",
+      "operator": "UOI",
+      "lineno": 309,
+      "col_offset": 7,
+      "end_lineno": 309,
+      "end_col_offset": 38,
+      "original": "not os.path.exists(dotenv_path)",
+      "replacement": "(os.path.exists(dotenv_path))"
+    },
+    {
+      "id": "f6992acdd0d2",
+      "operator": "CRP",
+      "lineno": 310,
+      "col_offset": 23,
+      "end_lineno": 310,
+      "end_col_offset": 65,
+      "original": "\"Can't delete from %s - it doesn't exist.\"",
+      "replacement": "(\"XXCan't delete from %s - it doesn't exist.XX\")"
+    },
+    {
+      "id": "a5dc68bcc22c",
+      "operator": "RET",
+      "lineno": 311,
+      "col_offset": 8,
+      "end_lineno": 311,
+      "end_col_offset": 33,
+      "original": "return None, key_to_unset",
+      "replacement": "return None"
+    },
+    {
+      "id": "e6e31ede6afb",
+      "operator": "CRP",
+      "lineno": 313,
+      "col_offset": 14,
+      "end_lineno": 313,
+      "end_col_offset": 19,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "c2a21472dd30",
+      "operator": "ROR",
+      "lineno": 319,
+      "col_offset": 15,
+      "end_lineno": 319,
+      "end_col_offset": 42,
+      "original": "mapping.key == key_to_unset",
+      "replacement": "(mapping.key != key_to_unset)"
+    },
+    {
+      "id": "223958750a21",
+      "operator": "CRP",
+      "lineno": 320,
+      "col_offset": 26,
+      "end_lineno": 320,
+      "end_col_offset": 30,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "58bea199049e",
+      "operator": "UOI",
+      "lineno": 324,
+      "col_offset": 7,
+      "end_lineno": 324,
+      "end_col_offset": 18,
+      "original": "not removed",
+      "replacement": "(removed)"
+    },
+    {
+      "id": "59d4d4a23212",
+      "operator": "CRP",
+      "lineno": 326,
+      "col_offset": 12,
+      "end_lineno": 326,
+      "end_col_offset": 61,
+      "original": "\"Key %s not removed from %s - key doesn't exist.\"",
+      "replacement": "(\"XXKey %s not removed from %s - key doesn't exist.XX\")"
+    },
+    {
+      "id": "6b24efd213f0",
+      "operator": "RET",
+      "lineno": 328,
+      "col_offset": 8,
+      "end_lineno": 328,
+      "end_col_offset": 33,
+      "original": "return None, key_to_unset",
+      "replacement": "return None"
+    },
+    {
+      "id": "37aafb6bf3a4",
+      "operator": "RET",
+      "lineno": 330,
+      "col_offset": 4,
+      "end_lineno": 330,
+      "end_col_offset": 32,
+      "original": "return removed, key_to_unset",
+      "replacement": "return None"
+    },
+    {
+      "id": "8dccdde44cd3",
+      "operator": "ROR",
+      "lineno": 340,
+      "col_offset": 11,
+      "end_lineno": 340,
+      "end_col_offset": 24,
+      "original": "value is None",
+      "replacement": "(value is not None)"
+    },
+    {
+      "id": "bef1e9d9a014",
+      "operator": "COND",
+      "lineno": 345,
+      "col_offset": 15,
+      "end_lineno": 345,
+      "end_col_offset": 23,
+      "original": "override",
+      "replacement": "(not override)"
+    },
+    {
+      "id": "27ba59029a8f",
+      "operator": "CRP",
+      "lineno": 351,
+      "col_offset": 21,
+      "end_lineno": 351,
+      "end_col_offset": 23,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "0490b605d107",
+      "operator": "RET",
+      "lineno": 355,
+      "col_offset": 4,
+      "end_lineno": 355,
+      "end_col_offset": 21,
+      "original": "return new_values",
+      "replacement": "return None"
+    },
+    {
+      "id": "bfe464025f9e",
+      "operator": "UOI",
+      "lineno": 362,
+      "col_offset": 7,
+      "end_lineno": 362,
+      "end_col_offset": 31,
+      "original": "not os.path.exists(path)",
+      "replacement": "(os.path.exists(path))"
+    },
+    {
+      "id": "954ca9d57df3",
+      "operator": "CRP",
+      "lineno": 363,
+      "col_offset": 22,
+      "end_lineno": 363,
+      "end_col_offset": 47,
+      "original": "\"Starting path not found\"",
+      "replacement": "('XXStarting path not foundXX')"
+    },
+    {
+      "id": "9a1ac0800dfd",
+      "operator": "COND",
+      "lineno": 365,
+      "col_offset": 7,
+      "end_lineno": 365,
+      "end_col_offset": 27,
+      "original": "os.path.isfile(path)",
+      "replacement": "(not os.path.isfile(path))"
+    },
+    {
+      "id": "10d19f7ca134",
+      "operator": "ROR",
+      "lineno": 370,
+      "col_offset": 10,
+      "end_lineno": 370,
+      "end_col_offset": 33,
+      "original": "last_dir != current_dir",
+      "replacement": "(last_dir == current_dir)"
+    },
+    {
+      "id": "62c0a01f8941",
+      "operator": "CRP",
+      "lineno": 377,
+      "col_offset": 20,
+      "end_lineno": 377,
+      "end_col_offset": 26,
+      "original": "\".env\"",
+      "replacement": "('XX.envXX')"
+    },
+    {
+      "id": "fcfc02eb89d3",
+      "operator": "CRP",
+      "lineno": 378,
+      "col_offset": 37,
+      "end_lineno": 378,
+      "end_col_offset": 42,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "2fd61e809c5c",
+      "operator": "CRP",
+      "lineno": 379,
+      "col_offset": 19,
+      "end_lineno": 379,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "5e6da8479146",
+      "operator": "LCR",
+      "lineno": 393,
+      "col_offset": 11,
+      "end_lineno": 393,
+      "end_col_offset": 53,
+      "original": "hasattr(sys, \"ps1\") or hasattr(sys, \"ps2\")",
+      "replacement": "(hasattr(sys, 'ps1') and hasattr(sys, 'ps2'))"
+    },
+    {
+      "id": "e37b68a7ad3f",
+      "operator": "CRP",
+      "lineno": 393,
+      "col_offset": 24,
+      "end_lineno": 393,
+      "end_col_offset": 29,
+      "original": "\"ps1\"",
+      "replacement": "('XXps1XX')"
+    },
+    {
+      "id": "fd5f524e29aa",
+      "operator": "CRP",
+      "lineno": 393,
+      "col_offset": 47,
+      "end_lineno": 393,
+      "end_col_offset": 52,
+      "original": "\"ps2\"",
+      "replacement": "('XXps2XX')"
+    },
+    {
+      "id": "de78a154cb1f",
+      "operator": "RET",
+      "lineno": 394,
+      "col_offset": 12,
+      "end_lineno": 394,
+      "end_col_offset": 23,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "02dc389f2c61",
+      "operator": "CRP",
+      "lineno": 394,
+      "col_offset": 19,
+      "end_lineno": 394,
+      "end_col_offset": 23,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8b0cb00deccb",
+      "operator": "CRP",
+      "lineno": 396,
+      "col_offset": 30,
+      "end_lineno": 396,
+      "end_col_offset": 40,
+      "original": "\"__main__\"",
+      "replacement": "('XX__main__XX')"
+    },
+    {
+      "id": "e0620e642405",
+      "operator": "CRP",
+      "lineno": 396,
+      "col_offset": 64,
+      "end_lineno": 396,
+      "end_col_offset": 74,
+      "original": "\"__file__\"",
+      "replacement": "('XX__file__XX')"
+    },
+    {
+      "id": "7bce189a7006",
+      "operator": "RET",
+      "lineno": 398,
+      "col_offset": 12,
+      "end_lineno": 398,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "d10b926160d0",
+      "operator": "CRP",
+      "lineno": 398,
+      "col_offset": 19,
+      "end_lineno": 398,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "a8dc124dc31c",
+      "operator": "RET",
+      "lineno": 399,
+      "col_offset": 8,
+      "end_lineno": 399,
+      "end_col_offset": 44,
+      "original": "return not hasattr(main, \"__file__\")",
+      "replacement": "return None"
+    },
+    {
+      "id": "13ac0933154b",
+      "operator": "UOI",
+      "lineno": 399,
+      "col_offset": 15,
+      "end_lineno": 399,
+      "end_col_offset": 44,
+      "original": "not hasattr(main, \"__file__\")",
+      "replacement": "(hasattr(main, '__file__'))"
+    },
+    {
+      "id": "e6187d1723c6",
+      "operator": "CRP",
+      "lineno": 399,
+      "col_offset": 33,
+      "end_lineno": 399,
+      "end_col_offset": 43,
+      "original": "\"__file__\"",
+      "replacement": "('XX__file__XX')"
+    },
+    {
+      "id": "d37bbe168ca7",
+      "operator": "RET",
+      "lineno": 402,
+      "col_offset": 8,
+      "end_lineno": 402,
+      "end_col_offset": 41,
+      "original": "return sys.gettrace() is not None",
+      "replacement": "return None"
+    },
+    {
+      "id": "83feb0d3c5ef",
+      "operator": "ROR",
+      "lineno": 402,
+      "col_offset": 15,
+      "end_lineno": 402,
+      "end_col_offset": 41,
+      "original": "sys.gettrace() is not None",
+      "replacement": "(sys.gettrace() is None)"
+    },
+    {
+      "id": "03caedc82ca1",
+      "operator": "LCR",
+      "lineno": 404,
+      "col_offset": 7,
+      "end_lineno": 404,
+      "end_col_offset": 85,
+      "original": "usecwd or _is_interactive() or _is_debugger() or getattr(sys, \"frozen\", False)",
+      "replacement": "(usecwd and _is_interactive() and _is_debugger() and getattr(sys, 'frozen', False))"
+    },
+    {
+      "id": "b763de8d57c5",
+      "operator": "CRP",
+      "lineno": 404,
+      "col_offset": 69,
+      "end_lineno": 404,
+      "end_col_offset": 77,
+      "original": "\"frozen\"",
+      "replacement": "('XXfrozenXX')"
+    },
+    {
+      "id": "9661309a6922",
+      "operator": "CRP",
+      "lineno": 404,
+      "col_offset": 79,
+      "end_lineno": 404,
+      "end_col_offset": 84,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "5967a567b223",
+      "operator": "LCR",
+      "lineno": 412,
+      "col_offset": 14,
+      "end_lineno": 414,
+      "end_col_offset": 9,
+      "original": "frame.f_code.co_filename == current_file or not os.path.exists( frame.f_code.co_filename )",
+      "replacement": "(frame.f_code.co_filename == current_file and (not os.path.exists(frame.f_code.co_filename)))"
+    },
+    {
+      "id": "07ff254cd35e",
+      "operator": "ROR",
+      "lineno": 412,
+      "col_offset": 14,
+      "end_lineno": 412,
+      "end_col_offset": 54,
+      "original": "frame.f_code.co_filename == current_file",
+      "replacement": "(frame.f_code.co_filename != current_file)"
+    },
+    {
+      "id": "fc5742833758",
+      "operator": "UOI",
+      "lineno": 412,
+      "col_offset": 58,
+      "end_lineno": 414,
+      "end_col_offset": 9,
+      "original": "not os.path.exists( frame.f_code.co_filename )",
+      "replacement": "(os.path.exists(frame.f_code.co_filename))"
+    },
+    {
+      "id": "f43c9def6d21",
+      "operator": "ROR",
+      "lineno": 415,
+      "col_offset": 19,
+      "end_lineno": 415,
+      "end_col_offset": 43,
+      "original": "frame.f_back is not None",
+      "replacement": "(frame.f_back is None)"
+    },
+    {
+      "id": "c0a810c8f248",
+      "operator": "COND",
+      "lineno": 422,
+      "col_offset": 11,
+      "end_lineno": 422,
+      "end_col_offset": 39,
+      "original": "_is_file_or_fifo(check_path)",
+      "replacement": "(not _is_file_or_fifo(check_path))"
+    },
+    {
+      "id": "665cd3ab4e78",
+      "operator": "RET",
+      "lineno": 423,
+      "col_offset": 12,
+      "end_lineno": 423,
+      "end_col_offset": 29,
+      "original": "return check_path",
+      "replacement": "return None"
+    },
+    {
+      "id": "b9de56ea5003",
+      "operator": "COND",
+      "lineno": 425,
+      "col_offset": 7,
+      "end_lineno": 425,
+      "end_col_offset": 31,
+      "original": "raise_error_if_not_found",
+      "replacement": "(not raise_error_if_not_found)"
+    },
+    {
+      "id": "72d5fb7c3a73",
+      "operator": "CRP",
+      "lineno": 426,
+      "col_offset": 22,
+      "end_lineno": 426,
+      "end_col_offset": 38,
+      "original": "\"File not found\"",
+      "replacement": "('XXFile not foundXX')"
+    },
+    {
+      "id": "4041852b2711",
+      "operator": "RET",
+      "lineno": 428,
+      "col_offset": 4,
+      "end_lineno": 428,
+      "end_col_offset": 13,
+      "original": "return \"\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "f1bd7cb0f802",
+      "operator": "CRP",
+      "lineno": 428,
+      "col_offset": 11,
+      "end_lineno": 428,
+      "end_col_offset": 13,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "c9cb97bbd846",
+      "operator": "CRP",
+      "lineno": 434,
+      "col_offset": 20,
+      "end_lineno": 434,
+      "end_col_offset": 25,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "84b6655e27b8",
+      "operator": "CRP",
+      "lineno": 435,
+      "col_offset": 21,
+      "end_lineno": 435,
+      "end_col_offset": 26,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "0ed521edeed2",
+      "operator": "CRP",
+      "lineno": 436,
+      "col_offset": 24,
+      "end_lineno": 436,
+      "end_col_offset": 28,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "9364c2436616",
+      "operator": "CRP",
+      "lineno": 437,
+      "col_offset": 30,
+      "end_lineno": 437,
+      "end_col_offset": 37,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "de63ffb9e717",
+      "operator": "COND",
+      "lineno": 462,
+      "col_offset": 7,
+      "end_lineno": 462,
+      "end_col_offset": 30,
+      "original": "_load_dotenv_disabled()",
+      "replacement": "(not _load_dotenv_disabled())"
+    },
+    {
+      "id": "f29e5c3e94fa",
+      "operator": "CRP",
+      "lineno": 464,
+      "col_offset": 12,
+      "end_lineno": 464,
+      "end_col_offset": 97,
+      "original": "\"python-dotenv: .env loading disabled by PYTHON_DOTENV_DISABLED environment variable\"",
+      "replacement": "('XXpython-dotenv: .env loading disabled by PYTHON_DOTENV_DISABLED environment variableXX')"
+    },
+    {
+      "id": "0b13c48b2607",
+      "operator": "RET",
+      "lineno": 466,
+      "col_offset": 8,
+      "end_lineno": 466,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "4004d0252cd8",
+      "operator": "CRP",
+      "lineno": 466,
+      "col_offset": 15,
+      "end_lineno": 466,
+      "end_col_offset": 20,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "c869b2f0b3d9",
+      "operator": "LCR",
+      "lineno": 468,
+      "col_offset": 7,
+      "end_lineno": 468,
+      "end_col_offset": 45,
+      "original": "dotenv_path is None and stream is None",
+      "replacement": "(dotenv_path is None or stream is None)"
+    },
+    {
+      "id": "da81bf877e28",
+      "operator": "ROR",
+      "lineno": 468,
+      "col_offset": 7,
+      "end_lineno": 468,
+      "end_col_offset": 26,
+      "original": "dotenv_path is None",
+      "replacement": "(dotenv_path is not None)"
+    },
+    {
+      "id": "a5a8309345f8",
+      "operator": "ROR",
+      "lineno": 468,
+      "col_offset": 31,
+      "end_lineno": 468,
+      "end_col_offset": 45,
+      "original": "stream is None",
+      "replacement": "(stream is not None)"
+    },
+    {
+      "id": "00e9d90d82f4",
+      "operator": "RET",
+      "lineno": 479,
+      "col_offset": 4,
+      "end_lineno": 479,
+      "end_col_offset": 48,
+      "original": "return dotenv.set_as_environment_variables()",
+      "replacement": "return None"
+    },
+    {
+      "id": "ddaa81db6dfc",
+      "operator": "CRP",
+      "lineno": 485,
+      "col_offset": 20,
+      "end_lineno": 485,
+      "end_col_offset": 25,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "54d7b9107552",
+      "operator": "CRP",
+      "lineno": 486,
+      "col_offset": 24,
+      "end_lineno": 486,
+      "end_col_offset": 28,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "f28e9c22f413",
+      "operator": "CRP",
+      "lineno": 487,
+      "col_offset": 30,
+      "end_lineno": 487,
+      "end_col_offset": 37,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "1789084796c9",
+      "operator": "LCR",
+      "lineno": 507,
+      "col_offset": 7,
+      "end_lineno": 507,
+      "end_col_offset": 45,
+      "original": "dotenv_path is None and stream is None",
+      "replacement": "(dotenv_path is None or stream is None)"
+    },
+    {
+      "id": "272468fe7aec",
+      "operator": "ROR",
+      "lineno": 507,
+      "col_offset": 7,
+      "end_lineno": 507,
+      "end_col_offset": 26,
+      "original": "dotenv_path is None",
+      "replacement": "(dotenv_path is not None)"
+    },
+    {
+      "id": "0dafbf13ffd2",
+      "operator": "ROR",
+      "lineno": 507,
+      "col_offset": 31,
+      "end_lineno": 507,
+      "end_col_offset": 45,
+      "original": "stream is None",
+      "replacement": "(stream is not None)"
+    },
+    {
+      "id": "fb281d5d7917",
+      "operator": "RET",
+      "lineno": 510,
+      "col_offset": 4,
+      "end_lineno": 517,
+      "end_col_offset": 12,
+      "original": "return DotEnv( dotenv_path=dotenv_path, stream=stream, verbose=verbose, interpolate=interpolate, override=True, encoding=encoding, ).dict()",
+      "replacement": "return None"
+    },
+    {
+      "id": "3478dc03cecf",
+      "operator": "CRP",
+      "lineno": 515,
+      "col_offset": 17,
+      "end_lineno": 515,
+      "end_col_offset": 21,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "def35a94f914",
+      "operator": "COND",
+      "lineno": 524,
+      "col_offset": 7,
+      "end_lineno": 524,
+      "end_col_offset": 27,
+      "original": "os.path.isfile(path)",
+      "replacement": "(not os.path.isfile(path))"
+    },
+    {
+      "id": "422e0799d3b0",
+      "operator": "RET",
+      "lineno": 525,
+      "col_offset": 8,
+      "end_lineno": 525,
+      "end_col_offset": 19,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "b6880413f76b",
+      "operator": "CRP",
+      "lineno": 525,
+      "col_offset": 15,
+      "end_lineno": 525,
+      "end_col_offset": 19,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8be093a8169c",
+      "operator": "RET",
+      "lineno": 530,
+      "col_offset": 8,
+      "end_lineno": 530,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "1221607466e7",
+      "operator": "CRP",
+      "lineno": 530,
+      "col_offset": 15,
+      "end_lineno": 530,
+      "end_col_offset": 20,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "3e760083561a",
+      "operator": "RET",
+      "lineno": 532,
+      "col_offset": 4,
+      "end_lineno": 532,
+      "end_col_offset": 36,
+      "original": "return stat.S_ISFIFO(st.st_mode)",
+      "replacement": "return None"
+    }
+  ]
+}

@@ -5,5 +5,5 @@ project_root = "../../_checkouts/click"
 module_file = "src/click/types.py"
 module_name = "click.types"
 python_path = ["src"]
-human_tests = ["tests/test_types.py"]
+human_tests = ["tests/test_types"]
 python = "../../_checkouts/_venvs/click/bin/python"

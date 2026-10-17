@@ -1,0 +1,54 @@
+{
+  "target": "toolz-dicttoolz",
+  "module_file": "toolz/dicttoolz.py",
+  "source_sha256": "b04f3094634b7b385d9a446a07681073149bc1b3baf9cfb84956d8fb2163ba81",
+  "tests_total": 51,
+  "tests_passed": 51,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 105,
+  "covered_lines": 105,
+  "num_branches": 42,
+  "covered_branches": 41,
+  "missing_lines": [],
+  "missing_branches": [
+    [
+      220,
+      219
+    ]
+  ],
+  "mutants_total": 55,
+  "mutants_killed": 51,
+  "mutants_survived": 4,
+  "mutants_not_covered": 0,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "bdab4a322771",
+    "43d93de2f632",
+    "c24521977741",
+    "9ca2bb87dab9"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 7.103148962999967,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T12:03:02+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 1.0,
+  "branch_coverage": 0.9761904761904762,
+  "mutation_score": 0.9272727272727272,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 266,
+  "mutants_generated": 55,
+  "id": "toolz-dicttoolz",
+  "status": "ok",
+  "screen_seconds": 7.1
+}

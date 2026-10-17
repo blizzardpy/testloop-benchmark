@@ -1,0 +1,70 @@
+{
+  "target": "dotenv-parser",
+  "module_file": "src/dotenv/parser.py",
+  "source_sha256": "0bc1350444eeff987f2c22924400ad0b7727563798118c641cd4c0de55bd30d0",
+  "tests_total": 56,
+  "tests_passed": 56,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 119,
+  "covered_lines": 114,
+  "num_branches": 22,
+  "covered_branches": 20,
+  "missing_lines": [
+    93,
+    94,
+    95,
+    96,
+    97
+  ],
+  "missing_branches": [
+    [
+      94,
+      95
+    ],
+    [
+      94,
+      96
+    ]
+  ],
+  "mutants_total": 81,
+  "mutants_killed": 67,
+  "mutants_survived": 6,
+  "mutants_not_covered": 4,
+  "mutants_timeout": 4,
+  "surviving_mutants": [
+    "148b9406143b",
+    "e8f57e8658ab",
+    "70098113292e",
+    "124604243ffe",
+    "041d654877d0",
+    "26c2b5c4bf13",
+    "8029452891c9",
+    "cafe5ef60158",
+    "88f2ef1a1a12",
+    "82a70e9547f5"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 24.478219252999907,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:32:27+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.957983193277311,
+  "branch_coverage": 0.9090909090909091,
+  "mutation_score": 0.8765432098765432,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 149,
+  "mutants_generated": 81,
+  "id": "dotenv-parser",
+  "status": "ok",
+  "screen_seconds": 24.5
+}

@@ -1,0 +1,121 @@
+{
+  "target": "xmltodict",
+  "module_file": "xmltodict.py",
+  "source_sha256": "9574766df8eae61b4c43a2920fb83cc03babf4b55a729f7bd8c7d161d97eb53c",
+  "tests_total": 134,
+  "tests_passed": 134,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 345,
+  "covered_lines": 337,
+  "num_branches": 196,
+  "covered_branches": 188,
+  "missing_lines": [
+    71,
+    131,
+    132,
+    420,
+    421,
+    422,
+    423,
+    425
+  ],
+  "missing_branches": [
+    [
+      70,
+      71
+    ],
+    [
+      96,
+      90
+    ],
+    [
+      128,
+      131
+    ],
+    [
+      162,
+      164
+    ],
+    [
+      419,
+      420
+    ],
+    [
+      424,
+      425
+    ],
+    [
+      597,
+      600
+    ],
+    [
+      626,
+      -567
+    ]
+  ],
+  "mutants_total": 200,
+  "mutants_killed": 166,
+  "mutants_survived": 30,
+  "mutants_not_covered": 4,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "bafab7753794",
+    "6c5d6c883903",
+    "004fe043b800",
+    "9eb820fc4499",
+    "a44f1a87de6d",
+    "d70728caa84a",
+    "13e490b7cae6",
+    "f52bfebb8996",
+    "986faffd87c9",
+    "0f84b85d21da",
+    "ca20a8d1c65b",
+    "c7f3527e0414",
+    "5186cab92f09",
+    "f27f8bee6636",
+    "f6a1ec20c60d",
+    "2dd515be3b90",
+    "68c4db89b421",
+    "13365c609728",
+    "e8cf8c13a59c",
+    "3a0f609422fa",
+    "d11ba5d82896",
+    "e86f6b5311dd",
+    "fe2eb16ba41a",
+    "298191755c2d",
+    "bdab38f5fd91",
+    "4ff38db3b54c",
+    "53f193264f1c",
+    "b29fbcedb28f",
+    "2d848855ef61",
+    "7cd7c3dae550",
+    "b55a08357b8f",
+    "d8c7c90b770c",
+    "d7bdeb39e2df",
+    "d1b9638b47e7"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 32.99474739000016,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:39:37+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9768115942028985,
+  "branch_coverage": 0.9591836734693877,
+  "mutation_score": 0.83,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 581,
+  "mutants_generated": 258,
+  "id": "xmltodict",
+  "status": "ok",
+  "screen_seconds": 33.0
+}

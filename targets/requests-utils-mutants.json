@@ -1,0 +1,2011 @@
+{
+  "target": "requests-utils",
+  "module_file": "src/requests/utils.py",
+  "source_sha256": "b879cb3f671cf1c28e8ff9b2b02151bcdb8974b4820a514cfdd1f5a038443cd2",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 477,
+  "mutants": [
+    {
+      "id": "c574b4d632c4",
+      "operator": "COND",
+      "lineno": 71,
+      "col_offset": 3,
+      "end_lineno": 71,
+      "end_col_offset": 16,
+      "original": "TYPE_CHECKING",
+      "replacement": "(not TYPE_CHECKING)"
+    },
+    {
+      "id": "5409fb1c35be",
+      "operator": "CRP",
+      "lineno": 87,
+      "col_offset": 14,
+      "end_lineno": 87,
+      "end_col_offset": 19,
+      "original": "\"_KT\"",
+      "replacement": "('XX_KTXX')"
+    },
+    {
+      "id": "19fa69f32509",
+      "operator": "CRP",
+      "lineno": 88,
+      "col_offset": 14,
+      "end_lineno": 88,
+      "end_col_offset": 19,
+      "original": "\"_VT\"",
+      "replacement": "('XX_VTXX')"
+    },
+    {
+      "id": "f509ad61628a",
+      "operator": "CRP",
+      "lineno": 92,
+      "col_offset": 51,
+      "end_lineno": 92,
+      "end_col_offset": 55,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "d33981a94393",
+      "operator": "ROR",
+      "lineno": 96,
+      "col_offset": 3,
+      "end_lineno": 96,
+      "end_col_offset": 26,
+      "original": "sys.platform == \"win32\"",
+      "replacement": "(sys.platform != 'win32')"
+    },
+    {
+      "id": "305db9d25b9e",
+      "operator": "CRP",
+      "lineno": 103,
+      "col_offset": 19,
+      "end_lineno": 103,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "e4f2671a2624",
+      "operator": "CRP",
+      "lineno": 111,
+      "col_offset": 68,
+      "end_lineno": 111,
+      "end_col_offset": 81,
+      "original": "\"ProxyEnable\"",
+      "replacement": "('XXProxyEnableXX')"
+    },
+    {
+      "id": "f9712468acdb",
+      "operator": "CRP",
+      "lineno": 111,
+      "col_offset": 83,
+      "end_lineno": 111,
+      "end_col_offset": 84,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "fef5fb0c72b9",
+      "operator": "CRP",
+      "lineno": 113,
+      "col_offset": 66,
+      "end_lineno": 113,
+      "end_col_offset": 81,
+      "original": "\"ProxyOverride\"",
+      "replacement": "('XXProxyOverrideXX')"
+    },
+    {
+      "id": "a63ec7090556",
+      "operator": "CRP",
+      "lineno": 115,
+      "col_offset": 19,
+      "end_lineno": 115,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "b64d6116ecdd",
+      "operator": "CRP",
+      "lineno": 127,
+      "col_offset": 23,
+      "end_lineno": 127,
+      "end_col_offset": 32,
+      "original": "\"<local>\"",
+      "replacement": "('XX<local>XX')"
+    },
+    {
+      "id": "1fe455d92843",
+      "operator": "CRP",
+      "lineno": 128,
+      "col_offset": 19,
+      "end_lineno": 128,
+      "end_col_offset": 22,
+      "original": "\".\"",
+      "replacement": "('XX.XX')"
+    },
+    {
+      "id": "4227cb61f048",
+      "operator": "CRP",
+      "lineno": 129,
+      "col_offset": 27,
+      "end_lineno": 129,
+      "end_col_offset": 31,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "306ecb8f6ecf",
+      "operator": "CRP",
+      "lineno": 130,
+      "col_offset": 32,
+      "end_lineno": 130,
+      "end_col_offset": 35,
+      "original": "\".\"",
+      "replacement": "('XX.XX')"
+    },
+    {
+      "id": "5c78036713c4",
+      "operator": "CRP",
+      "lineno": 130,
+      "col_offset": 37,
+      "end_lineno": 130,
+      "end_col_offset": 42,
+      "original": "r\"\\.\"",
+      "replacement": "('XX\\\\.XX')"
+    },
+    {
+      "id": "14b208d033a6",
+      "operator": "CRP",
+      "lineno": 132,
+      "col_offset": 37,
+      "end_lineno": 132,
+      "end_col_offset": 41,
+      "original": "r\".\"",
+      "replacement": "('XX.XX')"
+    },
+    {
+      "id": "ec90cc4ace68",
+      "operator": "COND",
+      "lineno": 133,
+      "col_offset": 15,
+      "end_lineno": 133,
+      "end_col_offset": 41,
+      "original": "re.match(test, host, re.I)",
+      "replacement": "(not re.match(test, host, re.I))"
+    },
+    {
+      "id": "1295d361e1b9",
+      "operator": "RET",
+      "lineno": 135,
+      "col_offset": 8,
+      "end_lineno": 135,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "5697fb4d347f",
+      "operator": "CRP",
+      "lineno": 135,
+      "col_offset": 15,
+      "end_lineno": 135,
+      "end_col_offset": 20,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "6ee06beb87a0",
+      "operator": "COND",
+      "lineno": 143,
+      "col_offset": 11,
+      "end_lineno": 143,
+      "end_col_offset": 35,
+      "original": "getproxies_environment()",
+      "replacement": "(not getproxies_environment())"
+    },
+    {
+      "id": "02dabfe7c793",
+      "operator": "RET",
+      "lineno": 144,
+      "col_offset": 12,
+      "end_lineno": 144,
+      "end_col_offset": 49,
+      "original": "return proxy_bypass_environment(host)",
+      "replacement": "return None"
+    },
+    {
+      "id": "5a6565479d56",
+      "operator": "COND",
+      "lineno": 154,
+      "col_offset": 7,
+      "end_lineno": 154,
+      "end_col_offset": 36,
+      "original": "isinstance(d, _SupportsItems)",
+      "replacement": "(not isinstance(d, _SupportsItems))"
+    },
+    {
+      "id": "142e27ebe24d",
+      "operator": "RET",
+      "lineno": 155,
+      "col_offset": 8,
+      "end_lineno": 155,
+      "end_col_offset": 24,
+      "original": "return d.items()",
+      "replacement": "return None"
+    },
+    {
+      "id": "8d730c66ecf0",
+      "operator": "UOI",
+      "lineno": 164,
+      "col_offset": 7,
+      "end_lineno": 164,
+      "end_col_offset": 23,
+      "original": "not is_urllib3_1",
+      "replacement": "(is_urllib3_1)"
+    },
+    {
+      "id": "1cdff1cedbdb",
+      "operator": "COND",
+      "lineno": 172,
+      "col_offset": 9,
+      "end_lineno": 172,
+      "end_col_offset": 26,
+      "original": "hasattr(o, \"len\")",
+      "replacement": "(not hasattr(o, 'len'))"
+    },
+    {
+      "id": "3087836b9ee4",
+      "operator": "COND",
+      "lineno": 175,
+      "col_offset": 9,
+      "end_lineno": 175,
+      "end_col_offset": 29,
+      "original": "hasattr(o, \"fileno\")",
+      "replacement": "(not hasattr(o, 'fileno'))"
+    },
+    {
+      "id": "1bc6883277a3",
+      "operator": "CRP",
+      "lineno": 188,
+      "col_offset": 15,
+      "end_lineno": 188,
+      "end_col_offset": 18,
+      "original": "\"b\"",
+      "replacement": "('XXbXX')"
+    },
+    {
+      "id": "e8c2f2c3c734",
+      "operator": "COND",
+      "lineno": 201,
+      "col_offset": 7,
+      "end_lineno": 201,
+      "end_col_offset": 25,
+      "original": "hasattr(o, \"tell\")",
+      "replacement": "(not hasattr(o, 'tell'))"
+    },
+    {
+      "id": "da37106f0d54",
+      "operator": "ROR",
+      "lineno": 212,
+      "col_offset": 38,
+      "end_lineno": 212,
+      "end_col_offset": 58,
+      "original": "total_length is None",
+      "replacement": "(total_length is not None)"
+    },
+    {
+      "id": "49f4f75e8357",
+      "operator": "CRP",
+      "lineno": 216,
+      "col_offset": 27,
+      "end_lineno": 216,
+      "end_col_offset": 28,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "768d3da4580a",
+      "operator": "LCR",
+      "lineno": 221,
+      "col_offset": 27,
+      "end_lineno": 221,
+      "end_col_offset": 48,
+      "original": "current_position or 0",
+      "replacement": "(current_position and 0)"
+    },
+    {
+      "id": "5ae484019367",
+      "operator": "CRP",
+      "lineno": 221,
+      "col_offset": 47,
+      "end_lineno": 221,
+      "end_col_offset": 48,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "7fb3e2f95c0f",
+      "operator": "CRP",
+      "lineno": 223,
+      "col_offset": 35,
+      "end_lineno": 223,
+      "end_col_offset": 36,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "3d38ff934f22",
+      "operator": "COND",
+      "lineno": 252,
+      "col_offset": 15,
+      "end_lineno": 252,
+      "end_col_offset": 34,
+      "original": "os.path.exists(loc)",
+      "replacement": "(not os.path.exists(loc))"
+    },
+    {
+      "id": "17764486c388",
+      "operator": "CRP",
+      "lineno": 270,
+      "col_offset": 26,
+      "end_lineno": 270,
+      "end_col_offset": 27,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "79fcfcdd2544",
+      "operator": "CRP",
+      "lineno": 270,
+      "col_offset": 46,
+      "end_lineno": 270,
+      "end_col_offset": 47,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "925e6813b275",
+      "operator": "RET",
+      "lineno": 271,
+      "col_offset": 16,
+      "end_lineno": 271,
+      "end_col_offset": 63,
+      "original": "return (_netrc[login_i] or \"\", _netrc[2] or \"\")",
+      "replacement": "return None"
+    },
+    {
+      "id": "b24b6c7fe623",
+      "operator": "LCR",
+      "lineno": 271,
+      "col_offset": 24,
+      "end_lineno": 271,
+      "end_col_offset": 45,
+      "original": "_netrc[login_i] or \"\"",
+      "replacement": "(_netrc[login_i] and '')"
+    },
+    {
+      "id": "84a167faabea",
+      "operator": "CRP",
+      "lineno": 271,
+      "col_offset": 43,
+      "end_lineno": 271,
+      "end_col_offset": 45,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "8a20d3dacd6d",
+      "operator": "CRP",
+      "lineno": 271,
+      "col_offset": 54,
+      "end_lineno": 271,
+      "end_col_offset": 55,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "9b77d30e1d35",
+      "operator": "ROR",
+      "lineno": 286,
+      "col_offset": 51,
+      "end_lineno": 286,
+      "end_col_offset": 65,
+      "original": "name[0] != \"<\"",
+      "replacement": "(name[0] == '<')"
+    },
+    {
+      "id": "bdd0ec12f3f6",
+      "operator": "ROR",
+      "lineno": 286,
+      "col_offset": 70,
+      "end_lineno": 286,
+      "end_col_offset": 85,
+      "original": "name[-1] != \">\"",
+      "replacement": "(name[-1] == '>')"
+    },
+    {
+      "id": "01b21cb6f322",
+      "operator": "CRP",
+      "lineno": 286,
+      "col_offset": 82,
+      "end_lineno": 286,
+      "end_col_offset": 85,
+      "original": "\">\"",
+      "replacement": "('XX>XX')"
+    },
+    {
+      "id": "2359deed1dd8",
+      "operator": "RET",
+      "lineno": 287,
+      "col_offset": 8,
+      "end_lineno": 287,
+      "end_col_offset": 37,
+      "original": "return os.path.basename(name)",
+      "replacement": "return None"
+    },
+    {
+      "id": "1086d4074391",
+      "operator": "COND",
+      "lineno": 295,
+      "col_offset": 7,
+      "end_lineno": 295,
+      "end_col_offset": 27,
+      "original": "os.path.exists(path)",
+      "replacement": "(not os.path.exists(path))"
+    },
+    {
+      "id": "7d10360b9c8a",
+      "operator": "RET",
+      "lineno": 297,
+      "col_offset": 8,
+      "end_lineno": 297,
+      "end_col_offset": 19,
+      "original": "return path",
+      "replacement": "return None"
+    },
+    {
+      "id": "a5dc68bcc22c",
+      "operator": "RET",
+      "lineno": 311,
+      "col_offset": 8,
+      "end_lineno": 311,
+      "end_col_offset": 19,
+      "original": "return path",
+      "replacement": "return None"
+    },
+    {
+      "id": "0257977f1d80",
+      "operator": "RET",
+      "lineno": 315,
+      "col_offset": 8,
+      "end_lineno": 315,
+      "end_col_offset": 19,
+      "original": "return path",
+      "replacement": "return None"
+    },
+    {
+      "id": "781be8191b0f",
+      "operator": "CRP",
+      "lineno": 318,
+      "col_offset": 43,
+      "end_lineno": 318,
+      "end_col_offset": 46,
+      "original": "\"/\"",
+      "replacement": "('XX/XX')"
+    },
+    {
+      "id": "f90875e09626",
+      "operator": "UOI",
+      "lineno": 318,
+      "col_offset": 48,
+      "end_lineno": 318,
+      "end_col_offset": 50,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "f2a361d94f73",
+      "operator": "RET",
+      "lineno": 325,
+      "col_offset": 4,
+      "end_lineno": 325,
+      "end_col_offset": 25,
+      "original": "return extracted_path",
+      "replacement": "return None"
+    },
+    {
+      "id": "b57635b50e50",
+      "operator": "CRP",
+      "lineno": 365,
+      "col_offset": 25,
+      "end_lineno": 365,
+      "end_col_offset": 70,
+      "original": "\"cannot encode objects that are not 2-tuples\"",
+      "replacement": "('XXcannot encode objects that are not 2-tuplesXX')"
+    },
+    {
+      "id": "6aa231df82d1",
+      "operator": "RET",
+      "lineno": 367,
+      "col_offset": 4,
+      "end_lineno": 367,
+      "end_col_offset": 29,
+      "original": "return OrderedDict(value)",
+      "replacement": "return None"
+    },
+    {
+      "id": "d37bbe168ca7",
+      "operator": "RET",
+      "lineno": 402,
+      "col_offset": 8,
+      "end_lineno": 402,
+      "end_col_offset": 34,
+      "original": "return list(value.items())",
+      "replacement": "return None"
+    },
+    {
+      "id": "3849e058fdc9",
+      "operator": "ROR",
+      "lineno": 433,
+      "col_offset": 11,
+      "end_lineno": 433,
+      "end_col_offset": 39,
+      "original": "item[:1] == item[-1:] == '\"'",
+      "replacement": "(item[:1] == item[-1:] != '\"')"
+    },
+    {
+      "id": "4462c31e0b92",
+      "operator": "ROR",
+      "lineno": 433,
+      "col_offset": 11,
+      "end_lineno": 433,
+      "end_col_offset": 39,
+      "original": "item[:1] == item[-1:] == '\"'",
+      "replacement": "(item[:1] != item[-1:] == '\"')"
+    },
+    {
+      "id": "1bf3f85c8e44",
+      "operator": "CRP",
+      "lineno": 433,
+      "col_offset": 29,
+      "end_lineno": 433,
+      "end_col_offset": 30,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "7cbe0da6b3ee",
+      "operator": "UOI",
+      "lineno": 434,
+      "col_offset": 47,
+      "end_lineno": 434,
+      "end_col_offset": 49,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "7df79301cad0",
+      "operator": "CRP",
+      "lineno": 434,
+      "col_offset": 48,
+      "end_lineno": 434,
+      "end_col_offset": 49,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c19f0e672eb7",
+      "operator": "RET",
+      "lineno": 436,
+      "col_offset": 4,
+      "end_lineno": 436,
+      "end_col_offset": 17,
+      "original": "return result",
+      "replacement": "return None"
+    },
+    {
+      "id": "341a56f8ace7",
+      "operator": "CRP",
+      "lineno": 467,
+      "col_offset": 38,
+      "end_lineno": 467,
+      "end_col_offset": 39,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "192821e1ff2f",
+      "operator": "ROR",
+      "lineno": 468,
+      "col_offset": 11,
+      "end_lineno": 468,
+      "end_col_offset": 41,
+      "original": "value[:1] == value[-1:] == '\"'",
+      "replacement": "(value[:1] != value[-1:] == '\"')"
+    },
+    {
+      "id": "f8e43792197c",
+      "operator": "UOI",
+      "lineno": 468,
+      "col_offset": 30,
+      "end_lineno": 468,
+      "end_col_offset": 32,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "6e15474282af",
+      "operator": "CRP",
+      "lineno": 469,
+      "col_offset": 47,
+      "end_lineno": 469,
+      "end_col_offset": 48,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "aeffb7440984",
+      "operator": "UOI",
+      "lineno": 469,
+      "col_offset": 49,
+      "end_lineno": 469,
+      "end_col_offset": 51,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "65d83aa3df97",
+      "operator": "CRP",
+      "lineno": 469,
+      "col_offset": 50,
+      "end_lineno": 469,
+      "end_col_offset": 51,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "929deec4a69b",
+      "operator": "LCR",
+      "lineno": 483,
+      "col_offset": 7,
+      "end_lineno": 483,
+      "end_col_offset": 45,
+      "original": "value and value[0] == value[-1] == '\"'",
+      "replacement": "(value or value[0] == value[-1] == '\"')"
+    },
+    {
+      "id": "9d5c5c3083f4",
+      "operator": "CRP",
+      "lineno": 483,
+      "col_offset": 23,
+      "end_lineno": 483,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "1bc5533606ad",
+      "operator": "UOI",
+      "lineno": 483,
+      "col_offset": 35,
+      "end_lineno": 483,
+      "end_col_offset": 37,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "bf643baf7a3b",
+      "operator": "CRP",
+      "lineno": 483,
+      "col_offset": 36,
+      "end_lineno": 483,
+      "end_col_offset": 37,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "030e06bf420a",
+      "operator": "CRP",
+      "lineno": 495,
+      "col_offset": 37,
+      "end_lineno": 495,
+      "end_col_offset": 38,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "418b0d19c2f4",
+      "operator": "RET",
+      "lineno": 496,
+      "col_offset": 12,
+      "end_lineno": 496,
+      "end_col_offset": 66,
+      "original": "return value.replace(\"\\\\\\\\\", \"\\\\\").replace('\\\\\"', '\"')",
+      "replacement": "return None"
+    },
+    {
+      "id": "832d990a203e",
+      "operator": "CRP",
+      "lineno": 496,
+      "col_offset": 33,
+      "end_lineno": 496,
+      "end_col_offset": 39,
+      "original": "\"\\\\\\\\\"",
+      "replacement": "('XX\\\\\\\\XX')"
+    },
+    {
+      "id": "fecf8f6f7832",
+      "operator": "CRP",
+      "lineno": 496,
+      "col_offset": 41,
+      "end_lineno": 496,
+      "end_col_offset": 45,
+      "original": "\"\\\\\"",
+      "replacement": "('XX\\\\XX')"
+    },
+    {
+      "id": "9963fa348cff",
+      "operator": "CRP",
+      "lineno": 529,
+      "col_offset": 12,
+      "end_lineno": 531,
+      "end_col_offset": 48,
+      "original": "\"In requests 3.0, get_encodings_from_content will be removed. For \" \"more information, please see the discussion on issue #2266. (This\" \" warning should only appear once.)\"",
+      "replacement": "('XXIn requests 3.0, get_encodings_from_content will be removed. For more information, please see the discussion on issue #2266. (This warning should only appear once.)XX')"
+    },
+    {
+      "id": "76a091cd2a88",
+      "operator": "CRP",
+      "lineno": 536,
+      "col_offset": 28,
+      "end_lineno": 536,
+      "end_col_offset": 64,
+      "original": "r'<meta.*?charset=[\"\\']*(.+?)[\"\\'>]'",
+      "replacement": "('XX<meta.*?charset=[\"\\\\\\']*(.+?)[\"\\\\\\'>]XX')"
+    },
+    {
+      "id": "630cde869681",
+      "operator": "CRP",
+      "lineno": 556,
+      "col_offset": 34,
+      "end_lineno": 556,
+      "end_col_offset": 35,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "13fc868cdcc1",
+      "operator": "LCR",
+      "lineno": 562,
+      "col_offset": 11,
+      "end_lineno": 562,
+      "end_col_offset": 51,
+      "original": "param and (idx := param.find(\"=\")) != -1",
+      "replacement": "(param or (idx := param.find('=')) != -1)"
+    },
+    {
+      "id": "c6c5418eb92f",
+      "operator": "CRP",
+      "lineno": 562,
+      "col_offset": 50,
+      "end_lineno": 562,
+      "end_col_offset": 51,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "269a36832230",
+      "operator": "RET",
+      "lineno": 566,
+      "col_offset": 4,
+      "end_lineno": 566,
+      "end_col_offset": 36,
+      "original": "return content_type, params_dict",
+      "replacement": "return None"
+    },
+    {
+      "id": "80929ec1cfc5",
+      "operator": "CRP",
+      "lineno": 584,
+      "col_offset": 39,
+      "end_lineno": 584,
+      "end_col_offset": 44,
+      "original": "\"'\\\"\"",
+      "replacement": "('XX\\'\"XX')"
+    },
+    {
+      "id": "31a9f20f83bd",
+      "operator": "CRP",
+      "lineno": 586,
+      "col_offset": 7,
+      "end_lineno": 586,
+      "end_col_offset": 13,
+      "original": "\"text\"",
+      "replacement": "('XXtextXX')"
+    },
+    {
+      "id": "f191a56e7a2a",
+      "operator": "RET",
+      "lineno": 587,
+      "col_offset": 8,
+      "end_lineno": 587,
+      "end_col_offset": 27,
+      "original": "return \"ISO-8859-1\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "7c21cee31ab0",
+      "operator": "CRP",
+      "lineno": 587,
+      "col_offset": 15,
+      "end_lineno": 587,
+      "end_col_offset": 27,
+      "original": "\"ISO-8859-1\"",
+      "replacement": "('XXISO-8859-1XX')"
+    },
+    {
+      "id": "ac977b239a5e",
+      "operator": "CRP",
+      "lineno": 591,
+      "col_offset": 15,
+      "end_lineno": 591,
+      "end_col_offset": 22,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "f003d47a8836",
+      "operator": "ROR",
+      "lineno": 599,
+      "col_offset": 7,
+      "end_lineno": 599,
+      "end_col_offset": 25,
+      "original": "r.encoding is None",
+      "replacement": "(r.encoding is not None)"
+    },
+    {
+      "id": "77e5d677e365",
+      "operator": "CRP",
+      "lineno": 608,
+      "col_offset": 35,
+      "end_lineno": 608,
+      "end_col_offset": 39,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "111c2a26c98e",
+      "operator": "COND",
+      "lineno": 609,
+      "col_offset": 7,
+      "end_lineno": 609,
+      "end_col_offset": 9,
+      "original": "rv",
+      "replacement": "(not rv)"
+    },
+    {
+      "id": "db5ad2970a61",
+      "operator": "LCR",
+      "lineno": 626,
+      "col_offset": 7,
+      "end_lineno": 626,
+      "end_col_offset": 48,
+      "original": "slice_length is None or slice_length <= 0",
+      "replacement": "(slice_length is None and slice_length <= 0)"
+    },
+    {
+      "id": "1c4a7e21ad8e",
+      "operator": "ROR",
+      "lineno": 626,
+      "col_offset": 7,
+      "end_lineno": 626,
+      "end_col_offset": 27,
+      "original": "slice_length is None",
+      "replacement": "(slice_length is not None)"
+    },
+    {
+      "id": "4bc04ab6f911",
+      "operator": "RET",
+      "lineno": 663,
+      "col_offset": 12,
+      "end_lineno": 663,
+      "end_col_offset": 43,
+      "original": "return str(r.content, encoding)",
+      "replacement": "return None"
+    },
+    {
+      "id": "663d97bb99fc",
+      "operator": "LCR",
+      "lineno": 669,
+      "col_offset": 30,
+      "end_lineno": 669,
+      "end_col_offset": 49,
+      "original": "encoding or \"utf-8\"",
+      "replacement": "(encoding and 'utf-8')"
+    },
+    {
+      "id": "04d8c1223f11",
+      "operator": "CRP",
+      "lineno": 669,
+      "col_offset": 58,
+      "end_lineno": 669,
+      "end_col_offset": 67,
+      "original": "\"replace\"",
+      "replacement": "('XXreplaceXX')"
+    },
+    {
+      "id": "51a22832e31a",
+      "operator": "RET",
+      "lineno": 671,
+      "col_offset": 8,
+      "end_lineno": 671,
+      "end_col_offset": 24,
+      "original": "return r.content",
+      "replacement": "return None"
+    },
+    {
+      "id": "5c39d8e2421c",
+      "operator": "AOR",
+      "lineno": 676,
+      "col_offset": 4,
+      "end_lineno": 676,
+      "end_col_offset": 77,
+      "original": "\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\" + \"0123456789-._~\"",
+      "replacement": "('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' - '0123456789-._~')"
+    },
+    {
+      "id": "f0b67d26b5d3",
+      "operator": "CRP",
+      "lineno": 686,
+      "col_offset": 22,
+      "end_lineno": 686,
+      "end_col_offset": 25,
+      "original": "\"%\"",
+      "replacement": "('XX%XX')"
+    },
+    {
+      "id": "171aa5a06e71",
+      "operator": "CRP",
+      "lineno": 687,
+      "col_offset": 19,
+      "end_lineno": 687,
+      "end_col_offset": 20,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "d9facc48d957",
+      "operator": "CRP",
+      "lineno": 688,
+      "col_offset": 21,
+      "end_lineno": 688,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "64909c3c5df0",
+      "operator": "LCR",
+      "lineno": 689,
+      "col_offset": 11,
+      "end_lineno": 689,
+      "end_col_offset": 38,
+      "original": "len(h) == 2 and h.isalnum()",
+      "replacement": "(len(h) == 2 or h.isalnum())"
+    },
+    {
+      "id": "18f124ed34e2",
+      "operator": "AOR",
+      "lineno": 696,
+      "col_offset": 27,
+      "end_lineno": 696,
+      "end_col_offset": 43,
+      "original": "c + parts[i][2:]",
+      "replacement": "(c - parts[i][2:])"
+    },
+    {
+      "id": "4c847f264bae",
+      "operator": "CRP",
+      "lineno": 696,
+      "col_offset": 40,
+      "end_lineno": 696,
+      "end_col_offset": 41,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "63504d343b1e",
+      "operator": "CRP",
+      "lineno": 701,
+      "col_offset": 11,
+      "end_lineno": 701,
+      "end_col_offset": 13,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "5695b9bb679f",
+      "operator": "CRP",
+      "lineno": 712,
+      "col_offset": 24,
+      "end_lineno": 712,
+      "end_col_offset": 46,
+      "original": "\"!#$%&'()*+,/:;=?@[]~\"",
+      "replacement": "(\"XX!#$%&'()*+,/:;=?@[]~XX\")"
+    },
+    {
+      "id": "700cb1a30626",
+      "operator": "CRP",
+      "lineno": 734,
+      "col_offset": 55,
+      "end_lineno": 734,
+      "end_col_offset": 56,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "0d89d0aa8b63",
+      "operator": "CRP",
+      "lineno": 735,
+      "col_offset": 30,
+      "end_lineno": 735,
+      "end_col_offset": 33,
+      "original": "\"/\"",
+      "replacement": "('XX/XX')"
+    },
+    {
+      "id": "25afb7bc5a4e",
+      "operator": "CRP",
+      "lineno": 736,
+      "col_offset": 28,
+      "end_lineno": 736,
+      "end_col_offset": 32,
+      "original": "\"=L\"",
+      "replacement": "('XX=LXX')"
+    },
+    {
+      "id": "5b92973d7b04",
+      "operator": "CRP",
+      "lineno": 737,
+      "col_offset": 61,
+      "end_lineno": 737,
+      "end_col_offset": 62,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "990880b5508c",
+      "operator": "RET",
+      "lineno": 738,
+      "col_offset": 4,
+      "end_lineno": 738,
+      "end_col_offset": 52,
+      "original": "return (ipaddr & netmask) == (network & netmask)",
+      "replacement": "return None"
+    },
+    {
+      "id": "b842105b5610",
+      "operator": "AOR",
+      "lineno": 738,
+      "col_offset": 34,
+      "end_lineno": 738,
+      "end_col_offset": 51,
+      "original": "network & netmask",
+      "replacement": "(network | netmask)"
+    },
+    {
+      "id": "d5b0a7dbdfae",
+      "operator": "CRP",
+      "lineno": 748,
+      "col_offset": 11,
+      "end_lineno": 748,
+      "end_col_offset": 21,
+      "original": "0xFFFFFFFF",
+      "replacement": "(4294967296)"
+    },
+    {
+      "id": "319254b2b8ec",
+      "operator": "AOR",
+      "lineno": 748,
+      "col_offset": 25,
+      "end_lineno": 748,
+      "end_col_offset": 39,
+      "original": "1 << 32 - mask",
+      "replacement": "(1 >> 32 - mask)"
+    },
+    {
+      "id": "0c8257900b1d",
+      "operator": "AOR",
+      "lineno": 748,
+      "col_offset": 30,
+      "end_lineno": 748,
+      "end_col_offset": 39,
+      "original": "32 - mask",
+      "replacement": "(32 + mask)"
+    },
+    {
+      "id": "006fcfe33edf",
+      "operator": "CRP",
+      "lineno": 749,
+      "col_offset": 40,
+      "end_lineno": 749,
+      "end_col_offset": 44,
+      "original": "\">I\"",
+      "replacement": "('XX>IXX')"
+    },
+    {
+      "id": "28c8f04a3679",
+      "operator": "CRP",
+      "lineno": 760,
+      "col_offset": 11,
+      "end_lineno": 760,
+      "end_col_offset": 15,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "c0ab923dd84b",
+      "operator": "CRP",
+      "lineno": 769,
+      "col_offset": 36,
+      "end_lineno": 769,
+      "end_col_offset": 37,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "69015379bc8e",
+      "operator": "CRP",
+      "lineno": 771,
+      "col_offset": 44,
+      "end_lineno": 771,
+      "end_col_offset": 47,
+      "original": "\"/\"",
+      "replacement": "('XX/XX')"
+    },
+    {
+      "id": "a6ca54f758f0",
+      "operator": "RET",
+      "lineno": 773,
+      "col_offset": 12,
+      "end_lineno": 773,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "01275b65a8e1",
+      "operator": "LCR",
+      "lineno": 775,
+      "col_offset": 11,
+      "end_lineno": 775,
+      "end_col_offset": 32,
+      "original": "mask < 1 or mask > 32",
+      "replacement": "(mask < 1 and mask > 32)"
+    },
+    {
+      "id": "81fd56e755cb",
+      "operator": "CRP",
+      "lineno": 775,
+      "col_offset": 18,
+      "end_lineno": 775,
+      "end_col_offset": 19,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "f6bff0d4760e",
+      "operator": "ROR",
+      "lineno": 775,
+      "col_offset": 23,
+      "end_lineno": 775,
+      "end_col_offset": 32,
+      "original": "mask > 32",
+      "replacement": "(mask >= 32)"
+    },
+    {
+      "id": "69ef11d4cac3",
+      "operator": "CRP",
+      "lineno": 779,
+      "col_offset": 50,
+      "end_lineno": 779,
+      "end_col_offset": 53,
+      "original": "\"/\"",
+      "replacement": "('XX/XX')"
+    },
+    {
+      "id": "87a3b623ead1",
+      "operator": "RET",
+      "lineno": 781,
+      "col_offset": 12,
+      "end_lineno": 781,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "cb585051973a",
+      "operator": "CRP",
+      "lineno": 781,
+      "col_offset": 19,
+      "end_lineno": 781,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "c1cd62736846",
+      "operator": "RET",
+      "lineno": 783,
+      "col_offset": 8,
+      "end_lineno": 783,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "e3673e3b2083",
+      "operator": "CRP",
+      "lineno": 784,
+      "col_offset": 11,
+      "end_lineno": 784,
+      "end_col_offset": 15,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "cdec5fbc8c45",
+      "operator": "ROR",
+      "lineno": 795,
+      "col_offset": 20,
+      "end_lineno": 795,
+      "end_col_offset": 37,
+      "original": "value is not None",
+      "replacement": "(value is None)"
+    },
+    {
+      "id": "546915fad5d4",
+      "operator": "ROR",
+      "lineno": 804,
+      "col_offset": 15,
+      "end_lineno": 804,
+      "end_col_offset": 32,
+      "original": "old_value is None",
+      "replacement": "(old_value is not None)"
+    },
+    {
+      "id": "4312da8a602c",
+      "operator": "LCR",
+      "lineno": 820,
+      "col_offset": 15,
+      "end_lineno": 820,
+      "end_col_offset": 65,
+      "original": "os.environ.get(key) or os.environ.get(key.upper())",
+      "replacement": "(os.environ.get(key) and os.environ.get(key.upper()))"
+    },
+    {
+      "id": "54b80ce30639",
+      "operator": "ROR",
+      "lineno": 825,
+      "col_offset": 7,
+      "end_lineno": 825,
+      "end_col_offset": 23,
+      "original": "no_proxy is None",
+      "replacement": "(no_proxy is not None)"
+    },
+    {
+      "id": "230fee455da0",
+      "operator": "CRP",
+      "lineno": 826,
+      "col_offset": 29,
+      "end_lineno": 826,
+      "end_col_offset": 39,
+      "original": "\"no_proxy\"",
+      "replacement": "('XXno_proxyXX')"
+    },
+    {
+      "id": "fcbf29bcc01f",
+      "operator": "RET",
+      "lineno": 832,
+      "col_offset": 8,
+      "end_lineno": 832,
+      "end_col_offset": 19,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "9aca6253a7b7",
+      "operator": "COND",
+      "lineno": 834,
+      "col_offset": 7,
+      "end_lineno": 834,
+      "end_col_offset": 15,
+      "original": "no_proxy",
+      "replacement": "(not no_proxy)"
+    },
+    {
+      "id": "fd0de4ed40ca",
+      "operator": "CRP",
+      "lineno": 837,
+      "col_offset": 60,
+      "end_lineno": 837,
+      "end_col_offset": 63,
+      "original": "\" \"",
+      "replacement": "('XX XX')"
+    },
+    {
+      "id": "69ddbc96f545",
+      "operator": "CRP",
+      "lineno": 837,
+      "col_offset": 75,
+      "end_lineno": 837,
+      "end_col_offset": 78,
+      "original": "\",\"",
+      "replacement": "('XX,XX')"
+    },
+    {
+      "id": "3adfd77f0103",
+      "operator": "COND",
+      "lineno": 839,
+      "col_offset": 11,
+      "end_lineno": 839,
+      "end_col_offset": 36,
+      "original": "is_ipv4_address(hostname)",
+      "replacement": "(not is_ipv4_address(hostname))"
+    },
+    {
+      "id": "77113b1bda74",
+      "operator": "CRP",
+      "lineno": 843,
+      "col_offset": 31,
+      "end_lineno": 843,
+      "end_col_offset": 35,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "9863e6a396ef",
+      "operator": "RET",
+      "lineno": 847,
+      "col_offset": 20,
+      "end_lineno": 847,
+      "end_col_offset": 31,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "96fb6595300f",
+      "operator": "COND",
+      "lineno": 850,
+      "col_offset": 15,
+      "end_lineno": 850,
+      "end_col_offset": 26,
+      "original": "parsed.port",
+      "replacement": "(not parsed.port)"
+    },
+    {
+      "id": "39570d751d72",
+      "operator": "CRP",
+      "lineno": 854,
+      "col_offset": 35,
+      "end_lineno": 854,
+      "end_col_offset": 38,
+      "original": "\".\"",
+      "replacement": "('XX.XX')"
+    },
+    {
+      "id": "a93b29a12934",
+      "operator": "RET",
+      "lineno": 856,
+      "col_offset": 20,
+      "end_lineno": 856,
+      "end_col_offset": 31,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "5b9809405854",
+      "operator": "RET",
+      "lineno": 859,
+      "col_offset": 20,
+      "end_lineno": 859,
+      "end_col_offset": 31,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "ec29da2fd6f4",
+      "operator": "CRP",
+      "lineno": 861,
+      "col_offset": 21,
+      "end_lineno": 861,
+      "end_col_offset": 31,
+      "original": "\"no_proxy\"",
+      "replacement": "('XXno_proxyXX')"
+    },
+    {
+      "id": "aadd2de69bab",
+      "operator": "CRP",
+      "lineno": 865,
+      "col_offset": 21,
+      "end_lineno": 865,
+      "end_col_offset": 26,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "17355def55f7",
+      "operator": "RET",
+      "lineno": 868,
+      "col_offset": 8,
+      "end_lineno": 868,
+      "end_col_offset": 19,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "19cbe53d3966",
+      "operator": "ROR",
+      "lineno": 893,
+      "col_offset": 7,
+      "end_lineno": 893,
+      "end_col_offset": 32,
+      "original": "urlparts.hostname is None",
+      "replacement": "(urlparts.hostname is not None)"
+    },
+    {
+      "id": "079c0248c50a",
+      "operator": "RET",
+      "lineno": 894,
+      "col_offset": 8,
+      "end_lineno": 894,
+      "end_col_offset": 63,
+      "original": "return proxies.get(urlparts.scheme, proxies.get(\"all\"))",
+      "replacement": "return None"
+    },
+    {
+      "id": "4ce9cfc6f919",
+      "operator": "AOR",
+      "lineno": 897,
+      "col_offset": 8,
+      "end_lineno": 897,
+      "end_col_offset": 51,
+      "original": "urlparts.scheme + \"://\" + urlparts.hostname",
+      "replacement": "(urlparts.scheme + '://' - urlparts.hostname)"
+    },
+    {
+      "id": "e2c4e6005c1d",
+      "operator": "CRP",
+      "lineno": 897,
+      "col_offset": 26,
+      "end_lineno": 897,
+      "end_col_offset": 31,
+      "original": "\"://\"",
+      "replacement": "('XX://XX')"
+    },
+    {
+      "id": "a5bdd9a8d960",
+      "operator": "CRP",
+      "lineno": 900,
+      "col_offset": 8,
+      "end_lineno": 900,
+      "end_col_offset": 13,
+      "original": "\"all\"",
+      "replacement": "('XXallXX')"
+    },
+    {
+      "id": "e964dc1f9001",
+      "operator": "ROR",
+      "lineno": 904,
+      "col_offset": 11,
+      "end_lineno": 904,
+      "end_col_offset": 31,
+      "original": "proxy_key in proxies",
+      "replacement": "(proxy_key not in proxies)"
+    },
+    {
+      "id": "af37a2e9dd40",
+      "operator": "CRP",
+      "lineno": 914,
+      "col_offset": 22,
+      "end_lineno": 914,
+      "end_col_offset": 26,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "3e0a9d73f818",
+      "operator": "ROR",
+      "lineno": 926,
+      "col_offset": 25,
+      "end_lineno": 926,
+      "end_col_offset": 44,
+      "original": "proxies is not None",
+      "replacement": "(proxies is None)"
+    },
+    {
+      "id": "6cf6fb525792",
+      "operator": "UOI",
+      "lineno": 932,
+      "col_offset": 21,
+      "end_lineno": 932,
+      "end_col_offset": 70,
+      "original": "not should_bypass_proxies(url, no_proxy=no_proxy)",
+      "replacement": "(should_bypass_proxies(url, no_proxy=no_proxy))"
+    },
+    {
+      "id": "9dc54df92294",
+      "operator": "RET",
+      "lineno": 939,
+      "col_offset": 4,
+      "end_lineno": 939,
+      "end_col_offset": 22,
+      "original": "return new_proxies",
+      "replacement": "return None"
+    },
+    {
+      "id": "136e36677ea4",
+      "operator": "RET",
+      "lineno": 948,
+      "col_offset": 4,
+      "end_lineno": 948,
+      "end_col_offset": 34,
+      "original": "return f\"{name}/{__version__}\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "349b81e5e682",
+      "operator": "CRP",
+      "lineno": 957,
+      "col_offset": 12,
+      "end_lineno": 957,
+      "end_col_offset": 24,
+      "original": "\"User-Agent\"",
+      "replacement": "('XXUser-AgentXX')"
+    },
+    {
+      "id": "1031ae3f136c",
+      "operator": "CRP",
+      "lineno": 958,
+      "col_offset": 12,
+      "end_lineno": 958,
+      "end_col_offset": 29,
+      "original": "\"Accept-Encoding\"",
+      "replacement": "('XXAccept-EncodingXX')"
+    },
+    {
+      "id": "0b53918e90bd",
+      "operator": "CRP",
+      "lineno": 959,
+      "col_offset": 12,
+      "end_lineno": 959,
+      "end_col_offset": 20,
+      "original": "\"Accept\"",
+      "replacement": "('XXAcceptXX')"
+    },
+    {
+      "id": "1f7210619e0a",
+      "operator": "CRP",
+      "lineno": 959,
+      "col_offset": 22,
+      "end_lineno": 959,
+      "end_col_offset": 27,
+      "original": "\"*/*\"",
+      "replacement": "('XX*/*XX')"
+    },
+    {
+      "id": "73893f6d04c3",
+      "operator": "CRP",
+      "lineno": 960,
+      "col_offset": 12,
+      "end_lineno": 960,
+      "end_col_offset": 24,
+      "original": "\"Connection\"",
+      "replacement": "('XXConnectionXX')"
+    },
+    {
+      "id": "6da67455ea1d",
+      "operator": "CRP",
+      "lineno": 960,
+      "col_offset": 26,
+      "end_lineno": 960,
+      "end_col_offset": 38,
+      "original": "\"keep-alive\"",
+      "replacement": "('XXkeep-aliveXX')"
+    },
+    {
+      "id": "f3aa4b39a1da",
+      "operator": "UOI",
+      "lineno": 978,
+      "col_offset": 7,
+      "end_lineno": 978,
+      "end_col_offset": 16,
+      "original": "not value",
+      "replacement": "(value)"
+    },
+    {
+      "id": "3fdb7dda97d2",
+      "operator": "CRP",
+      "lineno": 985,
+      "col_offset": 31,
+      "end_lineno": 985,
+      "end_col_offset": 33,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "31712e2a4b34",
+      "operator": "CRP",
+      "lineno": 987,
+      "col_offset": 32,
+      "end_lineno": 987,
+      "end_col_offset": 37,
+      "original": "\"url\"",
+      "replacement": "('XXurlXX')"
+    },
+    {
+      "id": "1f6766495c4d",
+      "operator": "CRP",
+      "lineno": 989,
+      "col_offset": 34,
+      "end_lineno": 989,
+      "end_col_offset": 37,
+      "original": "\";\"",
+      "replacement": "('XX;XX')"
+    },
+    {
+      "id": "368377d0c369",
+      "operator": "RET",
+      "lineno": 999,
+      "col_offset": 4,
+      "end_lineno": 999,
+      "end_col_offset": 16,
+      "original": "return links",
+      "replacement": "return None"
+    },
+    {
+      "id": "2722c0f3aabf",
+      "operator": "CRP",
+      "lineno": 1003,
+      "col_offset": 8,
+      "end_lineno": 1003,
+      "end_col_offset": 14,
+      "original": "\"\\x00\"",
+      "replacement": "('XX\\x00XX')"
+    },
+    {
+      "id": "297efb460b1c",
+      "operator": "CRP",
+      "lineno": 1003,
+      "col_offset": 22,
+      "end_lineno": 1003,
+      "end_col_offset": 29,
+      "original": "\"ascii\"",
+      "replacement": "('XXasciiXX')"
+    },
+    {
+      "id": "5d12888ce5d7",
+      "operator": "AOR",
+      "lineno": 1005,
+      "col_offset": 9,
+      "end_lineno": 1005,
+      "end_col_offset": 18,
+      "original": "_null * 3",
+      "replacement": "(_null / 3)"
+    },
+    {
+      "id": "712aef1a7f7f",
+      "operator": "CRP",
+      "lineno": 1015,
+      "col_offset": 19,
+      "end_lineno": 1015,
+      "end_col_offset": 20,
+      "original": "4",
+      "replacement": "(5)"
+    },
+    {
+      "id": "124a1f5eccf8",
+      "operator": "ROR",
+      "lineno": 1016,
+      "col_offset": 7,
+      "end_lineno": 1016,
+      "end_col_offset": 59,
+      "original": "sample in (codecs.BOM_UTF32_LE, codecs.BOM_UTF32_BE)",
+      "replacement": "(sample not in (codecs.BOM_UTF32_LE, codecs.BOM_UTF32_BE))"
+    },
+    {
+      "id": "b9d5e911516c",
+      "operator": "RET",
+      "lineno": 1017,
+      "col_offset": 8,
+      "end_lineno": 1017,
+      "end_col_offset": 23,
+      "original": "return \"utf-32\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "ac2512a4b5b8",
+      "operator": "CRP",
+      "lineno": 1017,
+      "col_offset": 15,
+      "end_lineno": 1017,
+      "end_col_offset": 23,
+      "original": "\"utf-32\"",
+      "replacement": "('XXutf-32XX')"
+    },
+    {
+      "id": "459080908ce6",
+      "operator": "ROR",
+      "lineno": 1018,
+      "col_offset": 7,
+      "end_lineno": 1018,
+      "end_col_offset": 36,
+      "original": "sample[:3] == codecs.BOM_UTF8",
+      "replacement": "(sample[:3] != codecs.BOM_UTF8)"
+    },
+    {
+      "id": "e8b4dde346b3",
+      "operator": "RET",
+      "lineno": 1019,
+      "col_offset": 8,
+      "end_lineno": 1019,
+      "end_col_offset": 26,
+      "original": "return \"utf-8-sig\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "61c5c3340166",
+      "operator": "CRP",
+      "lineno": 1019,
+      "col_offset": 15,
+      "end_lineno": 1019,
+      "end_col_offset": 26,
+      "original": "\"utf-8-sig\"",
+      "replacement": "('XXutf-8-sigXX')"
+    },
+    {
+      "id": "99ee9d756d9d",
+      "operator": "ROR",
+      "lineno": 1020,
+      "col_offset": 7,
+      "end_lineno": 1020,
+      "end_col_offset": 63,
+      "original": "sample[:2] in (codecs.BOM_UTF16_LE, codecs.BOM_UTF16_BE)",
+      "replacement": "(sample[:2] not in (codecs.BOM_UTF16_LE, codecs.BOM_UTF16_BE))"
+    },
+    {
+      "id": "028cbb5165c7",
+      "operator": "RET",
+      "lineno": 1021,
+      "col_offset": 8,
+      "end_lineno": 1021,
+      "end_col_offset": 23,
+      "original": "return \"utf-16\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "606949409672",
+      "operator": "CRP",
+      "lineno": 1023,
+      "col_offset": 20,
+      "end_lineno": 1023,
+      "end_col_offset": 21,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "a7052703eb9e",
+      "operator": "CRP",
+      "lineno": 1024,
+      "col_offset": 15,
+      "end_lineno": 1024,
+      "end_col_offset": 22,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "b92a1d4a6314",
+      "operator": "ROR",
+      "lineno": 1025,
+      "col_offset": 7,
+      "end_lineno": 1025,
+      "end_col_offset": 21,
+      "original": "nullcount == 2",
+      "replacement": "(nullcount != 2)"
+    },
+    {
+      "id": "c58152c4fe92",
+      "operator": "RET",
+      "lineno": 1027,
+      "col_offset": 12,
+      "end_lineno": 1027,
+      "end_col_offset": 30,
+      "original": "return \"utf-16-be\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "d68e8be1d33d",
+      "operator": "CRP",
+      "lineno": 1027,
+      "col_offset": 19,
+      "end_lineno": 1027,
+      "end_col_offset": 30,
+      "original": "\"utf-16-be\"",
+      "replacement": "('XXutf-16-beXX')"
+    },
+    {
+      "id": "9eed35f03faa",
+      "operator": "CRP",
+      "lineno": 1028,
+      "col_offset": 21,
+      "end_lineno": 1028,
+      "end_col_offset": 22,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "047e3d180acf",
+      "operator": "ROR",
+      "lineno": 1031,
+      "col_offset": 7,
+      "end_lineno": 1031,
+      "end_col_offset": 21,
+      "original": "nullcount == 3",
+      "replacement": "(nullcount != 3)"
+    },
+    {
+      "id": "a9f3cd284f96",
+      "operator": "CRP",
+      "lineno": 1033,
+      "col_offset": 19,
+      "end_lineno": 1033,
+      "end_col_offset": 30,
+      "original": "\"utf-32-be\"",
+      "replacement": "('XXutf-32-beXX')"
+    },
+    {
+      "id": "a31ab12ab9cb",
+      "operator": "ROR",
+      "lineno": 1034,
+      "col_offset": 11,
+      "end_lineno": 1034,
+      "end_col_offset": 31,
+      "original": "sample[1:] == _null3",
+      "replacement": "(sample[1:] != _null3)"
+    },
+    {
+      "id": "15eca9779fc6",
+      "operator": "CRP",
+      "lineno": 1034,
+      "col_offset": 18,
+      "end_lineno": 1034,
+      "end_col_offset": 19,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "eb771186a323",
+      "operator": "COND",
+      "lineno": 1057,
+      "col_offset": 7,
+      "end_lineno": 1057,
+      "end_col_offset": 11,
+      "original": "auth",
+      "replacement": "(not auth)"
+    },
+    {
+      "id": "d2d37aa9cbb8",
+      "operator": "ROR",
+      "lineno": 1062,
+      "col_offset": 7,
+      "end_lineno": 1062,
+      "end_col_offset": 21,
+      "original": "scheme is None",
+      "replacement": "(scheme is not None)"
+    },
+    {
+      "id": "c67c753b843e",
+      "operator": "RET",
+      "lineno": 1067,
+      "col_offset": 4,
+      "end_lineno": 1067,
+      "end_col_offset": 66,
+      "original": "return urlunparse((scheme, netloc, path, \"\", query, fragment))",
+      "replacement": "return None"
+    },
+    {
+      "id": "11867499a1aa",
+      "operator": "CRP",
+      "lineno": 1082,
+      "col_offset": 20,
+      "end_lineno": 1082,
+      "end_col_offset": 22,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "75522d21352f",
+      "operator": "RET",
+      "lineno": 1084,
+      "col_offset": 4,
+      "end_lineno": 1084,
+      "end_col_offset": 15,
+      "original": "return auth",
+      "replacement": "return None"
+    },
+    {
+      "id": "3a79d325a6ac",
+      "operator": "CRP",
+      "lineno": 1094,
+      "col_offset": 40,
+      "end_lineno": 1094,
+      "end_col_offset": 41,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "b09ed4d4955f",
+      "operator": "CRP",
+      "lineno": 1095,
+      "col_offset": 41,
+      "end_lineno": 1095,
+      "end_col_offset": 42,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "de3bf456a72d",
+      "operator": "CRP",
+      "lineno": 1115,
+      "col_offset": 58,
+      "end_lineno": 1115,
+      "end_col_offset": 59,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "f9ff51bb9559",
+      "operator": "UOI",
+      "lineno": 1131,
+      "col_offset": 7,
+      "end_lineno": 1131,
+      "end_col_offset": 17,
+      "original": "not netloc",
+      "replacement": "(netloc)"
+    },
+    {
+      "id": "0ac7d0cc3055",
+      "operator": "CRP",
+      "lineno": 1134,
+      "col_offset": 27,
+      "end_lineno": 1134,
+      "end_col_offset": 30,
+      "original": "\"@\"",
+      "replacement": "('XX@XX')"
+    },
+    {
+      "id": "25c1974d8150",
+      "operator": "CRP",
+      "lineno": 1136,
+      "col_offset": 60,
+      "end_lineno": 1136,
+      "end_col_offset": 62,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "3e8514970731",
+      "operator": "CRP",
+      "lineno": 1152,
+      "col_offset": 16,
+      "end_lineno": 1152,
+      "end_col_offset": 77,
+      "original": "\"An error occurred when rewinding request body for redirect.\"",
+      "replacement": "('XXAn error occurred when rewinding request body for redirect.XX')"
+    }
+  ]
+}

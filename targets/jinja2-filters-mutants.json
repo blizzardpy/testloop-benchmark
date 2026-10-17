@@ -1,0 +1,2011 @@
+{
+  "target": "jinja2-filters",
+  "module_file": "src/jinja2/filters.py",
+  "source_sha256": "4710ac67c53b98a3a98182852379cd9b2a00a6e9cc957a6ac598e3767f45836f",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 438,
+  "mutants": [
+    {
+      "id": "6e9f213a0f74",
+      "operator": "COND",
+      "lineno": 31,
+      "col_offset": 3,
+      "end_lineno": 31,
+      "end_col_offset": 18,
+      "original": "t.TYPE_CHECKING",
+      "replacement": "(not t.TYPE_CHECKING)"
+    },
+    {
+      "id": "a98f12a219e7",
+      "operator": "LCR",
+      "lineno": 75,
+      "col_offset": 15,
+      "end_lineno": 75,
+      "end_col_offset": 66,
+      "original": "default is not None and isinstance(item, Undefined)",
+      "replacement": "(default is not None or isinstance(item, Undefined))"
+    },
+    {
+      "id": "ab9d2026b487",
+      "operator": "ROR",
+      "lineno": 75,
+      "col_offset": 15,
+      "end_lineno": 75,
+      "end_col_offset": 34,
+      "original": "default is not None",
+      "replacement": "(default is None)"
+    },
+    {
+      "id": "eaf290af194d",
+      "operator": "RET",
+      "lineno": 83,
+      "col_offset": 4,
+      "end_lineno": 83,
+      "end_col_offset": 21,
+      "original": "return attrgetter",
+      "replacement": "return None"
+    },
+    {
+      "id": "6ccb6a83bf19",
+      "operator": "CRP",
+      "lineno": 102,
+      "col_offset": 62,
+      "end_lineno": 102,
+      "end_col_offset": 65,
+      "original": "\",\"",
+      "replacement": "('XX,XX')"
+    },
+    {
+      "id": "83aee5dd7104",
+      "operator": "AOR",
+      "lineno": 109,
+      "col_offset": 16,
+      "end_lineno": 109,
+      "end_col_offset": 35,
+      "original": "[None] * len(parts)",
+      "replacement": "([None] / len(parts))"
+    },
+    {
+      "id": "d2a7768f171e",
+      "operator": "RET",
+      "lineno": 122,
+      "col_offset": 8,
+      "end_lineno": 122,
+      "end_col_offset": 20,
+      "original": "return items",
+      "replacement": "return None"
+    },
+    {
+      "id": "7df028f3fb71",
+      "operator": "ROR",
+      "lineno": 130,
+      "col_offset": 7,
+      "end_lineno": 130,
+      "end_col_offset": 19,
+      "original": "attr is None",
+      "replacement": "(attr is not None)"
+    },
+    {
+      "id": "08ae6d46eb08",
+      "operator": "RET",
+      "lineno": 131,
+      "col_offset": 8,
+      "end_lineno": 131,
+      "end_col_offset": 17,
+      "original": "return []",
+      "replacement": "return None"
+    },
+    {
+      "id": "1d114bdacead",
+      "operator": "COND",
+      "lineno": 133,
+      "col_offset": 7,
+      "end_lineno": 133,
+      "end_col_offset": 28,
+      "original": "isinstance(attr, str)",
+      "replacement": "(not isinstance(attr, str))"
+    },
+    {
+      "id": "d2962326c852",
+      "operator": "RET",
+      "lineno": 136,
+      "col_offset": 4,
+      "end_lineno": 136,
+      "end_col_offset": 17,
+      "original": "return [attr]",
+      "replacement": "return None"
+    },
+    {
+      "id": "a8be6dd210e8",
+      "operator": "COND",
+      "lineno": 168,
+      "col_offset": 7,
+      "end_lineno": 168,
+      "end_col_offset": 30,
+      "original": "isinstance(value, dict)",
+      "replacement": "(not isinstance(value, dict))"
+    },
+    {
+      "id": "f98aafdc2413",
+      "operator": "RET",
+      "lineno": 173,
+      "col_offset": 4,
+      "end_lineno": 175,
+      "end_col_offset": 5,
+      "original": "return \"&\".join( f\"{url_quote(k, for_qs=True)}={url_quote(v, for_qs=True)}\" for k, v in items )",
+      "replacement": "return None"
+    },
+    {
+      "id": "2a0fd52d2931",
+      "operator": "UOI",
+      "lineno": 197,
+      "col_offset": 16,
+      "end_lineno": 197,
+      "end_col_offset": 18,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "b13c89834d7f",
+      "operator": "CRP",
+      "lineno": 197,
+      "col_offset": 17,
+      "end_lineno": 197,
+      "end_col_offset": 18,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "69e53faa8767",
+      "operator": "UOI",
+      "lineno": 199,
+      "col_offset": 7,
+      "end_lineno": 199,
+      "end_col_offset": 30,
+      "original": "not eval_ctx.autoescape",
+      "replacement": "(eval_ctx.autoescape)"
+    },
+    {
+      "id": "89680c341a5b",
+      "operator": "LCR",
+      "lineno": 204,
+      "col_offset": 11,
+      "end_lineno": 205,
+      "end_col_offset": 38,
+      "original": "hasattr(new, \"__html__\") and not hasattr(s, \"__html__\")",
+      "replacement": "(hasattr(new, '__html__') or not hasattr(s, '__html__'))"
+    },
+    {
+      "id": "2c0dcba2a41b",
+      "operator": "CRP",
+      "lineno": 204,
+      "col_offset": 24,
+      "end_lineno": 204,
+      "end_col_offset": 34,
+      "original": "\"__html__\"",
+      "replacement": "('XX__html__XX')"
+    },
+    {
+      "id": "e0fa52d4f71d",
+      "operator": "UOI",
+      "lineno": 205,
+      "col_offset": 12,
+      "end_lineno": 205,
+      "end_col_offset": 38,
+      "original": "not hasattr(s, \"__html__\")",
+      "replacement": "(hasattr(s, '__html__'))"
+    },
+    {
+      "id": "49a81b31242b",
+      "operator": "RET",
+      "lineno": 211,
+      "col_offset": 4,
+      "end_lineno": 211,
+      "end_col_offset": 57,
+      "original": "return s.replace(soft_str(old), soft_str(new), count)",
+      "replacement": "return None"
+    },
+    {
+      "id": "d5e74adf72ec",
+      "operator": "RET",
+      "lineno": 216,
+      "col_offset": 4,
+      "end_lineno": 216,
+      "end_col_offset": 30,
+      "original": "return soft_str(s).upper()",
+      "replacement": "return None"
+    },
+    {
+      "id": "70e2b0f36649",
+      "operator": "RET",
+      "lineno": 221,
+      "col_offset": 4,
+      "end_lineno": 221,
+      "end_col_offset": 30,
+      "original": "return soft_str(s).lower()",
+      "replacement": "return None"
+    },
+    {
+      "id": "27cd4e8d670b",
+      "operator": "COND",
+      "lineno": 245,
+      "col_offset": 7,
+      "end_lineno": 245,
+      "end_col_offset": 35,
+      "original": "isinstance(value, Undefined)",
+      "replacement": "(not isinstance(value, Undefined))"
+    },
+    {
+      "id": "0870652616a0",
+      "operator": "CRP",
+      "lineno": 249,
+      "col_offset": 24,
+      "end_lineno": 249,
+      "end_col_offset": 65,
+      "original": "\"Can only get item pairs from a mapping.\"",
+      "replacement": "('XXCan only get item pairs from a mapping.XX')"
+    },
+    {
+      "id": "7df310374dbb",
+      "operator": "CRP",
+      "lineno": 256,
+      "col_offset": 26,
+      "end_lineno": 256,
+      "end_col_offset": 36,
+      "original": "r\"[\\s/>=]\"",
+      "replacement": "('XX[\\\\s/>=]XX')"
+    },
+    {
+      "id": "f96bb4252bad",
+      "operator": "CRP",
+      "lineno": 261,
+      "col_offset": 73,
+      "end_lineno": 261,
+      "end_col_offset": 77,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "becc7fb7ec41",
+      "operator": "BRK",
+      "lineno": 303,
+      "col_offset": 12,
+      "end_lineno": 303,
+      "end_col_offset": 20,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "da19ecac9a65",
+      "operator": "AOR",
+      "lineno": 313,
+      "col_offset": 13,
+      "end_lineno": 313,
+      "end_col_offset": 21,
+      "original": "\" \" + rv",
+      "replacement": "(' ' - rv)"
+    },
+    {
+      "id": "1bc168675271",
+      "operator": "COND",
+      "lineno": 315,
+      "col_offset": 7,
+      "end_lineno": 315,
+      "end_col_offset": 26,
+      "original": "eval_ctx.autoescape",
+      "replacement": "(not eval_ctx.autoescape)"
+    },
+    {
+      "id": "f2a361d94f73",
+      "operator": "RET",
+      "lineno": 325,
+      "col_offset": 4,
+      "end_lineno": 325,
+      "end_col_offset": 35,
+      "original": "return soft_str(s).capitalize()",
+      "replacement": "return None"
+    },
+    {
+      "id": "31a461170b49",
+      "operator": "CRP",
+      "lineno": 335,
+      "col_offset": 11,
+      "end_lineno": 335,
+      "end_col_offset": 13,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "d3a36faeae31",
+      "operator": "CRP",
+      "lineno": 347,
+      "col_offset": 39,
+      "end_lineno": 347,
+      "end_col_offset": 44,
+      "original": "\"key\"",
+      "replacement": "('XXkeyXX')"
+    },
+    {
+      "id": "973f52e9c3bb",
+      "operator": "CRP",
+      "lineno": 348,
+      "col_offset": 20,
+      "end_lineno": 348,
+      "end_col_offset": 25,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "1f6ee64daafa",
+      "operator": "CRP",
+      "lineno": 367,
+      "col_offset": 13,
+      "end_lineno": 367,
+      "end_col_offset": 18,
+      "original": "\"key\"",
+      "replacement": "('XXkeyXX')"
+    },
+    {
+      "id": "1d7bc2c4cff4",
+      "operator": "CRP",
+      "lineno": 368,
+      "col_offset": 14,
+      "end_lineno": 368,
+      "end_col_offset": 15,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "cb90dc22910d",
+      "operator": "ROR",
+      "lineno": 369,
+      "col_offset": 9,
+      "end_lineno": 369,
+      "end_col_offset": 22,
+      "original": "by == \"value\"",
+      "replacement": "(by != 'value')"
+    },
+    {
+      "id": "ae9c74beb68e",
+      "operator": "CRP",
+      "lineno": 445,
+      "col_offset": 27,
+      "end_lineno": 445,
+      "end_col_offset": 32,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "2e8a194f12ce",
+      "operator": "RET",
+      "lineno": 481,
+      "col_offset": 4,
+      "end_lineno": 483,
+      "end_col_offset": 5,
+      "original": "return sync_do_unique( environment, await auto_to_list(value), case_sensitive, attribute )",
+      "replacement": "return None"
+    },
+    {
+      "id": "59093674efb1",
+      "operator": "RET",
+      "lineno": 498,
+      "col_offset": 8,
+      "end_lineno": 498,
+      "end_col_offset": 79,
+      "original": "return environment.undefined(\"No aggregated item, sequence was empty.\")",
+      "replacement": "return None"
+    },
+    {
+      "id": "f34c664b65b9",
+      "operator": "UOI",
+      "lineno": 501,
+      "col_offset": 59,
+      "end_lineno": 501,
+      "end_col_offset": 77,
+      "original": "not case_sensitive",
+      "replacement": "(case_sensitive)"
+    },
+    {
+      "id": "25b7808f8d67",
+      "operator": "RET",
+      "lineno": 503,
+      "col_offset": 4,
+      "end_lineno": 503,
+      "end_col_offset": 49,
+      "original": "return func(chain([first], it), key=key_func)",
+      "replacement": "return None"
+    },
+    {
+      "id": "64bf5e3fe6c4",
+      "operator": "CRP",
+      "lineno": 510,
+      "col_offset": 27,
+      "end_lineno": 510,
+      "end_col_offset": 32,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "24c420744ffe",
+      "operator": "RET",
+      "lineno": 523,
+      "col_offset": 4,
+      "end_lineno": 523,
+      "end_col_offset": 74,
+      "original": "return _min_or_max(environment, value, min, case_sensitive, attribute)",
+      "replacement": "return None"
+    },
+    {
+      "id": "e956f3f5b779",
+      "operator": "RET",
+      "lineno": 543,
+      "col_offset": 4,
+      "end_lineno": 543,
+      "end_col_offset": 74,
+      "original": "return _min_or_max(environment, value, max, case_sensitive, attribute)",
+      "replacement": "return None"
+    },
+    {
+      "id": "93e7892c7cbd",
+      "operator": "UOI",
+      "lineno": 573,
+      "col_offset": 52,
+      "end_lineno": 573,
+      "end_col_offset": 61,
+      "original": "not value",
+      "replacement": "(value)"
+    },
+    {
+      "id": "3fa01caa90fc",
+      "operator": "CRP",
+      "lineno": 583,
+      "col_offset": 13,
+      "end_lineno": 583,
+      "end_col_offset": 15,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "81cc013187bf",
+      "operator": "RET",
+      "lineno": 612,
+      "col_offset": 8,
+      "end_lineno": 612,
+      "end_col_offset": 43,
+      "original": "return str(d).join(map(str, value))",
+      "replacement": "return None"
+    },
+    {
+      "id": "26cb071b584e",
+      "operator": "UOI",
+      "lineno": 616,
+      "col_offset": 7,
+      "end_lineno": 616,
+      "end_col_offset": 33,
+      "original": "not hasattr(d, \"__html__\")",
+      "replacement": "(hasattr(d, '__html__'))"
+    },
+    {
+      "id": "54bb0bf4953c",
+      "operator": "CRP",
+      "lineno": 616,
+      "col_offset": 22,
+      "end_lineno": 616,
+      "end_col_offset": 32,
+      "original": "\"__html__\"",
+      "replacement": "('XX__html__XX')"
+    },
+    {
+      "id": "47be102ec6d0",
+      "operator": "CRP",
+      "lineno": 618,
+      "col_offset": 20,
+      "end_lineno": 618,
+      "end_col_offset": 25,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "2ad404c81063",
+      "operator": "CRP",
+      "lineno": 641,
+      "col_offset": 13,
+      "end_lineno": 641,
+      "end_col_offset": 15,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "05dbb7d33b76",
+      "operator": "CRP",
+      "lineno": 647,
+      "col_offset": 39,
+      "end_lineno": 647,
+      "end_col_offset": 41,
+      "original": "80",
+      "replacement": "(81)"
+    },
+    {
+      "id": "edfade2e7d95",
+      "operator": "RET",
+      "lineno": 649,
+      "col_offset": 4,
+      "end_lineno": 649,
+      "end_col_offset": 40,
+      "original": "return soft_str(value).center(width)",
+      "replacement": "return None"
+    },
+    {
+      "id": "f0a00f92f2cf",
+      "operator": "RET",
+      "lineno": 656,
+      "col_offset": 8,
+      "end_lineno": 656,
+      "end_col_offset": 30,
+      "original": "return next(iter(seq))",
+      "replacement": "return None"
+    },
+    {
+      "id": "ca73ac25237d",
+      "operator": "RET",
+      "lineno": 668,
+      "col_offset": 8,
+      "end_lineno": 668,
+      "end_col_offset": 74,
+      "original": "return environment.undefined(\"No first item, sequence was empty.\")",
+      "replacement": "return None"
+    },
+    {
+      "id": "bcabeb4c228e",
+      "operator": "CRP",
+      "lineno": 685,
+      "col_offset": 37,
+      "end_lineno": 685,
+      "end_col_offset": 72,
+      "original": "\"No last item, sequence was empty.\"",
+      "replacement": "('XXNo last item, sequence was empty.XX')"
+    },
+    {
+      "id": "4690c4d7bc04",
+      "operator": "RET",
+      "lineno": 695,
+      "col_offset": 8,
+      "end_lineno": 695,
+      "end_col_offset": 33,
+      "original": "return random.choice(seq)",
+      "replacement": "return None"
+    },
+    {
+      "id": "d3f6ed777f88",
+      "operator": "CRP",
+      "lineno": 707,
+      "col_offset": 31,
+      "end_lineno": 707,
+      "end_col_offset": 35,
+      "original": "1000",
+      "replacement": "(1001)"
+    },
+    {
+      "id": "a0174b636084",
+      "operator": "CRP",
+      "lineno": 709,
+      "col_offset": 30,
+      "end_lineno": 709,
+      "end_col_offset": 34,
+      "original": "\"kB\"",
+      "replacement": "('XXkBXX')"
+    },
+    {
+      "id": "8f833f43dc7c",
+      "operator": "CRP",
+      "lineno": 710,
+      "col_offset": 9,
+      "end_lineno": 710,
+      "end_col_offset": 14,
+      "original": "\"MiB\"",
+      "replacement": "('XXMiBXX')"
+    },
+    {
+      "id": "132bae2883a0",
+      "operator": "CRP",
+      "lineno": 711,
+      "col_offset": 30,
+      "end_lineno": 711,
+      "end_col_offset": 34,
+      "original": "\"GB\"",
+      "replacement": "('XXGBXX')"
+    },
+    {
+      "id": "f529a8c18c89",
+      "operator": "CRP",
+      "lineno": 712,
+      "col_offset": 9,
+      "end_lineno": 712,
+      "end_col_offset": 14,
+      "original": "\"TiB\"",
+      "replacement": "('XXTiBXX')"
+    },
+    {
+      "id": "6d178fd9d1e5",
+      "operator": "CRP",
+      "lineno": 713,
+      "col_offset": 9,
+      "end_lineno": 713,
+      "end_col_offset": 14,
+      "original": "\"PiB\"",
+      "replacement": "('XXPiBXX')"
+    },
+    {
+      "id": "9dcae2b25f37",
+      "operator": "CRP",
+      "lineno": 713,
+      "col_offset": 30,
+      "end_lineno": 713,
+      "end_col_offset": 34,
+      "original": "\"PB\"",
+      "replacement": "('XXPBXX')"
+    },
+    {
+      "id": "a1dccf0b92f9",
+      "operator": "CRP",
+      "lineno": 714,
+      "col_offset": 9,
+      "end_lineno": 714,
+      "end_col_offset": 14,
+      "original": "\"EiB\"",
+      "replacement": "('XXEiBXX')"
+    },
+    {
+      "id": "28ccc7f7626f",
+      "operator": "CRP",
+      "lineno": 716,
+      "col_offset": 30,
+      "end_lineno": 716,
+      "end_col_offset": 34,
+      "original": "\"YB\"",
+      "replacement": "('XXYBXX')"
+    },
+    {
+      "id": "8f6ae32ff5f4",
+      "operator": "ROR",
+      "lineno": 719,
+      "col_offset": 7,
+      "end_lineno": 719,
+      "end_col_offset": 17,
+      "original": "bytes == 1",
+      "replacement": "(bytes != 1)"
+    },
+    {
+      "id": "a685dd887bf5",
+      "operator": "CRP",
+      "lineno": 720,
+      "col_offset": 15,
+      "end_lineno": 720,
+      "end_col_offset": 23,
+      "original": "\"1 Byte\"",
+      "replacement": "('XX1 ByteXX')"
+    },
+    {
+      "id": "11e1fd2f2fb7",
+      "operator": "AOR",
+      "lineno": 725,
+      "col_offset": 19,
+      "end_lineno": 725,
+      "end_col_offset": 34,
+      "original": "base ** (i + 2)",
+      "replacement": "(base * (i + 2))"
+    },
+    {
+      "id": "38e278842915",
+      "operator": "AOR",
+      "lineno": 725,
+      "col_offset": 28,
+      "end_lineno": 725,
+      "end_col_offset": 33,
+      "original": "i + 2",
+      "replacement": "(i - 2)"
+    },
+    {
+      "id": "5fb5305c5621",
+      "operator": "CRP",
+      "lineno": 725,
+      "col_offset": 32,
+      "end_lineno": 725,
+      "end_col_offset": 33,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "af2099ce0364",
+      "operator": "RET",
+      "lineno": 730,
+      "col_offset": 8,
+      "end_lineno": 730,
+      "end_col_offset": 52,
+      "original": "return f\"{base * bytes / unit:.1f} {prefix}\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "75108fa0c199",
+      "operator": "CRP",
+      "lineno": 746,
+      "col_offset": 21,
+      "end_lineno": 746,
+      "end_col_offset": 26,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "07e1d8b12421",
+      "operator": "LCR",
+      "lineno": 789,
+      "col_offset": 21,
+      "end_lineno": 789,
+      "end_col_offset": 30,
+      "original": "rel or \"\"",
+      "replacement": "(rel and '')"
+    },
+    {
+      "id": "12774a9172fb",
+      "operator": "CRP",
+      "lineno": 789,
+      "col_offset": 28,
+      "end_lineno": 789,
+      "end_col_offset": 30,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "bc364d6fb8fc",
+      "operator": "COND",
+      "lineno": 791,
+      "col_offset": 7,
+      "end_lineno": 791,
+      "end_col_offset": 15,
+      "original": "nofollow",
+      "replacement": "(not nofollow)"
+    },
+    {
+      "id": "3db14583dc64",
+      "operator": "LCR",
+      "lineno": 795,
+      "col_offset": 10,
+      "end_lineno": 795,
+      "end_col_offset": 45,
+      "original": "\" \".join(sorted(rel_parts)) or None",
+      "replacement": "(' '.join(sorted(rel_parts)) and None)"
+    },
+    {
+      "id": "6924e2c75c79",
+      "operator": "ROR",
+      "lineno": 797,
+      "col_offset": 7,
+      "end_lineno": 797,
+      "end_col_offset": 21,
+      "original": "target is None",
+      "replacement": "(target is not None)"
+    },
+    {
+      "id": "678ca8151b50",
+      "operator": "ROR",
+      "lineno": 800,
+      "col_offset": 7,
+      "end_lineno": 800,
+      "end_col_offset": 28,
+      "original": "extra_schemes is None",
+      "replacement": "(extra_schemes is not None)"
+    },
+    {
+      "id": "c07ac28a05e4",
+      "operator": "LCR",
+      "lineno": 801,
+      "col_offset": 24,
+      "end_lineno": 801,
+      "end_col_offset": 62,
+      "original": "policies[\"urlize.extra_schemes\"] or ()",
+      "replacement": "(policies['urlize.extra_schemes'] and ())"
+    },
+    {
+      "id": "f23c13f1ba09",
+      "operator": "CRP",
+      "lineno": 801,
+      "col_offset": 33,
+      "end_lineno": 801,
+      "end_col_offset": 55,
+      "original": "\"urlize.extra_schemes\"",
+      "replacement": "('XXurlize.extra_schemesXX')"
+    },
+    {
+      "id": "3686431faec5",
+      "operator": "CRP",
+      "lineno": 822,
+      "col_offset": 31,
+      "end_lineno": 822,
+      "end_col_offset": 32,
+      "original": "4",
+      "replacement": "(5)"
+    },
+    {
+      "id": "d9dd9566ee51",
+      "operator": "CRP",
+      "lineno": 822,
+      "col_offset": 69,
+      "end_lineno": 822,
+      "end_col_offset": 74,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "eb80060ab7f4",
+      "operator": "COND",
+      "lineno": 839,
+      "col_offset": 7,
+      "end_lineno": 839,
+      "end_col_offset": 29,
+      "original": "isinstance(width, str)",
+      "replacement": "(not isinstance(width, str))"
+    },
+    {
+      "id": "83c4d100f4a3",
+      "operator": "COND",
+      "lineno": 852,
+      "col_offset": 7,
+      "end_lineno": 852,
+      "end_col_offset": 12,
+      "original": "blank",
+      "replacement": "(not blank)"
+    },
+    {
+      "id": "b93627ab016a",
+      "operator": "AOR",
+      "lineno": 853,
+      "col_offset": 14,
+      "end_lineno": 853,
+      "end_col_offset": 33,
+      "original": "newline + indention",
+      "replacement": "(newline - indention)"
+    },
+    {
+      "id": "0f0c7ce3a101",
+      "operator": "ASG",
+      "lineno": 859,
+      "col_offset": 12,
+      "end_lineno": 861,
+      "end_col_offset": 13,
+      "original": "rv += newline + newline.join( indention + line if line else line for line in lines )",
+      "replacement": "rv -= newline + newline.join((indention + line if line else line for line in lines))"
+    },
+    {
+      "id": "5a79a35c5f3a",
+      "operator": "AOR",
+      "lineno": 859,
+      "col_offset": 18,
+      "end_lineno": 861,
+      "end_col_offset": 13,
+      "original": "newline + newline.join( indention + line if line else line for line in lines )",
+      "replacement": "(newline - newline.join((indention + line if line else line for line in lines)))"
+    },
+    {
+      "id": "677ec91b0a75",
+      "operator": "AOR",
+      "lineno": 864,
+      "col_offset": 13,
+      "end_lineno": 864,
+      "end_col_offset": 27,
+      "original": "indention + rv",
+      "replacement": "(indention - rv)"
+    },
+    {
+      "id": "db8c17d146dd",
+      "operator": "CRP",
+      "lineno": 874,
+      "col_offset": 22,
+      "end_lineno": 874,
+      "end_col_offset": 27,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "f75647f95521",
+      "operator": "ROR",
+      "lineno": 907,
+      "col_offset": 7,
+      "end_lineno": 907,
+      "end_col_offset": 32,
+      "original": "len(s) <= length + leeway",
+      "replacement": "(len(s) < length + leeway)"
+    },
+    {
+      "id": "03f1f2e0a72d",
+      "operator": "AOR",
+      "lineno": 907,
+      "col_offset": 17,
+      "end_lineno": 907,
+      "end_col_offset": 32,
+      "original": "length + leeway",
+      "replacement": "(length - leeway)"
+    },
+    {
+      "id": "8497a2a7cab2",
+      "operator": "COND",
+      "lineno": 910,
+      "col_offset": 7,
+      "end_lineno": 910,
+      "end_col_offset": 16,
+      "original": "killwords",
+      "replacement": "(not killwords)"
+    },
+    {
+      "id": "61f26a6a55d0",
+      "operator": "RET",
+      "lineno": 911,
+      "col_offset": 8,
+      "end_lineno": 911,
+      "end_col_offset": 43,
+      "original": "return s[: length - len(end)] + end",
+      "replacement": "return None"
+    },
+    {
+      "id": "273521c83857",
+      "operator": "CRP",
+      "lineno": 913,
+      "col_offset": 43,
+      "end_lineno": 913,
+      "end_col_offset": 46,
+      "original": "\" \"",
+      "replacement": "('XX XX')"
+    },
+    {
+      "id": "6e5ab70d9d49",
+      "operator": "CRP",
+      "lineno": 913,
+      "col_offset": 48,
+      "end_lineno": 913,
+      "end_col_offset": 49,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "a1d9fc418862",
+      "operator": "AOR",
+      "lineno": 914,
+      "col_offset": 11,
+      "end_lineno": 914,
+      "end_col_offset": 23,
+      "original": "result + end",
+      "replacement": "(result - end)"
+    },
+    {
+      "id": "7d08d9fe7ceb",
+      "operator": "CRP",
+      "lineno": 921,
+      "col_offset": 17,
+      "end_lineno": 921,
+      "end_col_offset": 19,
+      "original": "79",
+      "replacement": "(80)"
+    },
+    {
+      "id": "f9b72afc213a",
+      "operator": "CRP",
+      "lineno": 924,
+      "col_offset": 29,
+      "end_lineno": 924,
+      "end_col_offset": 33,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "0b522ac4f574",
+      "operator": "ROR",
+      "lineno": 949,
+      "col_offset": 7,
+      "end_lineno": 949,
+      "end_col_offset": 25,
+      "original": "wrapstring is None",
+      "replacement": "(wrapstring is not None)"
+    },
+    {
+      "id": "3556c581b6fc",
+      "operator": "RET",
+      "lineno": 956,
+      "col_offset": 4,
+      "end_lineno": 970,
+      "end_col_offset": 5,
+      "original": "return wrapstring.join( [ wrapstring.join( textwrap.wrap( line, width=width, expand_tabs=False, replace_whitespace=False, break_long_words=break_long_words, break_on_hyphens=break_on_hyphens, ) ) for line in s.splitlines() ] )",
+      "replacement": "return None"
+    },
+    {
+      "id": "58118f280fe4",
+      "operator": "RET",
+      "lineno": 978,
+      "col_offset": 4,
+      "end_lineno": 978,
+      "end_col_offset": 45,
+      "original": "return len(_word_re.findall(soft_str(s)))",
+      "replacement": "return None"
+    },
+    {
+      "id": "d35ee4e559f3",
+      "operator": "RET",
+      "lineno": 992,
+      "col_offset": 12,
+      "end_lineno": 992,
+      "end_col_offset": 35,
+      "original": "return int(value, base)",
+      "replacement": "return None"
+    },
+    {
+      "id": "ce06cd62bae9",
+      "operator": "RET",
+      "lineno": 998,
+      "col_offset": 12,
+      "end_lineno": 998,
+      "end_col_offset": 36,
+      "original": "return int(float(value))",
+      "replacement": "return None"
+    },
+    {
+      "id": "388270be64af",
+      "operator": "CRP",
+      "lineno": 1003,
+      "col_offset": 44,
+      "end_lineno": 1003,
+      "end_col_offset": 47,
+      "original": "0.0",
+      "replacement": "(1.0)"
+    },
+    {
+      "id": "72c0f35c4dc7",
+      "operator": "RET",
+      "lineno": 1009,
+      "col_offset": 8,
+      "end_lineno": 1009,
+      "end_col_offset": 27,
+      "original": "return float(value)",
+      "replacement": "return None"
+    },
+    {
+      "id": "1cebef3a2427",
+      "operator": "RET",
+      "lineno": 1011,
+      "col_offset": 8,
+      "end_lineno": 1011,
+      "end_col_offset": 22,
+      "original": "return default",
+      "replacement": "return None"
+    },
+    {
+      "id": "50ea2f85b3dd",
+      "operator": "RET",
+      "lineno": 1039,
+      "col_offset": 4,
+      "end_lineno": 1039,
+      "end_col_offset": 45,
+      "original": "return soft_str(value) % (kwargs or args)",
+      "replacement": "return None"
+    },
+    {
+      "id": "dee75f23e992",
+      "operator": "AOR",
+      "lineno": 1039,
+      "col_offset": 11,
+      "end_lineno": 1039,
+      "end_col_offset": 45,
+      "original": "soft_str(value) % (kwargs or args)",
+      "replacement": "(soft_str(value) / (kwargs or args))"
+    },
+    {
+      "id": "df3a3f4880ee",
+      "operator": "LCR",
+      "lineno": 1039,
+      "col_offset": 30,
+      "end_lineno": 1039,
+      "end_col_offset": 44,
+      "original": "kwargs or args",
+      "replacement": "(kwargs and args)"
+    },
+    {
+      "id": "693ed6fc3248",
+      "operator": "COND",
+      "lineno": 1049,
+      "col_offset": 7,
+      "end_lineno": 1049,
+      "end_col_offset": 33,
+      "original": "hasattr(value, \"__html__\")",
+      "replacement": "(not hasattr(value, '__html__'))"
+    },
+    {
+      "id": "13470c1ab715",
+      "operator": "AOR",
+      "lineno": 1079,
+      "col_offset": 22,
+      "end_lineno": 1079,
+      "end_col_offset": 38,
+      "original": "length // slices",
+      "replacement": "(length / slices)"
+    },
+    {
+      "id": "128f1d6170e7",
+      "operator": "AOR",
+      "lineno": 1080,
+      "col_offset": 24,
+      "end_lineno": 1080,
+      "end_col_offset": 39,
+      "original": "length % slices",
+      "replacement": "(length / slices)"
+    },
+    {
+      "id": "eafce16b76e8",
+      "operator": "CRP",
+      "lineno": 1081,
+      "col_offset": 13,
+      "end_lineno": 1081,
+      "end_col_offset": 14,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "9e50da096561",
+      "operator": "AOR",
+      "lineno": 1084,
+      "col_offset": 25,
+      "end_lineno": 1084,
+      "end_col_offset": 55,
+      "original": "slice_number * items_per_slice",
+      "replacement": "(slice_number / items_per_slice)"
+    },
+    {
+      "id": "456650738354",
+      "operator": "ROR",
+      "lineno": 1086,
+      "col_offset": 11,
+      "end_lineno": 1086,
+      "end_col_offset": 43,
+      "original": "slice_number < slices_with_extra",
+      "replacement": "(slice_number <= slices_with_extra)"
+    },
+    {
+      "id": "7afe9cb57727",
+      "operator": "AOR",
+      "lineno": 1089,
+      "col_offset": 24,
+      "end_lineno": 1089,
+      "end_col_offset": 40,
+      "original": "slice_number + 1",
+      "replacement": "(slice_number - 1)"
+    },
+    {
+      "id": "9cb7c4552d32",
+      "operator": "CRP",
+      "lineno": 1089,
+      "col_offset": 39,
+      "end_lineno": 1089,
+      "end_col_offset": 40,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "77fb60cafcda",
+      "operator": "LCR",
+      "lineno": 1092,
+      "col_offset": 11,
+      "end_lineno": 1092,
+      "end_col_offset": 70,
+      "original": "fill_with is not None and slice_number >= slices_with_extra",
+      "replacement": "(fill_with is not None or slice_number >= slices_with_extra)"
+    },
+    {
+      "id": "9049c8d5b3cf",
+      "operator": "ROR",
+      "lineno": 1092,
+      "col_offset": 11,
+      "end_lineno": 1092,
+      "end_col_offset": 32,
+      "original": "fill_with is not None",
+      "replacement": "(fill_with is None)"
+    },
+    {
+      "id": "44ba0f4d7327",
+      "operator": "ROR",
+      "lineno": 1131,
+      "col_offset": 11,
+      "end_lineno": 1131,
+      "end_col_offset": 32,
+      "original": "len(tmp) == linecount",
+      "replacement": "(len(tmp) != linecount)"
+    },
+    {
+      "id": "0fd150248af3",
+      "operator": "COND",
+      "lineno": 1137,
+      "col_offset": 7,
+      "end_lineno": 1137,
+      "end_col_offset": 10,
+      "original": "tmp",
+      "replacement": "(not tmp)"
+    },
+    {
+      "id": "1d053e424b29",
+      "operator": "ROR",
+      "lineno": 1138,
+      "col_offset": 37,
+      "end_lineno": 1138,
+      "end_col_offset": 57,
+      "original": "len(tmp) < linecount",
+      "replacement": "(len(tmp) <= linecount)"
+    },
+    {
+      "id": "99d7bf656a53",
+      "operator": "AOR",
+      "lineno": 1139,
+      "col_offset": 19,
+      "end_lineno": 1139,
+      "end_col_offset": 55,
+      "original": "[fill_with] * (linecount - len(tmp))",
+      "replacement": "([fill_with] / (linecount - len(tmp)))"
+    },
+    {
+      "id": "4fd8f681d674",
+      "operator": "CRP",
+      "lineno": 1146,
+      "col_offset": 21,
+      "end_lineno": 1146,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "8f446c76eec0",
+      "operator": "ROR",
+      "lineno": 1174,
+      "col_offset": 7,
+      "end_lineno": 1174,
+      "end_col_offset": 48,
+      "original": "method not in {\"common\", \"ceil\", \"floor\"}",
+      "replacement": "(method in {'common', 'ceil', 'floor'})"
+    },
+    {
+      "id": "543dc381dc60",
+      "operator": "CRP",
+      "lineno": 1174,
+      "col_offset": 22,
+      "end_lineno": 1174,
+      "end_col_offset": 30,
+      "original": "\"common\"",
+      "replacement": "('XXcommonXX')"
+    },
+    {
+      "id": "5ea481ce0281",
+      "operator": "CRP",
+      "lineno": 1175,
+      "col_offset": 34,
+      "end_lineno": 1175,
+      "end_col_offset": 72,
+      "original": "\"method must be common, ceil or floor\"",
+      "replacement": "('XXmethod must be common, ceil or floorXX')"
+    },
+    {
+      "id": "879f6d188fc0",
+      "operator": "RET",
+      "lineno": 1181,
+      "col_offset": 4,
+      "end_lineno": 1181,
+      "end_col_offset": 73,
+      "original": "return t.cast(float, func(value * (10**precision)) / (10**precision))",
+      "replacement": "return None"
+    },
+    {
+      "id": "be9f8fb95d2d",
+      "operator": "AOR",
+      "lineno": 1181,
+      "col_offset": 39,
+      "end_lineno": 1181,
+      "end_col_offset": 52,
+      "original": "10**precision",
+      "replacement": "(10 * precision)"
+    },
+    {
+      "id": "2fca9be0529a",
+      "operator": "CRP",
+      "lineno": 1181,
+      "col_offset": 39,
+      "end_lineno": 1181,
+      "end_col_offset": 41,
+      "original": "10",
+      "replacement": "(11)"
+    },
+    {
+      "id": "ba08fe3e5236",
+      "operator": "CRP",
+      "lineno": 1181,
+      "col_offset": 58,
+      "end_lineno": 1181,
+      "end_col_offset": 60,
+      "original": "10",
+      "replacement": "(11)"
+    },
+    {
+      "id": "6ddfafd7c508",
+      "operator": "RET",
+      "lineno": 1194,
+      "col_offset": 8,
+      "end_lineno": 1194,
+      "end_col_offset": 34,
+      "original": "return tuple.__str__(self)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a9422f7620bb",
+      "operator": "CRP",
+      "lineno": 1203,
+      "col_offset": 27,
+      "end_lineno": 1203,
+      "end_col_offset": 32,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "0dfa794e0f0d",
+      "operator": "UOI",
+      "lineno": 1265,
+      "col_offset": 35,
+      "end_lineno": 1265,
+      "end_col_offset": 53,
+      "original": "not case_sensitive",
+      "replacement": "(case_sensitive)"
+    },
+    {
+      "id": "44090ce2627a",
+      "operator": "UOI",
+      "lineno": 1273,
+      "col_offset": 7,
+      "end_lineno": 1273,
+      "end_col_offset": 25,
+      "original": "not case_sensitive",
+      "replacement": "(case_sensitive)"
+    },
+    {
+      "id": "5e103d734168",
+      "operator": "UOI",
+      "lineno": 1292,
+      "col_offset": 35,
+      "end_lineno": 1292,
+      "end_col_offset": 53,
+      "original": "not case_sensitive",
+      "replacement": "(case_sensitive)"
+    },
+    {
+      "id": "d17ed19abc8e",
+      "operator": "UOI",
+      "lineno": 1300,
+      "col_offset": 7,
+      "end_lineno": 1300,
+      "end_col_offset": 25,
+      "original": "not case_sensitive",
+      "replacement": "(case_sensitive)"
+    },
+    {
+      "id": "8d7ec99b5db1",
+      "operator": "RET",
+      "lineno": 1305,
+      "col_offset": 4,
+      "end_lineno": 1305,
+      "end_col_offset": 14,
+      "original": "return out",
+      "replacement": "return None"
+    },
+    {
+      "id": "75bb83010337",
+      "operator": "CRP",
+      "lineno": 1340,
+      "col_offset": 15,
+      "end_lineno": 1340,
+      "end_col_offset": 16,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "82ed5f445d0c",
+      "operator": "ROR",
+      "lineno": 1344,
+      "col_offset": 7,
+      "end_lineno": 1344,
+      "end_col_offset": 28,
+      "original": "attribute is not None",
+      "replacement": "(attribute is None)"
+    },
+    {
+      "id": "d0b74e2f6583",
+      "operator": "RET",
+      "lineno": 1354,
+      "col_offset": 4,
+      "end_lineno": 1354,
+      "end_col_offset": 13,
+      "original": "return rv",
+      "replacement": "return None"
+    },
+    {
+      "id": "c6db2a635e2d",
+      "operator": "RET",
+      "lineno": 1373,
+      "col_offset": 4,
+      "end_lineno": 1373,
+      "end_col_offset": 24,
+      "original": "return Markup(value)",
+      "replacement": "return None"
+    },
+    {
+      "id": "406da9b41e9d",
+      "operator": "RET",
+      "lineno": 1378,
+      "col_offset": 4,
+      "end_lineno": 1378,
+      "end_col_offset": 21,
+      "original": "return str(value)",
+      "replacement": "return None"
+    },
+    {
+      "id": "bfd2577353b7",
+      "operator": "UOI",
+      "lineno": 1394,
+      "col_offset": 23,
+      "end_lineno": 1394,
+      "end_col_offset": 25,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2cc88f8858fe",
+      "operator": "CRP",
+      "lineno": 1404,
+      "col_offset": 38,
+      "end_lineno": 1404,
+      "end_col_offset": 65,
+      "original": "\"argument must be iterable\"",
+      "replacement": "('XXargument must be iterableXX')"
+    },
+    {
+      "id": "4d9e484528fc",
+      "operator": "UOI",
+      "lineno": 1424,
+      "col_offset": 11,
+      "end_lineno": 1424,
+      "end_col_offset": 33,
+      "original": "not hasattr(obj, name)",
+      "replacement": "(hasattr(obj, name))"
+    },
+    {
+      "id": "07bf1624dde8",
+      "operator": "RET",
+      "lineno": 1427,
+      "col_offset": 4,
+      "end_lineno": 1427,
+      "end_col_offset": 41,
+      "original": "return environment.getattr(obj, name)",
+      "replacement": "return None"
+    },
+    {
+      "id": "c03383c75141",
+      "operator": "COND",
+      "lineno": 1527,
+      "col_offset": 7,
+      "end_lineno": 1527,
+      "end_col_offset": 12,
+      "original": "value",
+      "replacement": "(not value)"
+    },
+    {
+      "id": "766d531321a7",
+      "operator": "RET",
+      "lineno": 1562,
+      "col_offset": 4,
+      "end_lineno": 1562,
+      "end_col_offset": 77,
+      "original": "return select_or_reject(context, value, args, kwargs, lambda x: x, False)",
+      "replacement": "return None"
+    },
+    {
+      "id": "4592a72a5a7f",
+      "operator": "CRP",
+      "lineno": 1572,
+      "col_offset": 77,
+      "end_lineno": 1572,
+      "end_col_offset": 82,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "b29978bd5a99",
+      "operator": "RET",
+      "lineno": 1598,
+      "col_offset": 4,
+      "end_lineno": 1598,
+      "end_col_offset": 81,
+      "original": "return select_or_reject(context, value, args, kwargs, lambda x: not x, False)",
+      "replacement": "return None"
+    },
+    {
+      "id": "9645ba535bbe",
+      "operator": "RET",
+      "lineno": 1608,
+      "col_offset": 4,
+      "end_lineno": 1608,
+      "end_col_offset": 87,
+      "original": "return async_select_or_reject(context, value, args, kwargs, lambda x: not x, False)",
+      "replacement": "return None"
+    },
+    {
+      "id": "1ad4bed03d3b",
+      "operator": "CRP",
+      "lineno": 1608,
+      "col_offset": 81,
+      "end_lineno": 1608,
+      "end_col_offset": 86,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "c2a254b55077",
+      "operator": "CRP",
+      "lineno": 1638,
+      "col_offset": 71,
+      "end_lineno": 1638,
+      "end_col_offset": 75,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "013407769697",
+      "operator": "RET",
+      "lineno": 1676,
+      "col_offset": 4,
+      "end_lineno": 1676,
+      "end_col_offset": 80,
+      "original": "return select_or_reject(context, value, args, kwargs, lambda x: not x, True)",
+      "replacement": "return None"
+    },
+    {
+      "id": "377d13ff5797",
+      "operator": "CRP",
+      "lineno": 1676,
+      "col_offset": 75,
+      "end_lineno": 1676,
+      "end_col_offset": 79,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8ed24c947b26",
+      "operator": "RET",
+      "lineno": 1686,
+      "col_offset": 4,
+      "end_lineno": 1686,
+      "end_col_offset": 86,
+      "original": "return async_select_or_reject(context, value, args, kwargs, lambda x: not x, True)",
+      "replacement": "return None"
+    },
+    {
+      "id": "cefa3c577b9b",
+      "operator": "UOI",
+      "lineno": 1686,
+      "col_offset": 74,
+      "end_lineno": 1686,
+      "end_col_offset": 79,
+      "original": "not x",
+      "replacement": "(x)"
+    },
+    {
+      "id": "cb32debbc0c3",
+      "operator": "CRP",
+      "lineno": 1686,
+      "col_offset": 81,
+      "end_lineno": 1686,
+      "end_col_offset": 85,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "69da9f49882d",
+      "operator": "CRP",
+      "lineno": 1708,
+      "col_offset": 21,
+      "end_lineno": 1708,
+      "end_col_offset": 42,
+      "original": "\"json.dumps_function\"",
+      "replacement": "('XXjson.dumps_functionXX')"
+    },
+    {
+      "id": "d436dc99fa70",
+      "operator": "CRP",
+      "lineno": 1709,
+      "col_offset": 22,
+      "end_lineno": 1709,
+      "end_col_offset": 41,
+      "original": "\"json.dumps_kwargs\"",
+      "replacement": "('XXjson.dumps_kwargsXX')"
+    },
+    {
+      "id": "c4c4565d9d84",
+      "operator": "RET",
+      "lineno": 1715,
+      "col_offset": 4,
+      "end_lineno": 1715,
+      "end_col_offset": 60,
+      "original": "return htmlsafe_json_dumps(value, dumps=dumps, **kwargs)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a23f2b7387df",
+      "operator": "CRP",
+      "lineno": 1721,
+      "col_offset": 20,
+      "end_lineno": 1721,
+      "end_col_offset": 31,
+      "original": "\"attribute\"",
+      "replacement": "('XXattributeXX')"
+    },
+    {
+      "id": "9cb501d06cf1",
+      "operator": "ROR",
+      "lineno": 1721,
+      "col_offset": 20,
+      "end_lineno": 1721,
+      "end_col_offset": 41,
+      "original": "\"attribute\" in kwargs",
+      "replacement": "('attribute' not in kwargs)"
+    },
+    {
+      "id": "a50a240ac582",
+      "operator": "CRP",
+      "lineno": 1722,
+      "col_offset": 31,
+      "end_lineno": 1722,
+      "end_col_offset": 42,
+      "original": "\"attribute\"",
+      "replacement": "('XXattributeXX')"
+    },
+    {
+      "id": "5260ed28addc",
+      "operator": "CRP",
+      "lineno": 1723,
+      "col_offset": 29,
+      "end_lineno": 1723,
+      "end_col_offset": 38,
+      "original": "\"default\"",
+      "replacement": "('XXdefaultXX')"
+    },
+    {
+      "id": "3b411244668e",
+      "operator": "CRP",
+      "lineno": 1733,
+      "col_offset": 24,
+      "end_lineno": 1733,
+      "end_col_offset": 25,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "3edcff9ec0ec",
+      "operator": "RET",
+      "lineno": 1739,
+      "col_offset": 12,
+      "end_lineno": 1741,
+      "end_col_offset": 13,
+      "original": "return context.environment.call_filter( name, item, args, kwargs, context=context )",
+      "replacement": "return None"
+    },
+    {
+      "id": "afd473e33b1c",
+      "operator": "COND",
+      "lineno": 1753,
+      "col_offset": 7,
+      "end_lineno": 1753,
+      "end_col_offset": 18,
+      "original": "lookup_attr",
+      "replacement": "(not lookup_attr)"
+    },
+    {
+      "id": "f116051bea25",
+      "operator": "CRP",
+      "lineno": 1760,
+      "col_offset": 14,
+      "end_lineno": 1760,
+      "end_col_offset": 15,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "4745dcafb28d",
+      "operator": "CRP",
+      "lineno": 1762,
+      "col_offset": 14,
+      "end_lineno": 1762,
+      "end_col_offset": 15,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "b46ff36e7741",
+      "operator": "RET",
+      "lineno": 1765,
+      "col_offset": 12,
+      "end_lineno": 1765,
+      "end_col_offset": 20,
+      "original": "return x",
+      "replacement": "return None"
+    },
+    {
+      "id": "36dc572a29c7",
+      "operator": "AOR",
+      "lineno": 1769,
+      "col_offset": 20,
+      "end_lineno": 1769,
+      "end_col_offset": 27,
+      "original": "1 + off",
+      "replacement": "(1 - off)"
+    },
+    {
+      "id": "1a8aebb32903",
+      "operator": "CRP",
+      "lineno": 1769,
+      "col_offset": 20,
+      "end_lineno": 1769,
+      "end_col_offset": 21,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "d76ee312669c",
+      "operator": "RET",
+      "lineno": 1772,
+      "col_offset": 12,
+      "end_lineno": 1772,
+      "end_col_offset": 83,
+      "original": "return context.environment.call_test(name, item, args, kwargs, context)",
+      "replacement": "return None"
+    },
+    {
+      "id": "441596cc6f6c",
+      "operator": "COND",
+      "lineno": 1804,
+      "col_offset": 7,
+      "end_lineno": 1804,
+      "end_col_offset": 12,
+      "original": "value",
+      "replacement": "(not value)"
+    },
+    {
+      "id": "71d8cfc52df4",
+      "operator": "CRP",
+      "lineno": 1813,
+      "col_offset": 4,
+      "end_lineno": 1813,
+      "end_col_offset": 9,
+      "original": "\"abs\"",
+      "replacement": "('XXabsXX')"
+    },
+    {
+      "id": "61f12e172d3d",
+      "operator": "CRP",
+      "lineno": 1815,
+      "col_offset": 4,
+      "end_lineno": 1815,
+      "end_col_offset": 11,
+      "original": "\"batch\"",
+      "replacement": "('XXbatchXX')"
+    },
+    {
+      "id": "b738aad732f3",
+      "operator": "CRP",
+      "lineno": 1816,
+      "col_offset": 4,
+      "end_lineno": 1816,
+      "end_col_offset": 16,
+      "original": "\"capitalize\"",
+      "replacement": "('XXcapitalizeXX')"
+    },
+    {
+      "id": "9295fd227343",
+      "operator": "CRP",
+      "lineno": 1817,
+      "col_offset": 4,
+      "end_lineno": 1817,
+      "end_col_offset": 12,
+      "original": "\"center\"",
+      "replacement": "('XXcenterXX')"
+    },
+    {
+      "id": "4587ca4b900a",
+      "operator": "CRP",
+      "lineno": 1818,
+      "col_offset": 4,
+      "end_lineno": 1818,
+      "end_col_offset": 11,
+      "original": "\"count\"",
+      "replacement": "('XXcountXX')"
+    },
+    {
+      "id": "178f9cb11229",
+      "operator": "CRP",
+      "lineno": 1822,
+      "col_offset": 4,
+      "end_lineno": 1822,
+      "end_col_offset": 7,
+      "original": "\"e\"",
+      "replacement": "('XXeXX')"
+    },
+    {
+      "id": "037354414bab",
+      "operator": "CRP",
+      "lineno": 1823,
+      "col_offset": 4,
+      "end_lineno": 1823,
+      "end_col_offset": 12,
+      "original": "\"escape\"",
+      "replacement": "('XXescapeXX')"
+    },
+    {
+      "id": "448003134c9d",
+      "operator": "CRP",
+      "lineno": 1829,
+      "col_offset": 4,
+      "end_lineno": 1829,
+      "end_col_offset": 13,
+      "original": "\"groupby\"",
+      "replacement": "('XXgroupbyXX')"
+    },
+    {
+      "id": "205e72f55800",
+      "operator": "CRP",
+      "lineno": 1830,
+      "col_offset": 4,
+      "end_lineno": 1830,
+      "end_col_offset": 12,
+      "original": "\"indent\"",
+      "replacement": "('XXindentXX')"
+    },
+    {
+      "id": "3cb6b134185a",
+      "operator": "CRP",
+      "lineno": 1834,
+      "col_offset": 4,
+      "end_lineno": 1834,
+      "end_col_offset": 12,
+      "original": "\"length\"",
+      "replacement": "('XXlengthXX')"
+    },
+    {
+      "id": "3d1246a80261",
+      "operator": "CRP",
+      "lineno": 1835,
+      "col_offset": 4,
+      "end_lineno": 1835,
+      "end_col_offset": 10,
+      "original": "\"list\"",
+      "replacement": "('XXlistXX')"
+    },
+    {
+      "id": "a439cc042de6",
+      "operator": "CRP",
+      "lineno": 1838,
+      "col_offset": 4,
+      "end_lineno": 1838,
+      "end_col_offset": 9,
+      "original": "\"map\"",
+      "replacement": "('XXmapXX')"
+    },
+    {
+      "id": "0b69a5bf1ae2",
+      "operator": "CRP",
+      "lineno": 1839,
+      "col_offset": 4,
+      "end_lineno": 1839,
+      "end_col_offset": 9,
+      "original": "\"min\"",
+      "replacement": "('XXminXX')"
+    },
+    {
+      "id": "10c7488e673e",
+      "operator": "CRP",
+      "lineno": 1841,
+      "col_offset": 4,
+      "end_lineno": 1841,
+      "end_col_offset": 12,
+      "original": "\"pprint\"",
+      "replacement": "('XXpprintXX')"
+    },
+    {
+      "id": "2f5f685416b2",
+      "operator": "CRP",
+      "lineno": 1844,
+      "col_offset": 4,
+      "end_lineno": 1844,
+      "end_col_offset": 16,
+      "original": "\"rejectattr\"",
+      "replacement": "('XXrejectattrXX')"
+    },
+    {
+      "id": "8a666a9c99a3",
+      "operator": "CRP",
+      "lineno": 1849,
+      "col_offset": 4,
+      "end_lineno": 1849,
+      "end_col_offset": 12,
+      "original": "\"select\"",
+      "replacement": "('XXselectXX')"
+    },
+    {
+      "id": "1718b00c61a9",
+      "operator": "CRP",
+      "lineno": 1853,
+      "col_offset": 4,
+      "end_lineno": 1853,
+      "end_col_offset": 12,
+      "original": "\"string\"",
+      "replacement": "('XXstringXX')"
+    },
+    {
+      "id": "cc50f1d0bd47",
+      "operator": "CRP",
+      "lineno": 1854,
+      "col_offset": 4,
+      "end_lineno": 1854,
+      "end_col_offset": 15,
+      "original": "\"striptags\"",
+      "replacement": "('XXstriptagsXX')"
+    },
+    {
+      "id": "8c8366de9123",
+      "operator": "CRP",
+      "lineno": 1857,
+      "col_offset": 4,
+      "end_lineno": 1857,
+      "end_col_offset": 10,
+      "original": "\"trim\"",
+      "replacement": "('XXtrimXX')"
+    },
+    {
+      "id": "fbbdf4ffb684",
+      "operator": "CRP",
+      "lineno": 1861,
+      "col_offset": 4,
+      "end_lineno": 1861,
+      "end_col_offset": 15,
+      "original": "\"urlencode\"",
+      "replacement": "('XXurlencodeXX')"
+    },
+    {
+      "id": "7d30865974f0",
+      "operator": "CRP",
+      "lineno": 1862,
+      "col_offset": 4,
+      "end_lineno": 1862,
+      "end_col_offset": 12,
+      "original": "\"urlize\"",
+      "replacement": "('XXurlizeXX')"
+    },
+    {
+      "id": "ffd323422788",
+      "operator": "CRP",
+      "lineno": 1864,
+      "col_offset": 4,
+      "end_lineno": 1864,
+      "end_col_offset": 14,
+      "original": "\"wordwrap\"",
+      "replacement": "('XXwordwrapXX')"
+    },
+    {
+      "id": "54af8f03ea0c",
+      "operator": "CRP",
+      "lineno": 1865,
+      "col_offset": 4,
+      "end_lineno": 1865,
+      "end_col_offset": 13,
+      "original": "\"xmlattr\"",
+      "replacement": "('XXxmlattrXX')"
+    }
+  ]
+}

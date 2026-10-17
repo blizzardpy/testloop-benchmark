@@ -1,0 +1,240 @@
+{
+  "target": "boltons-cacheutils",
+  "module_file": "boltons/cacheutils.py",
+  "source_sha256": "77f6c35dc6332482c2f3f57b13059f3c1962641fbb7a6212aa7fd221c6d8aaad",
+  "tests_total": 23,
+  "tests_passed": 23,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 409,
+  "covered_lines": 374,
+  "num_branches": 88,
+  "covered_branches": 69,
+  "missing_lines": [
+    73,
+    74,
+    76,
+    77,
+    79,
+    80,
+    86,
+    87,
+    88,
+    119,
+    126,
+    151,
+    152,
+    153,
+    154,
+    155,
+    314,
+    316,
+    318,
+    373,
+    374,
+    397,
+    429,
+    430,
+    431,
+    450,
+    473,
+    489,
+    491,
+    495,
+    496,
+    497,
+    686,
+    733,
+    857
+  ],
+  "missing_branches": [
+    [
+      118,
+      119
+    ],
+    [
+      125,
+      126
+    ],
+    [
+      152,
+      153
+    ],
+    [
+      152,
+      154
+    ],
+    [
+      313,
+      314
+    ],
+    [
+      315,
+      316
+    ],
+    [
+      317,
+      318
+    ],
+    [
+      371,
+      373
+    ],
+    [
+      428,
+      429
+    ],
+    [
+      430,
+      431
+    ],
+    [
+      430,
+      434
+    ],
+    [
+      448,
+      450
+    ],
+    [
+      472,
+      473
+    ],
+    [
+      487,
+      489
+    ],
+    [
+      489,
+      491
+    ],
+    [
+      489,
+      495
+    ],
+    [
+      685,
+      686
+    ],
+    [
+      731,
+      733
+    ],
+    [
+      803,
+      811
+    ]
+  ],
+  "mutants_total": 200,
+  "mutants_killed": 117,
+  "mutants_survived": 55,
+  "mutants_not_covered": 27,
+  "mutants_timeout": 1,
+  "surviving_mutants": [
+    "e2c93acf3eab",
+    "de281a8ba962",
+    "200834531018",
+    "e542b374249d",
+    "e3756a3bed83",
+    "3a257d67aae3",
+    "440c3298f6fa",
+    "d0dc2d04a54b",
+    "4ef147806660",
+    "971476b2ef60",
+    "43c71d6f53d1",
+    "fe33013e3f97",
+    "c339d022fa2e",
+    "71f1c6b92d6a",
+    "a31df6e6123d",
+    "9d74c17f3fd7",
+    "cbf7241ab328",
+    "c9368e22b3ba",
+    "1ac4c2b14899",
+    "08445712a754",
+    "57b30302bc27",
+    "626c2be1db72",
+    "187d6d38af6e",
+    "6020fdb35116",
+    "ea284a795f23",
+    "8c7804311648",
+    "319ff5817855",
+    "eb62a093c307",
+    "06875bb5cea8",
+    "6ddebdd6bec3",
+    "c9c3fa79a9c2",
+    "c5997faec5f8",
+    "491ef9ee1749",
+    "1781a0ed5471",
+    "9584eed7c3c7",
+    "b82ad9197943",
+    "58b36343b538",
+    "ffd4c376d0ee",
+    "455c600537ae",
+    "f966cb40b9e4",
+    "412c7107d55b",
+    "a0891af327c2",
+    "46813eabe9e5",
+    "b966132d9b1c",
+    "59cf2989a95f",
+    "4d17bdf31c8b",
+    "421f5496143c",
+    "3930a5490edf",
+    "6dfab5dc88ea",
+    "d7af90f316da",
+    "f07f14c53189",
+    "530c53d54c05",
+    "0f0bcc813b94",
+    "8db0ab8af703",
+    "2782878e38c4",
+    "552ed6e05aa7",
+    "dcda51bfb11b",
+    "123a2e884ca3",
+    "335d330ce81c",
+    "cc51d8f74a94",
+    "9f55d3c7c134",
+    "ac8cb73d01b1",
+    "681b28938545",
+    "91885b562e6d",
+    "ca12ac75be18",
+    "2c636bdeeaa5",
+    "22c4a96b79e5",
+    "9e441f02536f",
+    "feb23d0c8879",
+    "89374eae2a58",
+    "514cb14eba68",
+    "093d5c82af91",
+    "7325fca9939a",
+    "fe9fe9e5dd7a",
+    "9e145572612e",
+    "f9527bc11933",
+    "753d540edc23",
+    "de70f52f3583",
+    "061b800c41df",
+    "c78369cdd12f",
+    "ecb427d30944",
+    "92d2a9ffeed0"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 20.629298133999782,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T12:00:12+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9144254278728606,
+  "branch_coverage": 0.7840909090909091,
+  "mutation_score": 0.59,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 668,
+  "mutants_generated": 222,
+  "id": "boltons-cacheutils",
+  "status": "ok",
+  "screen_seconds": 20.6
+}

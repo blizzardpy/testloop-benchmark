@@ -1,0 +1,126 @@
+{
+  "target": "pathspec",
+  "module_file": "pathspec/pathspec.py",
+  "source_sha256": "8fad3bb877a3334768ca041f28a1e372550f8a3a3900e539914b756daec13945",
+  "tests_total": 13,
+  "tests_passed": 13,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 115,
+  "covered_lines": 97,
+  "num_branches": 40,
+  "covered_branches": 28,
+  "missing_lines": [
+    85,
+    92,
+    127,
+    138,
+    152,
+    202,
+    239,
+    240,
+    325,
+    328,
+    382,
+    392,
+    445,
+    489,
+    490,
+    502,
+    535,
+    536
+  ],
+  "missing_branches": [
+    [
+      82,
+      85
+    ],
+    [
+      91,
+      92
+    ],
+    [
+      124,
+      127
+    ],
+    [
+      134,
+      138
+    ],
+    [
+      145,
+      152
+    ],
+    [
+      201,
+      202
+    ],
+    [
+      322,
+      325
+    ],
+    [
+      327,
+      328
+    ],
+    [
+      381,
+      382
+    ],
+    [
+      391,
+      392
+    ],
+    [
+      394,
+      384
+    ],
+    [
+      444,
+      445
+    ]
+  ],
+  "mutants_total": 45,
+  "mutants_killed": 32,
+  "mutants_survived": 8,
+  "mutants_not_covered": 5,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "5d4e2485525d",
+    "f1e7fd93c704",
+    "fcec284b5027",
+    "226ca7faa60d",
+    "a35aece56ca6",
+    "e847a058939f",
+    "2de1ba3ad4e3",
+    "fba2ac788e1d",
+    "7a880ee256a4",
+    "f26b962427e5",
+    "c74a4d2ae3a4",
+    "3ecee23a2eaa",
+    "27e1af868646"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 7.102792059999956,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:35:33+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.8434782608695652,
+  "branch_coverage": 0.7,
+  "mutation_score": 0.7111111111111111,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 452,
+  "mutants_generated": 45,
+  "id": "pathspec",
+  "status": "ok",
+  "screen_seconds": 7.1
+}

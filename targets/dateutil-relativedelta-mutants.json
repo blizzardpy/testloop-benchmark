@@ -1,0 +1,2011 @@
+{
+  "target": "dateutil-relativedelta",
+  "module_file": "src/dateutil/relativedelta.py",
+  "source_sha256": "218fe6825323a196d87ebbe5a1363671ed366a25633c892265faa03536517ee0",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 395,
+  "mutants": [
+    {
+      "id": "db4dd0109d68",
+      "operator": "CRP",
+      "lineno": 13,
+      "col_offset": 72,
+      "end_lineno": 13,
+      "end_col_offset": 73,
+      "original": "7",
+      "replacement": "(8)"
+    },
+    {
+      "id": "44dc08f9df85",
+      "operator": "CRP",
+      "lineno": 15,
+      "col_offset": 46,
+      "end_lineno": 15,
+      "end_col_offset": 50,
+      "original": "\"TH\"",
+      "replacement": "('XXTHXX')"
+    },
+    {
+      "id": "b26a80a93947",
+      "operator": "CRP",
+      "lineno": 15,
+      "col_offset": 58,
+      "end_lineno": 15,
+      "end_col_offset": 62,
+      "original": "\"SA\"",
+      "replacement": "('XXSAXX')"
+    },
+    {
+      "id": "8bde4a0e8656",
+      "operator": "CRP",
+      "lineno": 15,
+      "col_offset": 64,
+      "end_lineno": 15,
+      "end_col_offset": 68,
+      "original": "\"SU\"",
+      "replacement": "('XXSUXX')"
+    },
+    {
+      "id": "10fb0b95ad4b",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 23,
+      "end_lineno": 106,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "659d00563306",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 33,
+      "end_lineno": 106,
+      "end_col_offset": 34,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e406247cd0be",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 62,
+      "end_lineno": 106,
+      "end_col_offset": 63,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "b072212e6135",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 23,
+      "end_lineno": 107,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e3ffbc0375e8",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 34,
+      "end_lineno": 107,
+      "end_col_offset": 35,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "9fe611ae0ea0",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 45,
+      "end_lineno": 107,
+      "end_col_offset": 46,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "bef3ba6dc846",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 61,
+      "end_lineno": 107,
+      "end_col_offset": 62,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "abbeb96f3d06",
+      "operator": "LCR",
+      "lineno": 112,
+      "col_offset": 11,
+      "end_lineno": 112,
+      "end_col_offset": 22,
+      "original": "dt1 and dt2",
+      "replacement": "(dt1 or dt2)"
+    },
+    {
+      "id": "d49cfe73181a",
+      "operator": "UOI",
+      "lineno": 114,
+      "col_offset": 15,
+      "end_lineno": 115,
+      "end_col_offset": 51,
+      "original": "not (isinstance(dt1, datetime.date) and isinstance(dt2, datetime.date))",
+      "replacement": "(isinstance(dt1, datetime.date) and isinstance(dt2, datetime.date))"
+    },
+    {
+      "id": "c0b8c95b18e7",
+      "operator": "LCR",
+      "lineno": 114,
+      "col_offset": 20,
+      "end_lineno": 115,
+      "end_col_offset": 50,
+      "original": "isinstance(dt1, datetime.date) and isinstance(dt2, datetime.date)",
+      "replacement": "(isinstance(dt1, datetime.date) or isinstance(dt2, datetime.date))"
+    },
+    {
+      "id": "b4974d3a31b4",
+      "operator": "UOI",
+      "lineno": 122,
+      "col_offset": 19,
+      "end_lineno": 122,
+      "end_col_offset": 57,
+      "original": "not isinstance(dt1, datetime.datetime)",
+      "replacement": "(isinstance(dt1, datetime.datetime))"
+    },
+    {
+      "id": "edbd7b1ced86",
+      "operator": "CRP",
+      "lineno": 127,
+      "col_offset": 25,
+      "end_lineno": 127,
+      "end_col_offset": 26,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "336fd1a66cc2",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 25,
+      "end_lineno": 131,
+      "end_col_offset": 26,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "33605d0bf793",
+      "operator": "CRP",
+      "lineno": 133,
+      "col_offset": 27,
+      "end_lineno": 133,
+      "end_col_offset": 28,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "cc0bd194ed09",
+      "operator": "CRP",
+      "lineno": 134,
+      "col_offset": 32,
+      "end_lineno": 134,
+      "end_col_offset": 33,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "d2c7d43be667",
+      "operator": "AOR",
+      "lineno": 146,
+      "col_offset": 21,
+      "end_lineno": 146,
+      "end_col_offset": 73,
+      "original": "(dt1.year - dt2.year) * 12 + (dt1.month - dt2.month)",
+      "replacement": "((dt1.year - dt2.year) * 12 - (dt1.month - dt2.month))"
+    },
+    {
+      "id": "e340360a14ff",
+      "operator": "CRP",
+      "lineno": 146,
+      "col_offset": 45,
+      "end_lineno": 146,
+      "end_col_offset": 47,
+      "original": "12",
+      "replacement": "(13)"
+    },
+    {
+      "id": "816a97408fda",
+      "operator": "CRP",
+      "lineno": 156,
+      "col_offset": 28,
+      "end_lineno": 156,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "4ceb7b24bfea",
+      "operator": "UOI",
+      "lineno": 159,
+      "col_offset": 28,
+      "end_lineno": 159,
+      "end_col_offset": 30,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "fc506bfcedf2",
+      "operator": "CRP",
+      "lineno": 159,
+      "col_offset": 29,
+      "end_lineno": 159,
+      "end_col_offset": 30,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "bf9e3a6949aa",
+      "operator": "COND",
+      "lineno": 161,
+      "col_offset": 18,
+      "end_lineno": 161,
+      "end_col_offset": 35,
+      "original": "compare(dt1, dtm)",
+      "replacement": "(not compare(dt1, dtm))"
+    },
+    {
+      "id": "45c22652df2f",
+      "operator": "AOR",
+      "lineno": 167,
+      "col_offset": 20,
+      "end_lineno": 167,
+      "end_col_offset": 29,
+      "original": "dt1 - dtm",
+      "replacement": "(dt1 + dtm)"
+    },
+    {
+      "id": "397e482dce2d",
+      "operator": "AOR",
+      "lineno": 168,
+      "col_offset": 27,
+      "end_lineno": 168,
+      "end_col_offset": 61,
+      "original": "delta.seconds + delta.days * 86400",
+      "replacement": "(delta.seconds - delta.days * 86400)"
+    },
+    {
+      "id": "cd62fc7fb2da",
+      "operator": "AOR",
+      "lineno": 168,
+      "col_offset": 43,
+      "end_lineno": 168,
+      "end_col_offset": 61,
+      "original": "delta.days * 86400",
+      "replacement": "(delta.days / 86400)"
+    },
+    {
+      "id": "011d3b1539e0",
+      "operator": "CRP",
+      "lineno": 168,
+      "col_offset": 56,
+      "end_lineno": 168,
+      "end_col_offset": 61,
+      "original": "86400",
+      "replacement": "(86401)"
+    },
+    {
+      "id": "69b4091ce5e5",
+      "operator": "COND",
+      "lineno": 172,
+      "col_offset": 15,
+      "end_lineno": 172,
+      "end_col_offset": 74,
+      "original": "any(x is not None and x != int(x) for x in (years, months))",
+      "replacement": "(not any((x is not None and x != int(x) for x in (years, months))))"
+    },
+    {
+      "id": "c69542d96b33",
+      "operator": "LCR",
+      "lineno": 172,
+      "col_offset": 19,
+      "end_lineno": 172,
+      "end_col_offset": 48,
+      "original": "x is not None and x != int(x)",
+      "replacement": "(x is not None or x != int(x))"
+    },
+    {
+      "id": "7abecea52474",
+      "operator": "ROR",
+      "lineno": 172,
+      "col_offset": 19,
+      "end_lineno": 172,
+      "end_col_offset": 32,
+      "original": "x is not None",
+      "replacement": "(x is None)"
+    },
+    {
+      "id": "e9d83493531c",
+      "operator": "ROR",
+      "lineno": 172,
+      "col_offset": 37,
+      "end_lineno": 172,
+      "end_col_offset": 48,
+      "original": "x != int(x)",
+      "replacement": "(x == int(x))"
+    },
+    {
+      "id": "4499e0224cca",
+      "operator": "CRP",
+      "lineno": 173,
+      "col_offset": 33,
+      "end_lineno": 174,
+      "end_col_offset": 73,
+      "original": "\"Non-integer years and months are \" \"ambiguous and not currently supported.\"",
+      "replacement": "('XXNon-integer years and months are ambiguous and not currently supported.XX')"
+    },
+    {
+      "id": "c6a0f8449de4",
+      "operator": "AOR",
+      "lineno": 179,
+      "col_offset": 31,
+      "end_lineno": 179,
+      "end_col_offset": 40,
+      "original": "weeks * 7",
+      "replacement": "(weeks / 7)"
+    },
+    {
+      "id": "73ba5e73ede9",
+      "operator": "CRP",
+      "lineno": 179,
+      "col_offset": 39,
+      "end_lineno": 179,
+      "end_col_offset": 40,
+      "original": "7",
+      "replacement": "(8)"
+    },
+    {
+      "id": "99e395f62ee5",
+      "operator": "ROR",
+      "lineno": 195,
+      "col_offset": 19,
+      "end_lineno": 195,
+      "end_col_offset": 32,
+      "original": "x is not None",
+      "replacement": "(x is None)"
+    },
+    {
+      "id": "5c2fc806bc0b",
+      "operator": "AOR",
+      "lineno": 199,
+      "col_offset": 21,
+      "end_lineno": 201,
+      "end_col_offset": 49,
+      "original": "\"Non-integer value passed as absolute information. \" + \"This is not a well-defined condition and will raise \" + \"errors in future versions.\"",
+      "replacement": "('Non-integer value passed as absolute information. ' + 'This is not a well-defined condition and will raise ' - 'errors in future versions.')"
+    },
+    {
+      "id": "02cd180761a3",
+      "operator": "CRP",
+      "lineno": 199,
+      "col_offset": 21,
+      "end_lineno": 199,
+      "end_col_offset": 73,
+      "original": "\"Non-integer value passed as absolute information. \"",
+      "replacement": "('XXNon-integer value passed as absolute information. XX')"
+    },
+    {
+      "id": "8ce78d26372f",
+      "operator": "CRP",
+      "lineno": 200,
+      "col_offset": 21,
+      "end_lineno": 200,
+      "end_col_offset": 75,
+      "original": "\"This is not a well-defined condition and will raise \"",
+      "replacement": "('XXThis is not a well-defined condition and will raise XX')"
+    },
+    {
+      "id": "31ab7e033c1d",
+      "operator": "COND",
+      "lineno": 203,
+      "col_offset": 15,
+      "end_lineno": 203,
+      "end_col_offset": 49,
+      "original": "isinstance(weekday, integer_types)",
+      "replacement": "(not isinstance(weekday, integer_types))"
+    },
+    {
+      "id": "a1802b4d6c2a",
+      "operator": "CRP",
+      "lineno": 213,
+      "col_offset": 29,
+      "end_lineno": 213,
+      "end_col_offset": 31,
+      "original": "59",
+      "replacement": "(60)"
+    },
+    {
+      "id": "546b35986c44",
+      "operator": "UOI",
+      "lineno": 214,
+      "col_offset": 36,
+      "end_lineno": 214,
+      "end_col_offset": 38,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "32a0ba828f61",
+      "operator": "COND",
+      "lineno": 215,
+      "col_offset": 15,
+      "end_lineno": 215,
+      "end_col_offset": 19,
+      "original": "yday",
+      "replacement": "(not yday)"
+    },
+    {
+      "id": "f5031173ace6",
+      "operator": "CRP",
+      "lineno": 216,
+      "col_offset": 27,
+      "end_lineno": 216,
+      "end_col_offset": 29,
+      "original": "31",
+      "replacement": "(32)"
+    },
+    {
+      "id": "cda0e74d6ef6",
+      "operator": "CRP",
+      "lineno": 216,
+      "col_offset": 31,
+      "end_lineno": 216,
+      "end_col_offset": 33,
+      "original": "59",
+      "replacement": "(60)"
+    },
+    {
+      "id": "6e4ee7c4ef4c",
+      "operator": "CRP",
+      "lineno": 216,
+      "col_offset": 35,
+      "end_lineno": 216,
+      "end_col_offset": 37,
+      "original": "90",
+      "replacement": "(91)"
+    },
+    {
+      "id": "e6b4dc9b3c17",
+      "operator": "ROR",
+      "lineno": 219,
+      "col_offset": 23,
+      "end_lineno": 219,
+      "end_col_offset": 36,
+      "original": "yday <= ydays",
+      "replacement": "(yday < ydays)"
+    },
+    {
+      "id": "e49ebff54512",
+      "operator": "CRP",
+      "lineno": 220,
+      "col_offset": 41,
+      "end_lineno": 220,
+      "end_col_offset": 42,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "93be77f2185a",
+      "operator": "CRP",
+      "lineno": 221,
+      "col_offset": 34,
+      "end_lineno": 221,
+      "end_col_offset": 35,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "426bcbf4d7ab",
+      "operator": "CRP",
+      "lineno": 224,
+      "col_offset": 56,
+      "end_lineno": 224,
+      "end_col_offset": 57,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "1b518db43b50",
+      "operator": "BRK",
+      "lineno": 225,
+      "col_offset": 24,
+      "end_lineno": 225,
+      "end_col_offset": 29,
+      "original": "break",
+      "replacement": "continue"
+    },
+    {
+      "id": "9625d87f49b1",
+      "operator": "AOR",
+      "lineno": 227,
+      "col_offset": 37,
+      "end_lineno": 227,
+      "end_col_offset": 67,
+      "original": "\"invalid year day (%d)\" % yday",
+      "replacement": "('invalid year day (%d)' / yday)"
+    },
+    {
+      "id": "fcdd65b1e67e",
+      "operator": "CRP",
+      "lineno": 227,
+      "col_offset": 37,
+      "end_lineno": 227,
+      "end_col_offset": 60,
+      "original": "\"invalid year day (%d)\"",
+      "replacement": "('XXinvalid year day (%d)XX')"
+    },
+    {
+      "id": "db5aa5ae68d7",
+      "operator": "AOR",
+      "lineno": 234,
+      "col_offset": 30,
+      "end_lineno": 234,
+      "end_col_offset": 51,
+      "original": "self.microseconds * s",
+      "replacement": "(self.microseconds / s)"
+    },
+    {
+      "id": "93bc109549e6",
+      "operator": "AOR",
+      "lineno": 236,
+      "col_offset": 28,
+      "end_lineno": 236,
+      "end_col_offset": 35,
+      "original": "div * s",
+      "replacement": "(div / s)"
+    },
+    {
+      "id": "1116a95dedef",
+      "operator": "CRP",
+      "lineno": 239,
+      "col_offset": 48,
+      "end_lineno": 239,
+      "end_col_offset": 50,
+      "original": "60",
+      "replacement": "(61)"
+    },
+    {
+      "id": "660d515456e1",
+      "operator": "ASG",
+      "lineno": 241,
+      "col_offset": 12,
+      "end_lineno": 241,
+      "end_col_offset": 35,
+      "original": "self.minutes += div * s",
+      "replacement": "self.minutes -= div * s"
+    },
+    {
+      "id": "83a54982d58d",
+      "operator": "AOR",
+      "lineno": 241,
+      "col_offset": 28,
+      "end_lineno": 241,
+      "end_col_offset": 35,
+      "original": "div * s",
+      "replacement": "(div / s)"
+    },
+    {
+      "id": "2b8ae6a6e578",
+      "operator": "ROR",
+      "lineno": 242,
+      "col_offset": 11,
+      "end_lineno": 242,
+      "end_col_offset": 33,
+      "original": "abs(self.minutes) > 59",
+      "replacement": "(abs(self.minutes) >= 59)"
+    },
+    {
+      "id": "b2581dcfc368",
+      "operator": "CRP",
+      "lineno": 242,
+      "col_offset": 31,
+      "end_lineno": 242,
+      "end_col_offset": 33,
+      "original": "59",
+      "replacement": "(60)"
+    },
+    {
+      "id": "1fa2b9706a7e",
+      "operator": "ROR",
+      "lineno": 247,
+      "col_offset": 11,
+      "end_lineno": 247,
+      "end_col_offset": 31,
+      "original": "abs(self.hours) > 23",
+      "replacement": "(abs(self.hours) >= 23)"
+    },
+    {
+      "id": "78bbd30085f5",
+      "operator": "CRP",
+      "lineno": 247,
+      "col_offset": 29,
+      "end_lineno": 247,
+      "end_col_offset": 31,
+      "original": "23",
+      "replacement": "(24)"
+    },
+    {
+      "id": "3cac4dc31849",
+      "operator": "CRP",
+      "lineno": 249,
+      "col_offset": 46,
+      "end_lineno": 249,
+      "end_col_offset": 48,
+      "original": "24",
+      "replacement": "(25)"
+    },
+    {
+      "id": "d740379afa0e",
+      "operator": "AOR",
+      "lineno": 250,
+      "col_offset": 25,
+      "end_lineno": 250,
+      "end_col_offset": 32,
+      "original": "mod * s",
+      "replacement": "(mod / s)"
+    },
+    {
+      "id": "1e402fe77458",
+      "operator": "ASG",
+      "lineno": 251,
+      "col_offset": 12,
+      "end_lineno": 251,
+      "end_col_offset": 32,
+      "original": "self.days += div * s",
+      "replacement": "self.days -= div * s"
+    },
+    {
+      "id": "90b47d29d2f9",
+      "operator": "AOR",
+      "lineno": 254,
+      "col_offset": 30,
+      "end_lineno": 254,
+      "end_col_offset": 45,
+      "original": "self.months * s",
+      "replacement": "(self.months / s)"
+    },
+    {
+      "id": "4e2a143d86f0",
+      "operator": "AOR",
+      "lineno": 256,
+      "col_offset": 26,
+      "end_lineno": 256,
+      "end_col_offset": 33,
+      "original": "div * s",
+      "replacement": "(div / s)"
+    },
+    {
+      "id": "d6e0b39a5fc7",
+      "operator": "LCR",
+      "lineno": 257,
+      "col_offset": 12,
+      "end_lineno": 259,
+      "end_col_offset": 71,
+      "original": "self.hours or self.minutes or self.seconds or self.microseconds or self.hour is not None or self.minute is not None or self.second is not None or self.microsecond is not None",
+      "replacement": "(self.hours and self.minutes and self.seconds and self.microseconds and (self.hour is not None) and (self.minute is not None) and (self.second is not None) and (self.microsecond is not None))"
+    },
+    {
+      "id": "072650cf548a",
+      "operator": "ROR",
+      "lineno": 258,
+      "col_offset": 44,
+      "end_lineno": 258,
+      "end_col_offset": 67,
+      "original": "self.minute is not None",
+      "replacement": "(self.minute is None)"
+    },
+    {
+      "id": "c07aabd06c07",
+      "operator": "CRP",
+      "lineno": 260,
+      "col_offset": 29,
+      "end_lineno": 260,
+      "end_col_offset": 30,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "66e9ce70d855",
+      "operator": "CRP",
+      "lineno": 262,
+      "col_offset": 29,
+      "end_lineno": 262,
+      "end_col_offset": 30,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "0e0f064dd1e1",
+      "operator": "RET",
+      "lineno": 266,
+      "col_offset": 8,
+      "end_lineno": 266,
+      "end_col_offset": 35,
+      "original": "return int(self.days / 7.0)",
+      "replacement": "return None"
+    },
+    {
+      "id": "6a931a03145d",
+      "operator": "AOR",
+      "lineno": 266,
+      "col_offset": 19,
+      "end_lineno": 266,
+      "end_col_offset": 34,
+      "original": "self.days / 7.0",
+      "replacement": "(self.days * 7.0)"
+    },
+    {
+      "id": "59265951d6e8",
+      "operator": "AOR",
+      "lineno": 270,
+      "col_offset": 20,
+      "end_lineno": 270,
+      "end_col_offset": 48,
+      "original": "self.days - (self.weeks * 7)",
+      "replacement": "(self.days + self.weeks * 7)"
+    },
+    {
+      "id": "0639caf9a392",
+      "operator": "AOR",
+      "lineno": 270,
+      "col_offset": 33,
+      "end_lineno": 270,
+      "end_col_offset": 47,
+      "original": "self.weeks * 7",
+      "replacement": "(self.weeks / 7)"
+    },
+    {
+      "id": "d00542044e3b",
+      "operator": "AOR",
+      "lineno": 270,
+      "col_offset": 51,
+      "end_lineno": 270,
+      "end_col_offset": 60,
+      "original": "value * 7",
+      "replacement": "(value / 7)"
+    },
+    {
+      "id": "bdf23c98963e",
+      "operator": "CRP",
+      "lineno": 270,
+      "col_offset": 59,
+      "end_lineno": 270,
+      "end_col_offset": 60,
+      "original": "7",
+      "replacement": "(8)"
+    },
+    {
+      "id": "a4d27e67fdee",
+      "operator": "ROR",
+      "lineno": 274,
+      "col_offset": 11,
+      "end_lineno": 274,
+      "end_col_offset": 32,
+      "original": "abs(self.months) > 11",
+      "replacement": "(abs(self.months) >= 11)"
+    },
+    {
+      "id": "ad1508420fe9",
+      "operator": "CRP",
+      "lineno": 276,
+      "col_offset": 47,
+      "end_lineno": 276,
+      "end_col_offset": 49,
+      "original": "12",
+      "replacement": "(13)"
+    },
+    {
+      "id": "919804bac308",
+      "operator": "AOR",
+      "lineno": 278,
+      "col_offset": 25,
+      "end_lineno": 278,
+      "end_col_offset": 32,
+      "original": "div * s",
+      "replacement": "(div / s)"
+    },
+    {
+      "id": "1b1d4066391d",
+      "operator": "CRP",
+      "lineno": 280,
+      "col_offset": 25,
+      "end_lineno": 280,
+      "end_col_offset": 26,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e31eb78853d1",
+      "operator": "CRP",
+      "lineno": 296,
+      "col_offset": 37,
+      "end_lineno": 296,
+      "end_col_offset": 39,
+      "original": "24",
+      "replacement": "(25)"
+    },
+    {
+      "id": "15c2efc45582",
+      "operator": "AOR",
+      "lineno": 299,
+      "col_offset": 26,
+      "end_lineno": 299,
+      "end_col_offset": 63,
+      "original": "self.minutes + 60 * (hours_f - hours)",
+      "replacement": "(self.minutes - 60 * (hours_f - hours))"
+    },
+    {
+      "id": "4d2c5d605da3",
+      "operator": "AOR",
+      "lineno": 299,
+      "col_offset": 41,
+      "end_lineno": 299,
+      "end_col_offset": 63,
+      "original": "60 * (hours_f - hours)",
+      "replacement": "(60 / (hours_f - hours))"
+    },
+    {
+      "id": "8e33e0d9ce90",
+      "operator": "CRP",
+      "lineno": 299,
+      "col_offset": 41,
+      "end_lineno": 299,
+      "end_col_offset": 43,
+      "original": "60",
+      "replacement": "(61)"
+    },
+    {
+      "id": "c0d0c94bc90c",
+      "operator": "CRP",
+      "lineno": 299,
+      "col_offset": 65,
+      "end_lineno": 299,
+      "end_col_offset": 67,
+      "original": "10",
+      "replacement": "(11)"
+    },
+    {
+      "id": "b55db4d962ba",
+      "operator": "AOR",
+      "lineno": 302,
+      "col_offset": 26,
+      "end_lineno": 302,
+      "end_col_offset": 67,
+      "original": "self.seconds + 60 * (minutes_f - minutes)",
+      "replacement": "(self.seconds - 60 * (minutes_f - minutes))"
+    },
+    {
+      "id": "c6c14f93f43b",
+      "operator": "AOR",
+      "lineno": 302,
+      "col_offset": 47,
+      "end_lineno": 302,
+      "end_col_offset": 66,
+      "original": "minutes_f - minutes",
+      "replacement": "(minutes_f + minutes)"
+    },
+    {
+      "id": "f124e5caac76",
+      "operator": "CRP",
+      "lineno": 302,
+      "col_offset": 69,
+      "end_lineno": 302,
+      "end_col_offset": 70,
+      "original": "8",
+      "replacement": "(9)"
+    },
+    {
+      "id": "5ad97c7afccf",
+      "operator": "AOR",
+      "lineno": 305,
+      "col_offset": 29,
+      "end_lineno": 305,
+      "end_col_offset": 76,
+      "original": "self.microseconds + 1e6 * (seconds_f - seconds)",
+      "replacement": "(self.microseconds - 1000000.0 * (seconds_f - seconds))"
+    },
+    {
+      "id": "4e51cffb94e0",
+      "operator": "AOR",
+      "lineno": 305,
+      "col_offset": 49,
+      "end_lineno": 305,
+      "end_col_offset": 76,
+      "original": "1e6 * (seconds_f - seconds)",
+      "replacement": "(1000000.0 / (seconds_f - seconds))"
+    },
+    {
+      "id": "199c5bda692c",
+      "operator": "CRP",
+      "lineno": 305,
+      "col_offset": 49,
+      "end_lineno": 305,
+      "end_col_offset": 52,
+      "original": "1e6",
+      "replacement": "(1000001.0)"
+    },
+    {
+      "id": "e435b391d81a",
+      "operator": "AOR",
+      "lineno": 319,
+      "col_offset": 40,
+      "end_lineno": 319,
+      "end_col_offset": 64,
+      "original": "other.years + self.years",
+      "replacement": "(other.years - self.years)"
+    },
+    {
+      "id": "4fca5314690a",
+      "operator": "AOR",
+      "lineno": 320,
+      "col_offset": 40,
+      "end_lineno": 320,
+      "end_col_offset": 66,
+      "original": "other.months + self.months",
+      "replacement": "(other.months - self.months)"
+    },
+    {
+      "id": "425e9cd6f68c",
+      "operator": "AOR",
+      "lineno": 322,
+      "col_offset": 39,
+      "end_lineno": 322,
+      "end_col_offset": 63,
+      "original": "other.hours + self.hours",
+      "replacement": "(other.hours - self.hours)"
+    },
+    {
+      "id": "481407c00e0a",
+      "operator": "AOR",
+      "lineno": 323,
+      "col_offset": 41,
+      "end_lineno": 323,
+      "end_col_offset": 69,
+      "original": "other.minutes + self.minutes",
+      "replacement": "(other.minutes - self.minutes)"
+    },
+    {
+      "id": "5bb899a27065",
+      "operator": "AOR",
+      "lineno": 324,
+      "col_offset": 41,
+      "end_lineno": 324,
+      "end_col_offset": 69,
+      "original": "other.seconds + self.seconds",
+      "replacement": "(other.seconds - self.seconds)"
+    },
+    {
+      "id": "27cfee4aca99",
+      "operator": "ROR",
+      "lineno": 328,
+      "col_offset": 53,
+      "end_lineno": 328,
+      "end_col_offset": 75,
+      "original": "other.year is not None",
+      "replacement": "(other.year is None)"
+    },
+    {
+      "id": "de60d1205d7e",
+      "operator": "ROR",
+      "lineno": 330,
+      "col_offset": 55,
+      "end_lineno": 330,
+      "end_col_offset": 78,
+      "original": "other.month is not None",
+      "replacement": "(other.month is None)"
+    },
+    {
+      "id": "1fd647cbf199",
+      "operator": "ROR",
+      "lineno": 336,
+      "col_offset": 53,
+      "end_lineno": 336,
+      "end_col_offset": 75,
+      "original": "other.hour is not None",
+      "replacement": "(other.hour is None)"
+    },
+    {
+      "id": "f4663d09b3d6",
+      "operator": "AOR",
+      "lineno": 348,
+      "col_offset": 39,
+      "end_lineno": 348,
+      "end_col_offset": 61,
+      "original": "self.days + other.days",
+      "replacement": "(self.days - other.days)"
+    },
+    {
+      "id": "706e61aea806",
+      "operator": "AOR",
+      "lineno": 351,
+      "col_offset": 42,
+      "end_lineno": 351,
+      "end_col_offset": 70,
+      "original": "self.seconds + other.seconds",
+      "replacement": "(self.seconds - other.seconds)"
+    },
+    {
+      "id": "a2629d78c764",
+      "operator": "RET",
+      "lineno": 363,
+      "col_offset": 12,
+      "end_lineno": 363,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "4f1194be244e",
+      "operator": "LCR",
+      "lineno": 364,
+      "col_offset": 13,
+      "end_lineno": 364,
+      "end_col_offset": 72,
+      "original": "self._has_time and not isinstance(other, datetime.datetime)",
+      "replacement": "(self._has_time or not isinstance(other, datetime.datetime))"
+    },
+    {
+      "id": "366f266bb282",
+      "operator": "LCR",
+      "lineno": 366,
+      "col_offset": 16,
+      "end_lineno": 366,
+      "end_col_offset": 39,
+      "original": "self.year or other.year",
+      "replacement": "(self.year and other.year)"
+    },
+    {
+      "id": "b3c0140d5ca2",
+      "operator": "CRP",
+      "lineno": 369,
+      "col_offset": 19,
+      "end_lineno": 369,
+      "end_col_offset": 20,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "8c8fdde6516f",
+      "operator": "CRP",
+      "lineno": 371,
+      "col_offset": 23,
+      "end_lineno": 371,
+      "end_col_offset": 25,
+      "original": "12",
+      "replacement": "(13)"
+    },
+    {
+      "id": "1df913a8e0a9",
+      "operator": "ASG",
+      "lineno": 372,
+      "col_offset": 16,
+      "end_lineno": 372,
+      "end_col_offset": 25,
+      "original": "year += 1",
+      "replacement": "year -= 1"
+    },
+    {
+      "id": "3cb6fe19735e",
+      "operator": "CRP",
+      "lineno": 372,
+      "col_offset": 24,
+      "end_lineno": 372,
+      "end_col_offset": 25,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "5a2f2eb5819e",
+      "operator": "ROR",
+      "lineno": 374,
+      "col_offset": 17,
+      "end_lineno": 374,
+      "end_col_offset": 26,
+      "original": "month < 1",
+      "replacement": "(month <= 1)"
+    },
+    {
+      "id": "583569185e8a",
+      "operator": "ASG",
+      "lineno": 376,
+      "col_offset": 16,
+      "end_lineno": 376,
+      "end_col_offset": 27,
+      "original": "month += 12",
+      "replacement": "month -= 12"
+    },
+    {
+      "id": "6a1312ec884b",
+      "operator": "CRP",
+      "lineno": 379,
+      "col_offset": 16,
+      "end_lineno": 379,
+      "end_col_offset": 22,
+      "original": "\"year\"",
+      "replacement": "('XXyearXX')"
+    },
+    {
+      "id": "66a2489b38d7",
+      "operator": "CRP",
+      "lineno": 379,
+      "col_offset": 30,
+      "end_lineno": 379,
+      "end_col_offset": 37,
+      "original": "\"month\"",
+      "replacement": "('XXmonthXX')"
+    },
+    {
+      "id": "99113b2e156a",
+      "operator": "CRP",
+      "lineno": 380,
+      "col_offset": 21,
+      "end_lineno": 380,
+      "end_col_offset": 27,
+      "original": "\"hour\"",
+      "replacement": "('XXhourXX')"
+    },
+    {
+      "id": "1ec0eb78fcd0",
+      "operator": "CRP",
+      "lineno": 380,
+      "col_offset": 29,
+      "end_lineno": 380,
+      "end_col_offset": 37,
+      "original": "\"minute\"",
+      "replacement": "('XXminuteXX')"
+    },
+    {
+      "id": "558a858949a6",
+      "operator": "CRP",
+      "lineno": 380,
+      "col_offset": 49,
+      "end_lineno": 380,
+      "end_col_offset": 62,
+      "original": "\"microsecond\"",
+      "replacement": "('XXmicrosecondXX')"
+    },
+    {
+      "id": "9fc10fb6d750",
+      "operator": "ASG",
+      "lineno": 386,
+      "col_offset": 12,
+      "end_lineno": 386,
+      "end_col_offset": 33,
+      "original": "days += self.leapdays",
+      "replacement": "days -= self.leapdays"
+    },
+    {
+      "id": "0bba8e5f113b",
+      "operator": "AOR",
+      "lineno": 387,
+      "col_offset": 15,
+      "end_lineno": 392,
+      "end_col_offset": 67,
+      "original": "other.replace(**repl) + datetime.timedelta(days=days, hours=self.hours, minutes=self.minutes, seconds=self.seconds, microseconds=self.microseconds)",
+      "replacement": "(other.replace(**repl) - datetime.timedelta(days=days, hours=self.hours, minutes=self.minutes, seconds=self.seconds, microseconds=self.microseconds))"
+    },
+    {
+      "id": "cf5b756e7689",
+      "operator": "CRP",
+      "lineno": 394,
+      "col_offset": 67,
+      "end_lineno": 394,
+      "end_col_offset": 68,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c358222d2e5f",
+      "operator": "AOR",
+      "lineno": 395,
+      "col_offset": 24,
+      "end_lineno": 395,
+      "end_col_offset": 36,
+      "original": "abs(nth) - 1",
+      "replacement": "(abs(nth) + 1)"
+    },
+    {
+      "id": "5dfc472058fe",
+      "operator": "CRP",
+      "lineno": 395,
+      "col_offset": 35,
+      "end_lineno": 395,
+      "end_col_offset": 36,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "890f57fa58b2",
+      "operator": "CRP",
+      "lineno": 396,
+      "col_offset": 21,
+      "end_lineno": 396,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "23ce4df16c1b",
+      "operator": "ASG",
+      "lineno": 397,
+      "col_offset": 16,
+      "end_lineno": 397,
+      "end_col_offset": 61,
+      "original": "jumpdays += (7 - ret.weekday() + weekday) % 7",
+      "replacement": "jumpdays -= (7 - ret.weekday() + weekday) % 7"
+    },
+    {
+      "id": "68ce4615419b",
+      "operator": "AOR",
+      "lineno": 397,
+      "col_offset": 28,
+      "end_lineno": 397,
+      "end_col_offset": 61,
+      "original": "(7 - ret.weekday() + weekday) % 7",
+      "replacement": "((7 - ret.weekday() + weekday) / 7)"
+    },
+    {
+      "id": "76892f3b695f",
+      "operator": "AOR",
+      "lineno": 397,
+      "col_offset": 29,
+      "end_lineno": 397,
+      "end_col_offset": 46,
+      "original": "7 - ret.weekday()",
+      "replacement": "(7 + ret.weekday())"
+    },
+    {
+      "id": "e06636366474",
+      "operator": "AOR",
+      "lineno": 397,
+      "col_offset": 29,
+      "end_lineno": 397,
+      "end_col_offset": 56,
+      "original": "7 - ret.weekday() + weekday",
+      "replacement": "(7 - ret.weekday() - weekday)"
+    },
+    {
+      "id": "c28bf1b9a437",
+      "operator": "CRP",
+      "lineno": 397,
+      "col_offset": 29,
+      "end_lineno": 397,
+      "end_col_offset": 30,
+      "original": "7",
+      "replacement": "(8)"
+    },
+    {
+      "id": "f9e3df8b5cca",
+      "operator": "ASG",
+      "lineno": 400,
+      "col_offset": 16,
+      "end_lineno": 400,
+      "end_col_offset": 30,
+      "original": "jumpdays *= -1",
+      "replacement": "jumpdays /= -1"
+    },
+    {
+      "id": "d402ceb67be9",
+      "operator": "CRP",
+      "lineno": 400,
+      "col_offset": 29,
+      "end_lineno": 400,
+      "end_col_offset": 30,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "24bebacd83bc",
+      "operator": "ASG",
+      "lineno": 401,
+      "col_offset": 12,
+      "end_lineno": 401,
+      "end_col_offset": 52,
+      "original": "ret += datetime.timedelta(days=jumpdays)",
+      "replacement": "ret -= datetime.timedelta(days=jumpdays)"
+    },
+    {
+      "id": "a315395ffb38",
+      "operator": "RET",
+      "lineno": 408,
+      "col_offset": 8,
+      "end_lineno": 408,
+      "end_col_offset": 45,
+      "original": "return self.__neg__().__radd__(other)",
+      "replacement": "return None"
+    },
+    {
+      "id": "5b3b2c3a1965",
+      "operator": "UOI",
+      "lineno": 411,
+      "col_offset": 11,
+      "end_lineno": 411,
+      "end_col_offset": 47,
+      "original": "not isinstance(other, relativedelta)",
+      "replacement": "(isinstance(other, relativedelta))"
+    },
+    {
+      "id": "48c5de893718",
+      "operator": "RET",
+      "lineno": 412,
+      "col_offset": 12,
+      "end_lineno": 412,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "84f0edd1c249",
+      "operator": "RET",
+      "lineno": 413,
+      "col_offset": 8,
+      "end_lineno": 437,
+      "end_col_offset": 61,
+      "original": "return self.__class__(years=self.years - other.years, months=self.months - other.months, days=self.days - other.days, hours=self.hours - other.hours, minutes=self.minutes - other.minutes, seconds=self.seconds - other.seconds, microseconds=self.microseconds - other.microseconds, leapdays=self.leapdays or other.leapdays, year=(self.year if self.year is not None else other.year), month=(self.month if self.month is not None else other.month), day=(self.day if self.day is not None else other.day), weekday=(self.weekday if self.weekday is not None else other.weekday), hour=(self.hour if self.hour is not None else other.hour), minute=(self.minute if self.minute is not None else other.minute), second=(self.second if self.second is not None else other.second), microsecond=(self.microsecond if self.microsecond is not None else other.microsecond))",
+      "replacement": "return None"
+    },
+    {
+      "id": "ccb0084538cf",
+      "operator": "AOR",
+      "lineno": 413,
+      "col_offset": 36,
+      "end_lineno": 413,
+      "end_col_offset": 60,
+      "original": "self.years - other.years",
+      "replacement": "(self.years + other.years)"
+    },
+    {
+      "id": "09b60e5d8302",
+      "operator": "AOR",
+      "lineno": 415,
+      "col_offset": 34,
+      "end_lineno": 415,
+      "end_col_offset": 56,
+      "original": "self.days - other.days",
+      "replacement": "(self.days + other.days)"
+    },
+    {
+      "id": "e661e325bf8f",
+      "operator": "AOR",
+      "lineno": 417,
+      "col_offset": 37,
+      "end_lineno": 417,
+      "end_col_offset": 65,
+      "original": "self.minutes - other.minutes",
+      "replacement": "(self.minutes + other.minutes)"
+    },
+    {
+      "id": "b05dd773efcc",
+      "operator": "ROR",
+      "lineno": 421,
+      "col_offset": 48,
+      "end_lineno": 421,
+      "end_col_offset": 69,
+      "original": "self.year is not None",
+      "replacement": "(self.year is None)"
+    },
+    {
+      "id": "332616eec461",
+      "operator": "ROR",
+      "lineno": 425,
+      "col_offset": 46,
+      "end_lineno": 425,
+      "end_col_offset": 66,
+      "original": "self.day is not None",
+      "replacement": "(self.day is None)"
+    },
+    {
+      "id": "1a08cd535ace",
+      "operator": "ROR",
+      "lineno": 429,
+      "col_offset": 48,
+      "end_lineno": 429,
+      "end_col_offset": 69,
+      "original": "self.hour is not None",
+      "replacement": "(self.hour is None)"
+    },
+    {
+      "id": "218b1437de84",
+      "operator": "ROR",
+      "lineno": 433,
+      "col_offset": 52,
+      "end_lineno": 433,
+      "end_col_offset": 75,
+      "original": "self.second is not None",
+      "replacement": "(self.second is None)"
+    },
+    {
+      "id": "317f4cc4c26c",
+      "operator": "ROR",
+      "lineno": 435,
+      "col_offset": 62,
+      "end_lineno": 436,
+      "end_col_offset": 53,
+      "original": "self.microsecond is not None",
+      "replacement": "(self.microsecond is None)"
+    },
+    {
+      "id": "2c3da43b16a4",
+      "operator": "UOI",
+      "lineno": 458,
+      "col_offset": 36,
+      "end_lineno": 458,
+      "end_col_offset": 47,
+      "original": "-self.years",
+      "replacement": "(self.years)"
+    },
+    {
+      "id": "3fe26ee1c378",
+      "operator": "UOI",
+      "lineno": 459,
+      "col_offset": 36,
+      "end_lineno": 459,
+      "end_col_offset": 48,
+      "original": "-self.months",
+      "replacement": "(self.months)"
+    },
+    {
+      "id": "16ea2f109394",
+      "operator": "UOI",
+      "lineno": 462,
+      "col_offset": 37,
+      "end_lineno": 462,
+      "end_col_offset": 50,
+      "original": "-self.minutes",
+      "replacement": "(self.minutes)"
+    },
+    {
+      "id": "7d7fb89ff5b4",
+      "operator": "UOI",
+      "lineno": 463,
+      "col_offset": 37,
+      "end_lineno": 463,
+      "end_col_offset": 50,
+      "original": "-self.seconds",
+      "replacement": "(self.seconds)"
+    },
+    {
+      "id": "3bb34b5387b4",
+      "operator": "RET",
+      "lineno": 476,
+      "col_offset": 8,
+      "end_lineno": 491,
+      "end_col_offset": 45,
+      "original": "return not (not self.years and not self.months and not self.days and not self.hours and not self.minutes and not self.seconds and not self.microseconds and not self.leapdays and self.year is None and self.month is None and self.day is None and self.weekday is None and self.hour is None and self.minute is None and self.second is None and self.microsecond is None)",
+      "replacement": "return None"
+    },
+    {
+      "id": "45895c0b0562",
+      "operator": "UOI",
+      "lineno": 476,
+      "col_offset": 15,
+      "end_lineno": 491,
+      "end_col_offset": 45,
+      "original": "not (not self.years and not self.months and not self.days and not self.hours and not self.minutes and not self.seconds and not self.microseconds and not self.leapdays and self.year is None and self.month is None and self.day is None and self.weekday is None and self.hour is None and self.minute is None and self.second is None and self.microsecond is None)",
+      "replacement": "(not self.years and (not self.months) and (not self.days) and (not self.hours) and (not self.minutes) and (not self.seconds) and (not self.microseconds) and (not self.leapdays) and (self.year is None) and (self.month is None) and (self.day is None) and (self.weekday is None) and (self.hour is None) and (self.minute is None) and (self.second is None) and (self.microsecond is None))"
+    },
+    {
+      "id": "8358a25e8c5c",
+      "operator": "UOI",
+      "lineno": 476,
+      "col_offset": 20,
+      "end_lineno": 476,
+      "end_col_offset": 34,
+      "original": "not self.years",
+      "replacement": "(self.years)"
+    },
+    {
+      "id": "d1ab44c3b1a7",
+      "operator": "UOI",
+      "lineno": 478,
+      "col_offset": 20,
+      "end_lineno": 478,
+      "end_col_offset": 33,
+      "original": "not self.days",
+      "replacement": "(self.days)"
+    },
+    {
+      "id": "06c3bc12e198",
+      "operator": "UOI",
+      "lineno": 480,
+      "col_offset": 20,
+      "end_lineno": 480,
+      "end_col_offset": 36,
+      "original": "not self.minutes",
+      "replacement": "(self.minutes)"
+    },
+    {
+      "id": "39b0ee4d448b",
+      "operator": "UOI",
+      "lineno": 483,
+      "col_offset": 20,
+      "end_lineno": 483,
+      "end_col_offset": 37,
+      "original": "not self.leapdays",
+      "replacement": "(self.leapdays)"
+    },
+    {
+      "id": "5a97b8bb7592",
+      "operator": "ROR",
+      "lineno": 484,
+      "col_offset": 20,
+      "end_lineno": 484,
+      "end_col_offset": 37,
+      "original": "self.year is None",
+      "replacement": "(self.year is not None)"
+    },
+    {
+      "id": "064dc9cfb51d",
+      "operator": "ROR",
+      "lineno": 485,
+      "col_offset": 20,
+      "end_lineno": 485,
+      "end_col_offset": 38,
+      "original": "self.month is None",
+      "replacement": "(self.month is not None)"
+    },
+    {
+      "id": "b16cd302c0c5",
+      "operator": "ROR",
+      "lineno": 488,
+      "col_offset": 20,
+      "end_lineno": 488,
+      "end_col_offset": 37,
+      "original": "self.hour is None",
+      "replacement": "(self.hour is not None)"
+    },
+    {
+      "id": "1098cbf381d4",
+      "operator": "ROR",
+      "lineno": 491,
+      "col_offset": 20,
+      "end_lineno": 491,
+      "end_col_offset": 44,
+      "original": "self.microsecond is None",
+      "replacement": "(self.microsecond is not None)"
+    },
+    {
+      "id": "ccb1508575db",
+      "operator": "RET",
+      "lineno": 499,
+      "col_offset": 12,
+      "end_lineno": 499,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "85798d51418d",
+      "operator": "RET",
+      "lineno": 501,
+      "col_offset": 8,
+      "end_lineno": 516,
+      "end_col_offset": 58,
+      "original": "return self.__class__(years=int(self.years * f), months=int(self.months * f), days=int(self.days * f), hours=int(self.hours * f), minutes=int(self.minutes * f), seconds=int(self.seconds * f), microseconds=int(self.microseconds * f), leapdays=self.leapdays, year=self.year, month=self.month, day=self.day, weekday=self.weekday, hour=self.hour, minute=self.minute, second=self.second, microsecond=self.microsecond)",
+      "replacement": "return None"
+    },
+    {
+      "id": "2a6ea5cfea25",
+      "operator": "AOR",
+      "lineno": 503,
+      "col_offset": 38,
+      "end_lineno": 503,
+      "end_col_offset": 51,
+      "original": "self.days * f",
+      "replacement": "(self.days / f)"
+    },
+    {
+      "id": "60f506e2f939",
+      "operator": "AOR",
+      "lineno": 505,
+      "col_offset": 41,
+      "end_lineno": 505,
+      "end_col_offset": 57,
+      "original": "self.minutes * f",
+      "replacement": "(self.minutes / f)"
+    },
+    {
+      "id": "d920954f4e14",
+      "operator": "AOR",
+      "lineno": 506,
+      "col_offset": 41,
+      "end_lineno": 506,
+      "end_col_offset": 57,
+      "original": "self.seconds * f",
+      "replacement": "(self.seconds / f)"
+    },
+    {
+      "id": "03accac97037",
+      "operator": "AOR",
+      "lineno": 507,
+      "col_offset": 46,
+      "end_lineno": 507,
+      "end_col_offset": 67,
+      "original": "self.microseconds * f",
+      "replacement": "(self.microseconds / f)"
+    },
+    {
+      "id": "fe6efde453ce",
+      "operator": "UOI",
+      "lineno": 521,
+      "col_offset": 11,
+      "end_lineno": 521,
+      "end_col_offset": 47,
+      "original": "not isinstance(other, relativedelta)",
+      "replacement": "(isinstance(other, relativedelta))"
+    },
+    {
+      "id": "d93564f4d232",
+      "operator": "LCR",
+      "lineno": 523,
+      "col_offset": 11,
+      "end_lineno": 523,
+      "end_col_offset": 40,
+      "original": "self.weekday or other.weekday",
+      "replacement": "(self.weekday and other.weekday)"
+    },
+    {
+      "id": "d43de1ca04b3",
+      "operator": "RET",
+      "lineno": 525,
+      "col_offset": 16,
+      "end_lineno": 525,
+      "end_col_offset": 28,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "93e1dba16fa2",
+      "operator": "ROR",
+      "lineno": 526,
+      "col_offset": 15,
+      "end_lineno": 526,
+      "end_col_offset": 60,
+      "original": "self.weekday.weekday != other.weekday.weekday",
+      "replacement": "(self.weekday.weekday == other.weekday.weekday)"
+    },
+    {
+      "id": "82c53171347c",
+      "operator": "RET",
+      "lineno": 527,
+      "col_offset": 16,
+      "end_lineno": 527,
+      "end_col_offset": 28,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "40a8e4454923",
+      "operator": "LCR",
+      "lineno": 529,
+      "col_offset": 15,
+      "end_lineno": 529,
+      "end_col_offset": 77,
+      "original": "n1 != n2 and not ((not n1 or n1 == 1) and (not n2 or n2 == 1))",
+      "replacement": "(n1 != n2 or not ((not n1 or n1 == 1) and (not n2 or n2 == 1)))"
+    },
+    {
+      "id": "d13aa972daf3",
+      "operator": "UOI",
+      "lineno": 529,
+      "col_offset": 28,
+      "end_lineno": 529,
+      "end_col_offset": 77,
+      "original": "not ((not n1 or n1 == 1) and (not n2 or n2 == 1))",
+      "replacement": "((not n1 or n1 == 1) and (not n2 or n2 == 1))"
+    },
+    {
+      "id": "fe360996a195",
+      "operator": "LCR",
+      "lineno": 529,
+      "col_offset": 34,
+      "end_lineno": 529,
+      "end_col_offset": 51,
+      "original": "not n1 or n1 == 1",
+      "replacement": "(not n1 and n1 == 1)"
+    },
+    {
+      "id": "fc064342a2ac",
+      "operator": "UOI",
+      "lineno": 529,
+      "col_offset": 34,
+      "end_lineno": 529,
+      "end_col_offset": 40,
+      "original": "not n1",
+      "replacement": "(n1)"
+    },
+    {
+      "id": "dfd5d35525ca",
+      "operator": "CRP",
+      "lineno": 529,
+      "col_offset": 50,
+      "end_lineno": 529,
+      "end_col_offset": 51,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "83b4a7ea39f9",
+      "operator": "LCR",
+      "lineno": 529,
+      "col_offset": 58,
+      "end_lineno": 529,
+      "end_col_offset": 75,
+      "original": "not n2 or n2 == 1",
+      "replacement": "(not n2 and n2 == 1)"
+    },
+    {
+      "id": "27231051bf95",
+      "operator": "UOI",
+      "lineno": 529,
+      "col_offset": 58,
+      "end_lineno": 529,
+      "end_col_offset": 64,
+      "original": "not n2",
+      "replacement": "(n2)"
+    },
+    {
+      "id": "76fc6f7f77c1",
+      "operator": "ROR",
+      "lineno": 529,
+      "col_offset": 68,
+      "end_lineno": 529,
+      "end_col_offset": 75,
+      "original": "n2 == 1",
+      "replacement": "(n2 != 1)"
+    },
+    {
+      "id": "f8f9c06a7441",
+      "operator": "CRP",
+      "lineno": 530,
+      "col_offset": 23,
+      "end_lineno": 530,
+      "end_col_offset": 28,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "805c54852740",
+      "operator": "RET",
+      "lineno": 531,
+      "col_offset": 8,
+      "end_lineno": 545,
+      "end_col_offset": 54,
+      "original": "return (self.years == other.years and self.months == other.months and self.days == other.days and self.hours == other.hours and self.minutes == other.minutes and self.seconds == other.seconds and self.microseconds == other.microseconds and self.leapdays == other.leapdays and self.year == other.year and self.month == other.month and self.day == other.day and self.hour == other.hour and self.minute == other.minute and self.second == other.second and self.microsecond == other.microsecond)",
+      "replacement": "return None"
+    },
+    {
+      "id": "89d4dde5c075",
+      "operator": "LCR",
+      "lineno": 531,
+      "col_offset": 16,
+      "end_lineno": 545,
+      "end_col_offset": 53,
+      "original": "self.years == other.years and self.months == other.months and self.days == other.days and self.hours == other.hours and self.minutes == other.minutes and self.seconds == other.seconds and self.microseconds == other.microseconds and self.leapdays == other.leapdays and self.year == other.year and self.month == other.month and self.day == other.day and self.hour == other.hour and self.minute == other.minute and self.second == other.second and self.microsecond == other.microsecond",
+      "replacement": "(self.years == other.years or self.months == other.months or self.days == other.days or (self.hours == other.hours) or (self.minutes == other.minutes) or (self.seconds == other.seconds) or (self.microseconds == other.microseconds) or (self.leapdays == other.leapdays) or (self.year == other.year) or (self.month == other.month) or (self.day == other.day) or (self.hour == other.hour) or (self.minute == other.minute) or (self.second == other.second) or (self.microsecond == other.microsecond))"
+    },
+    {
+      "id": "c28e564e82b3",
+      "operator": "ROR",
+      "lineno": 531,
+      "col_offset": 16,
+      "end_lineno": 531,
+      "end_col_offset": 41,
+      "original": "self.years == other.years",
+      "replacement": "(self.years != other.years)"
+    },
+    {
+      "id": "4b53b0e7a41f",
+      "operator": "ROR",
+      "lineno": 533,
+      "col_offset": 16,
+      "end_lineno": 533,
+      "end_col_offset": 39,
+      "original": "self.days == other.days",
+      "replacement": "(self.days != other.days)"
+    },
+    {
+      "id": "43a40b0a2175",
+      "operator": "ROR",
+      "lineno": 534,
+      "col_offset": 16,
+      "end_lineno": 534,
+      "end_col_offset": 41,
+      "original": "self.hours == other.hours",
+      "replacement": "(self.hours != other.hours)"
+    },
+    {
+      "id": "5257985c5fbc",
+      "operator": "ROR",
+      "lineno": 535,
+      "col_offset": 16,
+      "end_lineno": 535,
+      "end_col_offset": 45,
+      "original": "self.minutes == other.minutes",
+      "replacement": "(self.minutes != other.minutes)"
+    },
+    {
+      "id": "25f9198ea876",
+      "operator": "ROR",
+      "lineno": 539,
+      "col_offset": 16,
+      "end_lineno": 539,
+      "end_col_offset": 39,
+      "original": "self.year == other.year",
+      "replacement": "(self.year != other.year)"
+    },
+    {
+      "id": "18ef1646e1fd",
+      "operator": "ROR",
+      "lineno": 540,
+      "col_offset": 16,
+      "end_lineno": 540,
+      "end_col_offset": 41,
+      "original": "self.month == other.month",
+      "replacement": "(self.month != other.month)"
+    },
+    {
+      "id": "d333bb3bd4dd",
+      "operator": "ROR",
+      "lineno": 544,
+      "col_offset": 16,
+      "end_lineno": 544,
+      "end_col_offset": 43,
+      "original": "self.second == other.second",
+      "replacement": "(self.second != other.second)"
+    },
+    {
+      "id": "1b714e747899",
+      "operator": "RET",
+      "lineno": 548,
+      "col_offset": 8,
+      "end_lineno": 565,
+      "end_col_offset": 10,
+      "original": "return hash(( self.weekday, self.years, self.months, self.days, self.hours, self.minutes, self.seconds, self.microseconds, self.leapdays, self.year, self.month, self.day, self.hour, self.minute, self.second, self.microsecond, ))",
+      "replacement": "return None"
+    },
+    {
+      "id": "1334965d7a94",
+      "operator": "CRP",
+      "lineno": 572,
+      "col_offset": 25,
+      "end_lineno": 572,
+      "end_col_offset": 26,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "6a9ba912e220",
+      "operator": "RET",
+      "lineno": 574,
+      "col_offset": 12,
+      "end_lineno": 574,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "7a78bcd0089a",
+      "operator": "CRP",
+      "lineno": 582,
+      "col_offset": 21,
+      "end_lineno": 582,
+      "end_col_offset": 28,
+      "original": "\"years\"",
+      "replacement": "('XXyearsXX')"
+    },
+    {
+      "id": "0e70f2cde8fc",
+      "operator": "CRP",
+      "lineno": 582,
+      "col_offset": 40,
+      "end_lineno": 582,
+      "end_col_offset": 46,
+      "original": "\"days\"",
+      "replacement": "('XXdaysXX')"
+    },
+    {
+      "id": "195b13a99fef",
+      "operator": "CRP",
+      "lineno": 583,
+      "col_offset": 30,
+      "end_lineno": 583,
+      "end_col_offset": 39,
+      "original": "\"minutes\"",
+      "replacement": "('XXminutesXX')"
+    },
+    {
+      "id": "37e7b5845953",
+      "operator": "CRP",
+      "lineno": 587,
+      "col_offset": 21,
+      "end_lineno": 587,
+      "end_col_offset": 27,
+      "original": "\"year\"",
+      "replacement": "('XXyearXX')"
+    },
+    {
+      "id": "c8ae66f96866",
+      "operator": "CRP",
+      "lineno": 587,
+      "col_offset": 38,
+      "end_lineno": 587,
+      "end_col_offset": 43,
+      "original": "\"day\"",
+      "replacement": "('XXdayXX')"
+    },
+    {
+      "id": "704a20e219fb",
+      "operator": "CRP",
+      "lineno": 588,
+      "col_offset": 21,
+      "end_lineno": 588,
+      "end_col_offset": 27,
+      "original": "\"hour\"",
+      "replacement": "('XXhourXX')"
+    },
+    {
+      "id": "386dee6158c4",
+      "operator": "CRP",
+      "lineno": 588,
+      "col_offset": 29,
+      "end_lineno": 588,
+      "end_col_offset": 37,
+      "original": "\"minute\"",
+      "replacement": "('XXminuteXX')"
+    },
+    {
+      "id": "d26e82890af9",
+      "operator": "CRP",
+      "lineno": 588,
+      "col_offset": 39,
+      "end_lineno": 588,
+      "end_col_offset": 47,
+      "original": "\"second\"",
+      "replacement": "('XXsecondXX')"
+    },
+    {
+      "id": "689e515f869f",
+      "operator": "ROR",
+      "lineno": 590,
+      "col_offset": 15,
+      "end_lineno": 590,
+      "end_col_offset": 32,
+      "original": "value is not None",
+      "replacement": "(value is None)"
+    },
+    {
+      "id": "26fefef31ba2",
+      "operator": "CRP",
+      "lineno": 591,
+      "col_offset": 25,
+      "end_lineno": 591,
+      "end_col_offset": 41,
+      "original": "\"{attr}={value}\"",
+      "replacement": "('XX{attr}={value}XX')"
+    },
+    {
+      "id": "e4b94724360a",
+      "operator": "CRP",
+      "lineno": 597,
+      "col_offset": 24,
+      "end_lineno": 597,
+      "end_col_offset": 25,
+      "original": "1",
+      "replacement": "(2)"
+    }
+  ]
+}

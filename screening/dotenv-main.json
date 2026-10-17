@@ -1,0 +1,202 @@
+{
+  "target": "dotenv-main",
+  "module_file": "src/dotenv/main.py",
+  "source_sha256": "fcb89122cd8756c43209f9052bb3c552dbe440d45493c762295c771f0d1ceaa8",
+  "tests_total": 153,
+  "tests_passed": 153,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 245,
+  "covered_lines": 215,
+  "num_branches": 100,
+  "covered_branches": 81,
+  "missing_lines": [
+    35,
+    207,
+    208,
+    220,
+    221,
+    247,
+    261,
+    263,
+    325,
+    328,
+    363,
+    366,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    402,
+    409,
+    410,
+    412,
+    415,
+    416,
+    417,
+    418,
+    469,
+    508,
+    532
+  ],
+  "missing_branches": [
+    [
+      34,
+      35
+    ],
+    [
+      72,
+      77
+    ],
+    [
+      98,
+      97
+    ],
+    [
+      111,
+      108
+    ],
+    [
+      123,
+      126
+    ],
+    [
+      210,
+      220
+    ],
+    [
+      246,
+      247
+    ],
+    [
+      253,
+      261
+    ],
+    [
+      262,
+      263
+    ],
+    [
+      324,
+      325
+    ],
+    [
+      362,
+      363
+    ],
+    [
+      365,
+      366
+    ],
+    [
+      393,
+      394
+    ],
+    [
+      393,
+      395
+    ],
+    [
+      404,
+      409
+    ],
+    [
+      412,
+      415
+    ],
+    [
+      412,
+      417
+    ],
+    [
+      468,
+      469
+    ],
+    [
+      507,
+      508
+    ]
+  ],
+  "mutants_total": 172,
+  "mutants_killed": 123,
+  "mutants_survived": 26,
+  "mutants_not_covered": 23,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "daf4f95c3e7d",
+    "e9b9800954f9",
+    "ea66e33d76cb",
+    "7725d5fab8f9",
+    "fcf6812b316d",
+    "567235527e72",
+    "1ad8d441d9fc",
+    "af78905fd332",
+    "28cf471738e4",
+    "ae419b125d1e",
+    "2c4e8fbc0b12",
+    "749f18ee0fc5",
+    "a7054d1e0fd0",
+    "65c50662dc31",
+    "01f6ff082767",
+    "b5048f1c165a",
+    "6fc4056c6b42",
+    "e6e31ede6afb",
+    "59d4d4a23212",
+    "6b24efd213f0",
+    "954ca9d57df3",
+    "2fd61e809c5c",
+    "5e6da8479146",
+    "e37b68a7ad3f",
+    "fd5f524e29aa",
+    "de78a154cb1f",
+    "02dc389f2c61",
+    "8b0cb00deccb",
+    "e0620e642405",
+    "7bce189a7006",
+    "d10b926160d0",
+    "a8dc124dc31c",
+    "13ac0933154b",
+    "e6187d1723c6",
+    "d37bbe168ca7",
+    "83feb0d3c5ef",
+    "b763de8d57c5",
+    "9661309a6922",
+    "5967a567b223",
+    "07ff254cd35e",
+    "fc5742833758",
+    "f43c9def6d21",
+    "72d5fb7c3a73",
+    "c9cb97bbd846",
+    "ddaa81db6dfc",
+    "54d7b9107552",
+    "0dafbf13ffd2",
+    "8be093a8169c",
+    "3e760083561a"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 31.35854224500008,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T12:01:37+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.8775510204081632,
+  "branch_coverage": 0.81,
+  "mutation_score": 0.7151162790697675,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 435,
+  "mutants_generated": 172,
+  "id": "dotenv-main",
+  "status": "ok",
+  "screen_seconds": 31.4
+}

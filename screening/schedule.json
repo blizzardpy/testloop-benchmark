@@ -1,0 +1,177 @@
+{
+  "target": "schedule",
+  "module_file": "schedule/__init__.py",
+  "source_sha256": "b0c93f8ee84cbb8dbb98bcb8284864f4ea04012fdbc216de13f8ad2141d09efa",
+  "tests_total": 40,
+  "tests_passed": 40,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 385,
+  "covered_lines": 362,
+  "num_branches": 144,
+  "covered_branches": 128,
+  "missing_lines": [
+    499,
+    501,
+    502,
+    503,
+    504,
+    506,
+    659,
+    744,
+    746,
+    755,
+    788,
+    789,
+    790,
+    792,
+    794,
+    798,
+    800,
+    802,
+    805,
+    809,
+    810,
+    816,
+    817
+  ],
+  "missing_branches": [
+    [
+      498,
+      499
+    ],
+    [
+      501,
+      502
+    ],
+    [
+      501,
+      503
+    ],
+    [
+      503,
+      504
+    ],
+    [
+      503,
+      506
+    ],
+    [
+      552,
+      555
+    ],
+    [
+      658,
+      659
+    ],
+    [
+      742,
+      744
+    ],
+    [
+      754,
+      755
+    ],
+    [
+      781,
+      788
+    ],
+    [
+      792,
+      794
+    ],
+    [
+      792,
+      798
+    ],
+    [
+      798,
+      800
+    ],
+    [
+      798,
+      802
+    ],
+    [
+      810,
+      816
+    ],
+    [
+      810,
+      817
+    ]
+  ],
+  "mutants_total": 200,
+  "mutants_killed": 156,
+  "mutants_survived": 34,
+  "mutants_not_covered": 9,
+  "mutants_timeout": 1,
+  "surviving_mutants": [
+    "c6d0aaf33588",
+    "89d0ffe46648",
+    "13903607f7d5",
+    "35b30b975d81",
+    "85526c508dc5",
+    "0e1788dfeb45",
+    "98bedcba1a9d",
+    "423bb5f0acbd",
+    "227614071cff",
+    "f2a9c0083926",
+    "47fdfe1fd54d",
+    "e0f820a1016d",
+    "82e52ed58635",
+    "8749c01a5455",
+    "03100655810f",
+    "d3d2beddc3e6",
+    "f3bcaa7a34a2",
+    "526daa9ca321",
+    "95f6ef12aa34",
+    "2feec1a0af08",
+    "c8097bd86020",
+    "4c06bbea83e1",
+    "c861d852a689",
+    "aec2c9e22f1f",
+    "92b31a27b9e6",
+    "d58085861889",
+    "2466f102fff1",
+    "96d94d3fd98b",
+    "418d99fe0f31",
+    "805b081a5eef",
+    "b56e61cc663e",
+    "df0700b999de",
+    "e4708a0a461e",
+    "08ae0e77a23c",
+    "de2b12d42af3",
+    "fbf4bcd6c895",
+    "541c7ff98aa7",
+    "d58dbbeda3b7",
+    "ae892db67d4e",
+    "3c05ff7d4309",
+    "888c78cb0a37",
+    "61f26a6a55d0",
+    "13f873093281"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 42.43570662399998,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:36:19+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9402597402597402,
+  "branch_coverage": 0.8888888888888888,
+  "mutation_score": 0.785,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 732,
+  "mutants_generated": 322,
+  "id": "schedule",
+  "status": "ok",
+  "screen_seconds": 42.4
+}

@@ -1,0 +1,68 @@
+{
+  "target": "inflection",
+  "module_file": "inflection/__init__.py",
+  "source_sha256": "b6b089383f812e6986f917a3c689722c54b8a69f04ded2ac32b627cbcfdaf35e",
+  "tests_total": 455,
+  "tests_passed": 455,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 83,
+  "covered_lines": 82,
+  "num_branches": 22,
+  "covered_branches": 21,
+  "missing_lines": [
+    309
+  ],
+  "missing_branches": [
+    [
+      306,
+      309
+    ]
+  ],
+  "mutants_total": 200,
+  "mutants_killed": 184,
+  "mutants_survived": 15,
+  "mutants_not_covered": 1,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "cab9cccaeded",
+    "55fbd3d45cf9",
+    "f43eb9fe6239",
+    "655c736df03e",
+    "abc1c48e703b",
+    "10fb0b95ad4b",
+    "0f3c6b119727",
+    "d8fab1d64b0e",
+    "fbc426fcc12f",
+    "45ba23baf3fb",
+    "2ad20388e4e6",
+    "800488d6de91",
+    "191163937fa2",
+    "6c3a89d878ad",
+    "79d1b4711617",
+    "6f3c9066c949"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 27.97632568400013,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T12:02:34+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9879518072289156,
+  "branch_coverage": 0.9545454545454546,
+  "mutation_score": 0.92,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 346,
+  "mutants_generated": 290,
+  "id": "inflection",
+  "status": "ok",
+  "screen_seconds": 28.0
+}

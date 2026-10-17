@@ -2,7 +2,7 @@
 # One [[project]] per source repository, pinned to a commit; one [[project.target]] per module under test.
 # category: logic = pure logic, class = class-based / stateful, io = parsing or file/environment I/O,
 #           deps = depends on third-party packages (proposal بند ۵-د).
-# status: candidate | selected | rejected (with reason).
+# status: candidate | selected | rejected (with reason). Selection proposed 2026-10-17, not yet frozen.
 
 [[project]]
 name = "python-slugify"
@@ -17,7 +17,7 @@ module_file = "slugify/slugify.py"
 module_name = "slugify.slugify"
 python_path = ["."]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "inflection"
@@ -32,7 +32,7 @@ module_file = "inflection/__init__.py"
 module_name = "inflection"
 python_path = ["."]
 human_tests = ["test_inflection.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "python-semver"
@@ -47,7 +47,7 @@ module_file = "src/semver/version.py"
 module_name = "semver.version"
 python_path = ["src"]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "python-json-pointer"
@@ -62,7 +62,7 @@ module_file = "jsonpointer.py"
 module_name = "jsonpointer"
 python_path = ["."]
 human_tests = ["tests.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "toolz"
@@ -77,7 +77,8 @@ module_file = "toolz/dicttoolz.py"
 module_name = "toolz.dicttoolz"
 python_path = ["."]
 human_tests = ["toolz/tests/test_dicttoolz.py"]
-status = "candidate"
+status = "rejected"
+reason = "only 55 mutants, too few for per-module statistics"
 
 [[project.target]]
 id = "toolz-itertoolz"
@@ -86,7 +87,7 @@ module_file = "toolz/itertoolz.py"
 module_name = "toolz.itertoolz"
 python_path = ["."]
 human_tests = ["toolz/tests/test_itertoolz.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "boltons"
@@ -101,7 +102,7 @@ module_file = "boltons/strutils.py"
 module_name = "boltons.strutils"
 python_path = ["."]
 human_tests = ["tests/test_strutils.py"]
-status = "candidate"
+status = "selected"
 
 [[project.target]]
 id = "boltons-cacheutils"
@@ -110,7 +111,7 @@ module_file = "boltons/cacheutils.py"
 module_name = "boltons.cacheutils"
 python_path = ["."]
 human_tests = ["tests/test_cacheutils.py"]
-status = "candidate"
+status = "selected"
 
 [[project.target]]
 id = "boltons-setutils"
@@ -119,7 +120,8 @@ module_file = "boltons/setutils.py"
 module_name = "boltons.setutils"
 python_path = ["."]
 human_tests = ["tests/test_setutils.py"]
-status = "candidate"
+status = "rejected"
+reason = "third boltons module; two are kept to limit the weight of one project"
 
 [[project]]
 name = "humanize"
@@ -134,7 +136,7 @@ module_file = "src/humanize/number.py"
 module_name = "humanize.number"
 python_path = ["src"]
 human_tests = ["tests/test_number.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "parse"
@@ -149,7 +151,7 @@ module_file = "parse/__init__.py"
 module_name = "parse"
 python_path = ["."]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "webcolors"
@@ -164,7 +166,8 @@ module_file = "src/webcolors/_conversion.py"
 module_name = "webcolors._conversion"
 python_path = ["src"]
 human_tests = ["tests/test_conversion.py"]
-status = "candidate"
+status = "rejected"
+reason = "only 36 mutants, too few for per-module statistics"
 
 [[project]]
 name = "cachetools"
@@ -179,13 +182,13 @@ module_file = "src/cachetools/__init__.py"
 module_name = "cachetools"
 python_path = ["src"]
 human_tests = ["tests/test_cache.py", "tests/test_fifo.py", "tests/test_lfu.py", "tests/test_lru.py", "tests/test_rr.py", "tests/test_ttl.py", "tests/test_tlru.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "bidict"
 repo = "https://github.com/jab/bidict"
 commit = "299fedc89f1d70d5d41cf7922564b376d3e2d435"
-test_deps = ["hypothesis", "sortedcontainers", "sortedcollections"]
+test_deps = ["hypothesis", "sortedcontainers", "sortedcollections", "typing_extensions"]
 
 [[project.target]]
 id = "bidict-base"
@@ -194,7 +197,7 @@ module_file = "bidict/_base.py"
 module_name = "bidict._base"
 python_path = ["."]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "isodate"
@@ -209,7 +212,7 @@ module_file = "src/isodate/duration.py"
 module_name = "isodate.duration"
 python_path = ["src"]
 human_tests = ["tests/test_duration.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "schedule"
@@ -224,7 +227,7 @@ module_file = "schedule/__init__.py"
 module_name = "schedule"
 python_path = ["."]
 human_tests = ["test_schedule.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "dateutil"
@@ -239,7 +242,7 @@ module_file = "src/dateutil/relativedelta.py"
 module_name = "dateutil.relativedelta"
 python_path = ["src"]
 human_tests = ["tests/test_relativedelta.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "xmltodict"
@@ -254,7 +257,7 @@ module_file = "xmltodict.py"
 module_name = "xmltodict"
 python_path = ["."]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "tomli"
@@ -269,7 +272,7 @@ module_file = "src/tomli/_parser.py"
 module_name = "tomli._parser"
 python_path = ["src"]
 human_tests = ["tests"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "python-dotenv"
@@ -284,7 +287,7 @@ module_file = "src/dotenv/main.py"
 module_name = "dotenv.main"
 python_path = ["src"]
 human_tests = ["tests/test_main.py"]
-status = "candidate"
+status = "selected"
 
 [[project.target]]
 id = "dotenv-parser"
@@ -293,7 +296,7 @@ module_file = "src/dotenv/parser.py"
 module_name = "dotenv.parser"
 python_path = ["src"]
 human_tests = ["tests/test_parser.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "python-pathspec"
@@ -308,7 +311,8 @@ module_file = "pathspec/pathspec.py"
 module_name = "pathspec.pathspec"
 python_path = ["."]
 human_tests = ["tests/test_05_pathspec.py"]
-status = "candidate"
+status = "rejected"
+reason = "only 45 mutants and 13 human tests"
 
 [[project]]
 name = "requests"
@@ -323,7 +327,7 @@ module_file = "src/requests/utils.py"
 module_name = "requests.utils"
 python_path = ["src"]
 human_tests = ["tests/test_utils.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "marshmallow"
@@ -338,7 +342,7 @@ module_file = "src/marshmallow/validate.py"
 module_name = "marshmallow.validate"
 python_path = ["src"]
 human_tests = ["tests/test_validate.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "jinja"
@@ -353,7 +357,7 @@ module_file = "src/jinja2/filters.py"
 module_name = "jinja2.filters"
 python_path = ["src"]
 human_tests = ["tests/test_filters.py"]
-status = "candidate"
+status = "selected"
 
 [[project]]
 name = "click"
@@ -367,5 +371,5 @@ category = "deps"
 module_file = "src/click/types.py"
 module_name = "click.types"
 python_path = ["src"]
-human_tests = ["tests/test_types.py"]
-status = "candidate"
+human_tests = ["tests/test_types"]
+status = "selected"

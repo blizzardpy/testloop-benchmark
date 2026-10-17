@@ -1,0 +1,2011 @@
+{
+  "target": "inflection",
+  "module_file": "inflection/__init__.py",
+  "source_sha256": "b6b089383f812e6986f917a3c689722c54b8a69f04ded2ac32b627cbcfdaf35e",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 290,
+  "mutants": [
+    {
+      "id": "cab9cccaeded",
+      "operator": "CRP",
+      "lineno": 16,
+      "col_offset": 14,
+      "end_lineno": 16,
+      "end_col_offset": 21,
+      "original": "'0.5.1'",
+      "replacement": "('XX0.5.1XX')"
+    },
+    {
+      "id": "4235b5354543",
+      "operator": "CRP",
+      "lineno": 21,
+      "col_offset": 21,
+      "end_lineno": 21,
+      "end_col_offset": 29,
+      "original": "r'\\1zes'",
+      "replacement": "('XX\\\\1zesXX')"
+    },
+    {
+      "id": "b51b57cf3da8",
+      "operator": "CRP",
+      "lineno": 22,
+      "col_offset": 22,
+      "end_lineno": 22,
+      "end_col_offset": 27,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "073e751a2fb4",
+      "operator": "CRP",
+      "lineno": 23,
+      "col_offset": 5,
+      "end_lineno": 23,
+      "end_col_offset": 18,
+      "original": "r\"(?i)^(ox)$\"",
+      "replacement": "('XX(?i)^(ox)$XX')"
+    },
+    {
+      "id": "6cd69f7be046",
+      "operator": "CRP",
+      "lineno": 23,
+      "col_offset": 20,
+      "end_lineno": 23,
+      "end_col_offset": 27,
+      "original": "r'\\1en'",
+      "replacement": "('XX\\\\1enXX')"
+    },
+    {
+      "id": "3c5e4aa07ed9",
+      "operator": "CRP",
+      "lineno": 24,
+      "col_offset": 5,
+      "end_lineno": 24,
+      "end_col_offset": 21,
+      "original": "r\"(?i)(m|l)ice$\"",
+      "replacement": "('XX(?i)(m|l)ice$XX')"
+    },
+    {
+      "id": "81118e56231c",
+      "operator": "CRP",
+      "lineno": 24,
+      "col_offset": 23,
+      "end_lineno": 24,
+      "end_col_offset": 31,
+      "original": "r'\\1ice'",
+      "replacement": "('XX\\\\1iceXX')"
+    },
+    {
+      "id": "d5dcb75b8b1d",
+      "operator": "CRP",
+      "lineno": 25,
+      "col_offset": 5,
+      "end_lineno": 25,
+      "end_col_offset": 22,
+      "original": "r\"(?i)(m|l)ouse$\"",
+      "replacement": "('XX(?i)(m|l)ouse$XX')"
+    },
+    {
+      "id": "62211525db81",
+      "operator": "CRP",
+      "lineno": 26,
+      "col_offset": 5,
+      "end_lineno": 26,
+      "end_col_offset": 25,
+      "original": "r\"(?i)(passer)s?by$\"",
+      "replacement": "('XX(?i)(passer)s?by$XX')"
+    },
+    {
+      "id": "7a9427477dfb",
+      "operator": "CRP",
+      "lineno": 26,
+      "col_offset": 27,
+      "end_lineno": 26,
+      "end_col_offset": 35,
+      "original": "r'\\1sby'",
+      "replacement": "('XX\\\\1sbyXX')"
+    },
+    {
+      "id": "678726695cde",
+      "operator": "CRP",
+      "lineno": 28,
+      "col_offset": 5,
+      "end_lineno": 28,
+      "end_col_offset": 25,
+      "original": "r\"(?i)(x|ch|ss|sh)$\"",
+      "replacement": "('XX(?i)(x|ch|ss|sh)$XX')"
+    },
+    {
+      "id": "5c442ae68fcf",
+      "operator": "CRP",
+      "lineno": 28,
+      "col_offset": 27,
+      "end_lineno": 28,
+      "end_col_offset": 34,
+      "original": "r'\\1es'",
+      "replacement": "('XX\\\\1esXX')"
+    },
+    {
+      "id": "24f1df72af82",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 5,
+      "end_lineno": 29,
+      "end_col_offset": 28,
+      "original": "r\"(?i)([^aeiouy]|qu)y$\"",
+      "replacement": "('XX(?i)([^aeiouy]|qu)y$XX')"
+    },
+    {
+      "id": "2f08665239b9",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 30,
+      "end_lineno": 29,
+      "end_col_offset": 38,
+      "original": "r'\\1ies'",
+      "replacement": "('XX\\\\1iesXX')"
+    },
+    {
+      "id": "e6b3c8f0cf60",
+      "operator": "CRP",
+      "lineno": 30,
+      "col_offset": 21,
+      "end_lineno": 30,
+      "end_col_offset": 27,
+      "original": "r'\\1s'",
+      "replacement": "('XX\\\\1sXX')"
+    },
+    {
+      "id": "f755b60d4f6b",
+      "operator": "CRP",
+      "lineno": 31,
+      "col_offset": 5,
+      "end_lineno": 31,
+      "end_col_offset": 20,
+      "original": "r\"(?i)([lr])f$\"",
+      "replacement": "('XX(?i)([lr])f$XX')"
+    },
+    {
+      "id": "6bfde0cc8080",
+      "operator": "CRP",
+      "lineno": 31,
+      "col_offset": 22,
+      "end_lineno": 31,
+      "end_col_offset": 30,
+      "original": "r'\\1ves'",
+      "replacement": "('XX\\\\1vesXX')"
+    },
+    {
+      "id": "cdde62210cd0",
+      "operator": "CRP",
+      "lineno": 32,
+      "col_offset": 5,
+      "end_lineno": 32,
+      "end_col_offset": 21,
+      "original": "r\"(?i)([^f])fe$\"",
+      "replacement": "('XX(?i)([^f])fe$XX')"
+    },
+    {
+      "id": "fbe8fa262afb",
+      "operator": "CRP",
+      "lineno": 33,
+      "col_offset": 5,
+      "end_lineno": 33,
+      "end_col_offset": 16,
+      "original": "r\"(?i)sis$\"",
+      "replacement": "('XX(?i)sis$XX')"
+    },
+    {
+      "id": "97e84d65a8cb",
+      "operator": "CRP",
+      "lineno": 33,
+      "col_offset": 18,
+      "end_lineno": 33,
+      "end_col_offset": 23,
+      "original": "'ses'",
+      "replacement": "('XXsesXX')"
+    },
+    {
+      "id": "378313899df4",
+      "operator": "CRP",
+      "lineno": 34,
+      "col_offset": 5,
+      "end_lineno": 34,
+      "end_col_offset": 20,
+      "original": "r\"(?i)([ti])a$\"",
+      "replacement": "('XX(?i)([ti])a$XX')"
+    },
+    {
+      "id": "c0f3f3611189",
+      "operator": "CRP",
+      "lineno": 34,
+      "col_offset": 22,
+      "end_lineno": 34,
+      "end_col_offset": 28,
+      "original": "r'\\1a'",
+      "replacement": "('XX\\\\1aXX')"
+    },
+    {
+      "id": "74b87f490adb",
+      "operator": "CRP",
+      "lineno": 35,
+      "col_offset": 5,
+      "end_lineno": 35,
+      "end_col_offset": 21,
+      "original": "r\"(?i)([ti])um$\"",
+      "replacement": "('XX(?i)([ti])um$XX')"
+    },
+    {
+      "id": "0dfb78e33f11",
+      "operator": "CRP",
+      "lineno": 35,
+      "col_offset": 23,
+      "end_lineno": 35,
+      "end_col_offset": 29,
+      "original": "r'\\1a'",
+      "replacement": "('XX\\\\1aXX')"
+    },
+    {
+      "id": "17a287d8ae6d",
+      "operator": "CRP",
+      "lineno": 36,
+      "col_offset": 5,
+      "end_lineno": 36,
+      "end_col_offset": 34,
+      "original": "r\"(?i)(buffal|potat|tomat)o$\"",
+      "replacement": "('XX(?i)(buffal|potat|tomat)o$XX')"
+    },
+    {
+      "id": "4e216bb01094",
+      "operator": "CRP",
+      "lineno": 37,
+      "col_offset": 5,
+      "end_lineno": 37,
+      "end_col_offset": 18,
+      "original": "r\"(?i)(bu)s$\"",
+      "replacement": "('XX(?i)(bu)s$XX')"
+    },
+    {
+      "id": "e8a59915d267",
+      "operator": "CRP",
+      "lineno": 38,
+      "col_offset": 29,
+      "end_lineno": 38,
+      "end_col_offset": 36,
+      "original": "r'\\1es'",
+      "replacement": "('XX\\\\1esXX')"
+    },
+    {
+      "id": "81a4f693b636",
+      "operator": "CRP",
+      "lineno": 39,
+      "col_offset": 5,
+      "end_lineno": 39,
+      "end_col_offset": 25,
+      "original": "r\"(?i)(octop|vir)i$\"",
+      "replacement": "('XX(?i)(octop|vir)i$XX')"
+    },
+    {
+      "id": "5bd130b0dae1",
+      "operator": "CRP",
+      "lineno": 39,
+      "col_offset": 27,
+      "end_lineno": 39,
+      "end_col_offset": 33,
+      "original": "r'\\1i'",
+      "replacement": "('XX\\\\1iXX')"
+    },
+    {
+      "id": "0d7066559b89",
+      "operator": "CRP",
+      "lineno": 42,
+      "col_offset": 5,
+      "end_lineno": 42,
+      "end_col_offset": 14,
+      "original": "r\"(?i)s$\"",
+      "replacement": "('XX(?i)s$XX')"
+    },
+    {
+      "id": "066998bbf795",
+      "operator": "CRP",
+      "lineno": 42,
+      "col_offset": 16,
+      "end_lineno": 42,
+      "end_col_offset": 19,
+      "original": "'s'",
+      "replacement": "('XXsXX')"
+    },
+    {
+      "id": "6c6fb2de2826",
+      "operator": "CRP",
+      "lineno": 43,
+      "col_offset": 5,
+      "end_lineno": 43,
+      "end_col_offset": 9,
+      "original": "r\"$\"",
+      "replacement": "('XX$XX')"
+    },
+    {
+      "id": "ae2af8ce3391",
+      "operator": "CRP",
+      "lineno": 47,
+      "col_offset": 5,
+      "end_lineno": 47,
+      "end_col_offset": 24,
+      "original": "r\"(?i)(database)s$\"",
+      "replacement": "('XX(?i)(database)s$XX')"
+    },
+    {
+      "id": "145331a1fd75",
+      "operator": "CRP",
+      "lineno": 47,
+      "col_offset": 26,
+      "end_lineno": 47,
+      "end_col_offset": 31,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "5cbb6d40fed1",
+      "operator": "CRP",
+      "lineno": 48,
+      "col_offset": 5,
+      "end_lineno": 48,
+      "end_col_offset": 22,
+      "original": "r\"(?i)(quiz)zes$\"",
+      "replacement": "('XX(?i)(quiz)zes$XX')"
+    },
+    {
+      "id": "4a6c71b330c0",
+      "operator": "CRP",
+      "lineno": 48,
+      "col_offset": 24,
+      "end_lineno": 48,
+      "end_col_offset": 29,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "68496ba6aaa5",
+      "operator": "CRP",
+      "lineno": 49,
+      "col_offset": 5,
+      "end_lineno": 49,
+      "end_col_offset": 23,
+      "original": "r\"(?i)(matr)ices$\"",
+      "replacement": "('XX(?i)(matr)ices$XX')"
+    },
+    {
+      "id": "fd5622bbb42b",
+      "operator": "CRP",
+      "lineno": 49,
+      "col_offset": 25,
+      "end_lineno": 49,
+      "end_col_offset": 32,
+      "original": "r'\\1ix'",
+      "replacement": "('XX\\\\1ixXX')"
+    },
+    {
+      "id": "71cbe44aff46",
+      "operator": "CRP",
+      "lineno": 50,
+      "col_offset": 29,
+      "end_lineno": 50,
+      "end_col_offset": 36,
+      "original": "r'\\1ex'",
+      "replacement": "('XX\\\\1exXX')"
+    },
+    {
+      "id": "2028b6a76519",
+      "operator": "CRP",
+      "lineno": 51,
+      "col_offset": 5,
+      "end_lineno": 51,
+      "end_col_offset": 24,
+      "original": "r\"(?i)(passer)sby$\"",
+      "replacement": "('XX(?i)(passer)sby$XX')"
+    },
+    {
+      "id": "8e15a0e947a4",
+      "operator": "CRP",
+      "lineno": 51,
+      "col_offset": 26,
+      "end_lineno": 51,
+      "end_col_offset": 33,
+      "original": "r'\\1by'",
+      "replacement": "('XX\\\\1byXX')"
+    },
+    {
+      "id": "ceeee51fe428",
+      "operator": "CRP",
+      "lineno": 53,
+      "col_offset": 5,
+      "end_lineno": 53,
+      "end_col_offset": 32,
+      "original": "r\"(?i)(alias|status)(es)?$\"",
+      "replacement": "('XX(?i)(alias|status)(es)?$XX')"
+    },
+    {
+      "id": "67416435997d",
+      "operator": "CRP",
+      "lineno": 53,
+      "col_offset": 34,
+      "end_lineno": 53,
+      "end_col_offset": 39,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "976d2954f048",
+      "operator": "CRP",
+      "lineno": 54,
+      "col_offset": 5,
+      "end_lineno": 54,
+      "end_col_offset": 30,
+      "original": "r\"(?i)(octop|vir)(us|i)$\"",
+      "replacement": "('XX(?i)(octop|vir)(us|i)$XX')"
+    },
+    {
+      "id": "b92bd023b25c",
+      "operator": "CRP",
+      "lineno": 54,
+      "col_offset": 32,
+      "end_lineno": 54,
+      "end_col_offset": 39,
+      "original": "r'\\1us'",
+      "replacement": "('XX\\\\1usXX')"
+    },
+    {
+      "id": "ff5b4a100e46",
+      "operator": "CRP",
+      "lineno": 55,
+      "col_offset": 25,
+      "end_lineno": 55,
+      "end_col_offset": 33,
+      "original": "r'\\1xis'",
+      "replacement": "('XX\\\\1xisXX')"
+    },
+    {
+      "id": "a6bd0b332c3f",
+      "operator": "CRP",
+      "lineno": 56,
+      "col_offset": 33,
+      "end_lineno": 56,
+      "end_col_offset": 40,
+      "original": "r'\\1is'",
+      "replacement": "('XX\\\\1isXX')"
+    },
+    {
+      "id": "b34d415ddbef",
+      "operator": "CRP",
+      "lineno": 58,
+      "col_offset": 5,
+      "end_lineno": 58,
+      "end_col_offset": 18,
+      "original": "r\"(?i)(o)es$\"",
+      "replacement": "('XX(?i)(o)es$XX')"
+    },
+    {
+      "id": "43ce6a0c0a24",
+      "operator": "CRP",
+      "lineno": 58,
+      "col_offset": 20,
+      "end_lineno": 58,
+      "end_col_offset": 25,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "5ed20b8438bc",
+      "operator": "CRP",
+      "lineno": 59,
+      "col_offset": 5,
+      "end_lineno": 59,
+      "end_col_offset": 23,
+      "original": "r\"(?i)(bus)(es)?$\"",
+      "replacement": "('XX(?i)(bus)(es)?$XX')"
+    },
+    {
+      "id": "8c15688f8ecc",
+      "operator": "CRP",
+      "lineno": 59,
+      "col_offset": 25,
+      "end_lineno": 59,
+      "end_col_offset": 30,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "fc8280f031ca",
+      "operator": "CRP",
+      "lineno": 60,
+      "col_offset": 5,
+      "end_lineno": 60,
+      "end_col_offset": 21,
+      "original": "r\"(?i)(m|l)ice$\"",
+      "replacement": "('XX(?i)(m|l)ice$XX')"
+    },
+    {
+      "id": "50bd2c22f50b",
+      "operator": "CRP",
+      "lineno": 60,
+      "col_offset": 23,
+      "end_lineno": 60,
+      "end_col_offset": 32,
+      "original": "r'\\1ouse'",
+      "replacement": "('XX\\\\1ouseXX')"
+    },
+    {
+      "id": "0025dd73dfa8",
+      "operator": "CRP",
+      "lineno": 61,
+      "col_offset": 5,
+      "end_lineno": 61,
+      "end_col_offset": 27,
+      "original": "r\"(?i)(x|ch|ss|sh)es$\"",
+      "replacement": "('XX(?i)(x|ch|ss|sh)es$XX')"
+    },
+    {
+      "id": "4fbf1aef6f93",
+      "operator": "CRP",
+      "lineno": 61,
+      "col_offset": 29,
+      "end_lineno": 61,
+      "end_col_offset": 34,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "0dcd3fd93c5c",
+      "operator": "CRP",
+      "lineno": 62,
+      "col_offset": 5,
+      "end_lineno": 62,
+      "end_col_offset": 21,
+      "original": "r\"(?i)(m)ovies$\"",
+      "replacement": "('XX(?i)(m)ovies$XX')"
+    },
+    {
+      "id": "94aeb770795f",
+      "operator": "CRP",
+      "lineno": 63,
+      "col_offset": 5,
+      "end_lineno": 63,
+      "end_col_offset": 21,
+      "original": "r\"(?i)(s)eries$\"",
+      "replacement": "('XX(?i)(s)eries$XX')"
+    },
+    {
+      "id": "a4573870791b",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 5,
+      "end_lineno": 64,
+      "end_col_offset": 30,
+      "original": "r\"(?i)([^aeiouy]|qu)ies$\"",
+      "replacement": "('XX(?i)([^aeiouy]|qu)ies$XX')"
+    },
+    {
+      "id": "03de8d1270ec",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 32,
+      "end_lineno": 64,
+      "end_col_offset": 38,
+      "original": "r'\\1y'",
+      "replacement": "('XX\\\\1yXX')"
+    },
+    {
+      "id": "bad2e5ab0322",
+      "operator": "CRP",
+      "lineno": 65,
+      "col_offset": 5,
+      "end_lineno": 65,
+      "end_col_offset": 22,
+      "original": "r\"(?i)([lr])ves$\"",
+      "replacement": "('XX(?i)([lr])ves$XX')"
+    },
+    {
+      "id": "fc0d333e3eae",
+      "operator": "CRP",
+      "lineno": 66,
+      "col_offset": 5,
+      "end_lineno": 66,
+      "end_col_offset": 20,
+      "original": "r\"(?i)(tive)s$\"",
+      "replacement": "('XX(?i)(tive)s$XX')"
+    },
+    {
+      "id": "50e5d8a3000c",
+      "operator": "CRP",
+      "lineno": 66,
+      "col_offset": 22,
+      "end_lineno": 66,
+      "end_col_offset": 27,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "2d495fe11266",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 5,
+      "end_lineno": 68,
+      "end_col_offset": 22,
+      "original": "r\"(?i)([^f])ves$\"",
+      "replacement": "('XX(?i)([^f])ves$XX')"
+    },
+    {
+      "id": "b4d53ac532fd",
+      "operator": "CRP",
+      "lineno": 69,
+      "col_offset": 5,
+      "end_lineno": 69,
+      "end_col_offset": 27,
+      "original": "r\"(?i)(t)he(sis|ses)$\"",
+      "replacement": "('XX(?i)(t)he(sis|ses)$XX')"
+    },
+    {
+      "id": "7cf6af8c847b",
+      "operator": "CRP",
+      "lineno": 70,
+      "col_offset": 5,
+      "end_lineno": 70,
+      "end_col_offset": 29,
+      "original": "r\"(?i)(s)ynop(sis|ses)$\"",
+      "replacement": "('XX(?i)(s)ynop(sis|ses)$XX')"
+    },
+    {
+      "id": "55fbd3d45cf9",
+      "operator": "CRP",
+      "lineno": 70,
+      "col_offset": 31,
+      "end_lineno": 70,
+      "end_col_offset": 43,
+      "original": "r\"\\1ynopsis\"",
+      "replacement": "('XX\\\\1ynopsisXX')"
+    },
+    {
+      "id": "5125f9b00b82",
+      "operator": "CRP",
+      "lineno": 71,
+      "col_offset": 5,
+      "end_lineno": 71,
+      "end_col_offset": 30,
+      "original": "r\"(?i)(p)rogno(sis|ses)$\"",
+      "replacement": "('XX(?i)(p)rogno(sis|ses)$XX')"
+    },
+    {
+      "id": "f43eb9fe6239",
+      "operator": "CRP",
+      "lineno": 72,
+      "col_offset": 34,
+      "end_lineno": 72,
+      "end_col_offset": 49,
+      "original": "r\"\\1arenthesis\"",
+      "replacement": "('XX\\\\1arenthesisXX')"
+    },
+    {
+      "id": "53974d644b7f",
+      "operator": "CRP",
+      "lineno": 73,
+      "col_offset": 5,
+      "end_lineno": 73,
+      "end_col_offset": 30,
+      "original": "r\"(?i)(d)iagno(sis|ses)$\"",
+      "replacement": "('XX(?i)(d)iagno(sis|ses)$XX')"
+    },
+    {
+      "id": "49de58a608ed",
+      "operator": "CRP",
+      "lineno": 73,
+      "col_offset": 32,
+      "end_lineno": 73,
+      "end_col_offset": 45,
+      "original": "r\"\\1iagnosis\"",
+      "replacement": "('XX\\\\1iagnosisXX')"
+    },
+    {
+      "id": "c030efdbb54c",
+      "operator": "CRP",
+      "lineno": 74,
+      "col_offset": 28,
+      "end_lineno": 74,
+      "end_col_offset": 37,
+      "original": "r\"\\1asis\"",
+      "replacement": "('XX\\\\1asisXX')"
+    },
+    {
+      "id": "dca26026262a",
+      "operator": "CRP",
+      "lineno": 75,
+      "col_offset": 31,
+      "end_lineno": 75,
+      "end_col_offset": 43,
+      "original": "r\"\\1nalysis\"",
+      "replacement": "('XX\\\\1nalysisXX')"
+    },
+    {
+      "id": "74011a2f8608",
+      "operator": "CRP",
+      "lineno": 76,
+      "col_offset": 22,
+      "end_lineno": 76,
+      "end_col_offset": 29,
+      "original": "r'\\1um'",
+      "replacement": "('XX\\\\1umXX')"
+    },
+    {
+      "id": "ad60b40c348b",
+      "operator": "CRP",
+      "lineno": 77,
+      "col_offset": 5,
+      "end_lineno": 77,
+      "end_col_offset": 19,
+      "original": "r\"(?i)(n)ews$\"",
+      "replacement": "('XX(?i)(n)ews$XX')"
+    },
+    {
+      "id": "70ae16319dc0",
+      "operator": "CRP",
+      "lineno": 78,
+      "col_offset": 5,
+      "end_lineno": 78,
+      "end_col_offset": 17,
+      "original": "r\"(?i)(ss)$\"",
+      "replacement": "('XX(?i)(ss)$XX')"
+    },
+    {
+      "id": "2e8db88279de",
+      "operator": "CRP",
+      "lineno": 79,
+      "col_offset": 5,
+      "end_lineno": 79,
+      "end_col_offset": 14,
+      "original": "r\"(?i)s$\"",
+      "replacement": "('XX(?i)s$XX')"
+    },
+    {
+      "id": "f7d4e1d1d0f7",
+      "operator": "CRP",
+      "lineno": 83,
+      "col_offset": 4,
+      "end_lineno": 83,
+      "end_col_offset": 15,
+      "original": "'equipment'",
+      "replacement": "('XXequipmentXX')"
+    },
+    {
+      "id": "53e2597acf00",
+      "operator": "CRP",
+      "lineno": 84,
+      "col_offset": 4,
+      "end_lineno": 84,
+      "end_col_offset": 10,
+      "original": "'fish'",
+      "replacement": "('XXfishXX')"
+    },
+    {
+      "id": "1f7a73842a46",
+      "operator": "CRP",
+      "lineno": 85,
+      "col_offset": 4,
+      "end_lineno": 85,
+      "end_col_offset": 17,
+      "original": "'information'",
+      "replacement": "('XXinformationXX')"
+    },
+    {
+      "id": "55541091a5b4",
+      "operator": "CRP",
+      "lineno": 86,
+      "col_offset": 4,
+      "end_lineno": 86,
+      "end_col_offset": 11,
+      "original": "'jeans'",
+      "replacement": "('XXjeansXX')"
+    },
+    {
+      "id": "9fbe873e9f97",
+      "operator": "CRP",
+      "lineno": 89,
+      "col_offset": 4,
+      "end_lineno": 89,
+      "end_col_offset": 12,
+      "original": "'series'",
+      "replacement": "('XXseriesXX')"
+    },
+    {
+      "id": "a674f66a2a3d",
+      "operator": "CRP",
+      "lineno": 91,
+      "col_offset": 4,
+      "end_lineno": 91,
+      "end_col_offset": 13,
+      "original": "'species'",
+      "replacement": "('XXspeciesXX')"
+    },
+    {
+      "id": "ad21a48a94a1",
+      "operator": "RET",
+      "lineno": 103,
+      "col_offset": 8,
+      "end_lineno": 103,
+      "end_col_offset": 74,
+      "original": "return ''.join('[' + char + char.upper() + ']' for char in string)",
+      "replacement": "return None"
+    },
+    {
+      "id": "fcc4e432b2a2",
+      "operator": "CRP",
+      "lineno": 103,
+      "col_offset": 15,
+      "end_lineno": 103,
+      "end_col_offset": 17,
+      "original": "''",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "04f902b8f0a7",
+      "operator": "AOR",
+      "lineno": 103,
+      "col_offset": 23,
+      "end_lineno": 103,
+      "end_col_offset": 54,
+      "original": "'[' + char + char.upper() + ']'",
+      "replacement": "('[' + char + char.upper() - ']')"
+    },
+    {
+      "id": "a5abc9a10906",
+      "operator": "AOR",
+      "lineno": 103,
+      "col_offset": 23,
+      "end_lineno": 103,
+      "end_col_offset": 48,
+      "original": "'[' + char + char.upper()",
+      "replacement": "('[' + char - char.upper())"
+    },
+    {
+      "id": "c3d2129bc0ee",
+      "operator": "AOR",
+      "lineno": 103,
+      "col_offset": 23,
+      "end_lineno": 103,
+      "end_col_offset": 33,
+      "original": "'[' + char",
+      "replacement": "('[' - char)"
+    },
+    {
+      "id": "dfee46f9101c",
+      "operator": "CRP",
+      "lineno": 103,
+      "col_offset": 51,
+      "end_lineno": 103,
+      "end_col_offset": 54,
+      "original": "']'",
+      "replacement": "('XX]XX')"
+    },
+    {
+      "id": "655c736df03e",
+      "operator": "CRP",
+      "lineno": 105,
+      "col_offset": 16,
+      "end_lineno": 105,
+      "end_col_offset": 17,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "abc1c48e703b",
+      "operator": "CRP",
+      "lineno": 105,
+      "col_offset": 37,
+      "end_lineno": 105,
+      "end_col_offset": 38,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "10fb0b95ad4b",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 23,
+      "end_lineno": 106,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "99e769add085",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 12,
+      "end_lineno": 107,
+      "end_col_offset": 26,
+      "original": "r\"(?i)({}){}$\"",
+      "replacement": "('XX(?i)({}){}$XX')"
+    },
+    {
+      "id": "d7ad93542837",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 43,
+      "end_lineno": 107,
+      "end_col_offset": 44,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "8e3521c0500a",
+      "operator": "CRP",
+      "lineno": 107,
+      "col_offset": 56,
+      "end_lineno": 107,
+      "end_col_offset": 57,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "bce2c8e3f5f9",
+      "operator": "AOR",
+      "lineno": 108,
+      "col_offset": 12,
+      "end_lineno": 108,
+      "end_col_offset": 30,
+      "original": "r'\\1' + plural[1:]",
+      "replacement": "('\\\\1' - plural[1:])"
+    },
+    {
+      "id": "a766d2a47b85",
+      "operator": "CRP",
+      "lineno": 108,
+      "col_offset": 27,
+      "end_lineno": 108,
+      "end_col_offset": 28,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "0f3c6b119727",
+      "operator": "CRP",
+      "lineno": 110,
+      "col_offset": 23,
+      "end_lineno": 110,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "dd865bdf47d6",
+      "operator": "CRP",
+      "lineno": 111,
+      "col_offset": 12,
+      "end_lineno": 111,
+      "end_col_offset": 26,
+      "original": "r\"(?i)({}){}$\"",
+      "replacement": "('XX(?i)({}){}$XX')"
+    },
+    {
+      "id": "437536d9276e",
+      "operator": "CRP",
+      "lineno": 111,
+      "col_offset": 41,
+      "end_lineno": 111,
+      "end_col_offset": 42,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "1b03370a78ef",
+      "operator": "CRP",
+      "lineno": 112,
+      "col_offset": 12,
+      "end_lineno": 112,
+      "end_col_offset": 17,
+      "original": "r'\\1'",
+      "replacement": "('XX\\\\1XX')"
+    },
+    {
+      "id": "527a983a5421",
+      "operator": "CRP",
+      "lineno": 112,
+      "col_offset": 27,
+      "end_lineno": 112,
+      "end_col_offset": 28,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "d8fab1d64b0e",
+      "operator": "CRP",
+      "lineno": 114,
+      "col_offset": 25,
+      "end_lineno": 114,
+      "end_col_offset": 26,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "f20b5807cf8d",
+      "operator": "CRP",
+      "lineno": 115,
+      "col_offset": 12,
+      "end_lineno": 115,
+      "end_col_offset": 26,
+      "original": "r\"(?i)({}){}$\"",
+      "replacement": "('XX(?i)({}){}$XX')"
+    },
+    {
+      "id": "96aa977ca1b8",
+      "operator": "CRP",
+      "lineno": 115,
+      "col_offset": 41,
+      "end_lineno": 115,
+      "end_col_offset": 42,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "024e59a59ce4",
+      "operator": "AOR",
+      "lineno": 116,
+      "col_offset": 12,
+      "end_lineno": 116,
+      "end_col_offset": 32,
+      "original": "r'\\1' + singular[1:]",
+      "replacement": "('\\\\1' - singular[1:])"
+    },
+    {
+      "id": "911b37f39855",
+      "operator": "CRP",
+      "lineno": 116,
+      "col_offset": 29,
+      "end_lineno": 116,
+      "end_col_offset": 30,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "fbc426fcc12f",
+      "operator": "CRP",
+      "lineno": 119,
+      "col_offset": 23,
+      "end_lineno": 119,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "41f15d5feb4a",
+      "operator": "CRP",
+      "lineno": 120,
+      "col_offset": 12,
+      "end_lineno": 120,
+      "end_col_offset": 20,
+      "original": "r\"{}{}$\"",
+      "replacement": "('XX{}{}$XX')"
+    },
+    {
+      "id": "1f3a1aebccaa",
+      "operator": "CRP",
+      "lineno": 120,
+      "col_offset": 37,
+      "end_lineno": 120,
+      "end_col_offset": 38,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "7e36a2841ec0",
+      "operator": "CRP",
+      "lineno": 121,
+      "col_offset": 53,
+      "end_lineno": 121,
+      "end_col_offset": 54,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "0d3e4dc398d3",
+      "operator": "AOR",
+      "lineno": 122,
+      "col_offset": 12,
+      "end_lineno": 122,
+      "end_col_offset": 42,
+      "original": "plural[0].upper() + plural[1:]",
+      "replacement": "(plural[0].upper() - plural[1:])"
+    },
+    {
+      "id": "386676828695",
+      "operator": "CRP",
+      "lineno": 122,
+      "col_offset": 19,
+      "end_lineno": 122,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "45ba23baf3fb",
+      "operator": "CRP",
+      "lineno": 124,
+      "col_offset": 23,
+      "end_lineno": 124,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "7f8396a93d81",
+      "operator": "CRP",
+      "lineno": 125,
+      "col_offset": 12,
+      "end_lineno": 125,
+      "end_col_offset": 20,
+      "original": "r\"{}{}$\"",
+      "replacement": "('XX{}{}$XX')"
+    },
+    {
+      "id": "f9c1177ade72",
+      "operator": "AOR",
+      "lineno": 127,
+      "col_offset": 12,
+      "end_lineno": 127,
+      "end_col_offset": 42,
+      "original": "plural[0].lower() + plural[1:]",
+      "replacement": "(plural[0].lower() - plural[1:])"
+    },
+    {
+      "id": "678b9a8399ea",
+      "operator": "CRP",
+      "lineno": 127,
+      "col_offset": 39,
+      "end_lineno": 127,
+      "end_col_offset": 40,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c77f1989d64e",
+      "operator": "CRP",
+      "lineno": 130,
+      "col_offset": 12,
+      "end_lineno": 130,
+      "end_col_offset": 20,
+      "original": "r\"{}{}$\"",
+      "replacement": "('XX{}{}$XX')"
+    },
+    {
+      "id": "4b3ef6ff1187",
+      "operator": "CRP",
+      "lineno": 130,
+      "col_offset": 35,
+      "end_lineno": 130,
+      "end_col_offset": 36,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "fc272c9aa2c1",
+      "operator": "AOR",
+      "lineno": 131,
+      "col_offset": 12,
+      "end_lineno": 131,
+      "end_col_offset": 42,
+      "original": "plural[0].upper() + plural[1:]",
+      "replacement": "(plural[0].upper() - plural[1:])"
+    },
+    {
+      "id": "85ddfd3de055",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 19,
+      "end_lineno": 131,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e498d7c52411",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 39,
+      "end_lineno": 131,
+      "end_col_offset": 40,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "2ad20388e4e6",
+      "operator": "CRP",
+      "lineno": 133,
+      "col_offset": 23,
+      "end_lineno": 133,
+      "end_col_offset": 24,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "4cda78227f9e",
+      "operator": "CRP",
+      "lineno": 134,
+      "col_offset": 35,
+      "end_lineno": 134,
+      "end_col_offset": 36,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2bc6e8f8bac6",
+      "operator": "AOR",
+      "lineno": 135,
+      "col_offset": 12,
+      "end_lineno": 135,
+      "end_col_offset": 42,
+      "original": "plural[0].lower() + plural[1:]",
+      "replacement": "(plural[0].lower() - plural[1:])"
+    },
+    {
+      "id": "e07617f745df",
+      "operator": "CRP",
+      "lineno": 135,
+      "col_offset": 19,
+      "end_lineno": 135,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "299d6dd65d04",
+      "operator": "CRP",
+      "lineno": 135,
+      "col_offset": 39,
+      "end_lineno": 135,
+      "end_col_offset": 40,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "800488d6de91",
+      "operator": "CRP",
+      "lineno": 137,
+      "col_offset": 25,
+      "end_lineno": 137,
+      "end_col_offset": 26,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "f58cd1c6565c",
+      "operator": "CRP",
+      "lineno": 138,
+      "col_offset": 35,
+      "end_lineno": 138,
+      "end_col_offset": 36,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "dad640d113fb",
+      "operator": "CRP",
+      "lineno": 138,
+      "col_offset": 70,
+      "end_lineno": 138,
+      "end_col_offset": 71,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "b15305799b42",
+      "operator": "AOR",
+      "lineno": 139,
+      "col_offset": 12,
+      "end_lineno": 139,
+      "end_col_offset": 46,
+      "original": "singular[0].upper() + singular[1:]",
+      "replacement": "(singular[0].upper() - singular[1:])"
+    },
+    {
+      "id": "da8e9c982d65",
+      "operator": "CRP",
+      "lineno": 139,
+      "col_offset": 21,
+      "end_lineno": 139,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "f00c2bd37549",
+      "operator": "AOR",
+      "lineno": 143,
+      "col_offset": 12,
+      "end_lineno": 143,
+      "end_col_offset": 46,
+      "original": "singular[0].lower() + singular[1:]",
+      "replacement": "(singular[0].lower() - singular[1:])"
+    },
+    {
+      "id": "20fe76098a30",
+      "operator": "CRP",
+      "lineno": 143,
+      "col_offset": 21,
+      "end_lineno": 143,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2f07f5e653bc",
+      "operator": "CRP",
+      "lineno": 143,
+      "col_offset": 43,
+      "end_lineno": 143,
+      "end_col_offset": 44,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "80432d37af1e",
+      "operator": "CRP",
+      "lineno": 147,
+      "col_offset": 57,
+      "end_lineno": 147,
+      "end_col_offset": 61,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "03d9b833cf5c",
+      "operator": "COND",
+      "lineno": 168,
+      "col_offset": 7,
+      "end_lineno": 168,
+      "end_col_offset": 29,
+      "original": "uppercase_first_letter",
+      "replacement": "(not uppercase_first_letter)"
+    },
+    {
+      "id": "b9ecd7e6a8f6",
+      "operator": "RET",
+      "lineno": 169,
+      "col_offset": 8,
+      "end_lineno": 169,
+      "end_col_offset": 74,
+      "original": "return re.sub(r\"(?:^|_)(.)\", lambda m: m.group(1).upper(), string)",
+      "replacement": "return None"
+    },
+    {
+      "id": "eb23f09fd4fc",
+      "operator": "RET",
+      "lineno": 171,
+      "col_offset": 8,
+      "end_lineno": 171,
+      "end_col_offset": 55,
+      "original": "return string[0].lower() + camelize(string)[1:]",
+      "replacement": "return None"
+    },
+    {
+      "id": "0cfa8749d8f1",
+      "operator": "CRP",
+      "lineno": 171,
+      "col_offset": 22,
+      "end_lineno": 171,
+      "end_col_offset": 23,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "166abd98902f",
+      "operator": "CRP",
+      "lineno": 171,
+      "col_offset": 52,
+      "end_lineno": 171,
+      "end_col_offset": 53,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "b23437fd0d03",
+      "operator": "RET",
+      "lineno": 183,
+      "col_offset": 4,
+      "end_lineno": 183,
+      "end_col_offset": 33,
+      "original": "return word.replace('_', '-')",
+      "replacement": "return None"
+    },
+    {
+      "id": "9ace42a72b9d",
+      "operator": "CRP",
+      "lineno": 183,
+      "col_offset": 24,
+      "end_lineno": 183,
+      "end_col_offset": 27,
+      "original": "'_'",
+      "replacement": "('XX_XX')"
+    },
+    {
+      "id": "3c100cd0a26b",
+      "operator": "CRP",
+      "lineno": 183,
+      "col_offset": 29,
+      "end_lineno": 183,
+      "end_col_offset": 32,
+      "original": "'-'",
+      "replacement": "('XX-XX')"
+    },
+    {
+      "id": "b2623c1ece15",
+      "operator": "CRP",
+      "lineno": 200,
+      "col_offset": 18,
+      "end_lineno": 200,
+      "end_col_offset": 25,
+      "original": "r\"_id$\"",
+      "replacement": "('XX_id$XX')"
+    },
+    {
+      "id": "2d0ec55097cc",
+      "operator": "CRP",
+      "lineno": 200,
+      "col_offset": 27,
+      "end_lineno": 200,
+      "end_col_offset": 29,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "92682a0bb490",
+      "operator": "CRP",
+      "lineno": 202,
+      "col_offset": 18,
+      "end_lineno": 202,
+      "end_col_offset": 35,
+      "original": "r\"(?i)([a-z\\d]*)\"",
+      "replacement": "('XX(?i)([a-z\\\\d]*)XX')"
+    },
+    {
+      "id": "4176333c0dbe",
+      "operator": "CRP",
+      "lineno": 202,
+      "col_offset": 55,
+      "end_lineno": 202,
+      "end_col_offset": 56,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "0a19a2f4e08b",
+      "operator": "CRP",
+      "lineno": 203,
+      "col_offset": 18,
+      "end_lineno": 203,
+      "end_col_offset": 24,
+      "original": "r\"^\\w\"",
+      "replacement": "('XX^\\\\wXX')"
+    },
+    {
+      "id": "b2ef23b07e5b",
+      "operator": "CRP",
+      "lineno": 203,
+      "col_offset": 44,
+      "end_lineno": 203,
+      "end_col_offset": 45,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "6b2a176ae12f",
+      "operator": "RET",
+      "lineno": 204,
+      "col_offset": 4,
+      "end_lineno": 204,
+      "end_col_offset": 15,
+      "original": "return word",
+      "replacement": "return None"
+    },
+    {
+      "id": "4ca3bf4339ec",
+      "operator": "ROR",
+      "lineno": 229,
+      "col_offset": 7,
+      "end_lineno": 229,
+      "end_col_offset": 35,
+      "original": "number % 100 in (11, 12, 13)",
+      "replacement": "(number % 100 not in (11, 12, 13))"
+    },
+    {
+      "id": "b1ed8dc40825",
+      "operator": "CRP",
+      "lineno": 229,
+      "col_offset": 32,
+      "end_lineno": 229,
+      "end_col_offset": 34,
+      "original": "13",
+      "replacement": "(14)"
+    },
+    {
+      "id": "95a72d60e3e5",
+      "operator": "RET",
+      "lineno": 230,
+      "col_offset": 8,
+      "end_lineno": 230,
+      "end_col_offset": 19,
+      "original": "return \"th\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "a4e611c8fd49",
+      "operator": "CRP",
+      "lineno": 230,
+      "col_offset": 15,
+      "end_lineno": 230,
+      "end_col_offset": 19,
+      "original": "\"th\"",
+      "replacement": "('XXthXX')"
+    },
+    {
+      "id": "5fbbccdef2c7",
+      "operator": "RET",
+      "lineno": 232,
+      "col_offset": 8,
+      "end_lineno": 236,
+      "end_col_offset": 32,
+      "original": "return { 1: \"st\", 2: \"nd\", 3: \"rd\", }.get(number % 10, \"th\")",
+      "replacement": "return None"
+    },
+    {
+      "id": "adfe2cbc222b",
+      "operator": "CRP",
+      "lineno": 233,
+      "col_offset": 12,
+      "end_lineno": 233,
+      "end_col_offset": 13,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "8c484d01e31e",
+      "operator": "CRP",
+      "lineno": 233,
+      "col_offset": 15,
+      "end_lineno": 233,
+      "end_col_offset": 19,
+      "original": "\"st\"",
+      "replacement": "('XXstXX')"
+    },
+    {
+      "id": "101384ac0622",
+      "operator": "CRP",
+      "lineno": 234,
+      "col_offset": 12,
+      "end_lineno": 234,
+      "end_col_offset": 13,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "557ca2a23675",
+      "operator": "CRP",
+      "lineno": 235,
+      "col_offset": 15,
+      "end_lineno": 235,
+      "end_col_offset": 19,
+      "original": "\"rd\"",
+      "replacement": "('XXrdXX')"
+    },
+    {
+      "id": "6df953b37758",
+      "operator": "AOR",
+      "lineno": 236,
+      "col_offset": 14,
+      "end_lineno": 236,
+      "end_col_offset": 25,
+      "original": "number % 10",
+      "replacement": "(number / 10)"
+    },
+    {
+      "id": "1e293e4fbdb3",
+      "operator": "CRP",
+      "lineno": 236,
+      "col_offset": 23,
+      "end_lineno": 236,
+      "end_col_offset": 25,
+      "original": "10",
+      "replacement": "(11)"
+    },
+    {
+      "id": "fc475d23fc62",
+      "operator": "RET",
+      "lineno": 260,
+      "col_offset": 4,
+      "end_lineno": 260,
+      "end_col_offset": 49,
+      "original": "return \"{}{}\".format(number, ordinal(number))",
+      "replacement": "return None"
+    },
+    {
+      "id": "19ad25cc658f",
+      "operator": "CRP",
+      "lineno": 276,
+      "col_offset": 20,
+      "end_lineno": 276,
+      "end_col_offset": 40,
+      "original": "r\"(?i)[^a-z0-9\\-_]+\"",
+      "replacement": "('XX(?i)[^a-z0-9\\\\-_]+XX')"
+    },
+    {
+      "id": "4b901305ea7e",
+      "operator": "COND",
+      "lineno": 277,
+      "col_offset": 7,
+      "end_lineno": 277,
+      "end_col_offset": 16,
+      "original": "separator",
+      "replacement": "(not separator)"
+    },
+    {
+      "id": "d1454875c5e8",
+      "operator": "AOR",
+      "lineno": 280,
+      "col_offset": 24,
+      "end_lineno": 280,
+      "end_col_offset": 42,
+      "original": "r'%s{2,}' % re_sep",
+      "replacement": "('%s{2,}' / re_sep)"
+    },
+    {
+      "id": "191163937fa2",
+      "operator": "CRP",
+      "lineno": 280,
+      "col_offset": 24,
+      "end_lineno": 280,
+      "end_col_offset": 33,
+      "original": "r'%s{2,}'",
+      "replacement": "('XX%s{2,}XX')"
+    },
+    {
+      "id": "e2b23f291f13",
+      "operator": "CRP",
+      "lineno": 282,
+      "col_offset": 24,
+      "end_lineno": 282,
+      "end_col_offset": 44,
+      "original": "r\"(?i)^{sep}|{sep}$\"",
+      "replacement": "('XX(?i)^{sep}|{sep}$XX')"
+    },
+    {
+      "id": "1622a2e4c866",
+      "operator": "CRP",
+      "lineno": 282,
+      "col_offset": 65,
+      "end_lineno": 282,
+      "end_col_offset": 67,
+      "original": "''",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "ad7d0b0594a3",
+      "operator": "RET",
+      "lineno": 284,
+      "col_offset": 4,
+      "end_lineno": 284,
+      "end_col_offset": 25,
+      "original": "return string.lower()",
+      "replacement": "return None"
+    },
+    {
+      "id": "c6bab621391e",
+      "operator": "LCR",
+      "lineno": 303,
+      "col_offset": 7,
+      "end_lineno": 303,
+      "end_col_offset": 47,
+      "original": "not word or word.lower() in UNCOUNTABLES",
+      "replacement": "(not word and word.lower() in UNCOUNTABLES)"
+    },
+    {
+      "id": "4ceae30aee42",
+      "operator": "UOI",
+      "lineno": 303,
+      "col_offset": 7,
+      "end_lineno": 303,
+      "end_col_offset": 15,
+      "original": "not word",
+      "replacement": "(word)"
+    },
+    {
+      "id": "432bd39a1233",
+      "operator": "COND",
+      "lineno": 307,
+      "col_offset": 15,
+      "end_lineno": 307,
+      "end_col_offset": 36,
+      "original": "re.search(rule, word)",
+      "replacement": "(not re.search(rule, word))"
+    },
+    {
+      "id": "6c3a89d878ad",
+      "operator": "RET",
+      "lineno": 309,
+      "col_offset": 8,
+      "end_lineno": 309,
+      "end_col_offset": 19,
+      "original": "return word",
+      "replacement": "return None"
+    },
+    {
+      "id": "bf3015dc58c7",
+      "operator": "COND",
+      "lineno": 331,
+      "col_offset": 11,
+      "end_lineno": 331,
+      "end_col_offset": 56,
+      "original": "re.search(r'(?i)\\b(%s)\\Z' % inflection, word)",
+      "replacement": "(not re.search('(?i)\\\\b(%s)\\\\Z' % inflection, word))"
+    },
+    {
+      "id": "ae7189225afc",
+      "operator": "AOR",
+      "lineno": 331,
+      "col_offset": 21,
+      "end_lineno": 331,
+      "end_col_offset": 49,
+      "original": "r'(?i)\\b(%s)\\Z' % inflection",
+      "replacement": "('(?i)\\\\b(%s)\\\\Z' / inflection)"
+    },
+    {
+      "id": "405576002b75",
+      "operator": "CRP",
+      "lineno": 331,
+      "col_offset": 21,
+      "end_lineno": 331,
+      "end_col_offset": 36,
+      "original": "r'(?i)\\b(%s)\\Z'",
+      "replacement": "('XX(?i)\\\\b(%s)\\\\ZXX')"
+    },
+    {
+      "id": "13efeca24932",
+      "operator": "RET",
+      "lineno": 332,
+      "col_offset": 12,
+      "end_lineno": 332,
+      "end_col_offset": 23,
+      "original": "return word",
+      "replacement": "return None"
+    },
+    {
+      "id": "06334a9712d0",
+      "operator": "COND",
+      "lineno": 335,
+      "col_offset": 11,
+      "end_lineno": 335,
+      "end_col_offset": 32,
+      "original": "re.search(rule, word)",
+      "replacement": "(not re.search(rule, word))"
+    },
+    {
+      "id": "17871ced339a",
+      "operator": "RET",
+      "lineno": 336,
+      "col_offset": 12,
+      "end_lineno": 336,
+      "end_col_offset": 50,
+      "original": "return re.sub(rule, replacement, word)",
+      "replacement": "return None"
+    },
+    {
+      "id": "c6b8a1a29063",
+      "operator": "RET",
+      "lineno": 337,
+      "col_offset": 4,
+      "end_lineno": 337,
+      "end_col_offset": 15,
+      "original": "return word",
+      "replacement": "return None"
+    },
+    {
+      "id": "6d5a2c26fe7b",
+      "operator": "RET",
+      "lineno": 354,
+      "col_offset": 4,
+      "end_lineno": 354,
+      "end_col_offset": 38,
+      "original": "return pluralize(underscore(word))",
+      "replacement": "return None"
+    },
+    {
+      "id": "251052e5b189",
+      "operator": "RET",
+      "lineno": 375,
+      "col_offset": 4,
+      "end_lineno": 379,
+      "end_col_offset": 5,
+      "original": "return re.sub( r\"\\b('?\\w)\", lambda match: match.group(1).capitalize(), humanize(underscore(word)).title() )",
+      "replacement": "return None"
+    },
+    {
+      "id": "13ef1acb6e2c",
+      "operator": "CRP",
+      "lineno": 376,
+      "col_offset": 8,
+      "end_lineno": 376,
+      "end_col_offset": 19,
+      "original": "r\"\\b('?\\w)\"",
+      "replacement": "(\"XX\\\\b('?\\\\w)XX\")"
+    },
+    {
+      "id": "d8ae3c9327a0",
+      "operator": "CRP",
+      "lineno": 377,
+      "col_offset": 34,
+      "end_lineno": 377,
+      "end_col_offset": 35,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "4a80333e23ac",
+      "operator": "CRP",
+      "lineno": 396,
+      "col_offset": 39,
+      "end_lineno": 396,
+      "end_col_offset": 45,
+      "original": "'NFKD'",
+      "replacement": "('XXNFKDXX')"
+    },
+    {
+      "id": "09eb05367d41",
+      "operator": "RET",
+      "lineno": 397,
+      "col_offset": 4,
+      "end_lineno": 397,
+      "end_col_offset": 63,
+      "original": "return normalized.encode('ascii', 'ignore').decode('ascii')",
+      "replacement": "return None"
+    },
+    {
+      "id": "70b55b114872",
+      "operator": "CRP",
+      "lineno": 397,
+      "col_offset": 29,
+      "end_lineno": 397,
+      "end_col_offset": 36,
+      "original": "'ascii'",
+      "replacement": "('XXasciiXX')"
+    },
+    {
+      "id": "3643e08d4e9b",
+      "operator": "CRP",
+      "lineno": 397,
+      "col_offset": 55,
+      "end_lineno": 397,
+      "end_col_offset": 62,
+      "original": "'ascii'",
+      "replacement": "('XXasciiXX')"
+    },
+    {
+      "id": "fd619603608a",
+      "operator": "CRP",
+      "lineno": 416,
+      "col_offset": 43,
+      "end_lineno": 416,
+      "end_col_offset": 51,
+      "original": "r'\\1_\\2'",
+      "replacement": "('XX\\\\1_\\\\2XX')"
+    },
+    {
+      "id": "50b93a7aa1a9",
+      "operator": "CRP",
+      "lineno": 417,
+      "col_offset": 18,
+      "end_lineno": 417,
+      "end_col_offset": 37,
+      "original": "r\"([a-z\\d])([A-Z])\"",
+      "replacement": "('XX([a-z\\\\d])([A-Z])XX')"
+    },
+    {
+      "id": "f4915230734d",
+      "operator": "CRP",
+      "lineno": 417,
+      "col_offset": 39,
+      "end_lineno": 417,
+      "end_col_offset": 47,
+      "original": "r'\\1_\\2'",
+      "replacement": "('XX\\\\1_\\\\2XX')"
+    },
+    {
+      "id": "79d1b4711617",
+      "operator": "CRP",
+      "lineno": 418,
+      "col_offset": 29,
+      "end_lineno": 418,
+      "end_col_offset": 32,
+      "original": "\"_\"",
+      "replacement": "('XX_XX')"
+    },
+    {
+      "id": "f43cb1f023fd",
+      "operator": "CRP",
+      "lineno": 422,
+      "col_offset": 11,
+      "end_lineno": 422,
+      "end_col_offset": 19,
+      "original": "'person'",
+      "replacement": "('XXpersonXX')"
+    },
+    {
+      "id": "752f0dc4e8b5",
+      "operator": "CRP",
+      "lineno": 423,
+      "col_offset": 18,
+      "end_lineno": 423,
+      "end_col_offset": 23,
+      "original": "'men'",
+      "replacement": "('XXmenXX')"
+    },
+    {
+      "id": "2834de3438b4",
+      "operator": "CRP",
+      "lineno": 424,
+      "col_offset": 11,
+      "end_lineno": 424,
+      "end_col_offset": 18,
+      "original": "'human'",
+      "replacement": "('XXhumanXX')"
+    },
+    {
+      "id": "7373f8ef6a92",
+      "operator": "CRP",
+      "lineno": 425,
+      "col_offset": 11,
+      "end_lineno": 425,
+      "end_col_offset": 18,
+      "original": "'child'",
+      "replacement": "('XXchildXX')"
+    },
+    {
+      "id": "87a6d68755ac",
+      "operator": "CRP",
+      "lineno": 425,
+      "col_offset": 20,
+      "end_lineno": 425,
+      "end_col_offset": 30,
+      "original": "'children'",
+      "replacement": "('XXchildrenXX')"
+    },
+    {
+      "id": "8f63699136ad",
+      "operator": "CRP",
+      "lineno": 428,
+      "col_offset": 11,
+      "end_lineno": 428,
+      "end_col_offset": 16,
+      "original": "'cow'",
+      "replacement": "('XXcowXX')"
+    },
+    {
+      "id": "af8002fc7248",
+      "operator": "CRP",
+      "lineno": 428,
+      "col_offset": 18,
+      "end_lineno": 428,
+      "end_col_offset": 24,
+      "original": "'kine'",
+      "replacement": "('XXkineXX')"
+    },
+    {
+      "id": "6f3c9066c949",
+      "operator": "CRP",
+      "lineno": 429,
+      "col_offset": 11,
+      "end_lineno": 429,
+      "end_col_offset": 19,
+      "original": "'zombie'",
+      "replacement": "('XXzombieXX')"
+    }
+  ]
+}

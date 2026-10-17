@@ -52,7 +52,11 @@ def main() -> int:
     p.add_argument("--jobs", type=int, default=8)
     p.add_argument("--reruns", type=int, default=2)
     p.add_argument("--budget", type=int, default=200)
+    p.add_argument("--summary-only", action="store_true")
     args = p.parse_args()
+    if args.summary_only:
+        write_summary()
+        return 0
     OUT.mkdir(exist_ok=True)
     for path in sorted((HERE / "targets").glob("*.toml")):
         tid = path.stem
@@ -74,14 +78,22 @@ def main() -> int:
 
 
 def write_summary() -> None:
-    rows = [json.loads(p.read_text()) for p in sorted(OUT.glob("*.json"))]
-    lines = ["| Target | Status | LOC | Tests (pass/total) | Flaky | Line % | Branch % | Mutation % | Mutants (pinned/generated) | Not covered | Time (s) |",
-             "|---|---|---|---|---|---|---|---|---|---|---|"]
+    import tomllib
+    manifest = tomllib.loads((HERE / "manifest.toml").read_text(encoding="utf-8"))
+    info = {t["id"]: t for p in manifest["project"] for t in p["target"]}
+    order = {"logic": 0, "class": 1, "io": 2, "deps": 3}
+    rows = [json.loads(p.read_text()) for p in OUT.glob("*.json")]
+    rows.sort(key=lambda r: (info.get(r["id"], {}).get("status") != "selected",
+                             order.get(info.get(r["id"], {}).get("category"), 9), r["id"]))
+    lines = ["| Target | Category | Selection | LOC | Tests (pass/total) | Flaky | Line % | Branch % | Mutation % | Mutants (pinned/generated) | Not covered | Time (s) |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
+        t = info.get(r["id"], {})
+        sel = t.get("status", "?") + (f" ({t['reason']})" if t.get("reason") else "")
         if r["status"] != "ok":
-            lines.append(f"| {r['id']} | error: {r['error'][:80]} | | | | | | | | | {r['screen_seconds']} |")
+            lines.append(f"| {r['id']} | {t.get('category', '')} | {sel} | error: {r['error'][:80]} | | | | | | | | {r['screen_seconds']} |")
             continue
-        lines.append(f"| {r['id']} | ok | {r['loc']} | {r['tests_passed']}/{r['tests_total']} | {r['tests_flaky']} "
+        lines.append(f"| {r['id']} | {t.get('category', '')} | {sel} | {r['loc']} | {r['tests_passed']}/{r['tests_total']} | {r['tests_flaky']} "
                      f"| {pct(r['line_coverage'])} | {pct(r['branch_coverage'])} | {pct(r['mutation_score'])} "
                      f"| {r['mutants_total']}/{r['mutants_generated']} | {r['mutants_not_covered']} | {r['screen_seconds']} |")
     (OUT / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

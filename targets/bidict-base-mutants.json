@@ -1,0 +1,1891 @@
+{
+  "target": "bidict-base",
+  "module_file": "bidict/_base.py",
+  "source_sha256": "2c07075f5d3469f45a153aff1efd0c0d6275322b6415691c2e471242117999eb",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 188,
+  "mutants": [
+    {
+      "id": "960594b55724",
+      "operator": "AOR",
+      "lineno": 56,
+      "col_offset": 27,
+      "end_lineno": 56,
+      "end_col_offset": 47,
+      "original": "OldKV[KT, VT] | None",
+      "replacement": "(OldKV[KT, VT] & None)"
+    },
+    {
+      "id": "d1ff2e541ac6",
+      "operator": "RET",
+      "lineno": 85,
+      "col_offset": 8,
+      "end_lineno": 85,
+      "end_col_offset": 39,
+      "original": "return len(self._mapping._fwdm)",
+      "replacement": "return None"
+    },
+    {
+      "id": "339e21f52649",
+      "operator": "CRP",
+      "lineno": 103,
+      "col_offset": 33,
+      "end_lineno": 103,
+      "end_col_offset": 39,
+      "original": "'keys'",
+      "replacement": "('XXkeysXX')"
+    },
+    {
+      "id": "2f5bd4cdc3bf",
+      "operator": "RET",
+      "lineno": 108,
+      "col_offset": 8,
+      "end_lineno": 108,
+      "end_col_offset": 41,
+      "original": "return key in self._mapping._fwdm",
+      "replacement": "return None"
+    },
+    {
+      "id": "e260aa282b82",
+      "operator": "ROR",
+      "lineno": 108,
+      "col_offset": 15,
+      "end_lineno": 108,
+      "end_col_offset": 41,
+      "original": "key in self._mapping._fwdm",
+      "replacement": "(key not in self._mapping._fwdm)"
+    },
+    {
+      "id": "f9a8710e72b4",
+      "operator": "RET",
+      "lineno": 114,
+      "col_offset": 8,
+      "end_lineno": 114,
+      "end_col_offset": 70,
+      "original": "return f'{self.__class__.__name__}({self._mapping.inverse!r})'",
+      "replacement": "return None"
+    },
+    {
+      "id": "df06b7eb8c2b",
+      "operator": "RET",
+      "lineno": 118,
+      "col_offset": 8,
+      "end_lineno": 118,
+      "end_col_offset": 49,
+      "original": "return iter(self._mapping._invm.values())",
+      "replacement": "return None"
+    },
+    {
+      "id": "d4298ff9a00c",
+      "operator": "COND",
+      "lineno": 122,
+      "col_offset": 11,
+      "end_lineno": 122,
+      "end_col_offset": 36,
+      "original": "isinstance(mapping, dict)",
+      "replacement": "(not isinstance(mapping, dict))"
+    },
+    {
+      "id": "6f3e2d85d22a",
+      "operator": "RET",
+      "lineno": 123,
+      "col_offset": 12,
+      "end_lineno": 123,
+      "end_col_offset": 45,
+      "original": "return reversed(mapping.values())",
+      "replacement": "return None"
+    },
+    {
+      "id": "ad06ea5196a0",
+      "operator": "COND",
+      "lineno": 125,
+      "col_offset": 11,
+      "end_lineno": 125,
+      "end_col_offset": 41,
+      "original": "isinstance(values, Reversible)",
+      "replacement": "(not isinstance(values, Reversible))"
+    },
+    {
+      "id": "5cacf62514ff",
+      "operator": "RET",
+      "lineno": 126,
+      "col_offset": 12,
+      "end_lineno": 126,
+      "end_col_offset": 35,
+      "original": "return reversed(values)",
+      "replacement": "return None"
+    },
+    {
+      "id": "4668a9865c85",
+      "operator": "RET",
+      "lineno": 129,
+      "col_offset": 8,
+      "end_lineno": 129,
+      "end_col_offset": 72,
+      "original": "return (mapping[key] for key in reversed(self._mapping.inverse))",
+      "replacement": "return None"
+    },
+    {
+      "id": "3dc3e638a854",
+      "operator": "CRP",
+      "lineno": 151,
+      "col_offset": 33,
+      "end_lineno": 151,
+      "end_col_offset": 39,
+      "original": "'keys'",
+      "replacement": "('XXkeysXX')"
+    },
+    {
+      "id": "c28faace7e21",
+      "operator": "RET",
+      "lineno": 157,
+      "col_offset": 8,
+      "end_lineno": 157,
+      "end_col_offset": 41,
+      "original": "return key in self._mapping._fwdm",
+      "replacement": "return None"
+    },
+    {
+      "id": "53a86677ef9b",
+      "operator": "ROR",
+      "lineno": 157,
+      "col_offset": 15,
+      "end_lineno": 157,
+      "end_col_offset": 41,
+      "original": "key in self._mapping._fwdm",
+      "replacement": "(key not in self._mapping._fwdm)"
+    },
+    {
+      "id": "3ca5efc91531",
+      "operator": "RET",
+      "lineno": 161,
+      "col_offset": 8,
+      "end_lineno": 161,
+      "end_col_offset": 34,
+      "original": "return iter(self._mapping)",
+      "replacement": "return None"
+    },
+    {
+      "id": "38c2aec880f2",
+      "operator": "RET",
+      "lineno": 164,
+      "col_offset": 8,
+      "end_lineno": 164,
+      "end_col_offset": 38,
+      "original": "return reversed(self._mapping)",
+      "replacement": "return None"
+    },
+    {
+      "id": "e96e10f37607",
+      "operator": "CRP",
+      "lineno": 169,
+      "col_offset": 33,
+      "end_lineno": 169,
+      "end_col_offset": 40,
+      "original": "'items'",
+      "replacement": "('XXitemsXX')"
+    },
+    {
+      "id": "0e6ade9a2280",
+      "operator": "RET",
+      "lineno": 177,
+      "col_offset": 8,
+      "end_lineno": 177,
+      "end_col_offset": 47,
+      "original": "return ((key, fwdm[key]) for key in bi)",
+      "replacement": "return None"
+    },
+    {
+      "id": "0df049798e44",
+      "operator": "RET",
+      "lineno": 182,
+      "col_offset": 8,
+      "end_lineno": 182,
+      "end_col_offset": 57,
+      "original": "return ((key, fwdm[key]) for key in reversed(bi))",
+      "replacement": "return None"
+    },
+    {
+      "id": "5f56ea1d4516",
+      "operator": "COND",
+      "lineno": 190,
+      "col_offset": 11,
+      "end_lineno": 190,
+      "end_col_offset": 34,
+      "original": "bi._fwdm_has_dict_views",
+      "replacement": "(not bi._fwdm_has_dict_views)"
+    },
+    {
+      "id": "0902c894b063",
+      "operator": "RET",
+      "lineno": 191,
+      "col_offset": 12,
+      "end_lineno": 191,
+      "end_col_offset": 39,
+      "original": "return item in fwdm.items()",
+      "replacement": "return None"
+    },
+    {
+      "id": "716b1309e298",
+      "operator": "ROR",
+      "lineno": 191,
+      "col_offset": 19,
+      "end_lineno": 191,
+      "end_col_offset": 39,
+      "original": "item in fwdm.items()",
+      "replacement": "(item not in fwdm.items())"
+    },
+    {
+      "id": "acac71a0f5b0",
+      "operator": "LCR",
+      "lineno": 194,
+      "col_offset": 11,
+      "end_lineno": 194,
+      "end_col_offset": 56,
+      "original": "not isinstance(item, tuple) or len(item) != 2",
+      "replacement": "(not isinstance(item, tuple) and len(item) != 2)"
+    },
+    {
+      "id": "2b4583bd184d",
+      "operator": "UOI",
+      "lineno": 194,
+      "col_offset": 11,
+      "end_lineno": 194,
+      "end_col_offset": 38,
+      "original": "not isinstance(item, tuple)",
+      "replacement": "(isinstance(item, tuple))"
+    },
+    {
+      "id": "9a89f69c6b34",
+      "operator": "ROR",
+      "lineno": 194,
+      "col_offset": 42,
+      "end_lineno": 194,
+      "end_col_offset": 56,
+      "original": "len(item) != 2",
+      "replacement": "(len(item) == 2)"
+    },
+    {
+      "id": "113a71671925",
+      "operator": "CRP",
+      "lineno": 194,
+      "col_offset": 55,
+      "end_lineno": 194,
+      "end_col_offset": 56,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "00d9680711a0",
+      "operator": "RET",
+      "lineno": 195,
+      "col_offset": 12,
+      "end_lineno": 195,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "d793eb2fc916",
+      "operator": "CRP",
+      "lineno": 195,
+      "col_offset": 19,
+      "end_lineno": 195,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "ff528f5c1e15",
+      "operator": "RET",
+      "lineno": 200,
+      "col_offset": 12,
+      "end_lineno": 200,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "1793ae55ffd3",
+      "operator": "CRP",
+      "lineno": 200,
+      "col_offset": 19,
+      "end_lineno": 200,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "76e44c91329d",
+      "operator": "RET",
+      "lineno": 201,
+      "col_offset": 8,
+      "end_lineno": 201,
+      "end_col_offset": 43,
+      "original": "return val is value or val == value",
+      "replacement": "return None"
+    },
+    {
+      "id": "17205f3303be",
+      "operator": "LCR",
+      "lineno": 201,
+      "col_offset": 15,
+      "end_lineno": 201,
+      "end_col_offset": 43,
+      "original": "val is value or val == value",
+      "replacement": "(val is value and val == value)"
+    },
+    {
+      "id": "bfadba5815aa",
+      "operator": "ROR",
+      "lineno": 201,
+      "col_offset": 15,
+      "end_lineno": 201,
+      "end_col_offset": 27,
+      "original": "val is value",
+      "replacement": "(val is not value)"
+    },
+    {
+      "id": "b90e98911075",
+      "operator": "ROR",
+      "lineno": 201,
+      "col_offset": 31,
+      "end_lineno": 201,
+      "end_col_offset": 43,
+      "original": "val == value",
+      "replacement": "(val != value)"
+    },
+    {
+      "id": "cfdcf891392f",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 45,
+      "end_lineno": 231,
+      "end_col_offset": 49,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "c7a67d5120ca",
+      "operator": "ROR",
+      "lineno": 249,
+      "col_offset": 35,
+      "end_lineno": 249,
+      "end_col_offset": 88,
+      "original": "(fwdm_cls.keys, fwdm_cls.items) in _DICT_VIEW_METHODS",
+      "replacement": "((fwdm_cls.keys, fwdm_cls.items) not in _DICT_VIEW_METHODS)"
+    },
+    {
+      "id": "060eaae4cefd",
+      "operator": "COND",
+      "lineno": 253,
+      "col_offset": 7,
+      "end_lineno": 253,
+      "end_col_offset": 22,
+      "original": "t.TYPE_CHECKING",
+      "replacement": "(not t.TYPE_CHECKING)"
+    },
+    {
+      "id": "420516812494",
+      "operator": "ROR",
+      "lineno": 268,
+      "col_offset": 11,
+      "end_lineno": 268,
+      "end_col_offset": 30,
+      "original": "declared is MISSING",
+      "replacement": "(declared is not MISSING)"
+    },
+    {
+      "id": "dd675875b0b0",
+      "operator": "CRP",
+      "lineno": 271,
+      "col_offset": 38,
+      "end_lineno": 271,
+      "end_col_offset": 45,
+      "original": "'t.Any'",
+      "replacement": "('XXt.AnyXX')"
+    },
+    {
+      "id": "b6dc0cd5ff6b",
+      "operator": "ROR",
+      "lineno": 272,
+      "col_offset": 13,
+      "end_lineno": 272,
+      "end_col_offset": 45,
+      "original": "cls.__reversed__ is not declared",
+      "replacement": "(cls.__reversed__ is declared)"
+    },
+    {
+      "id": "ee2da5ccc83d",
+      "operator": "ROR",
+      "lineno": 276,
+      "col_offset": 36,
+      "end_lineno": 276,
+      "end_col_offset": 55,
+      "original": "declared is MISSING",
+      "replacement": "(declared is not MISSING)"
+    },
+    {
+      "id": "c498d7ff10eb",
+      "operator": "ROR",
+      "lineno": 278,
+      "col_offset": 26,
+      "end_lineno": 278,
+      "end_col_offset": 54,
+      "original": "cls.__reversed__ is not None",
+      "replacement": "(cls.__reversed__ is None)"
+    },
+    {
+      "id": "e3c71d8c82fb",
+      "operator": "CRP",
+      "lineno": 293,
+      "col_offset": 26,
+      "end_lineno": 293,
+      "end_col_offset": 40,
+      "original": "'__reversed__'",
+      "replacement": "('XX__reversed__XX')"
+    },
+    {
+      "id": "d86b0827f5e8",
+      "operator": "LCR",
+      "lineno": 296,
+      "col_offset": 23,
+      "end_lineno": 296,
+      "end_col_offset": 99,
+      "original": "ns.get('_reversed_is_computed') and (impl is _fwdm_reversed or impl is None)",
+      "replacement": "(ns.get('_reversed_is_computed') or (impl is _fwdm_reversed or impl is None))"
+    },
+    {
+      "id": "06f885f25a0c",
+      "operator": "CRP",
+      "lineno": 296,
+      "col_offset": 30,
+      "end_lineno": 296,
+      "end_col_offset": 53,
+      "original": "'_reversed_is_computed'",
+      "replacement": "('XX_reversed_is_computedXX')"
+    },
+    {
+      "id": "f54ecdb164a8",
+      "operator": "LCR",
+      "lineno": 296,
+      "col_offset": 60,
+      "end_lineno": 296,
+      "end_col_offset": 98,
+      "original": "impl is _fwdm_reversed or impl is None",
+      "replacement": "(impl is _fwdm_reversed and impl is None)"
+    },
+    {
+      "id": "106293430468",
+      "operator": "ROR",
+      "lineno": 296,
+      "col_offset": 60,
+      "end_lineno": 296,
+      "end_col_offset": 82,
+      "original": "impl is _fwdm_reversed",
+      "replacement": "(impl is not _fwdm_reversed)"
+    },
+    {
+      "id": "a43cb1c55ac2",
+      "operator": "ROR",
+      "lineno": 296,
+      "col_offset": 86,
+      "end_lineno": 296,
+      "end_col_offset": 98,
+      "original": "impl is None",
+      "replacement": "(impl is not None)"
+    },
+    {
+      "id": "be54d0040960",
+      "operator": "LCR",
+      "lineno": 297,
+      "col_offset": 15,
+      "end_lineno": 297,
+      "end_col_offset": 51,
+      "original": "impl is not MISSING and not computed",
+      "replacement": "(impl is not MISSING or not computed)"
+    },
+    {
+      "id": "690a26b5e8a4",
+      "operator": "ROR",
+      "lineno": 297,
+      "col_offset": 15,
+      "end_lineno": 297,
+      "end_col_offset": 34,
+      "original": "impl is not MISSING",
+      "replacement": "(impl is MISSING)"
+    },
+    {
+      "id": "4c13cdbe91b9",
+      "operator": "UOI",
+      "lineno": 297,
+      "col_offset": 39,
+      "end_lineno": 297,
+      "end_col_offset": 51,
+      "original": "not computed",
+      "replacement": "(computed)"
+    },
+    {
+      "id": "2d2b8733810c",
+      "operator": "RET",
+      "lineno": 298,
+      "col_offset": 16,
+      "end_lineno": 298,
+      "end_col_offset": 27,
+      "original": "return impl",
+      "replacement": "return None"
+    },
+    {
+      "id": "720b940e52ed",
+      "operator": "RET",
+      "lineno": 299,
+      "col_offset": 8,
+      "end_lineno": 299,
+      "end_col_offset": 22,
+      "original": "return MISSING",
+      "replacement": "return None"
+    },
+    {
+      "id": "44f385dc9ed7",
+      "operator": "COND",
+      "lineno": 323,
+      "col_offset": 11,
+      "end_lineno": 323,
+      "end_col_offset": 55,
+      "original": "getattr(cls, '__dict__', {}).get('_inv_cls')",
+      "replacement": "(not getattr(cls, '__dict__', {}).get('_inv_cls'))"
+    },
+    {
+      "id": "36984ad67c12",
+      "operator": "CRP",
+      "lineno": 323,
+      "col_offset": 24,
+      "end_lineno": 323,
+      "end_col_offset": 34,
+      "original": "'__dict__'",
+      "replacement": "('XX__dict__XX')"
+    },
+    {
+      "id": "cd1ac5851a3d",
+      "operator": "CRP",
+      "lineno": 323,
+      "col_offset": 44,
+      "end_lineno": 323,
+      "end_col_offset": 54,
+      "original": "'_inv_cls'",
+      "replacement": "('XX_inv_clsXX')"
+    },
+    {
+      "id": "00139f54782f",
+      "operator": "ROR",
+      "lineno": 330,
+      "col_offset": 29,
+      "end_lineno": 330,
+      "end_col_offset": 58,
+      "original": "getattr(cls, k, MISSING) == v",
+      "replacement": "(getattr(cls, k, MISSING) != v)"
+    },
+    {
+      "id": "a3a0591c899c",
+      "operator": "COND",
+      "lineno": 331,
+      "col_offset": 11,
+      "end_lineno": 331,
+      "end_col_offset": 25,
+      "original": "cls_is_own_inv",
+      "replacement": "(not cls_is_own_inv)"
+    },
+    {
+      "id": "13efeca24932",
+      "operator": "RET",
+      "lineno": 332,
+      "col_offset": 12,
+      "end_lineno": 332,
+      "end_col_offset": 22,
+      "original": "return cls",
+      "replacement": "return None"
+    },
+    {
+      "id": "975b8dc7628f",
+      "operator": "CRP",
+      "lineno": 335,
+      "col_offset": 13,
+      "end_lineno": 335,
+      "end_col_offset": 23,
+      "original": "'_inv_cls'",
+      "replacement": "('XX_inv_clsXX')"
+    },
+    {
+      "id": "85a9e940a3c3",
+      "operator": "RET",
+      "lineno": 343,
+      "col_offset": 8,
+      "end_lineno": 343,
+      "end_col_offset": 46,
+      "original": "return t.cast('type[t.Self]', inv_cls)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a8223d5e9afd",
+      "operator": "CRP",
+      "lineno": 343,
+      "col_offset": 22,
+      "end_lineno": 343,
+      "end_col_offset": 36,
+      "original": "'type[t.Self]'",
+      "replacement": "('XXtype[t.Self]XX')"
+    },
+    {
+      "id": "97ace315a589",
+      "operator": "RET",
+      "lineno": 347,
+      "col_offset": 8,
+      "end_lineno": 350,
+      "end_col_offset": 9,
+      "original": "return { '_fwdm_cls': cls._invm_cls, '_invm_cls': cls._fwdm_cls, }",
+      "replacement": "return None"
+    },
+    {
+      "id": "76f512f1213b",
+      "operator": "CRP",
+      "lineno": 348,
+      "col_offset": 12,
+      "end_lineno": 348,
+      "end_col_offset": 23,
+      "original": "'_fwdm_cls'",
+      "replacement": "('XX_fwdm_clsXX')"
+    },
+    {
+      "id": "8a62f5301491",
+      "operator": "CRP",
+      "lineno": 349,
+      "col_offset": 12,
+      "end_lineno": 349,
+      "end_col_offset": 23,
+      "original": "'_invm_cls'",
+      "replacement": "('XX_invm_clsXX')"
+    },
+    {
+      "id": "d7fc852622dc",
+      "operator": "CRP",
+      "lineno": 364,
+      "col_offset": 39,
+      "end_lineno": 364,
+      "end_col_offset": 44,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "98dac169190e",
+      "operator": "CRP",
+      "lineno": 371,
+      "col_offset": 55,
+      "end_lineno": 371,
+      "end_col_offset": 61,
+      "original": "'_inv'",
+      "replacement": "('XX_invXX')"
+    },
+    {
+      "id": "dbf910d2434e",
+      "operator": "ROR",
+      "lineno": 372,
+      "col_offset": 11,
+      "end_lineno": 372,
+      "end_col_offset": 26,
+      "original": "inv is not None",
+      "replacement": "(inv is None)"
+    },
+    {
+      "id": "8e26d33b396e",
+      "operator": "RET",
+      "lineno": 373,
+      "col_offset": 12,
+      "end_lineno": 373,
+      "end_col_offset": 22,
+      "original": "return inv",
+      "replacement": "return None"
+    },
+    {
+      "id": "ce384c57431f",
+      "operator": "CRP",
+      "lineno": 375,
+      "col_offset": 32,
+      "end_lineno": 375,
+      "end_col_offset": 42,
+      "original": "'_invweak'",
+      "replacement": "('XX_invweakXX')"
+    },
+    {
+      "id": "3271d94ea874",
+      "operator": "ROR",
+      "lineno": 376,
+      "col_offset": 11,
+      "end_lineno": 376,
+      "end_col_offset": 30,
+      "original": "invweak is not None",
+      "replacement": "(invweak is None)"
+    },
+    {
+      "id": "162cab575b74",
+      "operator": "ROR",
+      "lineno": 378,
+      "col_offset": 15,
+      "end_lineno": 378,
+      "end_col_offset": 30,
+      "original": "inv is not None",
+      "replacement": "(inv is None)"
+    },
+    {
+      "id": "611df59527a6",
+      "operator": "RET",
+      "lineno": 379,
+      "col_offset": 16,
+      "end_lineno": 379,
+      "end_col_offset": 26,
+      "original": "return inv",
+      "replacement": "return None"
+    },
+    {
+      "id": "455cfc0daaad",
+      "operator": "RET",
+      "lineno": 391,
+      "col_offset": 8,
+      "end_lineno": 391,
+      "end_col_offset": 18,
+      "original": "return inv",
+      "replacement": "return None"
+    },
+    {
+      "id": "1781a0ed5471",
+      "operator": "RET",
+      "lineno": 397,
+      "col_offset": 8,
+      "end_lineno": 397,
+      "end_col_offset": 18,
+      "original": "return inv",
+      "replacement": "return None"
+    },
+    {
+      "id": "d37bbe168ca7",
+      "operator": "RET",
+      "lineno": 402,
+      "col_offset": 8,
+      "end_lineno": 402,
+      "end_col_offset": 27,
+      "original": "return self.inverse",
+      "replacement": "return None"
+    },
+    {
+      "id": "567f4a80dfcf",
+      "operator": "CRP",
+      "lineno": 411,
+      "col_offset": 48,
+      "end_lineno": 411,
+      "end_col_offset": 50,
+      "original": "''",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "2e5e7544d543",
+      "operator": "RET",
+      "lineno": 412,
+      "col_offset": 8,
+      "end_lineno": 412,
+      "end_col_offset": 36,
+      "original": "return f'{clsname}({items})'",
+      "replacement": "return None"
+    },
+    {
+      "id": "f717235fd813",
+      "operator": "RET",
+      "lineno": 432,
+      "col_offset": 8,
+      "end_lineno": 432,
+      "end_col_offset": 115,
+      "original": "return BidictValuesView(self.inverse) if self._reversible else _NonReversibleBidictValuesView(self.inverse)",
+      "replacement": "return None"
+    },
+    {
+      "id": "446a6656f89e",
+      "operator": "COND",
+      "lineno": 455,
+      "col_offset": 11,
+      "end_lineno": 455,
+      "end_col_offset": 36,
+      "original": "self._fwdm_has_dict_views",
+      "replacement": "(not self._fwdm_has_dict_views)"
+    },
+    {
+      "id": "298da57a22af",
+      "operator": "RET",
+      "lineno": 456,
+      "col_offset": 12,
+      "end_lineno": 456,
+      "end_col_offset": 36,
+      "original": "return self._fwdm.keys()",
+      "replacement": "return None"
+    },
+    {
+      "id": "a926255bb9f0",
+      "operator": "RET",
+      "lineno": 457,
+      "col_offset": 8,
+      "end_lineno": 457,
+      "end_col_offset": 84,
+      "original": "return _KeysView(self) if self._reversible else _NonReversibleKeysView(self)",
+      "replacement": "return None"
+    },
+    {
+      "id": "2c13a97bb102",
+      "operator": "COND",
+      "lineno": 479,
+      "col_offset": 11,
+      "end_lineno": 479,
+      "end_col_offset": 36,
+      "original": "self._fwdm_has_dict_views",
+      "replacement": "(not self._fwdm_has_dict_views)"
+    },
+    {
+      "id": "b2ce357d730a",
+      "operator": "RET",
+      "lineno": 480,
+      "col_offset": 12,
+      "end_lineno": 480,
+      "end_col_offset": 37,
+      "original": "return self._fwdm.items()",
+      "replacement": "return None"
+    },
+    {
+      "id": "9d09307947c8",
+      "operator": "RET",
+      "lineno": 481,
+      "col_offset": 8,
+      "end_lineno": 481,
+      "end_col_offset": 86,
+      "original": "return _ItemsView(self) if self._reversible else _NonReversibleItemsView(self)",
+      "replacement": "return None"
+    },
+    {
+      "id": "c0409234b7d1",
+      "operator": "RET",
+      "lineno": 489,
+      "col_offset": 8,
+      "end_lineno": 489,
+      "end_col_offset": 32,
+      "original": "return key in self._fwdm",
+      "replacement": "return None"
+    },
+    {
+      "id": "145ab2343f7a",
+      "operator": "ROR",
+      "lineno": 489,
+      "col_offset": 15,
+      "end_lineno": 489,
+      "end_col_offset": 32,
+      "original": "key in self._fwdm",
+      "replacement": "(key not in self._fwdm)"
+    },
+    {
+      "id": "7952ec8f9b7d",
+      "operator": "COND",
+      "lineno": 510,
+      "col_offset": 11,
+      "end_lineno": 510,
+      "end_col_offset": 37,
+      "original": "isinstance(other, Mapping)",
+      "replacement": "(not isinstance(other, Mapping))"
+    },
+    {
+      "id": "526032b13059",
+      "operator": "RET",
+      "lineno": 511,
+      "col_offset": 12,
+      "end_lineno": 511,
+      "end_col_offset": 54,
+      "original": "return self._fwdm.items() == other.items()",
+      "replacement": "return None"
+    },
+    {
+      "id": "c19b1b530e7e",
+      "operator": "ROR",
+      "lineno": 511,
+      "col_offset": 19,
+      "end_lineno": 511,
+      "end_col_offset": 54,
+      "original": "self._fwdm.items() == other.items()",
+      "replacement": "(self._fwdm.items() != other.items())"
+    },
+    {
+      "id": "e0e5c09e259b",
+      "operator": "RET",
+      "lineno": 513,
+      "col_offset": 8,
+      "end_lineno": 513,
+      "end_col_offset": 29,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "faacd588624a",
+      "operator": "LCR",
+      "lineno": 521,
+      "col_offset": 11,
+      "end_lineno": 521,
+      "end_col_offset": 68,
+      "original": "not isinstance(other, Mapping) or len(self) != len(other)",
+      "replacement": "(not isinstance(other, Mapping) and len(self) != len(other))"
+    },
+    {
+      "id": "b083c91b5a85",
+      "operator": "UOI",
+      "lineno": 521,
+      "col_offset": 11,
+      "end_lineno": 521,
+      "end_col_offset": 41,
+      "original": "not isinstance(other, Mapping)",
+      "replacement": "(isinstance(other, Mapping))"
+    },
+    {
+      "id": "109abd2f26fd",
+      "operator": "ROR",
+      "lineno": 521,
+      "col_offset": 45,
+      "end_lineno": 521,
+      "end_col_offset": 68,
+      "original": "len(self) != len(other)",
+      "replacement": "(len(self) == len(other))"
+    },
+    {
+      "id": "230e8dc3d215",
+      "operator": "RET",
+      "lineno": 522,
+      "col_offset": 12,
+      "end_lineno": 522,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "1528f5d72fe0",
+      "operator": "CRP",
+      "lineno": 522,
+      "col_offset": 19,
+      "end_lineno": 522,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "cc51d8f74a94",
+      "operator": "RET",
+      "lineno": 523,
+      "col_offset": 8,
+      "end_lineno": 523,
+      "end_col_offset": 56,
+      "original": "return all(map(eq, self.items(), other.items()))",
+      "replacement": "return None"
+    },
+    {
+      "id": "89938cef2ebc",
+      "operator": "ROR",
+      "lineno": 546,
+      "col_offset": 19,
+      "end_lineno": 546,
+      "end_col_offset": 40,
+      "original": "oldval is not MISSING",
+      "replacement": "(oldval is MISSING)"
+    },
+    {
+      "id": "54a006fafd48",
+      "operator": "ROR",
+      "lineno": 547,
+      "col_offset": 19,
+      "end_lineno": 547,
+      "end_col_offset": 40,
+      "original": "oldkey is not MISSING",
+      "replacement": "(oldkey is MISSING)"
+    },
+    {
+      "id": "c450b795a29e",
+      "operator": "LCR",
+      "lineno": 548,
+      "col_offset": 11,
+      "end_lineno": 548,
+      "end_col_offset": 32,
+      "original": "isdupkey and isdupval",
+      "replacement": "(isdupkey or isdupval)"
+    },
+    {
+      "id": "8613cb3b18d1",
+      "operator": "ROR",
+      "lineno": 549,
+      "col_offset": 15,
+      "end_lineno": 549,
+      "end_col_offset": 37,
+      "original": "fwdm[oldkey] is oldval",
+      "replacement": "(fwdm[oldkey] is not oldval)"
+    },
+    {
+      "id": "03912c5ec316",
+      "operator": "ROR",
+      "lineno": 552,
+      "col_offset": 15,
+      "end_lineno": 552,
+      "end_col_offset": 34,
+      "original": "on_dup.val is RAISE",
+      "replacement": "(on_dup.val is not RAISE)"
+    },
+    {
+      "id": "04a8e71d5cfb",
+      "operator": "ROR",
+      "lineno": 554,
+      "col_offset": 15,
+      "end_lineno": 554,
+      "end_col_offset": 37,
+      "original": "on_dup.val is DROP_NEW",
+      "replacement": "(on_dup.val is not DROP_NEW)"
+    },
+    {
+      "id": "8aaf33759e80",
+      "operator": "ROR",
+      "lineno": 556,
+      "col_offset": 19,
+      "end_lineno": 556,
+      "end_col_offset": 41,
+      "original": "on_dup.val is DROP_OLD",
+      "replacement": "(on_dup.val is not DROP_OLD)"
+    },
+    {
+      "id": "bec1170defa0",
+      "operator": "COND",
+      "lineno": 558,
+      "col_offset": 13,
+      "end_lineno": 558,
+      "end_col_offset": 21,
+      "original": "isdupkey",
+      "replacement": "(not isdupkey)"
+    },
+    {
+      "id": "499a2c2358e6",
+      "operator": "ROR",
+      "lineno": 559,
+      "col_offset": 15,
+      "end_lineno": 559,
+      "end_col_offset": 34,
+      "original": "on_dup.key is RAISE",
+      "replacement": "(on_dup.key is not RAISE)"
+    },
+    {
+      "id": "88d964041f01",
+      "operator": "ROR",
+      "lineno": 561,
+      "col_offset": 15,
+      "end_lineno": 561,
+      "end_col_offset": 37,
+      "original": "on_dup.key is DROP_NEW",
+      "replacement": "(on_dup.key is not DROP_NEW)"
+    },
+    {
+      "id": "5280176f2193",
+      "operator": "ROR",
+      "lineno": 563,
+      "col_offset": 19,
+      "end_lineno": 563,
+      "end_col_offset": 41,
+      "original": "on_dup.key is DROP_OLD",
+      "replacement": "(on_dup.key is not DROP_OLD)"
+    },
+    {
+      "id": "10f9189ec2b1",
+      "operator": "COND",
+      "lineno": 565,
+      "col_offset": 13,
+      "end_lineno": 565,
+      "end_col_offset": 21,
+      "original": "isdupval",
+      "replacement": "(not isdupval)"
+    },
+    {
+      "id": "3ad11cfe96c4",
+      "operator": "ROR",
+      "lineno": 566,
+      "col_offset": 15,
+      "end_lineno": 566,
+      "end_col_offset": 34,
+      "original": "on_dup.val is RAISE",
+      "replacement": "(on_dup.val is not RAISE)"
+    },
+    {
+      "id": "21c4de97f42c",
+      "operator": "ROR",
+      "lineno": 568,
+      "col_offset": 15,
+      "end_lineno": 568,
+      "end_col_offset": 37,
+      "original": "on_dup.val is DROP_NEW",
+      "replacement": "(on_dup.val is not DROP_NEW)"
+    },
+    {
+      "id": "ed6b720e38c4",
+      "operator": "ROR",
+      "lineno": 570,
+      "col_offset": 19,
+      "end_lineno": 570,
+      "end_col_offset": 41,
+      "original": "on_dup.val is DROP_OLD",
+      "replacement": "(on_dup.val is not DROP_OLD)"
+    },
+    {
+      "id": "04deae923a8d",
+      "operator": "RET",
+      "lineno": 573,
+      "col_offset": 8,
+      "end_lineno": 573,
+      "end_col_offset": 29,
+      "original": "return oldkey, oldval",
+      "replacement": "return None"
+    },
+    {
+      "id": "5b4090617cff",
+      "operator": "ROR",
+      "lineno": 598,
+      "col_offset": 11,
+      "end_lineno": 598,
+      "end_col_offset": 32,
+      "original": "oldval is not MISSING",
+      "replacement": "(oldval is MISSING)"
+    },
+    {
+      "id": "46faefca652d",
+      "operator": "ROR",
+      "lineno": 600,
+      "col_offset": 11,
+      "end_lineno": 600,
+      "end_col_offset": 32,
+      "original": "oldkey is not MISSING",
+      "replacement": "(oldkey is MISSING)"
+    },
+    {
+      "id": "be01fd9ec7f0",
+      "operator": "ROR",
+      "lineno": 609,
+      "col_offset": 11,
+      "end_lineno": 609,
+      "end_col_offset": 32,
+      "original": "oldkey is not MISSING",
+      "replacement": "(oldkey is MISSING)"
+    },
+    {
+      "id": "3a956e4f002c",
+      "operator": "ROR",
+      "lineno": 612,
+      "col_offset": 15,
+      "end_lineno": 612,
+      "end_col_offset": 35,
+      "original": "unwrites is not None",
+      "replacement": "(unwrites is None)"
+    },
+    {
+      "id": "e010d9e3ee2d",
+      "operator": "ROR",
+      "lineno": 614,
+      "col_offset": 11,
+      "end_lineno": 614,
+      "end_col_offset": 32,
+      "original": "oldval is not MISSING",
+      "replacement": "(oldval is MISSING)"
+    },
+    {
+      "id": "e8b550f33d04",
+      "operator": "ROR",
+      "lineno": 617,
+      "col_offset": 15,
+      "end_lineno": 617,
+      "end_col_offset": 35,
+      "original": "unwrites is not None",
+      "replacement": "(unwrites is None)"
+    },
+    {
+      "id": "be942bdffed1",
+      "operator": "ROR",
+      "lineno": 620,
+      "col_offset": 11,
+      "end_lineno": 620,
+      "end_col_offset": 31,
+      "original": "unwrites is not None",
+      "replacement": "(unwrites is None)"
+    },
+    {
+      "id": "4d7b4aa4ced4",
+      "operator": "ROR",
+      "lineno": 622,
+      "col_offset": 50,
+      "end_lineno": 622,
+      "end_col_offset": 67,
+      "original": "oldval is MISSING",
+      "replacement": "(oldval is not MISSING)"
+    },
+    {
+      "id": "0c21206f484b",
+      "operator": "ROR",
+      "lineno": 624,
+      "col_offset": 11,
+      "end_lineno": 624,
+      "end_col_offset": 31,
+      "original": "unwrites is not None",
+      "replacement": "(unwrites is None)"
+    },
+    {
+      "id": "6a90516511a5",
+      "operator": "ROR",
+      "lineno": 626,
+      "col_offset": 50,
+      "end_lineno": 626,
+      "end_col_offset": 67,
+      "original": "oldkey is MISSING",
+      "replacement": "(oldkey is not MISSING)"
+    },
+    {
+      "id": "8c1fa5b8fe75",
+      "operator": "CRP",
+      "lineno": 633,
+      "col_offset": 25,
+      "end_lineno": 633,
+      "end_col_offset": 29,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "1dfc34e76681",
+      "operator": "LCR",
+      "lineno": 647,
+      "col_offset": 11,
+      "end_lineno": 647,
+      "end_col_offset": 69,
+      "original": "not isinstance(arg, Iterable) and not hasattr(arg, 'keys')",
+      "replacement": "(not isinstance(arg, Iterable) or not hasattr(arg, 'keys'))"
+    },
+    {
+      "id": "462a935755db",
+      "operator": "UOI",
+      "lineno": 647,
+      "col_offset": 11,
+      "end_lineno": 647,
+      "end_col_offset": 40,
+      "original": "not isinstance(arg, Iterable)",
+      "replacement": "(isinstance(arg, Iterable))"
+    },
+    {
+      "id": "aa4dd1b41793",
+      "operator": "UOI",
+      "lineno": 647,
+      "col_offset": 45,
+      "end_lineno": 647,
+      "end_col_offset": 69,
+      "original": "not hasattr(arg, 'keys')",
+      "replacement": "(hasattr(arg, 'keys'))"
+    },
+    {
+      "id": "ce9f31fcb0d1",
+      "operator": "CRP",
+      "lineno": 647,
+      "col_offset": 62,
+      "end_lineno": 647,
+      "end_col_offset": 68,
+      "original": "'keys'",
+      "replacement": "('XXkeysXX')"
+    },
+    {
+      "id": "169b81166ddb",
+      "operator": "LCR",
+      "lineno": 649,
+      "col_offset": 11,
+      "end_lineno": 649,
+      "end_col_offset": 29,
+      "original": "not arg and not kw",
+      "replacement": "(not arg or not kw)"
+    },
+    {
+      "id": "a0c029f480e7",
+      "operator": "UOI",
+      "lineno": 649,
+      "col_offset": 11,
+      "end_lineno": 649,
+      "end_col_offset": 18,
+      "original": "not arg",
+      "replacement": "(arg)"
+    },
+    {
+      "id": "78247a3a4dd1",
+      "operator": "UOI",
+      "lineno": 649,
+      "col_offset": 23,
+      "end_lineno": 649,
+      "end_col_offset": 29,
+      "original": "not kw",
+      "replacement": "(kw)"
+    },
+    {
+      "id": "a81f9380b213",
+      "operator": "ROR",
+      "lineno": 651,
+      "col_offset": 11,
+      "end_lineno": 651,
+      "end_col_offset": 25,
+      "original": "on_dup is None",
+      "replacement": "(on_dup is not None)"
+    },
+    {
+      "id": "7e0c931136c2",
+      "operator": "LCR",
+      "lineno": 655,
+      "col_offset": 11,
+      "end_lineno": 655,
+      "end_col_offset": 62,
+      "original": "not self and not kw and isinstance(arg, BidictBase)",
+      "replacement": "(not self or not kw or isinstance(arg, BidictBase))"
+    },
+    {
+      "id": "372354a68189",
+      "operator": "UOI",
+      "lineno": 655,
+      "col_offset": 11,
+      "end_lineno": 655,
+      "end_col_offset": 19,
+      "original": "not self",
+      "replacement": "(self)"
+    },
+    {
+      "id": "d7507736afeb",
+      "operator": "UOI",
+      "lineno": 655,
+      "col_offset": 24,
+      "end_lineno": 655,
+      "end_col_offset": 30,
+      "original": "not kw",
+      "replacement": "(kw)"
+    },
+    {
+      "id": "be9f3ac9b4f2",
+      "operator": "COND",
+      "lineno": 659,
+      "col_offset": 19,
+      "end_lineno": 659,
+      "end_col_offset": 27,
+      "original": "rollback",
+      "replacement": "(not rollback)"
+    },
+    {
+      "id": "04ca91c7b9da",
+      "operator": "ROR",
+      "lineno": 664,
+      "col_offset": 15,
+      "end_lineno": 664,
+      "end_col_offset": 61,
+      "original": "len(self._fwdm) == len(self._invm) == len(arg)",
+      "replacement": "(len(self._fwdm) == len(self._invm) != len(arg))"
+    },
+    {
+      "id": "ab93f12f68f4",
+      "operator": "ROR",
+      "lineno": 664,
+      "col_offset": 15,
+      "end_lineno": 664,
+      "end_col_offset": 61,
+      "original": "len(self._fwdm) == len(self._invm) == len(arg)",
+      "replacement": "(len(self._fwdm) != len(self._invm) == len(arg))"
+    },
+    {
+      "id": "7b01bb67db43",
+      "operator": "LCR",
+      "lineno": 674,
+      "col_offset": 11,
+      "end_lineno": 674,
+      "end_col_offset": 95,
+      "original": "type(arg) is self._inv_cls and t.cast('BidictBase[KT, VT]', arg)._fwdm is self._invm",
+      "replacement": "(type(arg) is self._inv_cls or t.cast('BidictBase[KT, VT]', arg)._fwdm is self._invm)"
+    },
+    {
+      "id": "771b5226ac50",
+      "operator": "ROR",
+      "lineno": 674,
+      "col_offset": 11,
+      "end_lineno": 674,
+      "end_col_offset": 37,
+      "original": "type(arg) is self._inv_cls",
+      "replacement": "(type(arg) is not self._inv_cls)"
+    },
+    {
+      "id": "e19731ca69d7",
+      "operator": "ROR",
+      "lineno": 674,
+      "col_offset": 42,
+      "end_lineno": 674,
+      "end_col_offset": 95,
+      "original": "t.cast('BidictBase[KT, VT]', arg)._fwdm is self._invm",
+      "replacement": "(t.cast('BidictBase[KT, VT]', arg)._fwdm is not self._invm)"
+    },
+    {
+      "id": "e4794d6c86d1",
+      "operator": "CRP",
+      "lineno": 674,
+      "col_offset": 49,
+      "end_lineno": 674,
+      "end_col_offset": 69,
+      "original": "'BidictBase[KT, VT]'",
+      "replacement": "('XXBidictBase[KT, VT]XX')"
+    },
+    {
+      "id": "37d7fbab78ad",
+      "operator": "ROR",
+      "lineno": 681,
+      "col_offset": 19,
+      "end_lineno": 681,
+      "end_col_offset": 43,
+      "original": "dedup_result is not None",
+      "replacement": "(dedup_result is None)"
+    },
+    {
+      "id": "c8fd0587e192",
+      "operator": "ROR",
+      "lineno": 684,
+      "col_offset": 15,
+      "end_lineno": 684,
+      "end_col_offset": 35,
+      "original": "unwrites is not None",
+      "replacement": "(unwrites is None)"
+    },
+    {
+      "id": "9c7a77bca2d8",
+      "operator": "RET",
+      "lineno": 691,
+      "col_offset": 8,
+      "end_lineno": 691,
+      "end_col_offset": 26,
+      "original": "return self.copy()",
+      "replacement": "return None"
+    },
+    {
+      "id": "ce0919d1a81e",
+      "operator": "RET",
+      "lineno": 699,
+      "col_offset": 8,
+      "end_lineno": 699,
+      "end_col_offset": 37,
+      "original": "return self._from_other(self)",
+      "replacement": "return None"
+    },
+    {
+      "id": "277df7ead260",
+      "operator": "RET",
+      "lineno": 706,
+      "col_offset": 8,
+      "end_lineno": 706,
+      "end_col_offset": 19,
+      "original": "return inst",
+      "replacement": "return None"
+    },
+    {
+      "id": "d0d22128761e",
+      "operator": "COND",
+      "lineno": 715,
+      "col_offset": 11,
+      "end_lineno": 715,
+      "end_col_offset": 40,
+      "original": "isinstance(other, BidictBase)",
+      "replacement": "(not isinstance(other, BidictBase))"
+    },
+    {
+      "id": "1e778e689e4c",
+      "operator": "CRP",
+      "lineno": 716,
+      "col_offset": 37,
+      "end_lineno": 716,
+      "end_col_offset": 57,
+      "original": "'BidictBase[KT, VT]'",
+      "replacement": "('XXBidictBase[KT, VT]XX')"
+    },
+    {
+      "id": "1a39a529aeec",
+      "operator": "UOI",
+      "lineno": 724,
+      "col_offset": 11,
+      "end_lineno": 724,
+      "end_col_offset": 41,
+      "original": "not isinstance(other, Mapping)",
+      "replacement": "(isinstance(other, Mapping))"
+    },
+    {
+      "id": "a3ace938544e",
+      "operator": "RET",
+      "lineno": 725,
+      "col_offset": 12,
+      "end_lineno": 725,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "8805bbe6497a",
+      "operator": "CRP",
+      "lineno": 727,
+      "col_offset": 36,
+      "end_lineno": 727,
+      "end_col_offset": 41,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "cd347af68be3",
+      "operator": "RET",
+      "lineno": 728,
+      "col_offset": 8,
+      "end_lineno": 728,
+      "end_col_offset": 18,
+      "original": "return new",
+      "replacement": "return None"
+    },
+    {
+      "id": "2f0e2ed0b4ba",
+      "operator": "UOI",
+      "lineno": 732,
+      "col_offset": 11,
+      "end_lineno": 732,
+      "end_col_offset": 41,
+      "original": "not isinstance(other, Mapping)",
+      "replacement": "(isinstance(other, Mapping))"
+    },
+    {
+      "id": "619d79162009",
+      "operator": "RET",
+      "lineno": 733,
+      "col_offset": 12,
+      "end_lineno": 733,
+      "end_col_offset": 33,
+      "original": "return NotImplemented",
+      "replacement": "return None"
+    },
+    {
+      "id": "006e91fb9713",
+      "operator": "CRP",
+      "lineno": 735,
+      "col_offset": 35,
+      "end_lineno": 735,
+      "end_col_offset": 40,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "7247f9ddc0a6",
+      "operator": "RET",
+      "lineno": 736,
+      "col_offset": 8,
+      "end_lineno": 736,
+      "end_col_offset": 18,
+      "original": "return new",
+      "replacement": "return None"
+    },
+    {
+      "id": "c431b1b9eb9b",
+      "operator": "RET",
+      "lineno": 741,
+      "col_offset": 8,
+      "end_lineno": 741,
+      "end_col_offset": 30,
+      "original": "return len(self._fwdm)",
+      "replacement": "return None"
+    },
+    {
+      "id": "43ae42715ecd",
+      "operator": "RET",
+      "lineno": 746,
+      "col_offset": 8,
+      "end_lineno": 746,
+      "end_col_offset": 31,
+      "original": "return iter(self._fwdm)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a1b60f256b18",
+      "operator": "RET",
+      "lineno": 751,
+      "col_offset": 8,
+      "end_lineno": 751,
+      "end_col_offset": 30,
+      "original": "return self._fwdm[key]",
+      "replacement": "return None"
+    },
+    {
+      "id": "c080e06a0ae4",
+      "operator": "RET",
+      "lineno": 756,
+      "col_offset": 8,
+      "end_lineno": 756,
+      "end_col_offset": 56,
+      "original": "return self.__class__._from_other, (dict(self),)",
+      "replacement": "return None"
+    },
+    {
+      "id": "e3d330bc3b02",
+      "operator": "RET",
+      "lineno": 762,
+      "col_offset": 4,
+      "end_lineno": 762,
+      "end_col_offset": 57,
+      "original": "return reversed(t.cast('Reversible[KT]', self._fwdm))",
+      "replacement": "return None"
+    },
+    {
+      "id": "d698e8cabf78",
+      "operator": "CRP",
+      "lineno": 762,
+      "col_offset": 27,
+      "end_lineno": 762,
+      "end_col_offset": 43,
+      "original": "'Reversible[KT]'",
+      "replacement": "('XXReversible[KT]XX')"
+    },
+    {
+      "id": "af4dc025b973",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 4,
+      "end_lineno": 772,
+      "end_col_offset": 12,
+      "original": "'__lt__'",
+      "replacement": "('XX__lt__XX')"
+    },
+    {
+      "id": "878a8ede86c2",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 14,
+      "end_lineno": 772,
+      "end_col_offset": 22,
+      "original": "'__le__'",
+      "replacement": "('XX__le__XX')"
+    },
+    {
+      "id": "46b2480227dc",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 24,
+      "end_lineno": 772,
+      "end_col_offset": 32,
+      "original": "'__gt__'",
+      "replacement": "('XX__gt__XX')"
+    },
+    {
+      "id": "32d631cae56a",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 34,
+      "end_lineno": 772,
+      "end_col_offset": 42,
+      "original": "'__ge__'",
+      "replacement": "('XX__ge__XX')"
+    },
+    {
+      "id": "e0b8001fc61d",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 44,
+      "end_lineno": 772,
+      "end_col_offset": 52,
+      "original": "'__eq__'",
+      "replacement": "('XX__eq__XX')"
+    },
+    {
+      "id": "2a224fc4c679",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 54,
+      "end_lineno": 772,
+      "end_col_offset": 62,
+      "original": "'__ne__'",
+      "replacement": "('XX__ne__XX')"
+    },
+    {
+      "id": "76a3d6380911",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 64,
+      "end_lineno": 772,
+      "end_col_offset": 73,
+      "original": "'__sub__'",
+      "replacement": "('XX__sub__XX')"
+    },
+    {
+      "id": "2240ac929bbb",
+      "operator": "CRP",
+      "lineno": 772,
+      "col_offset": 75,
+      "end_lineno": 772,
+      "end_col_offset": 85,
+      "original": "'__rsub__'",
+      "replacement": "('XX__rsub__XX')"
+    },
+    {
+      "id": "21e21f6c9e75",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 4,
+      "end_lineno": 773,
+      "end_col_offset": 12,
+      "original": "'__or__'",
+      "replacement": "('XX__or__XX')"
+    },
+    {
+      "id": "8472f76201de",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 14,
+      "end_lineno": 773,
+      "end_col_offset": 23,
+      "original": "'__ror__'",
+      "replacement": "('XX__ror__XX')"
+    },
+    {
+      "id": "43e570d4bee7",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 25,
+      "end_lineno": 773,
+      "end_col_offset": 34,
+      "original": "'__xor__'",
+      "replacement": "('XX__xor__XX')"
+    },
+    {
+      "id": "fb6a746cc37e",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 36,
+      "end_lineno": 773,
+      "end_col_offset": 46,
+      "original": "'__rxor__'",
+      "replacement": "('XX__rxor__XX')"
+    },
+    {
+      "id": "0b675ce3ba74",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 48,
+      "end_lineno": 773,
+      "end_col_offset": 57,
+      "original": "'__and__'",
+      "replacement": "('XX__and__XX')"
+    },
+    {
+      "id": "fcf7ab3a7d5d",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 59,
+      "end_lineno": 773,
+      "end_col_offset": 69,
+      "original": "'__rand__'",
+      "replacement": "('XX__rand__XX')"
+    },
+    {
+      "id": "8960dc62ea88",
+      "operator": "CRP",
+      "lineno": 773,
+      "col_offset": 71,
+      "end_lineno": 773,
+      "end_col_offset": 83,
+      "original": "'isdisjoint'",
+      "replacement": "('XXisdisjointXX')"
+    },
+    {
+      "id": "1bc76a379065",
+      "operator": "UOI",
+      "lineno": 781,
+      "col_offset": 15,
+      "end_lineno": 781,
+      "end_col_offset": 47,
+      "original": "not mapping._fwdm_has_dict_views",
+      "replacement": "(mapping._fwdm_has_dict_views)"
+    },
+    {
+      "id": "631958c49c39",
+      "operator": "RET",
+      "lineno": 782,
+      "col_offset": 16,
+      "end_lineno": 782,
+      "end_col_offset": 60,
+      "original": "return getattr(Set, methodname)(self, *args)",
+      "replacement": "return None"
+    },
+    {
+      "id": "7054500bf1ab",
+      "operator": "LCR",
+      "lineno": 792,
+      "col_offset": 15,
+      "end_lineno": 792,
+      "end_col_offset": 116,
+      "original": "len(args) == 1 and isinstance((arg := args[0]), ProxiedSetView) and arg._mapping._fwdm_has_dict_views",
+      "replacement": "(len(args) == 1 or isinstance((arg := args[0]), ProxiedSetView) or arg._mapping._fwdm_has_dict_views)"
+    },
+    {
+      "id": "792b5c7a09c4",
+      "operator": "ROR",
+      "lineno": 792,
+      "col_offset": 15,
+      "end_lineno": 792,
+      "end_col_offset": 29,
+      "original": "len(args) == 1",
+      "replacement": "(len(args) != 1)"
+    },
+    {
+      "id": "0391178871ea",
+      "operator": "CRP",
+      "lineno": 792,
+      "col_offset": 28,
+      "end_lineno": 792,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c37eb03c1bfb",
+      "operator": "CRP",
+      "lineno": 792,
+      "col_offset": 58,
+      "end_lineno": 792,
+      "end_col_offset": 59,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "0b83ee55bef6",
+      "operator": "RET",
+      "lineno": 794,
+      "col_offset": 16,
+      "end_lineno": 794,
+      "end_col_offset": 59,
+      "original": "return fwdm_dict_view_method(arg_dict_view)",
+      "replacement": "return None"
+    },
+    {
+      "id": "9aff6d66eb90",
+      "operator": "RET",
+      "lineno": 795,
+      "col_offset": 12,
+      "end_lineno": 795,
+      "end_col_offset": 47,
+      "original": "return fwdm_dict_view_method(*args)",
+      "replacement": "return None"
+    },
+    {
+      "id": "740e24bc0454",
+      "operator": "RET",
+      "lineno": 799,
+      "col_offset": 8,
+      "end_lineno": 799,
+      "end_col_offset": 21,
+      "original": "return method",
+      "replacement": "return None"
+    }
+  ]
+}

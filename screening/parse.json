@@ -1,0 +1,176 @@
+{
+  "target": "parse",
+  "module_file": "parse/__init__.py",
+  "source_sha256": "6564cc7ebfa06d236f27a921c461ac245257b935087a96307437fc039a6b6b6e",
+  "tests_total": 102,
+  "tests_passed": 102,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 550,
+  "covered_lines": 528,
+  "num_branches": 244,
+  "covered_branches": 227,
+  "missing_lines": [
+    133,
+    136,
+    141,
+    248,
+    291,
+    404,
+    447,
+    448,
+    449,
+    456,
+    458,
+    459,
+    460,
+    473,
+    474,
+    475,
+    491,
+    640,
+    641,
+    643,
+    859,
+    894
+  ],
+  "missing_branches": [
+    [
+      139,
+      141
+    ],
+    [
+      246,
+      248
+    ],
+    [
+      288,
+      291
+    ],
+    [
+      398,
+      404
+    ],
+    [
+      447,
+      448
+    ],
+    [
+      447,
+      449
+    ],
+    [
+      459,
+      460
+    ],
+    [
+      459,
+      463
+    ],
+    [
+      474,
+      475
+    ],
+    [
+      474,
+      483
+    ],
+    [
+      523,
+      525
+    ],
+    [
+      546,
+      548
+    ],
+    [
+      638,
+      640
+    ],
+    [
+      640,
+      641
+    ],
+    [
+      640,
+      643
+    ],
+    [
+      846,
+      850
+    ],
+    [
+      858,
+      859
+    ]
+  ],
+  "mutants_total": 200,
+  "mutants_killed": 159,
+  "mutants_survived": 26,
+  "mutants_not_covered": 13,
+  "mutants_timeout": 2,
+  "surviving_mutants": [
+    "f100487d5331",
+    "0f0514176766",
+    "37d83b0dfcd9",
+    "e96826130a98",
+    "b8d42497f4d9",
+    "cdcb2d140fc4",
+    "2f37708e03da",
+    "5e7313ffd806",
+    "17dde014d438",
+    "2805ac7304da",
+    "57bc6bc9c773",
+    "6a4d2b04c0fa",
+    "e956ce2f405c",
+    "ec65d97cb9c2",
+    "54416112d5b3",
+    "40cec06a3761",
+    "57c9cb161f1b",
+    "b82390bcc5d0",
+    "87f8ebbd2731",
+    "7b4239e4f39a",
+    "b1b932a855ea",
+    "2a5a343b179c",
+    "d6a873c0ce10",
+    "8960d4b5e5cf",
+    "1236426f703f",
+    "600d63841202",
+    "3036c3610df0",
+    "e6ed8ee6469c",
+    "93e5b66a1711",
+    "ec883e57f862",
+    "935e7c64b764",
+    "87becacd13e6",
+    "7ebaabc2fe4f",
+    "56638d63ed54",
+    "94a7a5bcecaf",
+    "6f7aaca07749",
+    "5ab251328ef3",
+    "079c0248c50a",
+    "77234c64e898"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 29.130714318000173,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-17T11:35:03+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.96,
+  "branch_coverage": 0.930327868852459,
+  "mutation_score": 0.805,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 805,
+  "mutants_generated": 730,
+  "id": "parse",
+  "status": "ok",
+  "screen_seconds": 29.1
+}

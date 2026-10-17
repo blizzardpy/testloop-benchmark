@@ -1,0 +1,2011 @@
+{
+  "target": "schedule",
+  "module_file": "schedule/__init__.py",
+  "source_sha256": "b0c93f8ee84cbb8dbb98bcb8284864f4ea04012fdbc216de13f8ad2141d09efa",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 322,
+  "mutants": [
+    {
+      "id": "c6d0aaf33588",
+      "operator": "CRP",
+      "lineno": 50,
+      "col_offset": 27,
+      "end_lineno": 50,
+      "end_col_offset": 37,
+      "original": "\"schedule\"",
+      "replacement": "('XXscheduleXX')"
+    },
+    {
+      "id": "78f63c909128",
+      "operator": "RET",
+      "lineno": 131,
+      "col_offset": 12,
+      "end_lineno": 131,
+      "end_col_offset": 31,
+      "original": "return self.jobs[:]",
+      "replacement": "return None"
+    },
+    {
+      "id": "4ba40cb41092",
+      "operator": "RET",
+      "lineno": 133,
+      "col_offset": 12,
+      "end_lineno": 133,
+      "end_col_offset": 64,
+      "original": "return [job for job in self.jobs if tag in job.tags]",
+      "replacement": "return None"
+    },
+    {
+      "id": "fb1001715780",
+      "operator": "ROR",
+      "lineno": 133,
+      "col_offset": 48,
+      "end_lineno": 133,
+      "end_col_offset": 63,
+      "original": "tag in job.tags",
+      "replacement": "(tag not in job.tags)"
+    },
+    {
+      "id": "8306a9164b39",
+      "operator": "ROR",
+      "lineno": 143,
+      "col_offset": 11,
+      "end_lineno": 143,
+      "end_col_offset": 22,
+      "original": "tag is None",
+      "replacement": "(tag is not None)"
+    },
+    {
+      "id": "89d0ffe46648",
+      "operator": "CRP",
+      "lineno": 144,
+      "col_offset": 25,
+      "end_lineno": 144,
+      "end_col_offset": 46,
+      "original": "\"Deleting *all* jobs\"",
+      "replacement": "('XXDeleting *all* jobsXX')"
+    },
+    {
+      "id": "13903607f7d5",
+      "operator": "CRP",
+      "lineno": 147,
+      "col_offset": 25,
+      "end_lineno": 147,
+      "end_col_offset": 56,
+      "original": "'Deleting all jobs tagged \"%s\"'",
+      "replacement": "('XXDeleting all jobs tagged \"%s\"XX')"
+    },
+    {
+      "id": "c94cd1e5459e",
+      "operator": "ROR",
+      "lineno": 148,
+      "col_offset": 56,
+      "end_lineno": 148,
+      "end_col_offset": 75,
+      "original": "tag not in job.tags",
+      "replacement": "(tag in job.tags)"
+    },
+    {
+      "id": "35b30b975d81",
+      "operator": "CRP",
+      "lineno": 157,
+      "col_offset": 25,
+      "end_lineno": 157,
+      "end_col_offset": 46,
+      "original": "'Cancelling job \"%s\"'",
+      "replacement": "('XXCancelling job \"%s\"XX')"
+    },
+    {
+      "id": "bc8eab2df231",
+      "operator": "RET",
+      "lineno": 170,
+      "col_offset": 8,
+      "end_lineno": 170,
+      "end_col_offset": 18,
+      "original": "return job",
+      "replacement": "return None"
+    },
+    {
+      "id": "98510cede3c6",
+      "operator": "LCR",
+      "lineno": 174,
+      "col_offset": 11,
+      "end_lineno": 174,
+      "end_col_offset": 57,
+      "original": "isinstance(ret, CancelJob) or ret is CancelJob",
+      "replacement": "(isinstance(ret, CancelJob) and ret is CancelJob)"
+    },
+    {
+      "id": "69bcd80f475e",
+      "operator": "UOI",
+      "lineno": 188,
+      "col_offset": 11,
+      "end_lineno": 188,
+      "end_col_offset": 24,
+      "original": "not self.jobs",
+      "replacement": "(self.jobs)"
+    },
+    {
+      "id": "c23275689e02",
+      "operator": "UOI",
+      "lineno": 191,
+      "col_offset": 11,
+      "end_lineno": 191,
+      "end_col_offset": 28,
+      "original": "not jobs_filtered",
+      "replacement": "(jobs_filtered)"
+    },
+    {
+      "id": "625da7a1c571",
+      "operator": "UOI",
+      "lineno": 204,
+      "col_offset": 11,
+      "end_lineno": 204,
+      "end_col_offset": 28,
+      "original": "not self.next_run",
+      "replacement": "(self.next_run)"
+    },
+    {
+      "id": "22ad8b84e35f",
+      "operator": "RET",
+      "lineno": 206,
+      "col_offset": 8,
+      "end_lineno": 206,
+      "end_col_offset": 72,
+      "original": "return (self.next_run - datetime.datetime.now()).total_seconds()",
+      "replacement": "return None"
+    },
+    {
+      "id": "a0b84b5fe607",
+      "operator": "AOR",
+      "lineno": 206,
+      "col_offset": 16,
+      "end_lineno": 206,
+      "end_col_offset": 55,
+      "original": "self.next_run - datetime.datetime.now()",
+      "replacement": "(self.next_run + datetime.datetime.now())"
+    },
+    {
+      "id": "46fb1712d225",
+      "operator": "RET",
+      "lineno": 262,
+      "col_offset": 8,
+      "end_lineno": 262,
+      "end_col_offset": 45,
+      "original": "return self.next_run < other.next_run",
+      "replacement": "return None"
+    },
+    {
+      "id": "b7e7fcd869cc",
+      "operator": "COND",
+      "lineno": 265,
+      "col_offset": 11,
+      "end_lineno": 265,
+      "end_col_offset": 45,
+      "original": "hasattr(self.job_func, \"__name__\")",
+      "replacement": "(not hasattr(self.job_func, '__name__'))"
+    },
+    {
+      "id": "85526c508dc5",
+      "operator": "CRP",
+      "lineno": 274,
+      "col_offset": 12,
+      "end_lineno": 274,
+      "end_col_offset": 16,
+      "original": "\"()\"",
+      "replacement": "('XX()XX')"
+    },
+    {
+      "id": "7ec2575ab062",
+      "operator": "ROR",
+      "lineno": 274,
+      "col_offset": 20,
+      "end_lineno": 274,
+      "end_col_offset": 41,
+      "original": "self.job_func is None",
+      "replacement": "(self.job_func is not None)"
+    },
+    {
+      "id": "0e1788dfeb45",
+      "operator": "CRP",
+      "lineno": 275,
+      "col_offset": 12,
+      "end_lineno": 275,
+      "end_col_offset": 16,
+      "original": "\"{}\"",
+      "replacement": "('XX{}XX')"
+    },
+    {
+      "id": "9ad18472ad23",
+      "operator": "ROR",
+      "lineno": 275,
+      "col_offset": 20,
+      "end_lineno": 275,
+      "end_col_offset": 41,
+      "original": "self.job_func is None",
+      "replacement": "(self.job_func is not None)"
+    },
+    {
+      "id": "86396aa1e9fe",
+      "operator": "RET",
+      "lineno": 280,
+      "col_offset": 12,
+      "end_lineno": 280,
+      "end_col_offset": 70,
+      "original": "return t.strftime(\"%Y-%m-%d %H:%M:%S\") if t else \"[never]\"",
+      "replacement": "return None"
+    },
+    {
+      "id": "d2592902c655",
+      "operator": "UOI",
+      "lineno": 283,
+      "col_offset": 19,
+      "end_lineno": 283,
+      "end_col_offset": 41,
+      "original": "not isinstance(j, Job)",
+      "replacement": "(isinstance(j, Job))"
+    },
+    {
+      "id": "6c5b2efa0c5b",
+      "operator": "AOR",
+      "lineno": 285,
+      "col_offset": 20,
+      "end_lineno": 288,
+      "end_col_offset": 9,
+      "original": "\"(last run: %s, next run: %s)\" % ( format_time(self.last_run), format_time(self.next_run), )",
+      "replacement": "('(last run: %s, next run: %s)' / (format_time(self.last_run), format_time(self.next_run)))"
+    },
+    {
+      "id": "a48ad7d3f686",
+      "operator": "COND",
+      "lineno": 290,
+      "col_offset": 11,
+      "end_lineno": 290,
+      "end_col_offset": 45,
+      "original": "hasattr(self.job_func, \"__name__\")",
+      "replacement": "(not hasattr(self.job_func, '__name__'))"
+    },
+    {
+      "id": "3359c286cc82",
+      "operator": "CRP",
+      "lineno": 290,
+      "col_offset": 34,
+      "end_lineno": 290,
+      "end_col_offset": 44,
+      "original": "\"__name__\"",
+      "replacement": "('XX__name__XX')"
+    },
+    {
+      "id": "c8d1915de0fd",
+      "operator": "AOR",
+      "lineno": 297,
+      "col_offset": 22,
+      "end_lineno": 297,
+      "end_col_offset": 44,
+      "original": "\"%s=%s\" % (k, repr(v))",
+      "replacement": "('%s=%s' / (k, repr(v)))"
+    },
+    {
+      "id": "bc6c22698d6d",
+      "operator": "AOR",
+      "lineno": 298,
+      "col_offset": 24,
+      "end_lineno": 298,
+      "end_col_offset": 76,
+      "original": "job_func_name + \"(\" + \", \".join(args + kwargs) + \")\"",
+      "replacement": "(job_func_name + '(' + ', '.join(args + kwargs) - ')')"
+    },
+    {
+      "id": "e8f28973c1dc",
+      "operator": "AOR",
+      "lineno": 298,
+      "col_offset": 24,
+      "end_lineno": 298,
+      "end_col_offset": 43,
+      "original": "job_func_name + \"(\"",
+      "replacement": "(job_func_name - '(')"
+    },
+    {
+      "id": "276092d77378",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 40,
+      "end_lineno": 298,
+      "end_col_offset": 43,
+      "original": "\"(\"",
+      "replacement": "('XX(XX')"
+    },
+    {
+      "id": "7e4896a023ef",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 46,
+      "end_lineno": 298,
+      "end_col_offset": 50,
+      "original": "\", \"",
+      "replacement": "('XX, XX')"
+    },
+    {
+      "id": "90a0ec4b8f2d",
+      "operator": "AOR",
+      "lineno": 298,
+      "col_offset": 56,
+      "end_lineno": 298,
+      "end_col_offset": 69,
+      "original": "args + kwargs",
+      "replacement": "(args - kwargs)"
+    },
+    {
+      "id": "c80344e0889f",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 73,
+      "end_lineno": 298,
+      "end_col_offset": 76,
+      "original": "\")\"",
+      "replacement": "('XX)XX')"
+    },
+    {
+      "id": "e6936f92591e",
+      "operator": "CRP",
+      "lineno": 300,
+      "col_offset": 24,
+      "end_lineno": 300,
+      "end_col_offset": 32,
+      "original": "\"[None]\"",
+      "replacement": "('XX[None]XX')"
+    },
+    {
+      "id": "1da35a632bf1",
+      "operator": "ROR",
+      "lineno": 302,
+      "col_offset": 11,
+      "end_lineno": 302,
+      "end_col_offset": 35,
+      "original": "self.at_time is not None",
+      "replacement": "(self.at_time is None)"
+    },
+    {
+      "id": "0ca27dafa9f3",
+      "operator": "AOR",
+      "lineno": 303,
+      "col_offset": 19,
+      "end_lineno": 309,
+      "end_col_offset": 13,
+      "original": "\"Every %s %s at %s do %s %s\" % ( self.interval, self.unit[:-1] if self.interval == 1 else self.unit, self.at_time, call_repr, timestats, )",
+      "replacement": "('Every %s %s at %s do %s %s' / (self.interval, self.unit[:-1] if self.interval == 1 else self.unit, self.at_time, call_repr, timestats))"
+    },
+    {
+      "id": "c46d2591c037",
+      "operator": "CRP",
+      "lineno": 303,
+      "col_offset": 19,
+      "end_lineno": 303,
+      "end_col_offset": 47,
+      "original": "\"Every %s %s at %s do %s %s\"",
+      "replacement": "('XXEvery %s %s at %s do %s %sXX')"
+    },
+    {
+      "id": "a50cfc1fc774",
+      "operator": "CRP",
+      "lineno": 305,
+      "col_offset": 51,
+      "end_lineno": 305,
+      "end_col_offset": 52,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "2b6a97d41dd8",
+      "operator": "AOR",
+      "lineno": 312,
+      "col_offset": 16,
+      "end_lineno": 314,
+      "end_col_offset": 59,
+      "original": "\"Every %(interval)s \" + (\"to %(latest)s \" if self.latest is not None else \"\") + \"%(unit)s do %(call_repr)s %(timestats)s\"",
+      "replacement": "('Every %(interval)s ' + ('to %(latest)s ' if self.latest is not None else '') - '%(unit)s do %(call_repr)s %(timestats)s')"
+    },
+    {
+      "id": "a5bf3f3a42a2",
+      "operator": "AOR",
+      "lineno": 312,
+      "col_offset": 16,
+      "end_lineno": 313,
+      "end_col_offset": 71,
+      "original": "\"Every %(interval)s \" + (\"to %(latest)s \" if self.latest is not None else \"\")",
+      "replacement": "('Every %(interval)s ' - ('to %(latest)s ' if self.latest is not None else ''))"
+    },
+    {
+      "id": "9ac8be058941",
+      "operator": "CRP",
+      "lineno": 312,
+      "col_offset": 16,
+      "end_lineno": 312,
+      "end_col_offset": 37,
+      "original": "\"Every %(interval)s \"",
+      "replacement": "('XXEvery %(interval)s XX')"
+    },
+    {
+      "id": "f72603991f01",
+      "operator": "CRP",
+      "lineno": 313,
+      "col_offset": 68,
+      "end_lineno": 313,
+      "end_col_offset": 70,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "14d438c731bd",
+      "operator": "CRP",
+      "lineno": 314,
+      "col_offset": 18,
+      "end_lineno": 314,
+      "end_col_offset": 59,
+      "original": "\"%(unit)s do %(call_repr)s %(timestats)s\"",
+      "replacement": "('XX%(unit)s do %(call_repr)s %(timestats)sXX')"
+    },
+    {
+      "id": "ae7735f4c5ce",
+      "operator": "AOR",
+      "lineno": 317,
+      "col_offset": 19,
+      "end_lineno": 323,
+      "end_col_offset": 13,
+      "original": "fmt % dict( interval=self.interval, latest=self.latest, unit=(self.unit[:-1] if self.interval == 1 else self.unit), call_repr=call_repr, timestats=timestats, )",
+      "replacement": "(fmt / dict(interval=self.interval, latest=self.latest, unit=self.unit[:-1] if self.interval == 1 else self.unit, call_repr=call_repr, timestats=timestats))"
+    },
+    {
+      "id": "5a5ab7039bbb",
+      "operator": "UOI",
+      "lineno": 320,
+      "col_offset": 33,
+      "end_lineno": 320,
+      "end_col_offset": 35,
+      "original": "-1",
+      "replacement": "(1)"
+    },
+    {
+      "id": "8ccdc3b959d8",
+      "operator": "CRP",
+      "lineno": 320,
+      "col_offset": 34,
+      "end_lineno": 320,
+      "end_col_offset": 35,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "27189763ba0e",
+      "operator": "ROR",
+      "lineno": 320,
+      "col_offset": 40,
+      "end_lineno": 320,
+      "end_col_offset": 58,
+      "original": "self.interval == 1",
+      "replacement": "(self.interval != 1)"
+    },
+    {
+      "id": "3c332ac5f457",
+      "operator": "ROR",
+      "lineno": 327,
+      "col_offset": 11,
+      "end_lineno": 327,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "dc7be3154727",
+      "operator": "CRP",
+      "lineno": 327,
+      "col_offset": 28,
+      "end_lineno": 327,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "1ec86cc6ded7",
+      "operator": "RET",
+      "lineno": 329,
+      "col_offset": 8,
+      "end_lineno": 329,
+      "end_col_offset": 27,
+      "original": "return self.seconds",
+      "replacement": "return None"
+    },
+    {
+      "id": "98f2f02a2b02",
+      "operator": "CRP",
+      "lineno": 338,
+      "col_offset": 28,
+      "end_lineno": 338,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c159eed0c49b",
+      "operator": "RET",
+      "lineno": 340,
+      "col_offset": 8,
+      "end_lineno": 340,
+      "end_col_offset": 27,
+      "original": "return self.minutes",
+      "replacement": "return None"
+    },
+    {
+      "id": "00d461e127a0",
+      "operator": "RET",
+      "lineno": 345,
+      "col_offset": 8,
+      "end_lineno": 345,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "15a95c4e6e72",
+      "operator": "RET",
+      "lineno": 351,
+      "col_offset": 8,
+      "end_lineno": 351,
+      "end_col_offset": 25,
+      "original": "return self.hours",
+      "replacement": "return None"
+    },
+    {
+      "id": "7ab764a7faa2",
+      "operator": "RET",
+      "lineno": 356,
+      "col_offset": 8,
+      "end_lineno": 356,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "98bedcba1a9d",
+      "operator": "CRP",
+      "lineno": 361,
+      "col_offset": 32,
+      "end_lineno": 361,
+      "end_col_offset": 57,
+      "original": "\"Use days instead of day\"",
+      "replacement": "('XXUse days instead of dayXX')"
+    },
+    {
+      "id": "9c32593fe9e9",
+      "operator": "RET",
+      "lineno": 362,
+      "col_offset": 8,
+      "end_lineno": 362,
+      "end_col_offset": 24,
+      "original": "return self.days",
+      "replacement": "return None"
+    },
+    {
+      "id": "3b2ffc305e48",
+      "operator": "RET",
+      "lineno": 367,
+      "col_offset": 8,
+      "end_lineno": 367,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "423bb5f0acbd",
+      "operator": "CRP",
+      "lineno": 372,
+      "col_offset": 32,
+      "end_lineno": 372,
+      "end_col_offset": 59,
+      "original": "\"Use weeks instead of week\"",
+      "replacement": "('XXUse weeks instead of weekXX')"
+    },
+    {
+      "id": "41de082fa67e",
+      "operator": "ROR",
+      "lineno": 382,
+      "col_offset": 11,
+      "end_lineno": 382,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "02871de576d3",
+      "operator": "CRP",
+      "lineno": 388,
+      "col_offset": 25,
+      "end_lineno": 388,
+      "end_col_offset": 33,
+      "original": "\"monday\"",
+      "replacement": "('XXmondayXX')"
+    },
+    {
+      "id": "583f191525b9",
+      "operator": "RET",
+      "lineno": 389,
+      "col_offset": 8,
+      "end_lineno": 389,
+      "end_col_offset": 25,
+      "original": "return self.weeks",
+      "replacement": "return None"
+    },
+    {
+      "id": "a1427cb1ccef",
+      "operator": "ROR",
+      "lineno": 393,
+      "col_offset": 11,
+      "end_lineno": 393,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "227614071cff",
+      "operator": "CRP",
+      "lineno": 395,
+      "col_offset": 16,
+      "end_lineno": 397,
+      "end_col_offset": 35,
+      "original": "\"Scheduling .tuesday() jobs is only allowed for weekly jobs. \" \"Using .tuesday() on a job scheduled to run every 2 or more weeks \" \"is not supported.\"",
+      "replacement": "('XXScheduling .tuesday() jobs is only allowed for weekly jobs. Using .tuesday() on a job scheduled to run every 2 or more weeks is not supported.XX')"
+    },
+    {
+      "id": "db609635263a",
+      "operator": "RET",
+      "lineno": 400,
+      "col_offset": 8,
+      "end_lineno": 400,
+      "end_col_offset": 25,
+      "original": "return self.weeks",
+      "replacement": "return None"
+    },
+    {
+      "id": "29226002a53f",
+      "operator": "CRP",
+      "lineno": 404,
+      "col_offset": 28,
+      "end_lineno": 404,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "c79a7ae10b90",
+      "operator": "ROR",
+      "lineno": 415,
+      "col_offset": 11,
+      "end_lineno": 415,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "6a988b59215d",
+      "operator": "CRP",
+      "lineno": 415,
+      "col_offset": 28,
+      "end_lineno": 415,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "f2a9c0083926",
+      "operator": "CRP",
+      "lineno": 417,
+      "col_offset": 16,
+      "end_lineno": 419,
+      "end_col_offset": 35,
+      "original": "\"Scheduling .thursday() jobs is only allowed for weekly jobs. \" \"Using .thursday() on a job scheduled to run every 2 or more weeks \" \"is not supported.\"",
+      "replacement": "('XXScheduling .thursday() jobs is only allowed for weekly jobs. Using .thursday() on a job scheduled to run every 2 or more weeks is not supported.XX')"
+    },
+    {
+      "id": "d745d7a0da93",
+      "operator": "CRP",
+      "lineno": 421,
+      "col_offset": 25,
+      "end_lineno": 421,
+      "end_col_offset": 35,
+      "original": "\"thursday\"",
+      "replacement": "('XXthursdayXX')"
+    },
+    {
+      "id": "99138dccf73f",
+      "operator": "ROR",
+      "lineno": 426,
+      "col_offset": 11,
+      "end_lineno": 426,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "47fdfe1fd54d",
+      "operator": "CRP",
+      "lineno": 428,
+      "col_offset": 16,
+      "end_lineno": 430,
+      "end_col_offset": 35,
+      "original": "\"Scheduling .friday() jobs is only allowed for weekly jobs. \" \"Using .friday() on a job scheduled to run every 2 or more weeks \" \"is not supported.\"",
+      "replacement": "('XXScheduling .friday() jobs is only allowed for weekly jobs. Using .friday() on a job scheduled to run every 2 or more weeks is not supported.XX')"
+    },
+    {
+      "id": "412c7107d55b",
+      "operator": "RET",
+      "lineno": 433,
+      "col_offset": 8,
+      "end_lineno": 433,
+      "end_col_offset": 25,
+      "original": "return self.weeks",
+      "replacement": "return None"
+    },
+    {
+      "id": "216df5ee503a",
+      "operator": "CRP",
+      "lineno": 437,
+      "col_offset": 28,
+      "end_lineno": 437,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "4e22dd38e730",
+      "operator": "CRP",
+      "lineno": 443,
+      "col_offset": 25,
+      "end_lineno": 443,
+      "end_col_offset": 35,
+      "original": "\"saturday\"",
+      "replacement": "('XXsaturdayXX')"
+    },
+    {
+      "id": "86c790ce722d",
+      "operator": "RET",
+      "lineno": 444,
+      "col_offset": 8,
+      "end_lineno": 444,
+      "end_col_offset": 25,
+      "original": "return self.weeks",
+      "replacement": "return None"
+    },
+    {
+      "id": "57cd123ba4c7",
+      "operator": "ROR",
+      "lineno": 448,
+      "col_offset": 11,
+      "end_lineno": 448,
+      "end_col_offset": 29,
+      "original": "self.interval != 1",
+      "replacement": "(self.interval == 1)"
+    },
+    {
+      "id": "e0f820a1016d",
+      "operator": "CRP",
+      "lineno": 450,
+      "col_offset": 16,
+      "end_lineno": 452,
+      "end_col_offset": 35,
+      "original": "\"Scheduling .sunday() jobs is only allowed for weekly jobs. \" \"Using .sunday() on a job scheduled to run every 2 or more weeks \" \"is not supported.\"",
+      "replacement": "('XXScheduling .sunday() jobs is only allowed for weekly jobs. Using .sunday() on a job scheduled to run every 2 or more weeks is not supported.XX')"
+    },
+    {
+      "id": "68bce24f9e2b",
+      "operator": "RET",
+      "lineno": 455,
+      "col_offset": 8,
+      "end_lineno": 455,
+      "end_col_offset": 25,
+      "original": "return self.weeks",
+      "replacement": "return None"
+    },
+    {
+      "id": "65a8e33423ee",
+      "operator": "UOI",
+      "lineno": 466,
+      "col_offset": 11,
+      "end_lineno": 466,
+      "end_col_offset": 61,
+      "original": "not all(isinstance(tag, Hashable) for tag in tags)",
+      "replacement": "(all((isinstance(tag, Hashable) for tag in tags)))"
+    },
+    {
+      "id": "cd3db54366db",
+      "operator": "CRP",
+      "lineno": 493,
+      "col_offset": 29,
+      "end_lineno": 493,
+      "end_col_offset": 35,
+      "original": "\"days\"",
+      "replacement": "('XXdaysXX')"
+    },
+    {
+      "id": "3785b59ff9a2",
+      "operator": "CRP",
+      "lineno": 493,
+      "col_offset": 46,
+      "end_lineno": 493,
+      "end_col_offset": 55,
+      "original": "\"minutes\"",
+      "replacement": "('XXminutesXX')"
+    },
+    {
+      "id": "01a41ec91327",
+      "operator": "UOI",
+      "lineno": 493,
+      "col_offset": 61,
+      "end_lineno": 493,
+      "end_col_offset": 79,
+      "original": "not self.start_day",
+      "replacement": "(self.start_day)"
+    },
+    {
+      "id": "82e52ed58635",
+      "operator": "CRP",
+      "lineno": 495,
+      "col_offset": 16,
+      "end_lineno": 495,
+      "end_col_offset": 79,
+      "original": "\"Invalid unit (valid units are `days`, `hours`, and `minutes`)\"",
+      "replacement": "('XXInvalid unit (valid units are `days`, `hours`, and `minutes`)XX')"
+    },
+    {
+      "id": "696505a01917",
+      "operator": "ROR",
+      "lineno": 498,
+      "col_offset": 11,
+      "end_lineno": 498,
+      "end_col_offset": 25,
+      "original": "tz is not None",
+      "replacement": "(tz is None)"
+    },
+    {
+      "id": "8749c01a5455",
+      "operator": "COND",
+      "lineno": 501,
+      "col_offset": 15,
+      "end_lineno": 501,
+      "end_col_offset": 34,
+      "original": "isinstance(tz, str)",
+      "replacement": "(not isinstance(tz, str))"
+    },
+    {
+      "id": "f6b0cdad8a17",
+      "operator": "UOI",
+      "lineno": 510,
+      "col_offset": 11,
+      "end_lineno": 510,
+      "end_col_offset": 40,
+      "original": "not isinstance(time_str, str)",
+      "replacement": "(isinstance(time_str, str))"
+    },
+    {
+      "id": "03100655810f",
+      "operator": "CRP",
+      "lineno": 511,
+      "col_offset": 28,
+      "end_lineno": 511,
+      "end_col_offset": 60,
+      "original": "\"at() should be passed a string\"",
+      "replacement": "('XXat() should be passed a stringXX')"
+    },
+    {
+      "id": "87c77f765e8e",
+      "operator": "LCR",
+      "lineno": 512,
+      "col_offset": 11,
+      "end_lineno": 512,
+      "end_col_offset": 48,
+      "original": "self.unit == \"days\" or self.start_day",
+      "replacement": "(self.unit == 'days' and self.start_day)"
+    },
+    {
+      "id": "deead33b0459",
+      "operator": "ROR",
+      "lineno": 512,
+      "col_offset": 11,
+      "end_lineno": 512,
+      "end_col_offset": 30,
+      "original": "self.unit == \"days\"",
+      "replacement": "(self.unit != 'days')"
+    },
+    {
+      "id": "54e3b1537250",
+      "operator": "UOI",
+      "lineno": 513,
+      "col_offset": 15,
+      "end_lineno": 513,
+      "end_col_offset": 70,
+      "original": "not re.match(r\"^[0-2]\\d:[0-5]\\d(:[0-5]\\d)?$\", time_str)",
+      "replacement": "(re.match('^[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?$', time_str))"
+    },
+    {
+      "id": "2f9147e52a6e",
+      "operator": "CRP",
+      "lineno": 513,
+      "col_offset": 28,
+      "end_lineno": 513,
+      "end_col_offset": 59,
+      "original": "r\"^[0-2]\\d:[0-5]\\d(:[0-5]\\d)?$\"",
+      "replacement": "('XX^[0-2]\\\\d:[0-5]\\\\d(:[0-5]\\\\d)?$XX')"
+    },
+    {
+      "id": "e7c89fe35b4f",
+      "operator": "ROR",
+      "lineno": 517,
+      "col_offset": 11,
+      "end_lineno": 517,
+      "end_col_offset": 31,
+      "original": "self.unit == \"hours\"",
+      "replacement": "(self.unit != 'hours')"
+    },
+    {
+      "id": "b0aee7193f51",
+      "operator": "CRP",
+      "lineno": 517,
+      "col_offset": 24,
+      "end_lineno": 517,
+      "end_col_offset": 31,
+      "original": "\"hours\"",
+      "replacement": "('XXhoursXX')"
+    },
+    {
+      "id": "66298ef8cd6e",
+      "operator": "UOI",
+      "lineno": 518,
+      "col_offset": 15,
+      "end_lineno": 518,
+      "end_col_offset": 62,
+      "original": "not re.match(r\"^([0-5]\\d)?:[0-5]\\d$\", time_str)",
+      "replacement": "(re.match('^([0-5]\\\\d)?:[0-5]\\\\d$', time_str))"
+    },
+    {
+      "id": "7d411df9012e",
+      "operator": "CRP",
+      "lineno": 518,
+      "col_offset": 28,
+      "end_lineno": 518,
+      "end_col_offset": 51,
+      "original": "r\"^([0-5]\\d)?:[0-5]\\d$\"",
+      "replacement": "('XX^([0-5]\\\\d)?:[0-5]\\\\d$XX')"
+    },
+    {
+      "id": "d3d2beddc3e6",
+      "operator": "CRP",
+      "lineno": 520,
+      "col_offset": 20,
+      "end_lineno": 520,
+      "end_col_offset": 86,
+      "original": "\"Invalid time format for an hourly job (valid format is (MM)?:SS)\"",
+      "replacement": "('XXInvalid time format for an hourly job (valid format is (MM)?:SS)XX')"
+    },
+    {
+      "id": "f875b86875fc",
+      "operator": "ROR",
+      "lineno": 523,
+      "col_offset": 11,
+      "end_lineno": 523,
+      "end_col_offset": 33,
+      "original": "self.unit == \"minutes\"",
+      "replacement": "(self.unit != 'minutes')"
+    },
+    {
+      "id": "257e22a2b051",
+      "operator": "UOI",
+      "lineno": 524,
+      "col_offset": 15,
+      "end_lineno": 524,
+      "end_col_offset": 52,
+      "original": "not re.match(r\"^:[0-5]\\d$\", time_str)",
+      "replacement": "(re.match('^:[0-5]\\\\d$', time_str))"
+    },
+    {
+      "id": "033f5560fc22",
+      "operator": "CRP",
+      "lineno": 524,
+      "col_offset": 28,
+      "end_lineno": 524,
+      "end_col_offset": 41,
+      "original": "r\"^:[0-5]\\d$\"",
+      "replacement": "('XX^:[0-5]\\\\d$XX')"
+    },
+    {
+      "id": "f3bcaa7a34a2",
+      "operator": "CRP",
+      "lineno": 526,
+      "col_offset": 20,
+      "end_lineno": 526,
+      "end_col_offset": 82,
+      "original": "\"Invalid time format for a minutely job (valid format is :SS)\"",
+      "replacement": "('XXInvalid time format for a minutely job (valid format is :SS)XX')"
+    },
+    {
+      "id": "cdebccd3cf9f",
+      "operator": "CRP",
+      "lineno": 528,
+      "col_offset": 37,
+      "end_lineno": 528,
+      "end_col_offset": 40,
+      "original": "\":\"",
+      "replacement": "('XX:XX')"
+    },
+    {
+      "id": "97c6e2bf6edb",
+      "operator": "CRP",
+      "lineno": 532,
+      "col_offset": 31,
+      "end_lineno": 532,
+      "end_col_offset": 32,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "bc1f2e3b73c9",
+      "operator": "LCR",
+      "lineno": 534,
+      "col_offset": 13,
+      "end_lineno": 534,
+      "end_col_offset": 61,
+      "original": "len(time_values) == 2 and self.unit == \"minutes\"",
+      "replacement": "(len(time_values) == 2 or self.unit == 'minutes')"
+    },
+    {
+      "id": "393824e6801d",
+      "operator": "CRP",
+      "lineno": 534,
+      "col_offset": 33,
+      "end_lineno": 534,
+      "end_col_offset": 34,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "7b0ec4472139",
+      "operator": "CRP",
+      "lineno": 534,
+      "col_offset": 52,
+      "end_lineno": 534,
+      "end_col_offset": 61,
+      "original": "\"minutes\"",
+      "replacement": "('XXminutesXX')"
+    },
+    {
+      "id": "526daa9ca321",
+      "operator": "CRP",
+      "lineno": 535,
+      "col_offset": 19,
+      "end_lineno": 535,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "95f6ef12aa34",
+      "operator": "CRP",
+      "lineno": 536,
+      "col_offset": 21,
+      "end_lineno": 536,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "bd8f5f24b91b",
+      "operator": "LCR",
+      "lineno": 538,
+      "col_offset": 13,
+      "end_lineno": 538,
+      "end_col_offset": 83,
+      "original": "len(time_values) == 2 and self.unit == \"hours\" and len(time_values[0])",
+      "replacement": "(len(time_values) == 2 or self.unit == 'hours' or len(time_values[0]))"
+    },
+    {
+      "id": "94b1d91ea891",
+      "operator": "ROR",
+      "lineno": 538,
+      "col_offset": 13,
+      "end_lineno": 538,
+      "end_col_offset": 34,
+      "original": "len(time_values) == 2",
+      "replacement": "(len(time_values) != 2)"
+    },
+    {
+      "id": "899d0c98d8ea",
+      "operator": "CRP",
+      "lineno": 538,
+      "col_offset": 33,
+      "end_lineno": 538,
+      "end_col_offset": 34,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "c774b6a7ae89",
+      "operator": "CRP",
+      "lineno": 538,
+      "col_offset": 80,
+      "end_lineno": 538,
+      "end_col_offset": 81,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2feec1a0af08",
+      "operator": "CRP",
+      "lineno": 539,
+      "col_offset": 19,
+      "end_lineno": 539,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "887003b9e972",
+      "operator": "CRP",
+      "lineno": 543,
+      "col_offset": 21,
+      "end_lineno": 543,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e659c4be8640",
+      "operator": "ROR",
+      "lineno": 544,
+      "col_offset": 11,
+      "end_lineno": 544,
+      "end_col_offset": 30,
+      "original": "self.unit == \"days\"",
+      "replacement": "(self.unit != 'days')"
+    },
+    {
+      "id": "3c2612b4929f",
+      "operator": "CRP",
+      "lineno": 546,
+      "col_offset": 20,
+      "end_lineno": 546,
+      "end_col_offset": 21,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "e76ef0a7355f",
+      "operator": "ROR",
+      "lineno": 546,
+      "col_offset": 20,
+      "end_lineno": 546,
+      "end_col_offset": 35,
+      "original": "0 <= hour <= 23",
+      "replacement": "(0 < hour <= 23)"
+    },
+    {
+      "id": "c8097bd86020",
+      "operator": "CRP",
+      "lineno": 546,
+      "col_offset": 33,
+      "end_lineno": 546,
+      "end_col_offset": 35,
+      "original": "23",
+      "replacement": "(24)"
+    },
+    {
+      "id": "4c06bbea83e1",
+      "operator": "CRP",
+      "lineno": 548,
+      "col_offset": 20,
+      "end_lineno": 548,
+      "end_col_offset": 74,
+      "original": "\"Invalid number of hours ({} is not between 0 and 23)\"",
+      "replacement": "('XXInvalid number of hours ({} is not between 0 and 23)XX')"
+    },
+    {
+      "id": "5b9467cabf16",
+      "operator": "ROR",
+      "lineno": 550,
+      "col_offset": 13,
+      "end_lineno": 550,
+      "end_col_offset": 33,
+      "original": "self.unit == \"hours\"",
+      "replacement": "(self.unit != 'hours')"
+    },
+    {
+      "id": "c861d852a689",
+      "operator": "CRP",
+      "lineno": 551,
+      "col_offset": 19,
+      "end_lineno": 551,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "aec2c9e22f1f",
+      "operator": "CRP",
+      "lineno": 553,
+      "col_offset": 19,
+      "end_lineno": 553,
+      "end_col_offset": 20,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "92b31a27b9e6",
+      "operator": "CRP",
+      "lineno": 554,
+      "col_offset": 21,
+      "end_lineno": 554,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "efe6b06bb65b",
+      "operator": "RET",
+      "lineno": 574,
+      "col_offset": 8,
+      "end_lineno": 574,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "0982e7c38465",
+      "operator": "COND",
+      "lineno": 605,
+      "col_offset": 11,
+      "end_lineno": 605,
+      "end_col_offset": 52,
+      "original": "isinstance(until_time, datetime.datetime)",
+      "replacement": "(not isinstance(until_time, datetime.datetime))"
+    },
+    {
+      "id": "cec96aa4f06a",
+      "operator": "COND",
+      "lineno": 609,
+      "col_offset": 13,
+      "end_lineno": 609,
+      "end_col_offset": 50,
+      "original": "isinstance(until_time, datetime.time)",
+      "replacement": "(not isinstance(until_time, datetime.time))"
+    },
+    {
+      "id": "e50989f0cdcc",
+      "operator": "COND",
+      "lineno": 613,
+      "col_offset": 13,
+      "end_lineno": 613,
+      "end_col_offset": 40,
+      "original": "isinstance(until_time, str)",
+      "replacement": "(not isinstance(until_time, str))"
+    },
+    {
+      "id": "6a7d5b238010",
+      "operator": "CRP",
+      "lineno": 617,
+      "col_offset": 20,
+      "end_lineno": 617,
+      "end_col_offset": 39,
+      "original": "\"%Y-%m-%d %H:%M:%S\"",
+      "replacement": "('XX%Y-%m-%d %H:%M:%SXX')"
+    },
+    {
+      "id": "d58085861889",
+      "operator": "CRP",
+      "lineno": 619,
+      "col_offset": 20,
+      "end_lineno": 619,
+      "end_col_offset": 30,
+      "original": "\"%Y-%m-%d\"",
+      "replacement": "('XX%Y-%m-%dXX')"
+    },
+    {
+      "id": "8ab8e18393ed",
+      "operator": "CRP",
+      "lineno": 620,
+      "col_offset": 20,
+      "end_lineno": 620,
+      "end_col_offset": 30,
+      "original": "\"%H:%M:%S\"",
+      "replacement": "('XX%H:%M:%SXX')"
+    },
+    {
+      "id": "1ff3e862d26a",
+      "operator": "CRP",
+      "lineno": 621,
+      "col_offset": 20,
+      "end_lineno": 621,
+      "end_col_offset": 27,
+      "original": "\"%H:%M\"",
+      "replacement": "('XX%H:%MXX')"
+    },
+    {
+      "id": "170cff4508cd",
+      "operator": "ROR",
+      "lineno": 624,
+      "col_offset": 15,
+      "end_lineno": 624,
+      "end_col_offset": 35,
+      "original": "cancel_after is None",
+      "replacement": "(cancel_after is not None)"
+    },
+    {
+      "id": "2466f102fff1",
+      "operator": "ROR",
+      "lineno": 638,
+      "col_offset": 11,
+      "end_lineno": 638,
+      "end_col_offset": 54,
+      "original": "self.cancel_after < datetime.datetime.now()",
+      "replacement": "(self.cancel_after <= datetime.datetime.now())"
+    },
+    {
+      "id": "a74e6fdc8038",
+      "operator": "RET",
+      "lineno": 642,
+      "col_offset": 8,
+      "end_lineno": 642,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "96d94d3fd98b",
+      "operator": "CRP",
+      "lineno": 660,
+      "col_offset": 16,
+      "end_lineno": 661,
+      "end_col_offset": 57,
+      "original": "\"Unable to a add job to schedule. \" \"Job is not associated with an scheduler\"",
+      "replacement": "('XXUnable to a add job to schedule. Job is not associated with an schedulerXX')"
+    },
+    {
+      "id": "086796d522a4",
+      "operator": "RET",
+      "lineno": 664,
+      "col_offset": 8,
+      "end_lineno": 664,
+      "end_col_offset": 19,
+      "original": "return self",
+      "replacement": "return None"
+    },
+    {
+      "id": "418d99fe0f31",
+      "operator": "CRP",
+      "lineno": 671,
+      "col_offset": 42,
+      "end_lineno": 671,
+      "end_col_offset": 78,
+      "original": "\"must run _schedule_next_run before\"",
+      "replacement": "('XXmust run _schedule_next_run beforeXX')"
+    },
+    {
+      "id": "475fc125ec48",
+      "operator": "RET",
+      "lineno": 672,
+      "col_offset": 8,
+      "end_lineno": 672,
+      "end_col_offset": 55,
+      "original": "return datetime.datetime.now() >= self.next_run",
+      "replacement": "return None"
+    },
+    {
+      "id": "a840c0997021",
+      "operator": "ROR",
+      "lineno": 672,
+      "col_offset": 15,
+      "end_lineno": 672,
+      "end_col_offset": 55,
+      "original": "datetime.datetime.now() >= self.next_run",
+      "replacement": "(datetime.datetime.now() > self.next_run)"
+    },
+    {
+      "id": "371c0d3dde8e",
+      "operator": "COND",
+      "lineno": 686,
+      "col_offset": 11,
+      "end_lineno": 686,
+      "end_col_offset": 52,
+      "original": "self._is_overdue(datetime.datetime.now())",
+      "replacement": "(not self._is_overdue(datetime.datetime.now()))"
+    },
+    {
+      "id": "805b081a5eef",
+      "operator": "CRP",
+      "lineno": 687,
+      "col_offset": 25,
+      "end_lineno": 687,
+      "end_col_offset": 44,
+      "original": "\"Cancelling job %s\"",
+      "replacement": "('XXCancelling job %sXX')"
+    },
+    {
+      "id": "2168fea68754",
+      "operator": "RET",
+      "lineno": 688,
+      "col_offset": 12,
+      "end_lineno": 688,
+      "end_col_offset": 28,
+      "original": "return CancelJob",
+      "replacement": "return None"
+    },
+    {
+      "id": "faaedc8bab6a",
+      "operator": "COND",
+      "lineno": 695,
+      "col_offset": 11,
+      "end_lineno": 695,
+      "end_col_offset": 42,
+      "original": "self._is_overdue(self.next_run)",
+      "replacement": "(not self._is_overdue(self.next_run))"
+    },
+    {
+      "id": "4411a072a4a8",
+      "operator": "RET",
+      "lineno": 698,
+      "col_offset": 8,
+      "end_lineno": 698,
+      "end_col_offset": 18,
+      "original": "return ret",
+      "replacement": "return None"
+    },
+    {
+      "id": "49643c27f5a6",
+      "operator": "CRP",
+      "lineno": 704,
+      "col_offset": 29,
+      "end_lineno": 704,
+      "end_col_offset": 38,
+      "original": "\"seconds\"",
+      "replacement": "('XXsecondsXX')"
+    },
+    {
+      "id": "ff77134a01c3",
+      "operator": "CRP",
+      "lineno": 704,
+      "col_offset": 51,
+      "end_lineno": 704,
+      "end_col_offset": 58,
+      "original": "\"hours\"",
+      "replacement": "('XXhoursXX')"
+    },
+    {
+      "id": "bc9a8d085d39",
+      "operator": "CRP",
+      "lineno": 704,
+      "col_offset": 60,
+      "end_lineno": 704,
+      "end_col_offset": 66,
+      "original": "\"days\"",
+      "replacement": "('XXdaysXX')"
+    },
+    {
+      "id": "aa8beef9c176",
+      "operator": "CRP",
+      "lineno": 704,
+      "col_offset": 68,
+      "end_lineno": 704,
+      "end_col_offset": 75,
+      "original": "\"weeks\"",
+      "replacement": "('XXweeksXX')"
+    },
+    {
+      "id": "b844c3af4577",
+      "operator": "ROR",
+      "lineno": 709,
+      "col_offset": 11,
+      "end_lineno": 709,
+      "end_col_offset": 34,
+      "original": "self.latest is not None",
+      "replacement": "(self.latest is None)"
+    },
+    {
+      "id": "734c09fe39cc",
+      "operator": "UOI",
+      "lineno": 710,
+      "col_offset": 15,
+      "end_lineno": 710,
+      "end_col_offset": 49,
+      "original": "not (self.latest >= self.interval)",
+      "replacement": "(self.latest >= self.interval)"
+    },
+    {
+      "id": "b56e61cc663e",
+      "operator": "ROR",
+      "lineno": 710,
+      "col_offset": 20,
+      "end_lineno": 710,
+      "end_col_offset": 48,
+      "original": "self.latest >= self.interval",
+      "replacement": "(self.latest > self.interval)"
+    },
+    {
+      "id": "df0700b999de",
+      "operator": "CRP",
+      "lineno": 711,
+      "col_offset": 36,
+      "end_lineno": 711,
+      "end_col_offset": 73,
+      "original": "\"`latest` is greater than `interval`\"",
+      "replacement": "('XX`latest` is greater than `interval`XX')"
+    },
+    {
+      "id": "9dec4f94faf9",
+      "operator": "ROR",
+      "lineno": 722,
+      "col_offset": 15,
+      "end_lineno": 722,
+      "end_col_offset": 35,
+      "original": "self.unit != \"weeks\"",
+      "replacement": "(self.unit == 'weeks')"
+    },
+    {
+      "id": "d793431f7ce5",
+      "operator": "CRP",
+      "lineno": 722,
+      "col_offset": 28,
+      "end_lineno": 722,
+      "end_col_offset": 35,
+      "original": "\"weeks\"",
+      "replacement": "('XXweeksXX')"
+    },
+    {
+      "id": "c08d3622bb45",
+      "operator": "ROR",
+      "lineno": 730,
+      "col_offset": 11,
+      "end_lineno": 730,
+      "end_col_offset": 24,
+      "original": "interval != 1",
+      "replacement": "(interval == 1)"
+    },
+    {
+      "id": "9e8a23ae8842",
+      "operator": "ASG",
+      "lineno": 731,
+      "col_offset": 12,
+      "end_lineno": 731,
+      "end_col_offset": 30,
+      "original": "next_run += period",
+      "replacement": "next_run -= period"
+    },
+    {
+      "id": "d1dcdb2af045",
+      "operator": "ASG",
+      "lineno": 734,
+      "col_offset": 12,
+      "end_lineno": 734,
+      "end_col_offset": 30,
+      "original": "next_run += period",
+      "replacement": "next_run -= period"
+    },
+    {
+      "id": "e4708a0a461e",
+      "operator": "ROR",
+      "lineno": 737,
+      "col_offset": 35,
+      "end_lineno": 737,
+      "end_col_offset": 59,
+      "original": "self.at_time is not None",
+      "replacement": "(self.at_time is None)"
+    },
+    {
+      "id": "08ae0e77a23c",
+      "operator": "ROR",
+      "lineno": 742,
+      "col_offset": 11,
+      "end_lineno": 742,
+      "end_col_offset": 40,
+      "original": "self.at_time_zone is not None",
+      "replacement": "(self.at_time_zone is None)"
+    },
+    {
+      "id": "c0c443af9885",
+      "operator": "ROR",
+      "lineno": 754,
+      "col_offset": 11,
+      "end_lineno": 754,
+      "end_col_offset": 31,
+      "original": "self.at_time is None",
+      "replacement": "(self.at_time is not None)"
+    },
+    {
+      "id": "de2b12d42af3",
+      "operator": "RET",
+      "lineno": 755,
+      "col_offset": 12,
+      "end_lineno": 755,
+      "end_col_offset": 25,
+      "original": "return moment",
+      "replacement": "return None"
+    },
+    {
+      "id": "b010b66ceddd",
+      "operator": "CRP",
+      "lineno": 757,
+      "col_offset": 18,
+      "end_lineno": 757,
+      "end_col_offset": 26,
+      "original": "\"second\"",
+      "replacement": "('XXsecondXX')"
+    },
+    {
+      "id": "1a8597bf952f",
+      "operator": "CRP",
+      "lineno": 757,
+      "col_offset": 49,
+      "end_lineno": 757,
+      "end_col_offset": 62,
+      "original": "\"microsecond\"",
+      "replacement": "('XXmicrosecondXX')"
+    },
+    {
+      "id": "736e33b0383a",
+      "operator": "ROR",
+      "lineno": 759,
+      "col_offset": 11,
+      "end_lineno": 759,
+      "end_col_offset": 30,
+      "original": "self.unit == \"days\"",
+      "replacement": "(self.unit != 'days')"
+    },
+    {
+      "id": "86077d735264",
+      "operator": "CRP",
+      "lineno": 759,
+      "col_offset": 24,
+      "end_lineno": 759,
+      "end_col_offset": 30,
+      "original": "\"days\"",
+      "replacement": "('XXdaysXX')"
+    },
+    {
+      "id": "a3f502dd76bb",
+      "operator": "CRP",
+      "lineno": 760,
+      "col_offset": 19,
+      "end_lineno": 760,
+      "end_col_offset": 25,
+      "original": "\"hour\"",
+      "replacement": "('XXhourXX')"
+    },
+    {
+      "id": "70388cd588f0",
+      "operator": "CRP",
+      "lineno": 762,
+      "col_offset": 25,
+      "end_lineno": 762,
+      "end_col_offset": 31,
+      "original": "\"days\"",
+      "replacement": "('XXdaysXX')"
+    },
+    {
+      "id": "8fc0bb583db7",
+      "operator": "ROR",
+      "lineno": 762,
+      "col_offset": 45,
+      "end_lineno": 762,
+      "end_col_offset": 71,
+      "original": "self.start_day is not None",
+      "replacement": "(self.start_day is None)"
+    },
+    {
+      "id": "92a973282587",
+      "operator": "CRP",
+      "lineno": 763,
+      "col_offset": 19,
+      "end_lineno": 763,
+      "end_col_offset": 27,
+      "original": "\"minute\"",
+      "replacement": "('XXminuteXX')"
+    },
+    {
+      "id": "c620d5ca7b00",
+      "operator": "RET",
+      "lineno": 771,
+      "col_offset": 8,
+      "end_lineno": 771,
+      "end_col_offset": 21,
+      "original": "return moment",
+      "replacement": "return None"
+    },
+    {
+      "id": "ad3a1d5d4c06",
+      "operator": "ROR",
+      "lineno": 781,
+      "col_offset": 11,
+      "end_lineno": 781,
+      "end_col_offset": 36,
+      "original": "self.at_time_zone is None",
+      "replacement": "(self.at_time_zone is not None)"
+    },
+    {
+      "id": "6f1ef6019154",
+      "operator": "RET",
+      "lineno": 782,
+      "col_offset": 12,
+      "end_lineno": 782,
+      "end_col_offset": 25,
+      "original": "return moment",
+      "replacement": "return None"
+    },
+    {
+      "id": "fbf4bcd6c895",
+      "operator": "UOI",
+      "lineno": 798,
+      "col_offset": 11,
+      "end_lineno": 798,
+      "end_col_offset": 26,
+      "original": "not fixate_time",
+      "replacement": "(fixate_time)"
+    },
+    {
+      "id": "541c7ff98aa7",
+      "operator": "RET",
+      "lineno": 800,
+      "col_offset": 12,
+      "end_lineno": 800,
+      "end_col_offset": 25,
+      "original": "return moment",
+      "replacement": "return None"
+    },
+    {
+      "id": "d58dbbeda3b7",
+      "operator": "ASG",
+      "lineno": 805,
+      "col_offset": 8,
+      "end_lineno": 805,
+      "end_col_offset": 29,
+      "original": "moment -= offset_diff",
+      "replacement": "moment += offset_diff"
+    },
+    {
+      "id": "ae892db67d4e",
+      "operator": "ROR",
+      "lineno": 810,
+      "col_offset": 11,
+      "end_lineno": 810,
+      "end_col_offset": 57,
+      "original": "re_normalized_offset != offset_after_normalize",
+      "replacement": "(re_normalized_offset == offset_after_normalize)"
+    },
+    {
+      "id": "3c05ff7d4309",
+      "operator": "ASG",
+      "lineno": 816,
+      "col_offset": 12,
+      "end_lineno": 816,
+      "end_col_offset": 33,
+      "original": "moment += offset_diff",
+      "replacement": "moment -= offset_diff"
+    },
+    {
+      "id": "888c78cb0a37",
+      "operator": "RET",
+      "lineno": 817,
+      "col_offset": 8,
+      "end_lineno": 817,
+      "end_col_offset": 21,
+      "original": "return moment",
+      "replacement": "return None"
+    },
+    {
+      "id": "668adcb84569",
+      "operator": "RET",
+      "lineno": 820,
+      "col_offset": 8,
+      "end_lineno": 820,
+      "end_col_offset": 73,
+      "original": "return self.cancel_after is not None and when > self.cancel_after",
+      "replacement": "return None"
+    },
+    {
+      "id": "16c8f457295f",
+      "operator": "LCR",
+      "lineno": 820,
+      "col_offset": 15,
+      "end_lineno": 820,
+      "end_col_offset": 73,
+      "original": "self.cancel_after is not None and when > self.cancel_after",
+      "replacement": "(self.cancel_after is not None or when > self.cancel_after)"
+    },
+    {
+      "id": "8883d9e9815c",
+      "operator": "ROR",
+      "lineno": 820,
+      "col_offset": 49,
+      "end_lineno": 820,
+      "end_col_offset": 73,
+      "original": "when > self.cancel_after",
+      "replacement": "(when >= self.cancel_after)"
+    },
+    {
+      "id": "c0a1d99bdf11",
+      "operator": "RET",
+      "lineno": 827,
+      "col_offset": 16,
+      "end_lineno": 827,
+      "end_col_offset": 66,
+      "original": "return datetime.datetime.strptime(datetime_str, f)",
+      "replacement": "return None"
+    },
+    {
+      "id": "265e4c7c7120",
+      "operator": "CRP",
+      "lineno": 843,
+      "col_offset": 26,
+      "end_lineno": 843,
+      "end_col_offset": 27,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "fb0facb83625",
+      "operator": "RET",
+      "lineno": 847,
+      "col_offset": 4,
+      "end_lineno": 847,
+      "end_col_offset": 44,
+      "original": "return default_scheduler.every(interval)",
+      "replacement": "return None"
+    },
+    {
+      "id": "5654ac88f07f",
+      "operator": "CRP",
+      "lineno": 857,
+      "col_offset": 33,
+      "end_lineno": 857,
+      "end_col_offset": 34,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "61f26a6a55d0",
+      "operator": "RET",
+      "lineno": 911,
+      "col_offset": 8,
+      "end_lineno": 911,
+      "end_col_offset": 33,
+      "original": "return decorated_function",
+      "replacement": "return None"
+    },
+    {
+      "id": "5e06e17b441a",
+      "operator": "RET",
+      "lineno": 913,
+      "col_offset": 4,
+      "end_lineno": 913,
+      "end_col_offset": 30,
+      "original": "return _schedule_decorator",
+      "replacement": "return None"
+    },
+    {
+      "id": "a5ee01fcd52f",
+      "operator": "AOR",
+      "lineno": 924,
+      "col_offset": 17,
+      "end_lineno": 924,
+      "end_col_offset": 49,
+      "original": "weekday_index - moment.weekday()",
+      "replacement": "(weekday_index + moment.weekday())"
+    },
+    {
+      "id": "0beb88c8aa63",
+      "operator": "ASG",
+      "lineno": 927,
+      "col_offset": 8,
+      "end_lineno": 927,
+      "end_col_offset": 23,
+      "original": "days_ahead += 7",
+      "replacement": "days_ahead -= 7"
+    },
+    {
+      "id": "658d4e50c235",
+      "operator": "CRP",
+      "lineno": 927,
+      "col_offset": 22,
+      "end_lineno": 927,
+      "end_col_offset": 23,
+      "original": "7",
+      "replacement": "(8)"
+    },
+    {
+      "id": "f52eb03c60ee",
+      "operator": "RET",
+      "lineno": 928,
+      "col_offset": 4,
+      "end_lineno": 928,
+      "end_col_offset": 55,
+      "original": "return moment + datetime.timedelta(days=days_ahead)",
+      "replacement": "return None"
+    },
+    {
+      "id": "b0508d902802",
+      "operator": "AOR",
+      "lineno": 928,
+      "col_offset": 11,
+      "end_lineno": 928,
+      "end_col_offset": 55,
+      "original": "moment + datetime.timedelta(days=days_ahead)",
+      "replacement": "(moment - datetime.timedelta(days=days_ahead))"
+    },
+    {
+      "id": "7b700e7e7933",
+      "operator": "CRP",
+      "lineno": 933,
+      "col_offset": 8,
+      "end_lineno": 933,
+      "end_col_offset": 16,
+      "original": "\"monday\"",
+      "replacement": "('XXmondayXX')"
+    },
+    {
+      "id": "567233d1200e",
+      "operator": "CRP",
+      "lineno": 934,
+      "col_offset": 8,
+      "end_lineno": 934,
+      "end_col_offset": 17,
+      "original": "\"tuesday\"",
+      "replacement": "('XXtuesdayXX')"
+    },
+    {
+      "id": "05cdc3ac0f40",
+      "operator": "CRP",
+      "lineno": 935,
+      "col_offset": 8,
+      "end_lineno": 935,
+      "end_col_offset": 19,
+      "original": "\"wednesday\"",
+      "replacement": "('XXwednesdayXX')"
+    },
+    {
+      "id": "15993d9f71b2",
+      "operator": "CRP",
+      "lineno": 936,
+      "col_offset": 8,
+      "end_lineno": 936,
+      "end_col_offset": 18,
+      "original": "\"thursday\"",
+      "replacement": "('XXthursdayXX')"
+    },
+    {
+      "id": "d9b93d2a8f08",
+      "operator": "ROR",
+      "lineno": 941,
+      "col_offset": 7,
+      "end_lineno": 941,
+      "end_col_offset": 26,
+      "original": "day not in weekdays",
+      "replacement": "(day in weekdays)"
+    },
+    {
+      "id": "13f873093281",
+      "operator": "CRP",
+      "lineno": 943,
+      "col_offset": 12,
+      "end_lineno": 943,
+      "end_col_offset": 57,
+      "original": "\"Invalid start day (valid start days are {})\"",
+      "replacement": "('XXInvalid start day (valid start days are {})XX')"
+    },
+    {
+      "id": "5febbc867a67",
+      "operator": "RET",
+      "lineno": 945,
+      "col_offset": 4,
+      "end_lineno": 945,
+      "end_col_offset": 30,
+      "original": "return weekdays.index(day)",
+      "replacement": "return None"
+    }
+  ]
+}
