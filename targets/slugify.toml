@@ -1,0 +1,12 @@
+# Candidate for the frozen benchmark (M2). Clone first:
+#   git clone https://github.com/un33k/python-slugify ../_checkouts/python-slugify
+#   git -C ../_checkouts/python-slugify checkout 35aca63fc2672cba2c739ff6dff685a4f26a4f9a
+#   pip install text-unidecode
+# (paths are from the benchmark/ folder; _checkouts/ sits next to it, outside any repo.)
+[target]
+name = "slugify.slugify"
+project_root = "../../_checkouts/python-slugify"
+module_file = "slugify/slugify.py"
+module_name = "slugify.slugify"
+python_path = ["."]
+human_tests = "tests"
