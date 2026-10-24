@@ -1,0 +1,116 @@
+# Post-cutoff tier (contamination control): modules first published after the models'
+# training cutoff (2026-06). Same schema as manifest.toml; `subdir` (optional) is the
+# project directory inside the repo when the package does not live at the repo root.
+# status: candidate | selected | rejected (with reason). Selection made 2026-10-24
+# (Amirkian chose the four recommended modules); benchmark-v1 is not changed.
+# Commits are the repository HEAD on 2026-10-24; the module file at each commit is
+# byte-identical to the released sdist (threeway: identical up to CRLF line endings).
+
+[[project]]
+name = "threeway"
+repo = "https://github.com/Bhavya-Dhoot/threeway"
+commit = "3e557ce206ca3ada981e7c5355cf1cba507867b5"  # 2026-09-09
+test_deps = []
+
+[[project.target]]
+id = "pc-threeway-core"
+category = "logic"
+module_file = "src/threeway/core.py"
+module_name = "threeway.core"
+python_path = ["src"]
+human_tests = ["tests/test_core.py"]
+status = "selected"
+
+[[project]]
+name = "lockcheck"
+repo = "https://github.com/Nappuccino-tlg/lockcheck"
+commit = "36cf94102f09818e1b0682f9811213330b6679c4"  # 2026-09-22
+test_deps = []
+
+[[project.target]]
+id = "pc-lockcheck-analyze"
+category = "io"
+module_file = "src/lockcheck/_analyze.py"
+module_name = "lockcheck._analyze"
+python_path = ["src"]
+human_tests = ["tests/test_rules.py"]
+status = "selected"
+
+[[project]]
+name = "quarantine-py"
+repo = "https://github.com/halcyon-past/quarantine"
+commit = "c27fefb80afa383613a5ffccb694eb68dcd80bfb"  # 2026-09-27
+test_deps = []
+
+[[project.target]]
+id = "pc-quarantine-redact"
+category = "logic"
+module_file = "src/quarantine/redact.py"
+module_name = "quarantine.redact"
+python_path = ["src"]
+human_tests = ["tests/test_redact.py"]
+status = "rejected"
+reason = "only 12 human tests; 6 of 80 mutants equivalent (__all__ and docstring constants)"
+
+[[project]]
+name = "drawio-digest"
+repo = "https://github.com/w616054/drawio-digest"
+commit = "a0f252bbc65b246faef1c7f6e73815b4491eaf75"  # 2026-07-23
+test_deps = []
+
+[[project.target]]
+id = "pc-drawio-parser"
+category = "io"
+module_file = "src/drawio_digest/parser.py"
+module_name = "drawio_digest.parser"
+python_path = ["src"]
+human_tests = ["tests/test_parser.py"]
+status = "selected"
+
+[[project]]
+name = "composite-enum"
+repo = "https://github.com/isaacfuenmayora/composite-enum"
+commit = "70338892a55a565c85872d462f95c0e704e00244"  # 2026-09-14
+test_deps = []
+
+[[project.target]]
+id = "pc-composite-enum-meta"
+category = "class"
+module_file = "composite_enum/_meta.py"
+module_name = "composite_enum._meta"
+python_path = ["."]
+human_tests = ["tests/test_composite.py"]
+status = "rejected"
+reason = "only 39 mutants, too few for per-module statistics; human tests already at 100%"
+
+[[project]]
+name = "patchward-check"
+repo = "https://github.com/kolesnikov-arch/patchward"
+commit = "44f45731603bebfd4d07a222e17a9b9af1d0059e"  # 2026-08-08
+subdir = "check"
+test_deps = []
+
+[[project.target]]
+id = "pc-patchward-detect"
+category = "io"
+module_file = "patchward_check/detect.py"
+module_name = "patchward_check.detect"
+python_path = ["."]
+human_tests = ["tests/test_detect.py"]
+status = "selected"
+
+[[project]]
+name = "indic-namematch"
+repo = "https://github.com/kiranshivaraju/indic-namematch"
+commit = "46675e178304216ed904b12bb819e2fa1bcd3f83"  # 2026-09-07
+test_deps = []
+
+[[project.target]]
+id = "pc-indic-matchers"
+category = "logic"
+module_file = "src/indic_namematch/matchers.py"
+module_name = "indic_namematch.matchers"
+python_path = ["src"]
+human_tests = ["tests/test_matchers.py"]
+status = "rejected"
+reason = "79 mutants (at the floor); doctests in the module show expected outputs"

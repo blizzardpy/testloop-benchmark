@@ -1,0 +1,1471 @@
+{
+  "target": "pc-lockcheck-analyze",
+  "module_file": "src/lockcheck/_analyze.py",
+  "source_sha256": "b5cc6128ae5afb9e13511fd592b92931a0d7fb1454c4599c32c78a3bb9f3a75a",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 146,
+  "mutants": [
+    {
+      "id": "582aefae034a",
+      "operator": "CRP",
+      "lineno": 26,
+      "col_offset": 20,
+      "end_lineno": 26,
+      "end_col_offset": 69,
+      "original": "r\"#\\s*lockcheck:\\s*ignore(?:\\[([A-Z0-9,\\s]+)\\])?\"",
+      "replacement": "('XX#\\\\s*lockcheck:\\\\s*ignore(?:\\\\[([A-Z0-9,\\\\s]+)\\\\])?XX')"
+    },
+    {
+      "id": "7b140190b88e",
+      "operator": "CRP",
+      "lineno": 29,
+      "col_offset": 18,
+      "end_lineno": 29,
+      "end_col_offset": 22,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "9cc6f8c1e171",
+      "operator": "RET",
+      "lineno": 37,
+      "col_offset": 8,
+      "end_lineno": 37,
+      "end_col_offset": 41,
+      "original": "return BY_CODE[self.code].summary",
+      "replacement": "return None"
+    },
+    {
+      "id": "4f86299bd394",
+      "operator": "RET",
+      "lineno": 41,
+      "col_offset": 8,
+      "end_lineno": 41,
+      "end_col_offset": 40,
+      "original": "return BY_CODE[self.code].detail",
+      "replacement": "return None"
+    },
+    {
+      "id": "6c215f06ed15",
+      "operator": "UOI",
+      "lineno": 51,
+      "col_offset": 7,
+      "end_lineno": 51,
+      "end_col_offset": 42,
+      "original": "not isinstance(func, ast.Attribute)",
+      "replacement": "(isinstance(func, ast.Attribute))"
+    },
+    {
+      "id": "331c1993577f",
+      "operator": "LCR",
+      "lineno": 54,
+      "col_offset": 7,
+      "end_lineno": 54,
+      "end_col_offset": 55,
+      "original": "isinstance(value, ast.Name) and value.id == \"op\"",
+      "replacement": "(isinstance(value, ast.Name) or value.id == 'op')"
+    },
+    {
+      "id": "c696ce25bc33",
+      "operator": "ROR",
+      "lineno": 54,
+      "col_offset": 39,
+      "end_lineno": 54,
+      "end_col_offset": 55,
+      "original": "value.id == \"op\"",
+      "replacement": "(value.id != 'op')"
+    },
+    {
+      "id": "69c248200f8a",
+      "operator": "CRP",
+      "lineno": 54,
+      "col_offset": 51,
+      "end_lineno": 54,
+      "end_col_offset": 55,
+      "original": "\"op\"",
+      "replacement": "('XXopXX')"
+    },
+    {
+      "id": "b51452dd4834",
+      "operator": "RET",
+      "lineno": 55,
+      "col_offset": 8,
+      "end_lineno": 55,
+      "end_col_offset": 24,
+      "original": "return func.attr",
+      "replacement": "return None"
+    },
+    {
+      "id": "c16c6b0d89e2",
+      "operator": "LCR",
+      "lineno": 56,
+      "col_offset": 7,
+      "end_lineno": 56,
+      "end_col_offset": 62,
+      "original": "isinstance(value, ast.Attribute) and value.attr == \"op\"",
+      "replacement": "(isinstance(value, ast.Attribute) or value.attr == 'op')"
+    },
+    {
+      "id": "bdc2b73c814a",
+      "operator": "ROR",
+      "lineno": 56,
+      "col_offset": 44,
+      "end_lineno": 56,
+      "end_col_offset": 62,
+      "original": "value.attr == \"op\"",
+      "replacement": "(value.attr != 'op')"
+    },
+    {
+      "id": "7e47dbc55a41",
+      "operator": "CRP",
+      "lineno": 56,
+      "col_offset": 58,
+      "end_lineno": 56,
+      "end_col_offset": 62,
+      "original": "\"op\"",
+      "replacement": "('XXopXX')"
+    },
+    {
+      "id": "331624a3a961",
+      "operator": "RET",
+      "lineno": 57,
+      "col_offset": 8,
+      "end_lineno": 57,
+      "end_col_offset": 24,
+      "original": "return func.attr",
+      "replacement": "return None"
+    },
+    {
+      "id": "1e8b0b9bc0e9",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 4,
+      "end_lineno": 64,
+      "end_col_offset": 16,
+      "original": "\"add_column\"",
+      "replacement": "('XXadd_columnXX')"
+    },
+    {
+      "id": "0aad60782ced",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 20,
+      "end_lineno": 64,
+      "end_col_offset": 32,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "7eba467e9d53",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 34,
+      "end_lineno": 64,
+      "end_col_offset": 35,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "cf17d8118531",
+      "operator": "CRP",
+      "lineno": 65,
+      "col_offset": 4,
+      "end_lineno": 65,
+      "end_col_offset": 18,
+      "original": "\"alter_column\"",
+      "replacement": "('XXalter_columnXX')"
+    },
+    {
+      "id": "4ff0e61ad49f",
+      "operator": "CRP",
+      "lineno": 65,
+      "col_offset": 22,
+      "end_lineno": 65,
+      "end_col_offset": 34,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "773b231b85e4",
+      "operator": "CRP",
+      "lineno": 65,
+      "col_offset": 36,
+      "end_lineno": 65,
+      "end_col_offset": 37,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "040044bde7a7",
+      "operator": "CRP",
+      "lineno": 66,
+      "col_offset": 4,
+      "end_lineno": 66,
+      "end_col_offset": 18,
+      "original": "\"create_index\"",
+      "replacement": "('XXcreate_indexXX')"
+    },
+    {
+      "id": "4bb852d7d66b",
+      "operator": "CRP",
+      "lineno": 66,
+      "col_offset": 22,
+      "end_lineno": 66,
+      "end_col_offset": 34,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "807428a9fcfa",
+      "operator": "CRP",
+      "lineno": 66,
+      "col_offset": 36,
+      "end_lineno": 66,
+      "end_col_offset": 37,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "572523efb140",
+      "operator": "CRP",
+      "lineno": 67,
+      "col_offset": 4,
+      "end_lineno": 67,
+      "end_col_offset": 16,
+      "original": "\"drop_index\"",
+      "replacement": "('XXdrop_indexXX')"
+    },
+    {
+      "id": "071bb1d5f031",
+      "operator": "CRP",
+      "lineno": 67,
+      "col_offset": 20,
+      "end_lineno": 67,
+      "end_col_offset": 32,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "0767f14e75cc",
+      "operator": "CRP",
+      "lineno": 67,
+      "col_offset": 34,
+      "end_lineno": 67,
+      "end_col_offset": 35,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "ed83a09dceca",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 4,
+      "end_lineno": 68,
+      "end_col_offset": 24,
+      "original": "\"create_foreign_key\"",
+      "replacement": "('XXcreate_foreign_keyXX')"
+    },
+    {
+      "id": "cf5739bddabe",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 28,
+      "end_lineno": 68,
+      "end_col_offset": 42,
+      "original": "\"source_table\"",
+      "replacement": "('XXsource_tableXX')"
+    },
+    {
+      "id": "745e6ebb5247",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 44,
+      "end_lineno": 68,
+      "end_col_offset": 45,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "5ac4ada022ff",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 49,
+      "end_lineno": 68,
+      "end_col_offset": 65,
+      "original": "\"referent_table\"",
+      "replacement": "('XXreferent_tableXX')"
+    },
+    {
+      "id": "3958237791b9",
+      "operator": "CRP",
+      "lineno": 68,
+      "col_offset": 67,
+      "end_lineno": 68,
+      "end_col_offset": 68,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "0436d7c032ca",
+      "operator": "CRP",
+      "lineno": 69,
+      "col_offset": 4,
+      "end_lineno": 69,
+      "end_col_offset": 29,
+      "original": "\"create_check_constraint\"",
+      "replacement": "('XXcreate_check_constraintXX')"
+    },
+    {
+      "id": "7b9c2036ad15",
+      "operator": "CRP",
+      "lineno": 69,
+      "col_offset": 33,
+      "end_lineno": 69,
+      "end_col_offset": 45,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "0d3649315187",
+      "operator": "CRP",
+      "lineno": 69,
+      "col_offset": 47,
+      "end_lineno": 69,
+      "end_col_offset": 48,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "d05d480dc6e2",
+      "operator": "CRP",
+      "lineno": 70,
+      "col_offset": 4,
+      "end_lineno": 70,
+      "end_col_offset": 30,
+      "original": "\"create_unique_constraint\"",
+      "replacement": "('XXcreate_unique_constraintXX')"
+    },
+    {
+      "id": "d5dd759ccf28",
+      "operator": "CRP",
+      "lineno": 70,
+      "col_offset": 34,
+      "end_lineno": 70,
+      "end_col_offset": 46,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "35160813ce17",
+      "operator": "CRP",
+      "lineno": 70,
+      "col_offset": 48,
+      "end_lineno": 70,
+      "end_col_offset": 49,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "bb101940d01d",
+      "operator": "ROR",
+      "lineno": 76,
+      "col_offset": 7,
+      "end_lineno": 76,
+      "end_col_offset": 26,
+      "original": "keyword is not None",
+      "replacement": "(keyword is None)"
+    },
+    {
+      "id": "fe91f132a040",
+      "operator": "RET",
+      "lineno": 77,
+      "col_offset": 8,
+      "end_lineno": 77,
+      "end_col_offset": 28,
+      "original": "return keyword.value",
+      "replacement": "return None"
+    },
+    {
+      "id": "2a49f71034e9",
+      "operator": "ROR",
+      "lineno": 78,
+      "col_offset": 7,
+      "end_lineno": 78,
+      "end_col_offset": 32,
+      "original": "position < len(node.args)",
+      "replacement": "(position <= len(node.args))"
+    },
+    {
+      "id": "4a4a0152f4fb",
+      "operator": "RET",
+      "lineno": 79,
+      "col_offset": 8,
+      "end_lineno": 79,
+      "end_col_offset": 34,
+      "original": "return node.args[position]",
+      "replacement": "return None"
+    },
+    {
+      "id": "b10b92b1a7ad",
+      "operator": "RET",
+      "lineno": 84,
+      "col_offset": 4,
+      "end_lineno": 84,
+      "end_col_offset": 97,
+      "original": "return expr.value if isinstance(expr, ast.Constant) and isinstance(expr.value, str) else None",
+      "replacement": "return None"
+    },
+    {
+      "id": "8f38bb4602c4",
+      "operator": "LCR",
+      "lineno": 84,
+      "col_offset": 25,
+      "end_lineno": 84,
+      "end_col_offset": 87,
+      "original": "isinstance(expr, ast.Constant) and isinstance(expr.value, str)",
+      "replacement": "(isinstance(expr, ast.Constant) or isinstance(expr.value, str))"
+    },
+    {
+      "id": "485e4334d2f7",
+      "operator": "ROR",
+      "lineno": 89,
+      "col_offset": 11,
+      "end_lineno": 89,
+      "end_col_offset": 30,
+      "original": "keyword.arg == name",
+      "replacement": "(keyword.arg != name)"
+    },
+    {
+      "id": "fbd3df60f73c",
+      "operator": "RET",
+      "lineno": 90,
+      "col_offset": 12,
+      "end_lineno": 90,
+      "end_col_offset": 26,
+      "original": "return keyword",
+      "replacement": "return None"
+    },
+    {
+      "id": "8bce5f0ab50b",
+      "operator": "RET",
+      "lineno": 95,
+      "col_offset": 4,
+      "end_lineno": 99,
+      "end_col_offset": 5,
+      "original": "return ( keyword is not None and isinstance(keyword.value, ast.Constant) and keyword.value.value is True )",
+      "replacement": "return None"
+    },
+    {
+      "id": "f81d86d6fe0e",
+      "operator": "LCR",
+      "lineno": 96,
+      "col_offset": 8,
+      "end_lineno": 98,
+      "end_col_offset": 39,
+      "original": "keyword is not None and isinstance(keyword.value, ast.Constant) and keyword.value.value is True",
+      "replacement": "(keyword is not None or isinstance(keyword.value, ast.Constant) or keyword.value.value is True)"
+    },
+    {
+      "id": "1633e3cd6397",
+      "operator": "ROR",
+      "lineno": 96,
+      "col_offset": 8,
+      "end_lineno": 96,
+      "end_col_offset": 27,
+      "original": "keyword is not None",
+      "replacement": "(keyword is None)"
+    },
+    {
+      "id": "00ef6ee2fdc3",
+      "operator": "ROR",
+      "lineno": 98,
+      "col_offset": 12,
+      "end_lineno": 98,
+      "end_col_offset": 39,
+      "original": "keyword.value.value is True",
+      "replacement": "(keyword.value.value is not True)"
+    },
+    {
+      "id": "e7b1c471cc83",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 35,
+      "end_lineno": 98,
+      "end_col_offset": 39,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "f5c2848d43ae",
+      "operator": "RET",
+      "lineno": 103,
+      "col_offset": 4,
+      "end_lineno": 107,
+      "end_col_offset": 5,
+      "original": "return ( keyword is not None and isinstance(keyword.value, ast.Constant) and keyword.value.value is False )",
+      "replacement": "return None"
+    },
+    {
+      "id": "e02b962153dc",
+      "operator": "LCR",
+      "lineno": 104,
+      "col_offset": 8,
+      "end_lineno": 106,
+      "end_col_offset": 40,
+      "original": "keyword is not None and isinstance(keyword.value, ast.Constant) and keyword.value.value is False",
+      "replacement": "(keyword is not None or isinstance(keyword.value, ast.Constant) or keyword.value.value is False)"
+    },
+    {
+      "id": "41767605dec9",
+      "operator": "ROR",
+      "lineno": 104,
+      "col_offset": 8,
+      "end_lineno": 104,
+      "end_col_offset": 27,
+      "original": "keyword is not None",
+      "replacement": "(keyword is None)"
+    },
+    {
+      "id": "dc5ad10dbbd2",
+      "operator": "ROR",
+      "lineno": 106,
+      "col_offset": 12,
+      "end_lineno": 106,
+      "end_col_offset": 40,
+      "original": "keyword.value.value is False",
+      "replacement": "(keyword.value.value is not False)"
+    },
+    {
+      "id": "2a7e5a5043e6",
+      "operator": "CRP",
+      "lineno": 106,
+      "col_offset": 35,
+      "end_lineno": 106,
+      "end_col_offset": 40,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "37e1a95b8b61",
+      "operator": "RET",
+      "lineno": 112,
+      "col_offset": 4,
+      "end_lineno": 118,
+      "end_col_offset": 5,
+      "original": "return [ child for child in ast.walk(node) if isinstance(child, ast.Call) and isinstance(child.func, ast.Attribute) and child.func.attr == \"Column\" ]",
+      "replacement": "return None"
+    },
+    {
+      "id": "ecfb750789bd",
+      "operator": "LCR",
+      "lineno": 115,
+      "col_offset": 11,
+      "end_lineno": 117,
+      "end_col_offset": 39,
+      "original": "isinstance(child, ast.Call) and isinstance(child.func, ast.Attribute) and child.func.attr == \"Column\"",
+      "replacement": "(isinstance(child, ast.Call) or isinstance(child.func, ast.Attribute) or child.func.attr == 'Column')"
+    },
+    {
+      "id": "cf98435e1c9c",
+      "operator": "ROR",
+      "lineno": 117,
+      "col_offset": 12,
+      "end_lineno": 117,
+      "end_col_offset": 39,
+      "original": "child.func.attr == \"Column\"",
+      "replacement": "(child.func.attr != 'Column')"
+    },
+    {
+      "id": "95a4aa48ed23",
+      "operator": "CRP",
+      "lineno": 117,
+      "col_offset": 31,
+      "end_lineno": 117,
+      "end_col_offset": 39,
+      "original": "\"Column\"",
+      "replacement": "('XXColumnXX')"
+    },
+    {
+      "id": "916fd974f78a",
+      "operator": "CRP",
+      "lineno": 127,
+      "col_offset": 27,
+      "end_lineno": 127,
+      "end_col_offset": 28,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2e6a9d2b6ad6",
+      "operator": "AOR",
+      "lineno": 144,
+      "col_offset": 22,
+      "end_lineno": 144,
+      "end_col_offset": 54,
+      "original": "previous | _tables_touched(node)",
+      "replacement": "(previous & _tables_touched(node))"
+    },
+    {
+      "id": "334566baef1f",
+      "operator": "UOI",
+      "lineno": 159,
+      "col_offset": 11,
+      "end_lineno": 159,
+      "end_col_offset": 21,
+      "original": "not wanted",
+      "replacement": "(wanted)"
+    },
+    {
+      "id": "7c2f37713c58",
+      "operator": "RET",
+      "lineno": 160,
+      "col_offset": 12,
+      "end_lineno": 160,
+      "end_col_offset": 24,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "e7c8f21147ff",
+      "operator": "CRP",
+      "lineno": 160,
+      "col_offset": 19,
+      "end_lineno": 160,
+      "end_col_offset": 24,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "7ae0d050c7a4",
+      "operator": "RET",
+      "lineno": 162,
+      "col_offset": 8,
+      "end_lineno": 162,
+      "end_col_offset": 73,
+      "original": "return bool(names) and all(name in self._fresh for name in names)",
+      "replacement": "return None"
+    },
+    {
+      "id": "fcd531bbf62e",
+      "operator": "LCR",
+      "lineno": 162,
+      "col_offset": 15,
+      "end_lineno": 162,
+      "end_col_offset": 73,
+      "original": "bool(names) and all(name in self._fresh for name in names)",
+      "replacement": "(bool(names) or all((name in self._fresh for name in names)))"
+    },
+    {
+      "id": "28ed7a819d8f",
+      "operator": "ROR",
+      "lineno": 162,
+      "col_offset": 35,
+      "end_lineno": 162,
+      "end_col_offset": 54,
+      "original": "name in self._fresh",
+      "replacement": "(name not in self._fresh)"
+    },
+    {
+      "id": "035c9746d6bd",
+      "operator": "COND",
+      "lineno": 165,
+      "col_offset": 11,
+      "end_lineno": 165,
+      "end_col_offset": 75,
+      "original": "any(_opens_autocommit(item.context_expr) for item in node.items)",
+      "replacement": "(not any((_opens_autocommit(item.context_expr) for item in node.items)))"
+    },
+    {
+      "id": "e36592a2c360",
+      "operator": "ASG",
+      "lineno": 166,
+      "col_offset": 12,
+      "end_lineno": 166,
+      "end_col_offset": 33,
+      "original": "self._autocommit += 1",
+      "replacement": "self._autocommit -= 1"
+    },
+    {
+      "id": "8315a2642b38",
+      "operator": "CRP",
+      "lineno": 166,
+      "col_offset": 32,
+      "end_lineno": 166,
+      "end_col_offset": 33,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "bc6813ceba26",
+      "operator": "ASG",
+      "lineno": 168,
+      "col_offset": 12,
+      "end_lineno": 168,
+      "end_col_offset": 33,
+      "original": "self._autocommit -= 1",
+      "replacement": "self._autocommit += 1"
+    },
+    {
+      "id": "3a913601f4ae",
+      "operator": "CRP",
+      "lineno": 168,
+      "col_offset": 32,
+      "end_lineno": 168,
+      "end_col_offset": 33,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "13b6742b7c0a",
+      "operator": "LCR",
+      "lineno": 179,
+      "col_offset": 11,
+      "end_lineno": 179,
+      "end_col_offset": 80,
+      "original": "operation is not None and not self._on_a_fresh_table(operation, node)",
+      "replacement": "(operation is not None or not self._on_a_fresh_table(operation, node))"
+    },
+    {
+      "id": "9e0d2e0e1c02",
+      "operator": "ROR",
+      "lineno": 179,
+      "col_offset": 11,
+      "end_lineno": 179,
+      "end_col_offset": 32,
+      "original": "operation is not None",
+      "replacement": "(operation is None)"
+    },
+    {
+      "id": "98950853d68f",
+      "operator": "UOI",
+      "lineno": 179,
+      "col_offset": 37,
+      "end_lineno": 179,
+      "end_col_offset": 80,
+      "original": "not self._on_a_fresh_table(operation, node)",
+      "replacement": "(self._on_a_fresh_table(operation, node))"
+    },
+    {
+      "id": "c28d818867b8",
+      "operator": "LCR",
+      "lineno": 187,
+      "col_offset": 43,
+      "end_lineno": 187,
+      "end_col_offset": 73,
+      "original": "node.end_lineno or node.lineno",
+      "replacement": "(node.end_lineno and node.lineno)"
+    },
+    {
+      "id": "3493818ac8be",
+      "operator": "CRP",
+      "lineno": 191,
+      "col_offset": 50,
+      "end_lineno": 191,
+      "end_col_offset": 60,
+      "original": "\"nullable\"",
+      "replacement": "('XXnullableXX')"
+    },
+    {
+      "id": "2133a09a9419",
+      "operator": "ROR",
+      "lineno": 192,
+      "col_offset": 26,
+      "end_lineno": 192,
+      "end_col_offset": 72,
+      "original": "_keyword(column, \"server_default\") is not None",
+      "replacement": "(_keyword(column, 'server_default') is None)"
+    },
+    {
+      "id": "6670984d9dc6",
+      "operator": "CRP",
+      "lineno": 192,
+      "col_offset": 43,
+      "end_lineno": 192,
+      "end_col_offset": 59,
+      "original": "\"server_default\"",
+      "replacement": "('XXserver_defaultXX')"
+    },
+    {
+      "id": "cab06f083fc9",
+      "operator": "LCR",
+      "lineno": 193,
+      "col_offset": 15,
+      "end_lineno": 193,
+      "end_col_offset": 43,
+      "original": "not_null and not has_default",
+      "replacement": "(not_null or not has_default)"
+    },
+    {
+      "id": "726668b2b60e",
+      "operator": "UOI",
+      "lineno": 193,
+      "col_offset": 28,
+      "end_lineno": 193,
+      "end_col_offset": 43,
+      "original": "not has_default",
+      "replacement": "(has_default)"
+    },
+    {
+      "id": "f910bbdee907",
+      "operator": "CRP",
+      "lineno": 194,
+      "col_offset": 35,
+      "end_lineno": 194,
+      "end_col_offset": 42,
+      "original": "\"LC001\"",
+      "replacement": "('XXLC001XX')"
+    },
+    {
+      "id": "26a94551d081",
+      "operator": "CRP",
+      "lineno": 197,
+      "col_offset": 45,
+      "end_lineno": 197,
+      "end_col_offset": 70,
+      "original": "\"postgresql_concurrently\"",
+      "replacement": "('XXpostgresql_concurrentlyXX')"
+    },
+    {
+      "id": "b20d48d46fd7",
+      "operator": "UOI",
+      "lineno": 198,
+      "col_offset": 11,
+      "end_lineno": 198,
+      "end_col_offset": 25,
+      "original": "not concurrent",
+      "replacement": "(concurrent)"
+    },
+    {
+      "id": "91ed3262d79c",
+      "operator": "CRP",
+      "lineno": 199,
+      "col_offset": 31,
+      "end_lineno": 199,
+      "end_col_offset": 38,
+      "original": "\"LC002\"",
+      "replacement": "('XXLC002XX')"
+    },
+    {
+      "id": "c9cc016cafb9",
+      "operator": "UOI",
+      "lineno": 200,
+      "col_offset": 13,
+      "end_lineno": 200,
+      "end_col_offset": 33,
+      "original": "not self._autocommit",
+      "replacement": "(self._autocommit)"
+    },
+    {
+      "id": "3127d31ed097",
+      "operator": "CRP",
+      "lineno": 201,
+      "col_offset": 31,
+      "end_lineno": 201,
+      "end_col_offset": 38,
+      "original": "\"LC003\"",
+      "replacement": "('XXLC003XX')"
+    },
+    {
+      "id": "eb1a864a924f",
+      "operator": "COND",
+      "lineno": 208,
+      "col_offset": 11,
+      "end_lineno": 208,
+      "end_col_offset": 48,
+      "original": "_is_false(_keyword(node, \"nullable\"))",
+      "replacement": "(not _is_false(_keyword(node, 'nullable')))"
+    },
+    {
+      "id": "dbb226a9b6ad",
+      "operator": "CRP",
+      "lineno": 208,
+      "col_offset": 36,
+      "end_lineno": 208,
+      "end_col_offset": 46,
+      "original": "\"nullable\"",
+      "replacement": "('XXnullableXX')"
+    },
+    {
+      "id": "f727dfc9cca0",
+      "operator": "CRP",
+      "lineno": 209,
+      "col_offset": 31,
+      "end_lineno": 209,
+      "end_col_offset": 38,
+      "original": "\"LC004\"",
+      "replacement": "('XXLC004XX')"
+    },
+    {
+      "id": "e62f640b5fcb",
+      "operator": "ROR",
+      "lineno": 210,
+      "col_offset": 11,
+      "end_lineno": 210,
+      "end_col_offset": 46,
+      "original": "_keyword(node, \"type_\") is not None",
+      "replacement": "(_keyword(node, 'type_') is None)"
+    },
+    {
+      "id": "c96e2f62cd9c",
+      "operator": "CRP",
+      "lineno": 210,
+      "col_offset": 26,
+      "end_lineno": 210,
+      "end_col_offset": 33,
+      "original": "\"type_\"",
+      "replacement": "('XXtype_XX')"
+    },
+    {
+      "id": "d0273122111b",
+      "operator": "CRP",
+      "lineno": 211,
+      "col_offset": 31,
+      "end_lineno": 211,
+      "end_col_offset": 38,
+      "original": "\"LC005\"",
+      "replacement": "('XXLC005XX')"
+    },
+    {
+      "id": "0434c1d5e10a",
+      "operator": "CRP",
+      "lineno": 214,
+      "col_offset": 27,
+      "end_lineno": 214,
+      "end_col_offset": 34,
+      "original": "\"LC006\"",
+      "replacement": "('XXLC006XX')"
+    },
+    {
+      "id": "9e4948f64532",
+      "operator": "CRP",
+      "lineno": 217,
+      "col_offset": 27,
+      "end_lineno": 217,
+      "end_col_offset": 34,
+      "original": "\"LC006\"",
+      "replacement": "('XXLC006XX')"
+    },
+    {
+      "id": "496712b77e47",
+      "operator": "CRP",
+      "lineno": 220,
+      "col_offset": 27,
+      "end_lineno": 220,
+      "end_col_offset": 34,
+      "original": "\"LC007\"",
+      "replacement": "('XXLC007XX')"
+    },
+    {
+      "id": "061500bfbde6",
+      "operator": "UOI",
+      "lineno": 227,
+      "col_offset": 11,
+      "end_lineno": 227,
+      "end_col_offset": 42,
+      "original": "not isinstance(child, ast.Call)",
+      "replacement": "(isinstance(child, ast.Call))"
+    },
+    {
+      "id": "21284c873ac7",
+      "operator": "BRK",
+      "lineno": 228,
+      "col_offset": 12,
+      "end_lineno": 228,
+      "end_col_offset": 20,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "93bcf1ca133c",
+      "operator": "ROR",
+      "lineno": 230,
+      "col_offset": 11,
+      "end_lineno": 230,
+      "end_col_offset": 54,
+      "original": "operation in {\"create_table\", \"drop_table\"}",
+      "replacement": "(operation not in {'create_table', 'drop_table'})"
+    },
+    {
+      "id": "e4c1201f998c",
+      "operator": "CRP",
+      "lineno": 230,
+      "col_offset": 25,
+      "end_lineno": 230,
+      "end_col_offset": 39,
+      "original": "\"create_table\"",
+      "replacement": "('XXcreate_tableXX')"
+    },
+    {
+      "id": "1ff0229872d6",
+      "operator": "CRP",
+      "lineno": 230,
+      "col_offset": 41,
+      "end_lineno": 230,
+      "end_col_offset": 53,
+      "original": "\"drop_table\"",
+      "replacement": "('XXdrop_tableXX')"
+    },
+    {
+      "id": "45661ceebd40",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 51,
+      "end_lineno": 231,
+      "end_col_offset": 63,
+      "original": "\"table_name\"",
+      "replacement": "('XXtable_nameXX')"
+    },
+    {
+      "id": "113cf977a055",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 65,
+      "end_lineno": 231,
+      "end_col_offset": 66,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "6ee6f98556f6",
+      "operator": "ROR",
+      "lineno": 232,
+      "col_offset": 15,
+      "end_lineno": 232,
+      "end_col_offset": 31,
+      "original": "name is not None",
+      "replacement": "(name is None)"
+    },
+    {
+      "id": "56bcca85aeba",
+      "operator": "RET",
+      "lineno": 234,
+      "col_offset": 4,
+      "end_lineno": 234,
+      "end_col_offset": 16,
+      "original": "return names",
+      "replacement": "return None"
+    },
+    {
+      "id": "e2fa4d48ca84",
+      "operator": "RET",
+      "lineno": 239,
+      "col_offset": 4,
+      "end_lineno": 243,
+      "end_col_offset": 5,
+      "original": "return ( isinstance(expr, ast.Call) and isinstance(expr.func, ast.Attribute) and expr.func.attr == \"autocommit_block\" )",
+      "replacement": "return None"
+    },
+    {
+      "id": "8112b2dcc731",
+      "operator": "LCR",
+      "lineno": 240,
+      "col_offset": 8,
+      "end_lineno": 242,
+      "end_col_offset": 48,
+      "original": "isinstance(expr, ast.Call) and isinstance(expr.func, ast.Attribute) and expr.func.attr == \"autocommit_block\"",
+      "replacement": "(isinstance(expr, ast.Call) or isinstance(expr.func, ast.Attribute) or expr.func.attr == 'autocommit_block')"
+    },
+    {
+      "id": "9e7ce02ae0d9",
+      "operator": "ROR",
+      "lineno": 242,
+      "col_offset": 12,
+      "end_lineno": 242,
+      "end_col_offset": 48,
+      "original": "expr.func.attr == \"autocommit_block\"",
+      "replacement": "(expr.func.attr != 'autocommit_block')"
+    },
+    {
+      "id": "e83e0eb3b4db",
+      "operator": "CRP",
+      "lineno": 242,
+      "col_offset": 30,
+      "end_lineno": 242,
+      "end_col_offset": 48,
+      "original": "\"autocommit_block\"",
+      "replacement": "('XXautocommit_blockXX')"
+    },
+    {
+      "id": "8e3654030fb7",
+      "operator": "CRP",
+      "lineno": 252,
+      "col_offset": 12,
+      "end_lineno": 252,
+      "end_col_offset": 17,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "9686e71ca7ed",
+      "operator": "AOR",
+      "lineno": 253,
+      "col_offset": 31,
+      "end_lineno": 253,
+      "end_col_offset": 38,
+      "original": "end + 1",
+      "replacement": "(end - 1)"
+    },
+    {
+      "id": "2b703625118f",
+      "operator": "CRP",
+      "lineno": 253,
+      "col_offset": 37,
+      "end_lineno": 253,
+      "end_col_offset": 38,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "75908cb9f87f",
+      "operator": "ROR",
+      "lineno": 254,
+      "col_offset": 11,
+      "end_lineno": 254,
+      "end_col_offset": 37,
+      "original": "number > len(source_lines)",
+      "replacement": "(number >= len(source_lines))"
+    },
+    {
+      "id": "be4dfff66f0d",
+      "operator": "BRK",
+      "lineno": 255,
+      "col_offset": 12,
+      "end_lineno": 255,
+      "end_col_offset": 17,
+      "original": "break",
+      "replacement": "continue"
+    },
+    {
+      "id": "95811b594af8",
+      "operator": "AOR",
+      "lineno": 256,
+      "col_offset": 43,
+      "end_lineno": 256,
+      "end_col_offset": 53,
+      "original": "number - 1",
+      "replacement": "(number + 1)"
+    },
+    {
+      "id": "bf8466316ddd",
+      "operator": "CRP",
+      "lineno": 256,
+      "col_offset": 52,
+      "end_lineno": 256,
+      "end_col_offset": 53,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "6f356334e8a4",
+      "operator": "UOI",
+      "lineno": 257,
+      "col_offset": 11,
+      "end_lineno": 257,
+      "end_col_offset": 20,
+      "original": "not match",
+      "replacement": "(match)"
+    },
+    {
+      "id": "bf15e4103773",
+      "operator": "BRK",
+      "lineno": 258,
+      "col_offset": 12,
+      "end_lineno": 258,
+      "end_col_offset": 20,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "de803b6c3855",
+      "operator": "CRP",
+      "lineno": 259,
+      "col_offset": 16,
+      "end_lineno": 259,
+      "end_col_offset": 20,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "78c8b5c634d0",
+      "operator": "CRP",
+      "lineno": 260,
+      "col_offset": 28,
+      "end_lineno": 260,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "ce03578cbfd9",
+      "operator": "ROR",
+      "lineno": 261,
+      "col_offset": 11,
+      "end_lineno": 261,
+      "end_col_offset": 24,
+      "original": "codes is None",
+      "replacement": "(codes is not None)"
+    },
+    {
+      "id": "081e7ea3e961",
+      "operator": "RET",
+      "lineno": 262,
+      "col_offset": 12,
+      "end_lineno": 262,
+      "end_col_offset": 24,
+      "original": "return set()",
+      "replacement": "return None"
+    },
+    {
+      "id": "fbddf2e8f5d5",
+      "operator": "CRP",
+      "lineno": 263,
+      "col_offset": 61,
+      "end_lineno": 263,
+      "end_col_offset": 64,
+      "original": "\",\"",
+      "replacement": "('XX,XX')"
+    },
+    {
+      "id": "9a8340a0230e",
+      "operator": "RET",
+      "lineno": 264,
+      "col_offset": 4,
+      "end_lineno": 264,
+      "end_col_offset": 38,
+      "original": "return silenced if found else None",
+      "replacement": "return None"
+    },
+    {
+      "id": "8010e5253aa8",
+      "operator": "LCR",
+      "lineno": 277,
+      "col_offset": 11,
+      "end_lineno": 277,
+      "end_col_offset": 70,
+      "original": "silenced is not None and (not silenced or code in silenced)",
+      "replacement": "(silenced is not None or (not silenced or code in silenced))"
+    },
+    {
+      "id": "da9bf041b503",
+      "operator": "ROR",
+      "lineno": 277,
+      "col_offset": 11,
+      "end_lineno": 277,
+      "end_col_offset": 31,
+      "original": "silenced is not None",
+      "replacement": "(silenced is None)"
+    },
+    {
+      "id": "dca3cdf089e8",
+      "operator": "LCR",
+      "lineno": 277,
+      "col_offset": 37,
+      "end_lineno": 277,
+      "end_col_offset": 69,
+      "original": "not silenced or code in silenced",
+      "replacement": "(not silenced and code in silenced)"
+    },
+    {
+      "id": "01c12185aa08",
+      "operator": "UOI",
+      "lineno": 277,
+      "col_offset": 37,
+      "end_lineno": 277,
+      "end_col_offset": 49,
+      "original": "not silenced",
+      "replacement": "(silenced)"
+    },
+    {
+      "id": "0d39da5e0456",
+      "operator": "ROR",
+      "lineno": 277,
+      "col_offset": 53,
+      "end_lineno": 277,
+      "end_col_offset": 69,
+      "original": "code in silenced",
+      "replacement": "(code not in silenced)"
+    },
+    {
+      "id": "33fb7bce1942",
+      "operator": "BRK",
+      "lineno": 278,
+      "col_offset": 12,
+      "end_lineno": 278,
+      "end_col_offset": 20,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "6bae38a01b0e",
+      "operator": "RET",
+      "lineno": 280,
+      "col_offset": 4,
+      "end_lineno": 280,
+      "end_col_offset": 59,
+      "original": "return sorted(findings, key=lambda f: (f.line, f.code))",
+      "replacement": "return None"
+    },
+    {
+      "id": "ad7d0b0594a3",
+      "operator": "RET",
+      "lineno": 284,
+      "col_offset": 4,
+      "end_lineno": 284,
+      "end_col_offset": 63,
+      "original": "return check_source(path.read_text(encoding=\"utf-8\"), path)",
+      "replacement": "return None"
+    },
+    {
+      "id": "6dd0f0e1e4fb",
+      "operator": "CRP",
+      "lineno": 284,
+      "col_offset": 48,
+      "end_lineno": 284,
+      "end_col_offset": 55,
+      "original": "\"utf-8\"",
+      "replacement": "('XXutf-8XX')"
+    },
+    {
+      "id": "b7eb7cd9f706",
+      "operator": "COND",
+      "lineno": 295,
+      "col_offset": 11,
+      "end_lineno": 295,
+      "end_col_offset": 24,
+      "original": "path.is_dir()",
+      "replacement": "(not path.is_dir())"
+    },
+    {
+      "id": "495a2138f42f",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 47,
+      "end_lineno": 298,
+      "end_col_offset": 53,
+      "original": "\"*.py\"",
+      "replacement": "('XX*.pyXX')"
+    },
+    {
+      "id": "29e3883c0f94",
+      "operator": "LCR",
+      "lineno": 299,
+      "col_offset": 19,
+      "end_lineno": 299,
+      "end_col_offset": 81,
+      "original": "child.name != \"__init__.py\" and not child.name.startswith(\".\")",
+      "replacement": "(child.name != '__init__.py' or not child.name.startswith('.'))"
+    },
+    {
+      "id": "0910295d55fa",
+      "operator": "ROR",
+      "lineno": 299,
+      "col_offset": 19,
+      "end_lineno": 299,
+      "end_col_offset": 46,
+      "original": "child.name != \"__init__.py\"",
+      "replacement": "(child.name == '__init__.py')"
+    },
+    {
+      "id": "9ddc61088a2a",
+      "operator": "CRP",
+      "lineno": 299,
+      "col_offset": 33,
+      "end_lineno": 299,
+      "end_col_offset": 46,
+      "original": "\"__init__.py\"",
+      "replacement": "('XX__init__.pyXX')"
+    },
+    {
+      "id": "98140c4126fc",
+      "operator": "UOI",
+      "lineno": 299,
+      "col_offset": 51,
+      "end_lineno": 299,
+      "end_col_offset": 81,
+      "original": "not child.name.startswith(\".\")",
+      "replacement": "(child.name.startswith('.'))"
+    },
+    {
+      "id": "644cd879f198",
+      "operator": "CRP",
+      "lineno": 299,
+      "col_offset": 77,
+      "end_lineno": 299,
+      "end_col_offset": 80,
+      "original": "\".\"",
+      "replacement": "('XX.XX')"
+    },
+    {
+      "id": "f62315144bdd",
+      "operator": "ROR",
+      "lineno": 301,
+      "col_offset": 13,
+      "end_lineno": 301,
+      "end_col_offset": 33,
+      "original": "path.suffix == \".py\"",
+      "replacement": "(path.suffix != '.py')"
+    },
+    {
+      "id": "9743857f336b",
+      "operator": "CRP",
+      "lineno": 301,
+      "col_offset": 28,
+      "end_lineno": 301,
+      "end_col_offset": 33,
+      "original": "\".py\"",
+      "replacement": "('XX.pyXX')"
+    },
+    {
+      "id": "86f78d160b9c",
+      "operator": "RET",
+      "lineno": 303,
+      "col_offset": 4,
+      "end_lineno": 303,
+      "end_col_offset": 16,
+      "original": "return files",
+      "replacement": "return None"
+    },
+    {
+      "id": "704d56784c8f",
+      "operator": "AOR",
+      "lineno": 307,
+      "col_offset": 14,
+      "end_lineno": 307,
+      "end_col_offset": 32,
+      "original": "ignore - ALL_CODES",
+      "replacement": "(ignore + ALL_CODES)"
+    },
+    {
+      "id": "1533db884d59",
+      "operator": "COND",
+      "lineno": 308,
+      "col_offset": 7,
+      "end_lineno": 308,
+      "end_col_offset": 14,
+      "original": "unknown",
+      "replacement": "(not unknown)"
+    },
+    {
+      "id": "c571e43d22e0",
+      "operator": "ROR",
+      "lineno": 313,
+      "col_offset": 55,
+      "end_lineno": 313,
+      "end_col_offset": 75,
+      "original": "f.code not in ignore",
+      "replacement": "(f.code in ignore)"
+    },
+    {
+      "id": "f42134ca00c2",
+      "operator": "RET",
+      "lineno": 314,
+      "col_offset": 4,
+      "end_lineno": 314,
+      "end_col_offset": 19,
+      "original": "return findings",
+      "replacement": "return None"
+    }
+  ]
+}

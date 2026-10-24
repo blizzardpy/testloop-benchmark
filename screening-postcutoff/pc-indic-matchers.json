@@ -1,0 +1,77 @@
+{
+  "target": "pc-indic-matchers",
+  "module_file": "src/indic_namematch/matchers.py",
+  "source_sha256": "9eb531d35570204ad637f060addd27f1a6a947fc83d6dca49fb86b745eea4577",
+  "tests_total": 42,
+  "tests_passed": 42,
+  "tests_failed": 0,
+  "tests_error": 0,
+  "tests_flaky": 0,
+  "collection_error": null,
+  "num_statements": 72,
+  "covered_lines": 70,
+  "num_branches": 20,
+  "covered_branches": 18,
+  "missing_lines": [
+    71,
+    125
+  ],
+  "missing_branches": [
+    [
+      70,
+      71
+    ],
+    [
+      124,
+      125
+    ]
+  ],
+  "mutants_total": 79,
+  "mutants_killed": 59,
+  "mutants_survived": 18,
+  "mutants_not_covered": 2,
+  "mutants_timeout": 0,
+  "surviving_mutants": [
+    "054e0c4b2cbb",
+    "57f27e09d80a",
+    "21944e91ba22",
+    "ea58d410e23e",
+    "0089ed2954ce",
+    "74eb57e49d39",
+    "44334eaeeba7",
+    "ef330ff428c2",
+    "9d349546bf45",
+    "4784a444b5ac",
+    "5f1e8e49fbec",
+    "bc4dee5efedd",
+    "2cc9f8c9b3ed",
+    "2838bf519ce6",
+    "7fe8d23b8f74",
+    "e54895fda8e2",
+    "86254b6389c9",
+    "427427703018",
+    "ce39dc6bc3d2",
+    "750803de882a"
+  ],
+  "mutant_set_seed": 0,
+  "mutant_set_budget": 200,
+  "seconds": 12.088263175000066,
+  "meta": {
+    "testloop_version": "0.1.0",
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v153-x86_64-with-glibc2.39",
+    "measured_at": "2026-10-24T11:14:54+00:00",
+    "reruns": 2,
+    "module_origin_ok": true
+  },
+  "line_coverage": 0.9722222222222222,
+  "branch_coverage": 0.9,
+  "mutation_score": 0.7468354430379747,
+  "valid_rate": 1.0,
+  "pass_rate": 1.0,
+  "loc": 194,
+  "mutants_generated": 79,
+  "id": "pc-indic-matchers",
+  "status": "ok",
+  "screen_seconds": 12.1
+}

@@ -5,6 +5,7 @@ to screening/ and a summary table to screening/SUMMARY.md.
 
     python tools/screen.py --jobs 8            # all targets
     python tools/screen.py --only parse tomli-parser
+    python tools/screen.py --tier postcutoff   # targets-postcutoff/ -> screening-postcutoff/
 """
 
 from __future__ import annotations
@@ -22,7 +23,13 @@ from testloop.sandbox import LocalSandbox
 from testloop.target import Target
 
 HERE = Path(__file__).resolve().parents[1]
-OUT = HERE / "screening"
+
+
+def tier_paths(tier: str) -> tuple[Path, Path, Path]:
+    """(manifest, targets dir, screening dir) of a tier; v1 is the frozen main tier."""
+    if tier == "v1":
+        return HERE / "manifest.toml", HERE / "targets", HERE / "screening"
+    return HERE / f"manifest-{tier}.toml", HERE / f"targets-{tier}", HERE / f"screening-{tier}"
 
 
 def pct(x):
@@ -53,12 +60,14 @@ def main() -> int:
     p.add_argument("--reruns", type=int, default=2)
     p.add_argument("--budget", type=int, default=200)
     p.add_argument("--summary-only", action="store_true")
+    p.add_argument("--tier", default="v1", help="v1 (default) or postcutoff")
     args = p.parse_args()
+    manifest, targets, out = tier_paths(args.tier)
     if args.summary_only:
-        write_summary()
+        write_summary(manifest, out)
         return 0
-    OUT.mkdir(exist_ok=True)
-    for path in sorted((HERE / "targets").glob("*.toml")):
+    out.mkdir(exist_ok=True)
+    for path in sorted(targets.glob("*.toml")):
         tid = path.stem
         if args.only and tid not in args.only:
             continue
@@ -69,20 +78,20 @@ def main() -> int:
         except Exception as exc:  # recorded, so one broken target does not stop the screen
             row, status = {"error": f"{type(exc).__name__}: {exc}", "trace": traceback.format_exc()}, "error"
         row.update(id=tid, status=status, screen_seconds=round(time.monotonic() - started, 1))
-        (OUT / f"{tid}.json").write_text(json.dumps(row, indent=2, ensure_ascii=False), encoding="utf-8")
+        (out / f"{tid}.json").write_text(json.dumps(row, indent=2, ensure_ascii=False), encoding="utf-8")
         print(f"{status:5} {tid:24} {row.get('error') or ''}"
               f"{'' if status != 'ok' else f'tests {row['tests_passed']}/{row['tests_total']} branch {pct(row['branch_coverage'])} ms {pct(row['mutation_score'])} ({row['mutants_total']}/{row['mutants_generated']}) {row['screen_seconds']}s'}",
               flush=True)
-    write_summary()
+    write_summary(manifest, out)
     return 0
 
 
-def write_summary() -> None:
+def write_summary(manifest_path: Path, out: Path) -> None:
     import tomllib
-    manifest = tomllib.loads((HERE / "manifest.toml").read_text(encoding="utf-8"))
+    manifest = tomllib.loads(manifest_path.read_text(encoding="utf-8"))
     info = {t["id"]: t for p in manifest["project"] for t in p["target"]}
     order = {"logic": 0, "class": 1, "io": 2, "deps": 3}
-    rows = [json.loads(p.read_text()) for p in OUT.glob("*.json")]
+    rows = [json.loads(p.read_text()) for p in out.glob("*.json")]
     rows.sort(key=lambda r: (info.get(r["id"], {}).get("status") != "selected",
                              order.get(info.get(r["id"], {}).get("category"), 9), r["id"]))
     lines = ["| Target | Category | Selection | LOC | Tests (pass/total) | Flaky | Line % | Branch % | Mutation % | Mutants (pinned/generated) | Not covered | Time (s) |",
@@ -96,7 +105,7 @@ def write_summary() -> None:
         lines.append(f"| {r['id']} | {t.get('category', '')} | {sel} | {r['loc']} | {r['tests_passed']}/{r['tests_total']} | {r['tests_flaky']} "
                      f"| {pct(r['line_coverage'])} | {pct(r['branch_coverage'])} | {pct(r['mutation_score'])} "
                      f"| {r['mutants_total']}/{r['mutants_generated']} | {r['mutants_not_covered']} | {r['screen_seconds']} |")
-    (OUT / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (out / "SUMMARY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

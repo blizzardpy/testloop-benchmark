@@ -1,0 +1,1051 @@
+{
+  "target": "pc-patchward-detect",
+  "module_file": "patchward_check/detect.py",
+  "source_sha256": "d589c76f86bfb6a84f10c5fa3eafd31c29d91d9c29eb82d6073144a52d07296b",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 104,
+  "mutants": [
+    {
+      "id": "99abc8770e15",
+      "operator": "CRP",
+      "lineno": 37,
+      "col_offset": 4,
+      "end_lineno": 43,
+      "end_col_offset": 26,
+      "original": "r\"(^|/)(tests?|__tests__|spec|specs|testing)/\" r\"|(^|/)test_[^/]+\\.(py|rb)$\" r\"|(^|/)[^/]+_test\\.(py|go|rb|dart)$\" r\"|(^|/)[^/]+_spec\\.rb$\" r\"|(^|/)[^/]+\\.(test|spec)\\.(js|jsx|mjs|cjs|ts|tsx)$\" r\"|(^|/)[^/]*Tests?\\.(java|kt|cs|scala|swift)$\" r\"|(^|/)conftest\\.py$\"",
+      "replacement": "('XX(^|/)(tests?|__tests__|spec|specs|testing)/|(^|/)test_[^/]+\\\\.(py|rb)$|(^|/)[^/]+_test\\\\.(py|go|rb|dart)$|(^|/)[^/]+_spec\\\\.rb$|(^|/)[^/]+\\\\.(test|spec)\\\\.(js|jsx|mjs|cjs|ts|tsx)$|(^|/)[^/]*Tests?\\\\.(java|kt|cs|scala|swift)$|(^|/)conftest\\\\.py$XX')"
+    },
+    {
+      "id": "14b1bb295a35",
+      "operator": "CRP",
+      "lineno": 49,
+      "col_offset": 4,
+      "end_lineno": 58,
+      "end_col_offset": 8,
+      "original": "r\"^\\s*(\" r\"(async\\s+)?def\\s+test\\w*\" # python r\"|func\\s+(Test|Benchmark|Fuzz|Example)\\w*\" # go r\"|(it|test|describe|context)\\s*[.(]\" # js/ts/rspec r\"|@Test\\b|@ParameterizedTest\\b\" # java/kotlin r\"|\\[(Test|Fact|Theory|TestMethod)\\]\" # c# r\"|#\\[test\\]\" # rust r\"|class\\s+\\w*Test\\w*\\b\" # xunit-style classes r\"|(it|specify|scenario)\\s+['\\\"]\" # rspec r\")\"",
+      "replacement": "('XX^\\\\s*((async\\\\s+)?def\\\\s+test\\\\w*|func\\\\s+(Test|Benchmark|Fuzz|Example)\\\\w*|(it|test|describe|context)\\\\s*[.(]|@Test\\\\b|@ParameterizedTest\\\\b|\\\\[(Test|Fact|Theory|TestMethod)\\\\]|#\\\\[test\\\\]|class\\\\s+\\\\w*Test\\\\w*\\\\b|(it|specify|scenario)\\\\s+[\\'\\\\\"])XX')"
+    },
+    {
+      "id": "7f0ef7aade84",
+      "operator": "CRP",
+      "lineno": 64,
+      "col_offset": 4,
+      "end_lineno": 72,
+      "end_col_offset": 8,
+      "original": "r\"\\b(\" r\"assert\\w*\" r\"|expect\\s*\\(\" r\"|should(Be|Equal|Not|Have|Throw|Raise)?\\b\" r\"|raises\\s*\\(|pytest\\.raises|assertRaises\" r\"|require\\.\\w+|\\.Equal\\(|\\.NoError\\(|\\.True\\(|\\.False\\(\" r\"|verify\\s*\\(|Assert\\.\\w+\" r\"|t\\.(Error|Fatal)f?\\(\" r\")\"",
+      "replacement": "('XX\\\\b(assert\\\\w*|expect\\\\s*\\\\(|should(Be|Equal|Not|Have|Throw|Raise)?\\\\b|raises\\\\s*\\\\(|pytest\\\\.raises|assertRaises|require\\\\.\\\\w+|\\\\.Equal\\\\(|\\\\.NoError\\\\(|\\\\.True\\\\(|\\\\.False\\\\(|verify\\\\s*\\\\(|Assert\\\\.\\\\w+|t\\\\.(Error|Fatal)f?\\\\()XX')"
+    },
+    {
+      "id": "13bdbe81707a",
+      "operator": "CRP",
+      "lineno": 77,
+      "col_offset": 4,
+      "end_lineno": 84,
+      "end_col_offset": 8,
+      "original": "r\"(@(pytest\\.mark\\.)?(skip|skipif|xfail)\\b\" r\"|@unittest\\.skip|pytest\\.skip\\s*\\(|self\\.skipTest\\s*\\(\" r\"|\\b(it|describe|test|context)\\.(skip|only)\\s*\\(\" r\"|\\bx(it|describe|test)\\s*\\(\" r\"|t\\.Skip(Now)?\\s*\\(\" r\"|@(Ignore|Disabled)\\b\" r\"|#\\[ignore\\]\" r\")\"",
+      "replacement": "('XX(@(pytest\\\\.mark\\\\.)?(skip|skipif|xfail)\\\\b|@unittest\\\\.skip|pytest\\\\.skip\\\\s*\\\\(|self\\\\.skipTest\\\\s*\\\\(|\\\\b(it|describe|test|context)\\\\.(skip|only)\\\\s*\\\\(|\\\\bx(it|describe|test)\\\\s*\\\\(|t\\\\.Skip(Now)?\\\\s*\\\\(|@(Ignore|Disabled)\\\\b|#\\\\[ignore\\\\])XX')"
+    },
+    {
+      "id": "4e2aab1c7c85",
+      "operator": "CRP",
+      "lineno": 89,
+      "col_offset": 19,
+      "end_lineno": 89,
+      "end_col_offset": 72,
+      "original": "r\"^\\s*($|#|//|/\\*|\\*|\\*/|--\\s|\\}|\\)|\\]|,|'''|\\\"\\\"\\\")\"",
+      "replacement": "('XX^\\\\s*($|#|//|/\\\\*|\\\\*|\\\\*/|--\\\\s|\\\\}|\\\\)|\\\\]|,|\\'\\'\\'|\\\\\"\\\\\"\\\\\")XX')"
+    },
+    {
+      "id": "98462a531c2a",
+      "operator": "CRP",
+      "lineno": 92,
+      "col_offset": 4,
+      "end_lineno": 92,
+      "end_col_offset": 27,
+      "original": "\"REWRITTEN_EXPECTATION\"",
+      "replacement": "('XXREWRITTEN_EXPECTATIONXX')"
+    },
+    {
+      "id": "92f8d15e7dc4",
+      "operator": "CRP",
+      "lineno": 92,
+      "col_offset": 29,
+      "end_lineno": 92,
+      "end_col_offset": 30,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "5bef86e12611",
+      "operator": "CRP",
+      "lineno": 93,
+      "col_offset": 4,
+      "end_lineno": 93,
+      "end_col_offset": 18,
+      "original": "\"DELETED_TEST\"",
+      "replacement": "('XXDELETED_TESTXX')"
+    },
+    {
+      "id": "fa1e5d665d94",
+      "operator": "CRP",
+      "lineno": 93,
+      "col_offset": 20,
+      "end_lineno": 93,
+      "end_col_offset": 21,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "9bddb1067306",
+      "operator": "CRP",
+      "lineno": 94,
+      "col_offset": 4,
+      "end_lineno": 94,
+      "end_col_offset": 16,
+      "original": "\"SUPPRESSED\"",
+      "replacement": "('XXSUPPRESSEDXX')"
+    },
+    {
+      "id": "2613eddc924a",
+      "operator": "CRP",
+      "lineno": 94,
+      "col_offset": 18,
+      "end_lineno": 94,
+      "end_col_offset": 19,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "20aebcf4405f",
+      "operator": "CRP",
+      "lineno": 95,
+      "col_offset": 4,
+      "end_lineno": 95,
+      "end_col_offset": 21,
+      "original": "\"NO_NEW_EVIDENCE\"",
+      "replacement": "('XXNO_NEW_EVIDENCEXX')"
+    },
+    {
+      "id": "b8cf0cd3f44d",
+      "operator": "CRP",
+      "lineno": 95,
+      "col_offset": 23,
+      "end_lineno": 95,
+      "end_col_offset": 24,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "caacbb78d5dd",
+      "operator": "CRP",
+      "lineno": 96,
+      "col_offset": 4,
+      "end_lineno": 96,
+      "end_col_offset": 17,
+      "original": "\"SELF_GRADED\"",
+      "replacement": "('XXSELF_GRADEDXX')"
+    },
+    {
+      "id": "ed88b6fecd84",
+      "operator": "CRP",
+      "lineno": 96,
+      "col_offset": 19,
+      "end_lineno": 96,
+      "end_col_offset": 20,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "790062e305f9",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 9,
+      "end_lineno": 98,
+      "end_col_offset": 10,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "c0bae12b2f3d",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 12,
+      "end_lineno": 98,
+      "end_col_offset": 18,
+      "original": "\"high\"",
+      "replacement": "('XXhighXX')"
+    },
+    {
+      "id": "b700c3e8eeab",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 20,
+      "end_lineno": 98,
+      "end_col_offset": 21,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "5be2421b997f",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 23,
+      "end_lineno": 98,
+      "end_col_offset": 31,
+      "original": "\"medium\"",
+      "replacement": "('XXmediumXX')"
+    },
+    {
+      "id": "1b2e6d7d2661",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 33,
+      "end_lineno": 98,
+      "end_col_offset": 34,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "e4b42724e0be",
+      "operator": "CRP",
+      "lineno": 98,
+      "col_offset": 36,
+      "end_lineno": 98,
+      "end_col_offset": 42,
+      "original": "\"info\"",
+      "replacement": "('XXinfoXX')"
+    },
+    {
+      "id": "1f9afb4e987c",
+      "operator": "RET",
+      "lineno": 110,
+      "col_offset": 8,
+      "end_lineno": 110,
+      "end_col_offset": 34,
+      "original": "return SEVERITY[self.kind]",
+      "replacement": "return None"
+    },
+    {
+      "id": "f9a8710e72b4",
+      "operator": "RET",
+      "lineno": 114,
+      "col_offset": 8,
+      "end_lineno": 114,
+      "end_col_offset": 35,
+      "original": "return LABEL[self.severity]",
+      "replacement": "return None"
+    },
+    {
+      "id": "43b18f40bdde",
+      "operator": "CRP",
+      "lineno": 122,
+      "col_offset": 21,
+      "end_lineno": 122,
+      "end_col_offset": 22,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "680e4feea8c1",
+      "operator": "CRP",
+      "lineno": 123,
+      "col_offset": 26,
+      "end_lineno": 123,
+      "end_col_offset": 27,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "52b256c53130",
+      "operator": "RET",
+      "lineno": 127,
+      "col_offset": 8,
+      "end_lineno": 127,
+      "end_col_offset": 66,
+      "original": "return max((f.severity for f in self.findings), default=0)",
+      "replacement": "return None"
+    },
+    {
+      "id": "17147a45fe7a",
+      "operator": "CRP",
+      "lineno": 127,
+      "col_offset": 64,
+      "end_lineno": 127,
+      "end_col_offset": 65,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "08ae6d46eb08",
+      "operator": "RET",
+      "lineno": 131,
+      "col_offset": 8,
+      "end_lineno": 131,
+      "end_col_offset": 81,
+      "original": "return {0: \"clean\", 1: \"note\", 2: \"review\", 3: \"self-graded\"}[self.worst]",
+      "replacement": "return None"
+    },
+    {
+      "id": "9b9411da76c2",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 16,
+      "end_lineno": 131,
+      "end_col_offset": 17,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "860f818151cc",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 19,
+      "end_lineno": 131,
+      "end_col_offset": 26,
+      "original": "\"clean\"",
+      "replacement": "('XXcleanXX')"
+    },
+    {
+      "id": "c31632492d3f",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 28,
+      "end_lineno": 131,
+      "end_col_offset": 29,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "5acd6bd10e78",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 31,
+      "end_lineno": 131,
+      "end_col_offset": 37,
+      "original": "\"note\"",
+      "replacement": "('XXnoteXX')"
+    },
+    {
+      "id": "24d1d1bb1216",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 39,
+      "end_lineno": 131,
+      "end_col_offset": 40,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "387ebeaa8e9b",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 42,
+      "end_lineno": 131,
+      "end_col_offset": 50,
+      "original": "\"review\"",
+      "replacement": "('XXreviewXX')"
+    },
+    {
+      "id": "fd084770b626",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 52,
+      "end_lineno": 131,
+      "end_col_offset": 53,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "dd4200071051",
+      "operator": "CRP",
+      "lineno": 131,
+      "col_offset": 55,
+      "end_lineno": 131,
+      "end_col_offset": 68,
+      "original": "\"self-graded\"",
+      "replacement": "('XXself-gradedXX')"
+    },
+    {
+      "id": "e7e5681fa63d",
+      "operator": "RET",
+      "lineno": 134,
+      "col_offset": 8,
+      "end_lineno": 134,
+      "end_col_offset": 59,
+      "original": "return [f for f in self.findings if f.kind == kind]",
+      "replacement": "return None"
+    },
+    {
+      "id": "eb8f1591c9a4",
+      "operator": "ROR",
+      "lineno": 134,
+      "col_offset": 44,
+      "end_lineno": 134,
+      "end_col_offset": 58,
+      "original": "f.kind == kind",
+      "replacement": "(f.kind != kind)"
+    },
+    {
+      "id": "404822a4bd41",
+      "operator": "LCR",
+      "lineno": 138,
+      "col_offset": 7,
+      "end_lineno": 138,
+      "end_col_offset": 55,
+      "original": "extra and any(re.search(p, path) for p in extra)",
+      "replacement": "(extra or any((re.search(p, path) for p in extra)))"
+    },
+    {
+      "id": "25d38d70e753",
+      "operator": "RET",
+      "lineno": 139,
+      "col_offset": 8,
+      "end_lineno": 139,
+      "end_col_offset": 19,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "32defe6fde65",
+      "operator": "CRP",
+      "lineno": 139,
+      "col_offset": 15,
+      "end_lineno": 139,
+      "end_col_offset": 19,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "8c201ec9b034",
+      "operator": "RET",
+      "lineno": 140,
+      "col_offset": 4,
+      "end_lineno": 140,
+      "end_col_offset": 39,
+      "original": "return bool(TEST_PATH.search(path))",
+      "replacement": "return None"
+    },
+    {
+      "id": "3795dff73e84",
+      "operator": "RET",
+      "lineno": 144,
+      "col_offset": 4,
+      "end_lineno": 144,
+      "end_col_offset": 65,
+      "original": "return [l for l in lines if l.strip() and not NOISE.match(l)]",
+      "replacement": "return None"
+    },
+    {
+      "id": "8b1863ea9354",
+      "operator": "LCR",
+      "lineno": 144,
+      "col_offset": 32,
+      "end_lineno": 144,
+      "end_col_offset": 64,
+      "original": "l.strip() and not NOISE.match(l)",
+      "replacement": "(l.strip() or not NOISE.match(l))"
+    },
+    {
+      "id": "dc19016e9218",
+      "operator": "UOI",
+      "lineno": 144,
+      "col_offset": 46,
+      "end_lineno": 144,
+      "end_col_offset": 64,
+      "original": "not NOISE.match(l)",
+      "replacement": "(NOISE.match(l))"
+    },
+    {
+      "id": "9ea468a1246a",
+      "operator": "COND",
+      "lineno": 151,
+      "col_offset": 7,
+      "end_lineno": 151,
+      "end_col_offset": 16,
+      "original": "fd.is_new",
+      "replacement": "(not fd.is_new)"
+    },
+    {
+      "id": "fce37405ea1a",
+      "operator": "RET",
+      "lineno": 152,
+      "col_offset": 8,
+      "end_lineno": 152,
+      "end_col_offset": 18,
+      "original": "return out",
+      "replacement": "return None"
+    },
+    {
+      "id": "8075fa9cac44",
+      "operator": "COND",
+      "lineno": 154,
+      "col_offset": 7,
+      "end_lineno": 154,
+      "end_col_offset": 20,
+      "original": "fd.is_deleted",
+      "replacement": "(not fd.is_deleted)"
+    },
+    {
+      "id": "142e27ebe24d",
+      "operator": "RET",
+      "lineno": 155,
+      "col_offset": 8,
+      "end_lineno": 156,
+      "end_col_offset": 66,
+      "original": "return [Finding(\"DELETED_TEST\", fd.path, \"test file deleted while source changed\")]",
+      "replacement": "return None"
+    },
+    {
+      "id": "1f9386edac17",
+      "operator": "CRP",
+      "lineno": 155,
+      "col_offset": 24,
+      "end_lineno": 155,
+      "end_col_offset": 38,
+      "original": "\"DELETED_TEST\"",
+      "replacement": "('XXDELETED_TESTXX')"
+    },
+    {
+      "id": "4a0cf5d9f774",
+      "operator": "CRP",
+      "lineno": 156,
+      "col_offset": 24,
+      "end_lineno": 156,
+      "end_col_offset": 64,
+      "original": "\"test file deleted while source changed\"",
+      "replacement": "('XXtest file deleted while source changedXX')"
+    },
+    {
+      "id": "2e7e9bd3ac5d",
+      "operator": "UOI",
+      "lineno": 161,
+      "col_offset": 11,
+      "end_lineno": 161,
+      "end_col_offset": 17,
+      "original": "not rm",
+      "replacement": "(rm)"
+    },
+    {
+      "id": "9d48a9139731",
+      "operator": "BRK",
+      "lineno": 162,
+      "col_offset": 12,
+      "end_lineno": 162,
+      "end_col_offset": 20,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "cc4fa250b803",
+      "operator": "ASG",
+      "lineno": 163,
+      "col_offset": 8,
+      "end_lineno": 163,
+      "end_col_offset": 62,
+      "original": "removed_decls += [l for l in rm if TEST_DECL.match(l)]",
+      "replacement": "removed_decls -= [l for l in rm if TEST_DECL.match(l)]"
+    },
+    {
+      "id": "830e9b526184",
+      "operator": "COND",
+      "lineno": 164,
+      "col_offset": 11,
+      "end_lineno": 164,
+      "end_col_offset": 27,
+      "original": "h.is_replacement",
+      "replacement": "(not h.is_replacement)"
+    },
+    {
+      "id": "b6f6510efcdc",
+      "operator": "ASG",
+      "lineno": 165,
+      "col_offset": 12,
+      "end_lineno": 165,
+      "end_col_offset": 27,
+      "original": "rewritten += rm",
+      "replacement": "rewritten -= rm"
+    },
+    {
+      "id": "812980827b3e",
+      "operator": "COND",
+      "lineno": 179,
+      "col_offset": 11,
+      "end_lineno": 179,
+      "end_col_offset": 25,
+      "original": "survivors[key]",
+      "replacement": "(not survivors[key])"
+    },
+    {
+      "id": "44973003803d",
+      "operator": "ASG",
+      "lineno": 180,
+      "col_offset": 12,
+      "end_lineno": 180,
+      "end_col_offset": 31,
+      "original": "survivors[key] -= 1",
+      "replacement": "survivors[key] += 1"
+    },
+    {
+      "id": "c91c10b4d7c3",
+      "operator": "CRP",
+      "lineno": 180,
+      "col_offset": 30,
+      "end_lineno": 180,
+      "end_col_offset": 31,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "016c833ada0d",
+      "operator": "RET",
+      "lineno": 181,
+      "col_offset": 12,
+      "end_lineno": 181,
+      "end_col_offset": 23,
+      "original": "return True",
+      "replacement": "return None"
+    },
+    {
+      "id": "5cd7bb2df3c5",
+      "operator": "CRP",
+      "lineno": 181,
+      "col_offset": 19,
+      "end_lineno": 181,
+      "end_col_offset": 23,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "0df049798e44",
+      "operator": "RET",
+      "lineno": 182,
+      "col_offset": 8,
+      "end_lineno": 182,
+      "end_col_offset": 20,
+      "original": "return False",
+      "replacement": "return None"
+    },
+    {
+      "id": "dffc59a7fb76",
+      "operator": "CRP",
+      "lineno": 182,
+      "col_offset": 15,
+      "end_lineno": 182,
+      "end_col_offset": 20,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "9a66e128cc4a",
+      "operator": "UOI",
+      "lineno": 184,
+      "col_offset": 41,
+      "end_lineno": 184,
+      "end_col_offset": 63,
+      "original": "not _kept_elsewhere(l)",
+      "replacement": "(_kept_elsewhere(l))"
+    },
+    {
+      "id": "e2dcf9f2e9a4",
+      "operator": "COND",
+      "lineno": 186,
+      "col_offset": 7,
+      "end_lineno": 186,
+      "end_col_offset": 16,
+      "original": "rewritten",
+      "replacement": "(not rewritten)"
+    },
+    {
+      "id": "28968e916f48",
+      "operator": "CRP",
+      "lineno": 190,
+      "col_offset": 18,
+      "end_lineno": 191,
+      "end_col_offset": 45,
+      "original": "\"none contain the word `assert` — the expected values \" \"themselves were rewritten\"",
+      "replacement": "('XXnone contain the word `assert` — the expected values themselves were rewrittenXX')"
+    },
+    {
+      "id": "cba0ed4e738b",
+      "operator": "CRP",
+      "lineno": 193,
+      "col_offset": 12,
+      "end_lineno": 193,
+      "end_col_offset": 35,
+      "original": "\"REWRITTEN_EXPECTATION\"",
+      "replacement": "('XXREWRITTEN_EXPECTATIONXX')"
+    },
+    {
+      "id": "aa0235a1a148",
+      "operator": "LCR",
+      "lineno": 197,
+      "col_offset": 13,
+      "end_lineno": 197,
+      "end_col_offset": 33,
+      "original": "asserty or rewritten",
+      "replacement": "(asserty and rewritten)"
+    },
+    {
+      "id": "572d5104a135",
+      "operator": "CRP",
+      "lineno": 197,
+      "col_offset": 36,
+      "end_lineno": 197,
+      "end_col_offset": 37,
+      "original": "4",
+      "replacement": "(5)"
+    },
+    {
+      "id": "000bb480060b",
+      "operator": "UOI",
+      "lineno": 201,
+      "col_offset": 18,
+      "end_lineno": 201,
+      "end_col_offset": 67,
+      "original": "not any(l.strip() == a.strip() for a in fd.added)",
+      "replacement": "(any((l.strip() == a.strip() for a in fd.added)))"
+    },
+    {
+      "id": "81821048a97a",
+      "operator": "ROR",
+      "lineno": 201,
+      "col_offset": 26,
+      "end_lineno": 201,
+      "end_col_offset": 48,
+      "original": "l.strip() == a.strip()",
+      "replacement": "(l.strip() != a.strip())"
+    },
+    {
+      "id": "894e259dee26",
+      "operator": "COND",
+      "lineno": 202,
+      "col_offset": 7,
+      "end_lineno": 202,
+      "end_col_offset": 14,
+      "original": "dropped",
+      "replacement": "(not dropped)"
+    },
+    {
+      "id": "8c9f046bdc58",
+      "operator": "CRP",
+      "lineno": 204,
+      "col_offset": 12,
+      "end_lineno": 204,
+      "end_col_offset": 26,
+      "original": "\"DELETED_TEST\"",
+      "replacement": "('XXDELETED_TESTXX')"
+    },
+    {
+      "id": "d6c6f98d2a70",
+      "operator": "CRP",
+      "lineno": 206,
+      "col_offset": 21,
+      "end_lineno": 206,
+      "end_col_offset": 22,
+      "original": "4",
+      "replacement": "(5)"
+    },
+    {
+      "id": "8140dcac415e",
+      "operator": "COND",
+      "lineno": 210,
+      "col_offset": 7,
+      "end_lineno": 210,
+      "end_col_offset": 17,
+      "original": "suppressed",
+      "replacement": "(not suppressed)"
+    },
+    {
+      "id": "195ffd3e2f6f",
+      "operator": "CRP",
+      "lineno": 212,
+      "col_offset": 12,
+      "end_lineno": 212,
+      "end_col_offset": 24,
+      "original": "\"SUPPRESSED\"",
+      "replacement": "('XXSUPPRESSEDXX')"
+    },
+    {
+      "id": "70a28f1761a6",
+      "operator": "CRP",
+      "lineno": 214,
+      "col_offset": 24,
+      "end_lineno": 214,
+      "end_col_offset": 25,
+      "original": "4",
+      "replacement": "(5)"
+    },
+    {
+      "id": "739cd6a131d1",
+      "operator": "RET",
+      "lineno": 217,
+      "col_offset": 4,
+      "end_lineno": 217,
+      "end_col_offset": 14,
+      "original": "return out",
+      "replacement": "return None"
+    },
+    {
+      "id": "5b4e25cc4284",
+      "operator": "LCR",
+      "lineno": 225,
+      "col_offset": 15,
+      "end_lineno": 225,
+      "end_col_offset": 37,
+      "original": "fd.path or fd.old_path",
+      "replacement": "(fd.path and fd.old_path)"
+    },
+    {
+      "id": "6e573fbfbc9e",
+      "operator": "COND",
+      "lineno": 226,
+      "col_offset": 11,
+      "end_lineno": 226,
+      "end_col_offset": 47,
+      "original": "is_test_path(path, extra_test_globs)",
+      "replacement": "(not is_test_path(path, extra_test_globs))"
+    },
+    {
+      "id": "efbacb91787d",
+      "operator": "ASG",
+      "lineno": 228,
+      "col_offset": 12,
+      "end_lineno": 228,
+      "end_col_offset": 75,
+      "original": "res.new_tests += sum(1 for l in fd.added if TEST_DECL.match(l))",
+      "replacement": "res.new_tests -= sum((1 for l in fd.added if TEST_DECL.match(l)))"
+    },
+    {
+      "id": "6217e62b42c8",
+      "operator": "CRP",
+      "lineno": 228,
+      "col_offset": 33,
+      "end_lineno": 228,
+      "end_col_offset": 34,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "675e6f296447",
+      "operator": "ASG",
+      "lineno": 229,
+      "col_offset": 12,
+      "end_lineno": 229,
+      "end_col_offset": 81,
+      "original": "res.new_assertions += sum(1 for l in fd.added if ASSERTION.search(l))",
+      "replacement": "res.new_assertions -= sum((1 for l in fd.added if ASSERTION.search(l)))"
+    },
+    {
+      "id": "340e47d0caa1",
+      "operator": "CRP",
+      "lineno": 229,
+      "col_offset": 38,
+      "end_lineno": 229,
+      "end_col_offset": 39,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "957ae78fba4c",
+      "operator": "ASG",
+      "lineno": 230,
+      "col_offset": 12,
+      "end_lineno": 230,
+      "end_col_offset": 44,
+      "original": "res.findings += analyse_file(fd)",
+      "replacement": "res.findings -= analyse_file(fd)"
+    },
+    {
+      "id": "009cd40f2fba",
+      "operator": "UOI",
+      "lineno": 234,
+      "col_offset": 7,
+      "end_lineno": 234,
+      "end_col_offset": 48,
+      "original": "not (res.source_files and res.test_files)",
+      "replacement": "(res.source_files and res.test_files)"
+    },
+    {
+      "id": "5a58f689067d",
+      "operator": "LCR",
+      "lineno": 234,
+      "col_offset": 12,
+      "end_lineno": 234,
+      "end_col_offset": 47,
+      "original": "res.source_files and res.test_files",
+      "replacement": "(res.source_files or res.test_files)"
+    },
+    {
+      "id": "1f98f7804445",
+      "operator": "ROR",
+      "lineno": 236,
+      "col_offset": 51,
+      "end_lineno": 236,
+      "end_col_offset": 73,
+      "original": "f.kind == \"SUPPRESSED\"",
+      "replacement": "(f.kind != 'SUPPRESSED')"
+    },
+    {
+      "id": "7e5236d4b4b5",
+      "operator": "CRP",
+      "lineno": 236,
+      "col_offset": 61,
+      "end_lineno": 236,
+      "end_col_offset": 73,
+      "original": "\"SUPPRESSED\"",
+      "replacement": "('XXSUPPRESSEDXX')"
+    },
+    {
+      "id": "2ffdcbbc26bc",
+      "operator": "RET",
+      "lineno": 237,
+      "col_offset": 8,
+      "end_lineno": 237,
+      "end_col_offset": 18,
+      "original": "return res",
+      "replacement": "return None"
+    },
+    {
+      "id": "070545fa00da",
+      "operator": "LCR",
+      "lineno": 239,
+      "col_offset": 7,
+      "end_lineno": 239,
+      "end_col_offset": 88,
+      "original": "not (res.new_tests or res.new_assertions) and not res.of(\"REWRITTEN_EXPECTATION\")",
+      "replacement": "(not (res.new_tests or res.new_assertions) or not res.of('REWRITTEN_EXPECTATION'))"
+    },
+    {
+      "id": "fd394f47427a",
+      "operator": "UOI",
+      "lineno": 239,
+      "col_offset": 7,
+      "end_lineno": 239,
+      "end_col_offset": 48,
+      "original": "not (res.new_tests or res.new_assertions)",
+      "replacement": "(res.new_tests or res.new_assertions)"
+    },
+    {
+      "id": "bfc0fc4b2f8d",
+      "operator": "LCR",
+      "lineno": 239,
+      "col_offset": 12,
+      "end_lineno": 239,
+      "end_col_offset": 47,
+      "original": "res.new_tests or res.new_assertions",
+      "replacement": "(res.new_tests and res.new_assertions)"
+    },
+    {
+      "id": "7ea0fac05c65",
+      "operator": "UOI",
+      "lineno": 239,
+      "col_offset": 53,
+      "end_lineno": 239,
+      "end_col_offset": 88,
+      "original": "not res.of(\"REWRITTEN_EXPECTATION\")",
+      "replacement": "(res.of('REWRITTEN_EXPECTATION'))"
+    },
+    {
+      "id": "e48c451ab7a1",
+      "operator": "CRP",
+      "lineno": 239,
+      "col_offset": 64,
+      "end_lineno": 239,
+      "end_col_offset": 87,
+      "original": "\"REWRITTEN_EXPECTATION\"",
+      "replacement": "('XXREWRITTEN_EXPECTATIONXX')"
+    },
+    {
+      "id": "65acacaa26ae",
+      "operator": "CRP",
+      "lineno": 241,
+      "col_offset": 12,
+      "end_lineno": 241,
+      "end_col_offset": 29,
+      "original": "\"NO_NEW_EVIDENCE\"",
+      "replacement": "('XXNO_NEW_EVIDENCEXX')"
+    },
+    {
+      "id": "4db569735ad2",
+      "operator": "CRP",
+      "lineno": 241,
+      "col_offset": 31,
+      "end_lineno": 241,
+      "end_col_offset": 35,
+      "original": "\", \"",
+      "replacement": "('XX, XX')"
+    },
+    {
+      "id": "1c73d4cc936e",
+      "operator": "CRP",
+      "lineno": 241,
+      "col_offset": 57,
+      "end_lineno": 241,
+      "end_col_offset": 58,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "5d82b87a8e3f",
+      "operator": "CRP",
+      "lineno": 242,
+      "col_offset": 12,
+      "end_lineno": 244,
+      "end_col_offset": 22,
+      "original": "\"test file(s) touched alongside source, but no new test case or \" \"assertion was added — the change moved its tests without adding \" \"evidence\"",
+      "replacement": "('XXtest file(s) touched alongside source, but no new test case or assertion was added — the change moved its tests without adding evidenceXX')"
+    },
+    {
+      "id": "fdc097beeb55",
+      "operator": "CRP",
+      "lineno": 248,
+      "col_offset": 8,
+      "end_lineno": 248,
+      "end_col_offset": 21,
+      "original": "\"SELF_GRADED\"",
+      "replacement": "('XXSELF_GRADEDXX')"
+    },
+    {
+      "id": "4c440aaa6db4",
+      "operator": "CRP",
+      "lineno": 248,
+      "col_offset": 23,
+      "end_lineno": 248,
+      "end_col_offset": 27,
+      "original": "\", \"",
+      "replacement": "('XX, XX')"
+    },
+    {
+      "id": "77e4c41332ea",
+      "operator": "CRP",
+      "lineno": 248,
+      "col_offset": 49,
+      "end_lineno": 248,
+      "end_col_offset": 50,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "0b74f8be5eba",
+      "operator": "UOI",
+      "lineno": 253,
+      "col_offset": 36,
+      "end_lineno": 253,
+      "end_col_offset": 47,
+      "original": "-f.severity",
+      "replacement": "(f.severity)"
+    },
+    {
+      "id": "75a35a52c9a7",
+      "operator": "RET",
+      "lineno": 254,
+      "col_offset": 4,
+      "end_lineno": 254,
+      "end_col_offset": 14,
+      "original": "return res",
+      "replacement": "return None"
+    }
+  ]
+}

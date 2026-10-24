@@ -43,7 +43,28 @@ pure Python, mutation-feasible size, at least ~80 mutants (so per-module
 statistics are meaningful), at most two modules per project, and a spread over
 the four categories.
 
-Still to add in M2: the BugsInPy subset (RQ4) and 3–5 modules from
-repositories created after the models' training cutoff (contamination tier).
 All 22 modules above are well-known projects that are almost certainly in the
-models' training data.
+models' training data. Still to add in M2: the BugsInPy subset (RQ4).
+
+## Post-cutoff tier (contamination control)
+
+Added 2026-10-24, separate from benchmark-v1: 4 modules whose code first
+appeared after the models' training cutoff (June 2026). Each was first released
+on PyPI 3–11 weeks after the cutoff, has no runtime dependencies, uses no
+network, clock or randomness, and is MIT-licensed.
+
+| Target | Module | First PyPI release | Mutants | Human mutation % |
+|---|---|---|---|---|
+| pc-threeway-core | threeway `core` (invoice / receipt matching) | 2026-09-09 | 171 | 81.3 |
+| pc-lockcheck-analyze | lockcheck `_analyze` (Alembic migration lock checks) | 2026-09-08 | 146 | 69.9 |
+| pc-drawio-parser | drawio-digest `parser` (draw.io XML) | 2026-07-22 | 200 | 59.5 |
+| pc-patchward-detect | patchward-check `detect` (diff analysis) | 2026-07-25 | 104 | 65.4 |
+
+Files: `manifest-postcutoff.toml` (3 rejected candidates with reasons),
+`targets-postcutoff/`, `screening-postcutoff/SUMMARY.md`. The tier has its own
+targets folder, so `TARGETS=all` over `targets/` still means the 22 v1 modules.
+
+```bash
+python3 tools/fetch.py --tier postcutoff
+python tools/screen.py --tier postcutoff --jobs 8
+```

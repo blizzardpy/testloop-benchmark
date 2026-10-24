@@ -1,0 +1,1721 @@
+{
+  "target": "pc-threeway-core",
+  "module_file": "src/threeway/core.py",
+  "source_sha256": "9dceed58193272378c00fba5d46928623fe4c85c3e59578af9a2cdfa5dee71b0",
+  "generator_version": "1",
+  "budget": 200,
+  "seed": 0,
+  "total_generated": 171,
+  "mutants": [
+    {
+      "id": "8ea70f97c8e5",
+      "operator": "CRP",
+      "lineno": 12,
+      "col_offset": 15,
+      "end_lineno": 12,
+      "end_col_offset": 18,
+      "original": "\"0\"",
+      "replacement": "('XX0XX')"
+    },
+    {
+      "id": "4120ab1e3d16",
+      "operator": "CRP",
+      "lineno": 14,
+      "col_offset": 13,
+      "end_lineno": 14,
+      "end_col_offset": 17,
+      "original": "\"_T\"",
+      "replacement": "('XX_TXX')"
+    },
+    {
+      "id": "a6cd08b87932",
+      "operator": "CRP",
+      "lineno": 31,
+      "col_offset": 32,
+      "end_lineno": 31,
+      "end_col_offset": 35,
+      "original": "\"2\"",
+      "replacement": "('XX2XX')"
+    },
+    {
+      "id": "01d042ad3d6f",
+      "operator": "CRP",
+      "lineno": 32,
+      "col_offset": 34,
+      "end_lineno": 32,
+      "end_col_offset": 40,
+      "original": "\"1.00\"",
+      "replacement": "('XX1.00XX')"
+    },
+    {
+      "id": "0d6ad4533008",
+      "operator": "CRP",
+      "lineno": 33,
+      "col_offset": 32,
+      "end_lineno": 33,
+      "end_col_offset": 37,
+      "original": "\"0.5\"",
+      "replacement": "('XX0.5XX')"
+    },
+    {
+      "id": "34a749180954",
+      "operator": "CRP",
+      "lineno": 34,
+      "col_offset": 22,
+      "end_lineno": 34,
+      "end_col_offset": 23,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "20783cdd7cde",
+      "operator": "CRP",
+      "lineno": 36,
+      "col_offset": 16,
+      "end_lineno": 36,
+      "end_col_offset": 73,
+      "original": "\"Receipt or invoice with no matching purchase order line\"",
+      "replacement": "('XXReceipt or invoice with no matching purchase order lineXX')"
+    },
+    {
+      "id": "c1635a72266e",
+      "operator": "CRP",
+      "lineno": 37,
+      "col_offset": 22,
+      "end_lineno": 37,
+      "end_col_offset": 67,
+      "original": "\"Units differ and no conversion rule applies\"",
+      "replacement": "('XXUnits differ and no conversion rule appliesXX')"
+    },
+    {
+      "id": "2e97d98976ce",
+      "operator": "CRP",
+      "lineno": 38,
+      "col_offset": 16,
+      "end_lineno": 38,
+      "end_col_offset": 61,
+      "original": "\"Timing difference within the cut-off window\"",
+      "replacement": "('XXTiming difference within the cut-off windowXX')"
+    },
+    {
+      "id": "a75a28a85647",
+      "operator": "RET",
+      "lineno": 42,
+      "col_offset": 4,
+      "end_lineno": 42,
+      "end_col_offset": 65,
+      "original": "return (po_number.strip().upper(), item_code.strip().upper())",
+      "replacement": "return None"
+    },
+    {
+      "id": "aae5f95bbbc7",
+      "operator": "RET",
+      "lineno": 46,
+      "col_offset": 4,
+      "end_lineno": 46,
+      "end_col_offset": 46,
+      "original": "return new if new is not None else current",
+      "replacement": "return None"
+    },
+    {
+      "id": "5237c021e48f",
+      "operator": "ROR",
+      "lineno": 46,
+      "col_offset": 18,
+      "end_lineno": 46,
+      "end_col_offset": 33,
+      "original": "new is not None",
+      "replacement": "(new is None)"
+    },
+    {
+      "id": "3a7ae36eee1e",
+      "operator": "CRP",
+      "lineno": 49,
+      "col_offset": 18,
+      "end_lineno": 49,
+      "end_col_offset": 22,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "47bbc7d3dcf4",
+      "operator": "CRP",
+      "lineno": 65,
+      "col_offset": 18,
+      "end_lineno": 65,
+      "end_col_offset": 22,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "9e98f90b4daa",
+      "operator": "CRP",
+      "lineno": 81,
+      "col_offset": 35,
+      "end_lineno": 81,
+      "end_col_offset": 40,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "7691489a91c5",
+      "operator": "CRP",
+      "lineno": 88,
+      "col_offset": 18,
+      "end_lineno": 88,
+      "end_col_offset": 22,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "e56916af524c",
+      "operator": "ASG",
+      "lineno": 110,
+      "col_offset": 8,
+      "end_lineno": 110,
+      "end_col_offset": 31,
+      "original": "ordered += row.quantity",
+      "replacement": "ordered -= row.quantity"
+    },
+    {
+      "id": "5a54eee84770",
+      "operator": "ROR",
+      "lineno": 111,
+      "col_offset": 11,
+      "end_lineno": 111,
+      "end_col_offset": 32,
+      "original": "row.price is not None",
+      "replacement": "(row.price is None)"
+    },
+    {
+      "id": "47dcc53e9629",
+      "operator": "AOR",
+      "lineno": 116,
+      "col_offset": 22,
+      "end_lineno": 116,
+      "end_col_offset": 44,
+      "original": "counts.get(key, 0) + 1",
+      "replacement": "(counts.get(key, 0) - 1)"
+    },
+    {
+      "id": "b1e29bf50b6d",
+      "operator": "CRP",
+      "lineno": 116,
+      "col_offset": 38,
+      "end_lineno": 116,
+      "end_col_offset": 39,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "fa8a3c864189",
+      "operator": "CRP",
+      "lineno": 116,
+      "col_offset": 43,
+      "end_lineno": 116,
+      "end_col_offset": 44,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "2db8f1fa2348",
+      "operator": "ROR",
+      "lineno": 118,
+      "col_offset": 11,
+      "end_lineno": 118,
+      "end_col_offset": 20,
+      "original": "count > 1",
+      "replacement": "(count >= 1)"
+    },
+    {
+      "id": "a8f676cf1be3",
+      "operator": "CRP",
+      "lineno": 118,
+      "col_offset": 19,
+      "end_lineno": 118,
+      "end_col_offset": 20,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "43443ac1007d",
+      "operator": "RET",
+      "lineno": 122,
+      "col_offset": 4,
+      "end_lineno": 122,
+      "end_col_offset": 40,
+      "original": "return totals, uoms, dates, warnings",
+      "replacement": "return None"
+    },
+    {
+      "id": "d4cef2701224",
+      "operator": "AOR",
+      "lineno": 131,
+      "col_offset": 22,
+      "end_lineno": 131,
+      "end_col_offset": 58,
+      "original": "totals.get(key, ZERO) + row.quantity",
+      "replacement": "(totals.get(key, ZERO) - row.quantity)"
+    },
+    {
+      "id": "e2dcd646f19b",
+      "operator": "RET",
+      "lineno": 134,
+      "col_offset": 4,
+      "end_lineno": 134,
+      "end_col_offset": 30,
+      "original": "return totals, uoms, dates",
+      "replacement": "return None"
+    },
+    {
+      "id": "fc913f0af65e",
+      "operator": "AOR",
+      "lineno": 146,
+      "col_offset": 26,
+      "end_lineno": 146,
+      "end_col_offset": 66,
+      "original": "qty_totals.get(key, ZERO) + row.quantity",
+      "replacement": "(qty_totals.get(key, ZERO) - row.quantity)"
+    },
+    {
+      "id": "a567a7dd1987",
+      "operator": "ROR",
+      "lineno": 147,
+      "col_offset": 11,
+      "end_lineno": 147,
+      "end_col_offset": 32,
+      "original": "row.price is not None",
+      "replacement": "(row.price is None)"
+    },
+    {
+      "id": "5edc121269ce",
+      "operator": "RET",
+      "lineno": 151,
+      "col_offset": 4,
+      "end_lineno": 151,
+      "end_col_offset": 42,
+      "original": "return qty_totals, prices, uoms, dates",
+      "replacement": "return None"
+    },
+    {
+      "id": "716c999da797",
+      "operator": "ROR",
+      "lineno": 157,
+      "col_offset": 7,
+      "end_lineno": 157,
+      "end_col_offset": 20,
+      "original": "as_of is None",
+      "replacement": "(as_of is not None)"
+    },
+    {
+      "id": "b275c468e6c3",
+      "operator": "RET",
+      "lineno": 158,
+      "col_offset": 8,
+      "end_lineno": 158,
+      "end_col_offset": 19,
+      "original": "return rows",
+      "replacement": "return None"
+    },
+    {
+      "id": "2f4f0021ffbf",
+      "operator": "RET",
+      "lineno": 159,
+      "col_offset": 4,
+      "end_lineno": 159,
+      "end_col_offset": 73,
+      "original": "return [row for row in rows if row.date is None or row.date <= as_of]",
+      "replacement": "return None"
+    },
+    {
+      "id": "2468a12dfca1",
+      "operator": "LCR",
+      "lineno": 159,
+      "col_offset": 35,
+      "end_lineno": 159,
+      "end_col_offset": 72,
+      "original": "row.date is None or row.date <= as_of",
+      "replacement": "(row.date is None and row.date <= as_of)"
+    },
+    {
+      "id": "a269d100d33b",
+      "operator": "ROR",
+      "lineno": 159,
+      "col_offset": 35,
+      "end_lineno": 159,
+      "end_col_offset": 51,
+      "original": "row.date is None",
+      "replacement": "(row.date is not None)"
+    },
+    {
+      "id": "c67e26dd5dfe",
+      "operator": "ROR",
+      "lineno": 159,
+      "col_offset": 55,
+      "end_lineno": 159,
+      "end_col_offset": 72,
+      "original": "row.date <= as_of",
+      "replacement": "(row.date < as_of)"
+    },
+    {
+      "id": "38f2a07a1a68",
+      "operator": "ROR",
+      "lineno": 163,
+      "col_offset": 7,
+      "end_lineno": 163,
+      "end_col_offset": 19,
+      "original": "unit is None",
+      "replacement": "(unit is not None)"
+    },
+    {
+      "id": "7a2b240aa6a0",
+      "operator": "RET",
+      "lineno": 166,
+      "col_offset": 4,
+      "end_lineno": 166,
+      "end_col_offset": 47,
+      "original": "return cleaned.upper() if cleaned else None",
+      "replacement": "return None"
+    },
+    {
+      "id": "64547dc198d0",
+      "operator": "LCR",
+      "lineno": 179,
+      "col_offset": 42,
+      "end_lineno": 179,
+      "end_col_offset": 53,
+      "original": "rules or {}",
+      "replacement": "(rules and {})"
+    },
+    {
+      "id": "e21c5402e6f1",
+      "operator": "LCR",
+      "lineno": 182,
+      "col_offset": 15,
+      "end_lineno": 182,
+      "end_col_offset": 62,
+      "original": "norm_unit is None or not isinstance(rule, dict)",
+      "replacement": "(norm_unit is None and (not isinstance(rule, dict)))"
+    },
+    {
+      "id": "39967cbad7ca",
+      "operator": "ROR",
+      "lineno": 182,
+      "col_offset": 15,
+      "end_lineno": 182,
+      "end_col_offset": 32,
+      "original": "norm_unit is None",
+      "replacement": "(norm_unit is not None)"
+    },
+    {
+      "id": "46fd63713e12",
+      "operator": "UOI",
+      "lineno": 182,
+      "col_offset": 36,
+      "end_lineno": 182,
+      "end_col_offset": 62,
+      "original": "not isinstance(rule, dict)",
+      "replacement": "(isinstance(rule, dict))"
+    },
+    {
+      "id": "701ef191c373",
+      "operator": "BRK",
+      "lineno": 183,
+      "col_offset": 16,
+      "end_lineno": 183,
+      "end_col_offset": 24,
+      "original": "continue",
+      "replacement": "break"
+    },
+    {
+      "id": "a295542d6c6f",
+      "operator": "CRP",
+      "lineno": 184,
+      "col_offset": 39,
+      "end_lineno": 184,
+      "end_col_offset": 45,
+      "original": "\"unit\"",
+      "replacement": "('XXunitXX')"
+    },
+    {
+      "id": "a0ab368e0c70",
+      "operator": "CRP",
+      "lineno": 184,
+      "col_offset": 57,
+      "end_lineno": 184,
+      "end_col_offset": 65,
+      "original": "\"factor\"",
+      "replacement": "('XXfactorXX')"
+    },
+    {
+      "id": "cd93677c3e2e",
+      "operator": "RET",
+      "lineno": 185,
+      "col_offset": 8,
+      "end_lineno": 185,
+      "end_col_offset": 18,
+      "original": "return out",
+      "replacement": "return None"
+    },
+    {
+      "id": "c86da728e022",
+      "operator": "UOI",
+      "lineno": 187,
+      "col_offset": 7,
+      "end_lineno": 187,
+      "end_col_offset": 18,
+      "original": "not uom_map",
+      "replacement": "(uom_map)"
+    },
+    {
+      "id": "4f3dca29638d",
+      "operator": "RET",
+      "lineno": 188,
+      "col_offset": 8,
+      "end_lineno": 188,
+      "end_col_offset": 43,
+      "original": "return {\"global_\": {}, \"items\": {}}",
+      "replacement": "return None"
+    },
+    {
+      "id": "c31be31ea7e3",
+      "operator": "CRP",
+      "lineno": 188,
+      "col_offset": 16,
+      "end_lineno": 188,
+      "end_col_offset": 25,
+      "original": "\"global_\"",
+      "replacement": "('XXglobal_XX')"
+    },
+    {
+      "id": "1f63886514be",
+      "operator": "CRP",
+      "lineno": 188,
+      "col_offset": 31,
+      "end_lineno": 188,
+      "end_col_offset": 38,
+      "original": "\"items\"",
+      "replacement": "('XXitemsXX')"
+    },
+    {
+      "id": "b57834b65865",
+      "operator": "CRP",
+      "lineno": 190,
+      "col_offset": 42,
+      "end_lineno": 190,
+      "end_col_offset": 50,
+      "original": "\"global\"",
+      "replacement": "('XXglobalXX')"
+    },
+    {
+      "id": "0fa7e412c9ed",
+      "operator": "LCR",
+      "lineno": 192,
+      "col_offset": 52,
+      "end_lineno": 192,
+      "end_col_offset": 78,
+      "original": "uom_map.get(\"items\") or {}",
+      "replacement": "(uom_map.get('items') and {})"
+    },
+    {
+      "id": "88af04c642b7",
+      "operator": "CRP",
+      "lineno": 192,
+      "col_offset": 64,
+      "end_lineno": 192,
+      "end_col_offset": 71,
+      "original": "\"items\"",
+      "replacement": "('XXitemsXX')"
+    },
+    {
+      "id": "d3ebc8ca05af",
+      "operator": "RET",
+      "lineno": 194,
+      "col_offset": 4,
+      "end_lineno": 194,
+      "end_col_offset": 52,
+      "original": "return {\"global_\": global_rules, \"items\": items}",
+      "replacement": "return None"
+    },
+    {
+      "id": "9f9db0c7597e",
+      "operator": "CRP",
+      "lineno": 194,
+      "col_offset": 12,
+      "end_lineno": 194,
+      "end_col_offset": 21,
+      "original": "\"global_\"",
+      "replacement": "('XXglobal_XX')"
+    },
+    {
+      "id": "99f92544f926",
+      "operator": "CRP",
+      "lineno": 194,
+      "col_offset": 37,
+      "end_lineno": 194,
+      "end_col_offset": 44,
+      "original": "\"items\"",
+      "replacement": "('XXitemsXX')"
+    },
+    {
+      "id": "bdb812e50b35",
+      "operator": "ROR",
+      "lineno": 201,
+      "col_offset": 7,
+      "end_lineno": 201,
+      "end_col_offset": 24,
+      "original": "norm_unit is None",
+      "replacement": "(norm_unit is not None)"
+    },
+    {
+      "id": "6b560d9bdfc2",
+      "operator": "CRP",
+      "lineno": 204,
+      "col_offset": 26,
+      "end_lineno": 204,
+      "end_col_offset": 33,
+      "original": "\"items\"",
+      "replacement": "('XXitemsXX')"
+    },
+    {
+      "id": "68c804ffb648",
+      "operator": "ROR",
+      "lineno": 205,
+      "col_offset": 7,
+      "end_lineno": 205,
+      "end_col_offset": 30,
+      "original": "norm_unit in item_rules",
+      "replacement": "(norm_unit not in item_rules)"
+    },
+    {
+      "id": "22ad8b84e35f",
+      "operator": "RET",
+      "lineno": 206,
+      "col_offset": 8,
+      "end_lineno": 206,
+      "end_col_offset": 36,
+      "original": "return item_rules[norm_unit]",
+      "replacement": "return None"
+    },
+    {
+      "id": "d36739e0244f",
+      "operator": "RET",
+      "lineno": 207,
+      "col_offset": 4,
+      "end_lineno": 207,
+      "end_col_offset": 45,
+      "original": "return norm_map[\"global_\"].get(norm_unit)",
+      "replacement": "return None"
+    },
+    {
+      "id": "5ad899e92413",
+      "operator": "CRP",
+      "lineno": 207,
+      "col_offset": 20,
+      "end_lineno": 207,
+      "end_col_offset": 29,
+      "original": "\"global_\"",
+      "replacement": "('XXglobal_XX')"
+    },
+    {
+      "id": "29e4dcb0b4af",
+      "operator": "LCR",
+      "lineno": 223,
+      "col_offset": 7,
+      "end_lineno": 223,
+      "end_col_offset": 75,
+      "original": "norm_source is None or norm_base is None or norm_source == norm_base",
+      "replacement": "(norm_source is None and norm_base is None and (norm_source == norm_base))"
+    },
+    {
+      "id": "56db812d0fe4",
+      "operator": "ROR",
+      "lineno": 223,
+      "col_offset": 7,
+      "end_lineno": 223,
+      "end_col_offset": 26,
+      "original": "norm_source is None",
+      "replacement": "(norm_source is not None)"
+    },
+    {
+      "id": "d141cf5595dd",
+      "operator": "ROR",
+      "lineno": 223,
+      "col_offset": 30,
+      "end_lineno": 223,
+      "end_col_offset": 47,
+      "original": "norm_base is None",
+      "replacement": "(norm_base is not None)"
+    },
+    {
+      "id": "a68cdb3a0470",
+      "operator": "ROR",
+      "lineno": 223,
+      "col_offset": 51,
+      "end_lineno": 223,
+      "end_col_offset": 75,
+      "original": "norm_source == norm_base",
+      "replacement": "(norm_source != norm_base)"
+    },
+    {
+      "id": "a9fad465b1e1",
+      "operator": "RET",
+      "lineno": 224,
+      "col_offset": 8,
+      "end_lineno": 224,
+      "end_col_offset": 36,
+      "original": "return quantity, False, True",
+      "replacement": "return None"
+    },
+    {
+      "id": "b5c3f530de88",
+      "operator": "CRP",
+      "lineno": 224,
+      "col_offset": 25,
+      "end_lineno": 224,
+      "end_col_offset": 30,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "be13ff165243",
+      "operator": "CRP",
+      "lineno": 224,
+      "col_offset": 32,
+      "end_lineno": 224,
+      "end_col_offset": 36,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "26a7dab4aeb9",
+      "operator": "ROR",
+      "lineno": 227,
+      "col_offset": 7,
+      "end_lineno": 227,
+      "end_col_offset": 19,
+      "original": "rule is None",
+      "replacement": "(rule is not None)"
+    },
+    {
+      "id": "bf7f35d38a4d",
+      "operator": "RET",
+      "lineno": 228,
+      "col_offset": 8,
+      "end_lineno": 228,
+      "end_col_offset": 37,
+      "original": "return quantity, False, False",
+      "replacement": "return None"
+    },
+    {
+      "id": "64e2e449cc47",
+      "operator": "CRP",
+      "lineno": 228,
+      "col_offset": 25,
+      "end_lineno": 228,
+      "end_col_offset": 30,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "9ec4704d4044",
+      "operator": "CRP",
+      "lineno": 228,
+      "col_offset": 32,
+      "end_lineno": 228,
+      "end_col_offset": 37,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "0a0c669e16b9",
+      "operator": "LCR",
+      "lineno": 230,
+      "col_offset": 7,
+      "end_lineno": 230,
+      "end_col_offset": 66,
+      "original": "_normalize_unit(target_unit) != norm_base or factor is None",
+      "replacement": "(_normalize_unit(target_unit) != norm_base and factor is None)"
+    },
+    {
+      "id": "0fea45d78e5d",
+      "operator": "ROR",
+      "lineno": 230,
+      "col_offset": 7,
+      "end_lineno": 230,
+      "end_col_offset": 48,
+      "original": "_normalize_unit(target_unit) != norm_base",
+      "replacement": "(_normalize_unit(target_unit) == norm_base)"
+    },
+    {
+      "id": "64ddb5dc58d6",
+      "operator": "ROR",
+      "lineno": 230,
+      "col_offset": 52,
+      "end_lineno": 230,
+      "end_col_offset": 66,
+      "original": "factor is None",
+      "replacement": "(factor is not None)"
+    },
+    {
+      "id": "3246a89b27eb",
+      "operator": "RET",
+      "lineno": 231,
+      "col_offset": 8,
+      "end_lineno": 231,
+      "end_col_offset": 37,
+      "original": "return quantity, False, False",
+      "replacement": "return None"
+    },
+    {
+      "id": "dd6d1b4ea815",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 25,
+      "end_lineno": 231,
+      "end_col_offset": 30,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "d5a1389f8ec2",
+      "operator": "CRP",
+      "lineno": 231,
+      "col_offset": 32,
+      "end_lineno": 231,
+      "end_col_offset": 37,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "c3e450cf0a74",
+      "operator": "UOI",
+      "lineno": 236,
+      "col_offset": 7,
+      "end_lineno": 236,
+      "end_col_offset": 38,
+      "original": "not isinstance(factor, Decimal)",
+      "replacement": "(isinstance(factor, Decimal))"
+    },
+    {
+      "id": "da4680c2364c",
+      "operator": "RET",
+      "lineno": 238,
+      "col_offset": 4,
+      "end_lineno": 238,
+      "end_col_offset": 40,
+      "original": "return quantity * factor, True, True",
+      "replacement": "return None"
+    },
+    {
+      "id": "dc862a70a351",
+      "operator": "AOR",
+      "lineno": 238,
+      "col_offset": 11,
+      "end_lineno": 238,
+      "end_col_offset": 28,
+      "original": "quantity * factor",
+      "replacement": "(quantity / factor)"
+    },
+    {
+      "id": "4c25260caab5",
+      "operator": "CRP",
+      "lineno": 238,
+      "col_offset": 30,
+      "end_lineno": 238,
+      "end_col_offset": 34,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "389ffd734db3",
+      "operator": "CRP",
+      "lineno": 238,
+      "col_offset": 36,
+      "end_lineno": 238,
+      "end_col_offset": 40,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "265caad4bcbb",
+      "operator": "ROR",
+      "lineno": 248,
+      "col_offset": 67,
+      "end_lineno": 248,
+      "end_col_offset": 82,
+      "original": "uom is not None",
+      "replacement": "(uom is None)"
+    },
+    {
+      "id": "de88932c1e65",
+      "operator": "UOI",
+      "lineno": 249,
+      "col_offset": 7,
+      "end_lineno": 249,
+      "end_col_offset": 21,
+      "original": "not candidates",
+      "replacement": "(candidates)"
+    },
+    {
+      "id": "79eca002bcb6",
+      "operator": "AOR",
+      "lineno": 254,
+      "col_offset": 23,
+      "end_lineno": 254,
+      "end_col_offset": 46,
+      "original": "counts.get(norm, 0) + 1",
+      "replacement": "(counts.get(norm, 0) - 1)"
+    },
+    {
+      "id": "cbd74dd185ce",
+      "operator": "CRP",
+      "lineno": 254,
+      "col_offset": 40,
+      "end_lineno": 254,
+      "end_col_offset": 41,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "23ec7ab3271c",
+      "operator": "CRP",
+      "lineno": 254,
+      "col_offset": 45,
+      "end_lineno": 254,
+      "end_col_offset": 46,
+      "original": "1",
+      "replacement": "(2)"
+    },
+    {
+      "id": "3e18a91c7c37",
+      "operator": "ROR",
+      "lineno": 257,
+      "col_offset": 11,
+      "end_lineno": 257,
+      "end_col_offset": 53,
+      "original": "counts[_normalize_unit(uom)] == best_count",
+      "replacement": "(counts[_normalize_unit(uom)] != best_count)"
+    },
+    {
+      "id": "dba23ea40e90",
+      "operator": "RET",
+      "lineno": 258,
+      "col_offset": 12,
+      "end_lineno": 258,
+      "end_col_offset": 22,
+      "original": "return uom",
+      "replacement": "return None"
+    },
+    {
+      "id": "a757d79dae99",
+      "operator": "RET",
+      "lineno": 259,
+      "col_offset": 4,
+      "end_lineno": 259,
+      "end_col_offset": 24,
+      "original": "return candidates[0]",
+      "replacement": "return None"
+    },
+    {
+      "id": "9266c2997f26",
+      "operator": "CRP",
+      "lineno": 259,
+      "col_offset": 22,
+      "end_lineno": 259,
+      "end_col_offset": 23,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "2e533081e62b",
+      "operator": "LCR",
+      "lineno": 263,
+      "col_offset": 7,
+      "end_lineno": 263,
+      "end_col_offset": 38,
+      "original": "first is None or second is None",
+      "replacement": "(first is None and second is None)"
+    },
+    {
+      "id": "2c489e5f6966",
+      "operator": "ROR",
+      "lineno": 263,
+      "col_offset": 7,
+      "end_lineno": 263,
+      "end_col_offset": 20,
+      "original": "first is None",
+      "replacement": "(first is not None)"
+    },
+    {
+      "id": "223b6b9d3cf1",
+      "operator": "ROR",
+      "lineno": 263,
+      "col_offset": 24,
+      "end_lineno": 263,
+      "end_col_offset": 38,
+      "original": "second is None",
+      "replacement": "(second is not None)"
+    },
+    {
+      "id": "490ede0148c7",
+      "operator": "RET",
+      "lineno": 265,
+      "col_offset": 4,
+      "end_lineno": 265,
+      "end_col_offset": 37,
+      "original": "return abs((first - second).days)",
+      "replacement": "return None"
+    },
+    {
+      "id": "a8cd7efce650",
+      "operator": "AOR",
+      "lineno": 265,
+      "col_offset": 16,
+      "end_lineno": 265,
+      "end_col_offset": 30,
+      "original": "first - second",
+      "replacement": "(first + second)"
+    },
+    {
+      "id": "cd695aa79b6f",
+      "operator": "AOR",
+      "lineno": 279,
+      "col_offset": 21,
+      "end_lineno": 279,
+      "end_col_offset": 40,
+      "original": "received * po_price",
+      "replacement": "(received / po_price)"
+    },
+    {
+      "id": "c79c6803cf36",
+      "operator": "AOR",
+      "lineno": 280,
+      "col_offset": 21,
+      "end_lineno": 280,
+      "end_col_offset": 45,
+      "original": "invoiced * invoice_price",
+      "replacement": "(invoiced / invoice_price)"
+    },
+    {
+      "id": "ef9003e88efc",
+      "operator": "AOR",
+      "lineno": 281,
+      "col_offset": 19,
+      "end_lineno": 281,
+      "end_col_offset": 38,
+      "original": "invoiced - received",
+      "replacement": "(invoiced + received)"
+    },
+    {
+      "id": "674526bc9109",
+      "operator": "AOR",
+      "lineno": 282,
+      "col_offset": 21,
+      "end_lineno": 282,
+      "end_col_offset": 52,
+      "original": "invoiced_value - expected_value",
+      "replacement": "(invoiced_value + expected_value)"
+    },
+    {
+      "id": "cfb2bcc92086",
+      "operator": "COND",
+      "lineno": 284,
+      "col_offset": 7,
+      "end_lineno": 284,
+      "end_col_offset": 13,
+      "original": "orphan",
+      "replacement": "(not orphan)"
+    },
+    {
+      "id": "8ff9509ce20d",
+      "operator": "RET",
+      "lineno": 285,
+      "col_offset": 8,
+      "end_lineno": 292,
+      "end_col_offset": 9,
+      "original": "return ( \"exception\", ORPHAN_REASON, expected_value, invoiced_value, qty_variance, value_variance, )",
+      "replacement": "return None"
+    },
+    {
+      "id": "d9aed235cdfe",
+      "operator": "CRP",
+      "lineno": 286,
+      "col_offset": 12,
+      "end_lineno": 286,
+      "end_col_offset": 23,
+      "original": "\"exception\"",
+      "replacement": "('XXexceptionXX')"
+    },
+    {
+      "id": "e86b7645d693",
+      "operator": "LCR",
+      "lineno": 294,
+      "col_offset": 7,
+      "end_lineno": 294,
+      "end_col_offset": 44,
+      "original": "received == ZERO and invoiced == ZERO",
+      "replacement": "(received == ZERO or invoiced == ZERO)"
+    },
+    {
+      "id": "75e1f49e4483",
+      "operator": "ROR",
+      "lineno": 294,
+      "col_offset": 7,
+      "end_lineno": 294,
+      "end_col_offset": 23,
+      "original": "received == ZERO",
+      "replacement": "(received != ZERO)"
+    },
+    {
+      "id": "2f9429b68518",
+      "operator": "ROR",
+      "lineno": 294,
+      "col_offset": 28,
+      "end_lineno": 294,
+      "end_col_offset": 44,
+      "original": "invoiced == ZERO",
+      "replacement": "(invoiced != ZERO)"
+    },
+    {
+      "id": "fa02dea1d790",
+      "operator": "CRP",
+      "lineno": 295,
+      "col_offset": 17,
+      "end_lineno": 295,
+      "end_col_offset": 30,
+      "original": "\"not_started\"",
+      "replacement": "('XXnot_startedXX')"
+    },
+    {
+      "id": "8ba31f3b67ff",
+      "operator": "LCR",
+      "lineno": 296,
+      "col_offset": 9,
+      "end_lineno": 296,
+      "end_col_offset": 86,
+      "original": "abs(qty_variance) <= qty_tolerance and abs(value_variance) <= value_tolerance",
+      "replacement": "(abs(qty_variance) <= qty_tolerance or abs(value_variance) <= value_tolerance)"
+    },
+    {
+      "id": "382047124405",
+      "operator": "ROR",
+      "lineno": 296,
+      "col_offset": 9,
+      "end_lineno": 296,
+      "end_col_offset": 43,
+      "original": "abs(qty_variance) <= qty_tolerance",
+      "replacement": "(abs(qty_variance) < qty_tolerance)"
+    },
+    {
+      "id": "a1a74ae2923f",
+      "operator": "ROR",
+      "lineno": 296,
+      "col_offset": 48,
+      "end_lineno": 296,
+      "end_col_offset": 86,
+      "original": "abs(value_variance) <= value_tolerance",
+      "replacement": "(abs(value_variance) < value_tolerance)"
+    },
+    {
+      "id": "ce5caa8f736d",
+      "operator": "CRP",
+      "lineno": 297,
+      "col_offset": 17,
+      "end_lineno": 297,
+      "end_col_offset": 26,
+      "original": "\"matched\"",
+      "replacement": "('XXmatchedXX')"
+    },
+    {
+      "id": "a3eaf4f2b826",
+      "operator": "LCR",
+      "lineno": 298,
+      "col_offset": 9,
+      "end_lineno": 298,
+      "end_col_offset": 94,
+      "original": "abs(qty_variance) <= qty_tolerance * 2 and abs(value_variance) <= value_tolerance * 3",
+      "replacement": "(abs(qty_variance) <= qty_tolerance * 2 or abs(value_variance) <= value_tolerance * 3)"
+    },
+    {
+      "id": "ab34f7f5f53d",
+      "operator": "ROR",
+      "lineno": 298,
+      "col_offset": 9,
+      "end_lineno": 298,
+      "end_col_offset": 47,
+      "original": "abs(qty_variance) <= qty_tolerance * 2",
+      "replacement": "(abs(qty_variance) < qty_tolerance * 2)"
+    },
+    {
+      "id": "941b74c7daac",
+      "operator": "AOR",
+      "lineno": 298,
+      "col_offset": 30,
+      "end_lineno": 298,
+      "end_col_offset": 47,
+      "original": "qty_tolerance * 2",
+      "replacement": "(qty_tolerance / 2)"
+    },
+    {
+      "id": "dd3cdd25c82d",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 46,
+      "end_lineno": 298,
+      "end_col_offset": 47,
+      "original": "2",
+      "replacement": "(3)"
+    },
+    {
+      "id": "9e846d278d31",
+      "operator": "ROR",
+      "lineno": 298,
+      "col_offset": 52,
+      "end_lineno": 298,
+      "end_col_offset": 94,
+      "original": "abs(value_variance) <= value_tolerance * 3",
+      "replacement": "(abs(value_variance) < value_tolerance * 3)"
+    },
+    {
+      "id": "33d5730369f7",
+      "operator": "AOR",
+      "lineno": 298,
+      "col_offset": 75,
+      "end_lineno": 298,
+      "end_col_offset": 94,
+      "original": "value_tolerance * 3",
+      "replacement": "(value_tolerance / 3)"
+    },
+    {
+      "id": "e348a8ae5c3b",
+      "operator": "CRP",
+      "lineno": 298,
+      "col_offset": 93,
+      "end_lineno": 298,
+      "end_col_offset": 94,
+      "original": "3",
+      "replacement": "(4)"
+    },
+    {
+      "id": "663e6957744a",
+      "operator": "CRP",
+      "lineno": 299,
+      "col_offset": 17,
+      "end_lineno": 299,
+      "end_col_offset": 24,
+      "original": "\"check\"",
+      "replacement": "('XXcheckXX')"
+    },
+    {
+      "id": "51c0bd285bec",
+      "operator": "CRP",
+      "lineno": 301,
+      "col_offset": 17,
+      "end_lineno": 301,
+      "end_col_offset": 28,
+      "original": "\"exception\"",
+      "replacement": "('XXexceptionXX')"
+    },
+    {
+      "id": "c38f97f98e95",
+      "operator": "ROR",
+      "lineno": 303,
+      "col_offset": 7,
+      "end_lineno": 303,
+      "end_col_offset": 26,
+      "original": "status == \"matched\"",
+      "replacement": "(status != 'matched')"
+    },
+    {
+      "id": "4950de1b3471",
+      "operator": "CRP",
+      "lineno": 303,
+      "col_offset": 17,
+      "end_lineno": 303,
+      "end_col_offset": 26,
+      "original": "\"matched\"",
+      "replacement": "('XXmatchedXX')"
+    },
+    {
+      "id": "03a2698e8f55",
+      "operator": "CRP",
+      "lineno": 304,
+      "col_offset": 17,
+      "end_lineno": 304,
+      "end_col_offset": 19,
+      "original": "\"\"",
+      "replacement": "('XXXX')"
+    },
+    {
+      "id": "d14bc3485d95",
+      "operator": "LCR",
+      "lineno": 305,
+      "col_offset": 9,
+      "end_lineno": 305,
+      "end_col_offset": 45,
+      "original": "received == ZERO and invoiced > ZERO",
+      "replacement": "(received == ZERO or invoiced > ZERO)"
+    },
+    {
+      "id": "cb0097c56072",
+      "operator": "ROR",
+      "lineno": 305,
+      "col_offset": 9,
+      "end_lineno": 305,
+      "end_col_offset": 25,
+      "original": "received == ZERO",
+      "replacement": "(received != ZERO)"
+    },
+    {
+      "id": "7cdebfe8fb28",
+      "operator": "ROR",
+      "lineno": 305,
+      "col_offset": 30,
+      "end_lineno": 305,
+      "end_col_offset": 45,
+      "original": "invoiced > ZERO",
+      "replacement": "(invoiced >= ZERO)"
+    },
+    {
+      "id": "6031f92f2baf",
+      "operator": "CRP",
+      "lineno": 306,
+      "col_offset": 17,
+      "end_lineno": 306,
+      "end_col_offset": 48,
+      "original": "\"Invoiced but nothing received\"",
+      "replacement": "('XXInvoiced but nothing receivedXX')"
+    },
+    {
+      "id": "268f18a3221d",
+      "operator": "LCR",
+      "lineno": 307,
+      "col_offset": 9,
+      "end_lineno": 307,
+      "end_col_offset": 46,
+      "original": "received == ZERO and invoiced == ZERO",
+      "replacement": "(received == ZERO or invoiced == ZERO)"
+    },
+    {
+      "id": "da44f116b20e",
+      "operator": "ROR",
+      "lineno": 307,
+      "col_offset": 9,
+      "end_lineno": 307,
+      "end_col_offset": 25,
+      "original": "received == ZERO",
+      "replacement": "(received != ZERO)"
+    },
+    {
+      "id": "bddc61f7379a",
+      "operator": "ROR",
+      "lineno": 307,
+      "col_offset": 30,
+      "end_lineno": 307,
+      "end_col_offset": 46,
+      "original": "invoiced == ZERO",
+      "replacement": "(invoiced != ZERO)"
+    },
+    {
+      "id": "249dc34402a7",
+      "operator": "CRP",
+      "lineno": 308,
+      "col_offset": 17,
+      "end_lineno": 308,
+      "end_col_offset": 48,
+      "original": "\"No receipt and no invoice yet\"",
+      "replacement": "('XXNo receipt and no invoice yetXX')"
+    },
+    {
+      "id": "036ff301a45e",
+      "operator": "ROR",
+      "lineno": 309,
+      "col_offset": 9,
+      "end_lineno": 309,
+      "end_col_offset": 28,
+      "original": "invoiced > received",
+      "replacement": "(invoiced >= received)"
+    },
+    {
+      "id": "d14fda8e9938",
+      "operator": "CRP",
+      "lineno": 310,
+      "col_offset": 17,
+      "end_lineno": 310,
+      "end_col_offset": 52,
+      "original": "\"Billed for more than was received\"",
+      "replacement": "('XXBilled for more than was receivedXX')"
+    },
+    {
+      "id": "9f41b1c732e9",
+      "operator": "ROR",
+      "lineno": 311,
+      "col_offset": 9,
+      "end_lineno": 311,
+      "end_col_offset": 27,
+      "original": "received > ordered",
+      "replacement": "(received >= ordered)"
+    },
+    {
+      "id": "86edfb90a9cd",
+      "operator": "CRP",
+      "lineno": 312,
+      "col_offset": 17,
+      "end_lineno": 312,
+      "end_col_offset": 49,
+      "original": "\"Received more than was ordered\"",
+      "replacement": "('XXReceived more than was orderedXX')"
+    },
+    {
+      "id": "be19070b795b",
+      "operator": "ROR",
+      "lineno": 313,
+      "col_offset": 9,
+      "end_lineno": 313,
+      "end_col_offset": 27,
+      "original": "received < ordered",
+      "replacement": "(received <= ordered)"
+    },
+    {
+      "id": "777297819dff",
+      "operator": "CRP",
+      "lineno": 314,
+      "col_offset": 17,
+      "end_lineno": 314,
+      "end_col_offset": 51,
+      "original": "\"Short delivery against the order\"",
+      "replacement": "('XXShort delivery against the orderXX')"
+    },
+    {
+      "id": "7f721b8a68ec",
+      "operator": "ROR",
+      "lineno": 315,
+      "col_offset": 9,
+      "end_lineno": 315,
+      "end_col_offset": 80,
+      "original": "abs(invoice_price - po_price) > po_price * pct_tolerance / Decimal(100)",
+      "replacement": "(abs(invoice_price - po_price) >= po_price * pct_tolerance / Decimal(100))"
+    },
+    {
+      "id": "a6e4ef7f05f9",
+      "operator": "AOR",
+      "lineno": 315,
+      "col_offset": 13,
+      "end_lineno": 315,
+      "end_col_offset": 37,
+      "original": "invoice_price - po_price",
+      "replacement": "(invoice_price + po_price)"
+    },
+    {
+      "id": "22cf9564356a",
+      "operator": "AOR",
+      "lineno": 315,
+      "col_offset": 41,
+      "end_lineno": 315,
+      "end_col_offset": 65,
+      "original": "po_price * pct_tolerance",
+      "replacement": "(po_price / pct_tolerance)"
+    },
+    {
+      "id": "7961c62df3eb",
+      "operator": "AOR",
+      "lineno": 315,
+      "col_offset": 41,
+      "end_lineno": 315,
+      "end_col_offset": 80,
+      "original": "po_price * pct_tolerance / Decimal(100)",
+      "replacement": "(po_price * pct_tolerance * Decimal(100))"
+    },
+    {
+      "id": "f5d4e05d52b4",
+      "operator": "CRP",
+      "lineno": 315,
+      "col_offset": 76,
+      "end_lineno": 315,
+      "end_col_offset": 79,
+      "original": "100",
+      "replacement": "(101)"
+    },
+    {
+      "id": "09b4f548d2e6",
+      "operator": "CRP",
+      "lineno": 316,
+      "col_offset": 17,
+      "end_lineno": 316,
+      "end_col_offset": 58,
+      "original": "\"Invoice price differs from the PO price\"",
+      "replacement": "('XXInvoice price differs from the PO priceXX')"
+    },
+    {
+      "id": "b89efccd572c",
+      "operator": "CRP",
+      "lineno": 318,
+      "col_offset": 17,
+      "end_lineno": 318,
+      "end_col_offset": 53,
+      "original": "\"Value gap with matching quantities\"",
+      "replacement": "('XXValue gap with matching quantitiesXX')"
+    },
+    {
+      "id": "4b58d243e313",
+      "operator": "RET",
+      "lineno": 320,
+      "col_offset": 4,
+      "end_lineno": 320,
+      "end_col_offset": 87,
+      "original": "return status, reason, expected_value, invoiced_value, qty_variance, value_variance",
+      "replacement": "return None"
+    },
+    {
+      "id": "159a2d2dfebf",
+      "operator": "AOR",
+      "lineno": 346,
+      "col_offset": 15,
+      "end_lineno": 346,
+      "end_col_offset": 52,
+      "original": "set(po_totals) | set(received_totals)",
+      "replacement": "(set(po_totals) & set(received_totals))"
+    },
+    {
+      "id": "1f13cacfbfb7",
+      "operator": "AOR",
+      "lineno": 346,
+      "col_offset": 15,
+      "end_lineno": 346,
+      "end_col_offset": 75,
+      "original": "set(po_totals) | set(received_totals) | set(invoiced_totals)",
+      "replacement": "((set(po_totals) | set(received_totals)) & set(invoiced_totals))"
+    },
+    {
+      "id": "6d7be2bee1db",
+      "operator": "ROR",
+      "lineno": 351,
+      "col_offset": 17,
+      "end_lineno": 351,
+      "end_col_offset": 37,
+      "original": "key not in po_totals",
+      "replacement": "(key in po_totals)"
+    },
+    {
+      "id": "c263c85443ea",
+      "operator": "COND",
+      "lineno": 352,
+      "col_offset": 11,
+      "end_lineno": 352,
+      "end_col_offset": 17,
+      "original": "orphan",
+      "replacement": "(not orphan)"
+    },
+    {
+      "id": "6cd46a9009cc",
+      "operator": "ROR",
+      "lineno": 356,
+      "col_offset": 39,
+      "end_lineno": 356,
+      "end_col_offset": 63,
+      "original": "raw_po_price is not None",
+      "replacement": "(raw_po_price is None)"
+    },
+    {
+      "id": "efde7cd6ecad",
+      "operator": "CRP",
+      "lineno": 370,
+      "col_offset": 33,
+      "end_lineno": 370,
+      "end_col_offset": 38,
+      "original": "False",
+      "replacement": "(True)"
+    },
+    {
+      "id": "d87ea673410b",
+      "operator": "CRP",
+      "lineno": 371,
+      "col_offset": 22,
+      "end_lineno": 371,
+      "end_col_offset": 26,
+      "original": "True",
+      "replacement": "(False)"
+    },
+    {
+      "id": "1afb9a969f10",
+      "operator": "LCR",
+      "lineno": 374,
+      "col_offset": 33,
+      "end_lineno": 374,
+      "end_col_offset": 66,
+      "original": "uom_conversion_applied or applied",
+      "replacement": "(uom_conversion_applied and applied)"
+    },
+    {
+      "id": "01214a70f515",
+      "operator": "LCR",
+      "lineno": 375,
+      "col_offset": 22,
+      "end_lineno": 375,
+      "end_col_offset": 45,
+      "original": "uom_covered and covered",
+      "replacement": "(uom_covered or covered)"
+    },
+    {
+      "id": "b6af40034754",
+      "operator": "LCR",
+      "lineno": 380,
+      "col_offset": 33,
+      "end_lineno": 380,
+      "end_col_offset": 66,
+      "original": "uom_conversion_applied or applied",
+      "replacement": "(uom_conversion_applied and applied)"
+    },
+    {
+      "id": "23573044ab22",
+      "operator": "LCR",
+      "lineno": 381,
+      "col_offset": 22,
+      "end_lineno": 381,
+      "end_col_offset": 45,
+      "original": "uom_covered and covered",
+      "replacement": "(uom_covered or covered)"
+    },
+    {
+      "id": "64d122f0d964",
+      "operator": "LCR",
+      "lineno": 386,
+      "col_offset": 33,
+      "end_lineno": 386,
+      "end_col_offset": 66,
+      "original": "uom_conversion_applied or applied",
+      "replacement": "(uom_conversion_applied and applied)"
+    },
+    {
+      "id": "8dff8694a715",
+      "operator": "LCR",
+      "lineno": 387,
+      "col_offset": 22,
+      "end_lineno": 387,
+      "end_col_offset": 45,
+      "original": "uom_covered and covered",
+      "replacement": "(uom_covered or covered)"
+    },
+    {
+      "id": "ee36588143c5",
+      "operator": "COND",
+      "lineno": 403,
+      "col_offset": 11,
+      "end_lineno": 403,
+      "end_col_offset": 17,
+      "original": "orphan",
+      "replacement": "(not orphan)"
+    },
+    {
+      "id": "e62ece14a337",
+      "operator": "UOI",
+      "lineno": 405,
+      "col_offset": 13,
+      "end_lineno": 405,
+      "end_col_offset": 28,
+      "original": "not uom_covered",
+      "replacement": "(uom_covered)"
+    },
+    {
+      "id": "66bf1881c7f6",
+      "operator": "CRP",
+      "lineno": 406,
+      "col_offset": 29,
+      "end_lineno": 406,
+      "end_col_offset": 40,
+      "original": "\"exception\"",
+      "replacement": "('XXexceptionXX')"
+    },
+    {
+      "id": "43b340d9064b",
+      "operator": "LCR",
+      "lineno": 408,
+      "col_offset": 12,
+      "end_lineno": 410,
+      "end_col_offset": 50,
+      "original": "status == \"exception\" and timing_gap_days is not None and 0 < timing_gap_days <= cutoff_days",
+      "replacement": "(status == 'exception' or timing_gap_days is not None or 0 < timing_gap_days <= cutoff_days)"
+    },
+    {
+      "id": "840152af5d63",
+      "operator": "ROR",
+      "lineno": 408,
+      "col_offset": 12,
+      "end_lineno": 408,
+      "end_col_offset": 33,
+      "original": "status == \"exception\"",
+      "replacement": "(status != 'exception')"
+    },
+    {
+      "id": "31633b982177",
+      "operator": "CRP",
+      "lineno": 408,
+      "col_offset": 22,
+      "end_lineno": 408,
+      "end_col_offset": 33,
+      "original": "\"exception\"",
+      "replacement": "('XXexceptionXX')"
+    },
+    {
+      "id": "2b17f90dc5e4",
+      "operator": "ROR",
+      "lineno": 409,
+      "col_offset": 16,
+      "end_lineno": 409,
+      "end_col_offset": 43,
+      "original": "timing_gap_days is not None",
+      "replacement": "(timing_gap_days is None)"
+    },
+    {
+      "id": "fc207d38dad1",
+      "operator": "CRP",
+      "lineno": 410,
+      "col_offset": 16,
+      "end_lineno": 410,
+      "end_col_offset": 17,
+      "original": "0",
+      "replacement": "(1)"
+    },
+    {
+      "id": "463e928e313e",
+      "operator": "ROR",
+      "lineno": 410,
+      "col_offset": 16,
+      "end_lineno": 410,
+      "end_col_offset": 50,
+      "original": "0 < timing_gap_days <= cutoff_days",
+      "replacement": "(0 <= timing_gap_days <= cutoff_days)"
+    },
+    {
+      "id": "dd93cfe2eced",
+      "operator": "ROR",
+      "lineno": 410,
+      "col_offset": 16,
+      "end_lineno": 410,
+      "end_col_offset": 50,
+      "original": "0 < timing_gap_days <= cutoff_days",
+      "replacement": "(0 < timing_gap_days < cutoff_days)"
+    },
+    {
+      "id": "0892303c3ba5",
+      "operator": "CRP",
+      "lineno": 412,
+      "col_offset": 29,
+      "end_lineno": 412,
+      "end_col_offset": 36,
+      "original": "\"check\"",
+      "replacement": "('XXcheckXX')"
+    },
+    {
+      "id": "2423b3a1d479",
+      "operator": "RET",
+      "lineno": 439,
+      "col_offset": 4,
+      "end_lineno": 439,
+      "end_col_offset": 96,
+      "original": "return ReconcileResult(lines=lines, warnings=warnings, as_of=as_of, cutoff_days=cutoff_days)",
+      "replacement": "return None"
+    }
+  ]
+}
